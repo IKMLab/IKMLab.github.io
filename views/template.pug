@@ -1,13 +1,15 @@
 html
     head
-        meta(charset='uft-8')
+        meta(content='text/html; charset=uft-8' http-equiv='Content-Type')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
         meta(name='viewport', content='width=device-width, initial-scale=1')
-        // script(src='script.js')
-        // link(rel='stylesheet', href='css/main.css')
+        link(rel='stylesheet', type="text/css", href='css/style.css')
+        //- link(rel="stylesheet", type="text/css", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+        //- script(src='all.js')
     body
         div(class='header')
-            h1 Information Knowledge Lab
+            h1 Information Knowledge Management Lab
             ul(class='nav-bar')
-                each nav in ['About', 'Members', 'Research', 'Contact', 'Related Links']
-                    li(class='nav')= nav
+                each nav in ['Home', 'About', 'Members', 'Research', 'Contact', 'Related Links']
+                    li(class='nav')
+                        a(href="/"+nav.toLowerCase())= nav

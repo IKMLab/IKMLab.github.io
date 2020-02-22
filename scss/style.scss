@@ -1,0 +1,63 @@
+@font-face{
+    font-family: 'Taipei Sans';
+    src: url(/lib/fonts/TaipeiSansTCBeta-Regular.ttf) format('truetype');
+}
+
+$color_pri: rgb(91, 190, 228);
+$color_sec: rgb(118, 200, 228);
+
+body {
+    font-family: 'Taipei Sans';
+    background-color: $color_pri;
+}
+
+.header {
+    height: 120px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.nav-bar {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.nav {
+	float: left;
+	font-size: 20px;
+    text-decoration: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.content {
+    height: 530px;
+    background-color: white;
+    width: 100%;
+}
+
+.box {
+    float: left;
+    width: 31%;
+    height: 85%;
+    margin: 1%;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footer {
+    height: 20px;
+    width: 98%;
+    padding: 1%;
+    text-align: center;
+}
