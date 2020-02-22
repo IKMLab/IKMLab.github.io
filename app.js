@@ -1,8 +1,11 @@
 const express = require('express')
 const app = express()
 
+app.set('view engine', 'pug')
+
 app.get('/', function (req, res) {
-  res.send('GET request to the homepage')
+    res.render('index')
 })
+
 
 app.listen(3000)
