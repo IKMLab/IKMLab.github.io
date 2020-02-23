@@ -7,33 +7,40 @@ body {
   background-color: #5bbee4;
 }
 
+ol, ul {
+  list-style: none;
+}
+
 .header {
   height: 120px;
-  width: 90%;
-  padding-left: 5%;
-  padding-right: 5%;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
 }
 
 .nav-bar {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-ol, ul {
-  list-style: none;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .nav {
-  float: left;
-  font-size: 20px;
-  text-decoration: none;
+  font-size: 18px;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.nav li {
+  vertical-align: middle;
+}
+.nav a {
+  text-align: center;
+  color: #000;
+}
+.nav a:hover {
+  text-decoration: none;
+  color: #FFF;
 }
 
 .content {
@@ -53,7 +60,7 @@ ol, ul {
 
 .footer {
   height: 20px;
-  width: 98%;
+  width: 100%;
   padding: 1%;
   text-align: center;
 }
