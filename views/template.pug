@@ -9,9 +9,10 @@ html
         script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js')
         script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js')
     body
-        div(class='header')
+        header
             h1 Information Knowledge Management Lab
-            ul(class='nav-bar row')
-                each nav in ['Home', 'About', 'Members', 'Research', 'Contact', 'Related Links']
-                    li(class='nav col')
-                        a(href="/"+nav.toLowerCase())= nav
+            div(class='nav-bar')
+                nav(class='d-flex justify-content-between')
+                    each nav in ['Home', 'About', 'Members', 'Research', 'Contact', 'Related Links']
+                        a(class='nav-item p-2' href='/'+nav.toLowerCase())= nav
+                        

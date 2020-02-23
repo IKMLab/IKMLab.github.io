@@ -7,15 +7,40 @@ body {
   background-color: #5bbee4;
 }
 
-ol, ul {
-  list-style: none;
-}
-
-.header {
+header {
   height: 120px;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: center;
+}
+
+nav {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+nav a {
+  text-align: center;
+  color: #000;
+}
+nav a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+main {
+  height: 600px;
+  background-color: white;
+  width: 100%;
+}
+
+footer {
+  height: 20px;
+  width: 100%;
+  padding: 1%;
   text-align: center;
 }
 
@@ -24,44 +49,11 @@ ol, ul {
   padding-right: 25%;
 }
 
-.nav {
-  font-size: 18px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.nav li {
-  vertical-align: middle;
-}
-.nav a {
-  text-align: center;
-  color: #000;
-}
-.nav a:hover {
-  text-decoration: none;
-  color: #FFF;
-}
-
-.content {
-  height: 530px;
-  background-color: white;
-  width: 100%;
-}
-
 .box {
   float: left;
-  width: 31%;
-  height: 85%;
-  margin: 1%;
+  width: 33%;
+  height: 100%;
   padding-top: 30px;
-  text-align: center;
-}
-
-.footer {
-  height: 20px;
-  width: 100%;
-  padding: 1%;
   text-align: center;
 }
 

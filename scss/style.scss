@@ -10,11 +10,7 @@ body {
     background-color: $color_pri;
 }
 
-ol, ul {
-    list-style: none;
-}
-
-.header {
+header {
     height: 120px;
     width: 100%;
     padding-top: 10px;
@@ -22,21 +18,12 @@ ol, ul {
     text-align: center;
 }
 
-.nav-bar {
-    padding-left: 25%;
-    padding-right: 25%;
-}
-
-.nav {
+nav {
     font-size: 18px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 5px;
     padding-right: 5px;
-
-    li {
-        vertical-align: middle;
-    }
 
     a {
         text-align: center;
@@ -49,24 +36,29 @@ ol, ul {
     }
 }
 
-.content {
-    height: 530px;
+main {
+    height: 600px;
     background-color: white;
     width: 100%;
 }
 
-.box {
-    float: left;
-    width: 31%;
-    height: 85%;
-    margin: 1%;
-    padding-top: 30px;
-    text-align: center;
-}
-
-.footer {
+footer {
     height: 20px;
     width: 100%;
     padding: 1%;
     text-align: center;
 }
+
+.nav-bar {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.box {
+    float: left;
+    width: 33%;
+    height: 100%;
+    padding-top: 30px;
+    text-align: center;
+}
+
