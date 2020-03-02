@@ -185,34 +185,36 @@ module.exports = (_, argv) => {
       // HTMLWebpackPlugin does not inject vendor chunks.
       // See issue:
       // https://github.com/jantimon/html-webpack-plugin/issues/882
-
-      // runtimeChunk: {
-      //   name: (entrypoint) => `runtime-${entrypoint.name}`,
-      // },
-      // splitChunks: {
-      //   // chunks: 'all',
-      //   cacheGroups: {
-      //     vendor: {
-      //       test: /[\\/]node_modules[\\/]/,
-      //       name: false, // some problem here "vendors"
-      //       chunks: 'all',
-      //       reuseExistingChunk: true,
-      //     },
-      //     react: {
-      //       test: /[\\/](react|react-dom)[\\/]/,
-      //       name: false, // some problem here "react"
-      //       chunks: 'all',
-      //       reuseExistingChunk: true,
-      //     },
-      //     styles: {
-      //       test: /\.css$/,
-      //       name: false, // some problem here "styles"
-      //       chunks: 'all',
-      //       reuseExistingChunk: true,
-      //     },
-      //     default: false,
-      //   },
-      // },
+      // This must be solve using next version of HTMLWebpackPlugin
+      // See issue:
+      // https://github.com/jantimon/html-webpack-plugin/issues/878
+      runtimeChunk: {
+        name: (entrypoint) => `runtime-${entrypoint.name}`,
+      },
+      splitChunks: {
+        // chunks: 'all',
+        cacheGroups: {
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: false, // some problem here "vendors"
+            chunks: 'all',
+            reuseExistingChunk: true,
+          },
+          react: {
+            test: /[\\/](react|react-dom)[\\/]/,
+            name: false, // some problem here "react"
+            chunks: 'all',
+            reuseExistingChunk: true,
+          },
+          styles: {
+            test: /\.css$/,
+            name: false, // some problem here "styles"
+            chunks: 'all',
+            reuseExistingChunk: true,
+          },
+          default: false,
+        },
+      },
     },
     module: {
       rules: [
@@ -246,9 +248,9 @@ module.exports = (_, argv) => {
               loader: 'babel-loader',
               options: {
                 presets: ['@babel/preset-react'],
-                // cacheDirectory: true,
-                // cacheCompression: false,
-                // compact: isProductionMode,
+                cacheDirectory: true,
+                cacheCompression: false,
+                compact: isProductionMode,
               },
             },
           ],
