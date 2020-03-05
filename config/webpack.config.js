@@ -4,7 +4,7 @@ const webpack = require('webpack')
 const postcssFlexbugsFixes = require('postcss-flexbugs-fixes')
 const postcssPresetEnv = require('postcss-preset-env')
 const postcssNormalize = require('postcss-normalize')
-const stylelint = require('stylelint')
+const StyleLintPlugin = require('stylelint-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const HTMLWebpackPulgin = require('html-webpack-plugin')
@@ -20,6 +20,11 @@ const pathConfig = {
   stylelint: path.resolve(__dirname, '.stylelintrc.json'),
 }
 
+const devConfig = {
+  host: 'localhost',
+  port: 3000,
+}
+
 
 module.exports = (_, argv) => {
   const isProductionMode = argv.mode == 'production' ? true : false
@@ -28,6 +33,11 @@ module.exports = (_, argv) => {
   process.env.NODE_ENV = isProductionMode ? 'production' : 'development'
   process.env.BABEL_ENV = process.env.NODE_ENV
   process.env.BROWSERSLIST_ENV = process.env.NODE_ENV
+
+  // webpack.output.publicPath need a trailing slash
+  const PUBLIC_URL = isProductionMode ?
+    'https://IKMLab.github.io/dist/' :
+    `https://${devConfig.host}:${devConfig.port}/`
 
   const getStyleLoaders = (useSassLoader = false) => {
     const loaders = [
@@ -56,13 +66,6 @@ module.exports = (_, argv) => {
           indent: 'postcss',
           sourceMap: true,
           plugins: () => [
-            stylelint({
-              configFile: pathConfig.stylelint,
-              fix: true,
-              cache: true,
-              cacheLocation:
-                path.resolve(pathConfig.nodeModules, '.cache'),
-            }),
             postcssFlexbugsFixes,
             postcssPresetEnv({
               stage: 3,
@@ -107,11 +110,11 @@ module.exports = (_, argv) => {
       compress: true,
       injectHot: true,
       hot: true,
-      host: 'localhost',
+      host: devConfig.host,
       https: true,
       open: true,
       openPage: 'home.html',
-      port: 3000,
+      port: devConfig.port,
       quiet: false,
     },
     context: pathConfig.src,
@@ -138,9 +141,7 @@ module.exports = (_, argv) => {
     output: {
       path: pathConfig.dist,
       pathinfo: isDevelopmentMode,
-      publicPath: isProductionMode ?
-        'https://IKMLab.github.io/dist' :
-        'https://localhost:3000/',
+      publicPath: PUBLIC_URL,
       filename: '[name].bundle.js',
     },
     target: 'web',
@@ -242,75 +243,83 @@ module.exports = (_, argv) => {
           ],
         },
         {
-          test: /\.(jsx?|tsx?)$/,
-          include: [
-            path.resolve(pathConfig.src),
-          ],
-          exclude: /node_modules/,
-          use: [
+          // `oneOf` will traverse all following loaders until one will
+          // match the requirements. When no loader matches it will fall
+          // back to the "file" loader at the end of the loader list.
+          // Must use `oneOf` to avoid using multiple loaders on single file
+          oneOf: [
             {
-              loader: 'babel-loader',
-              options: {
-                presets: ['@babel/preset-react'],
-                cacheDirectory: true,
-                cacheCompression: false,
-                compact: isProductionMode,
+              test: /\.(jsx?|tsx?)$/,
+              include: [
+                path.resolve(pathConfig.src),
+              ],
+              exclude: /node_modules/,
+              use: [
+                {
+                  loader: 'babel-loader',
+                  options: {
+                    presets: ['@babel/preset-react'],
+                    cacheDirectory: true,
+                    cacheCompression: false,
+                    compact: isProductionMode,
+                  },
+                },
+              ],
+            },
+            // Regular CSS files, mainly from 3rd party libraries.
+            {
+              test: /\.css$/,
+              exclude: /\.module\.css$/,
+              // Don't consider CSS imports dead code even if the
+              // containing package claims to have no side effects.
+              sideEffects: true,
+              use: getStyleLoaders(useSassLoader=false),
+            },
+            // Support CSS module
+            {
+              test: /\.module\.css$/,
+              use: getStyleLoaders(useSassLoader=false),
+            },
+            {
+              test: /\.(sass|scss)$/,
+              exclude: /\.module\.(sass|scss)$/,
+              // Don't consider Sass / SCSS imports dead code even if the
+              // containing package claims to have no side effects.
+              sideEffects: true,
+              use: getStyleLoaders(useSassLoader=true),
+            },
+            // Support css module
+            {
+              test: /\.module\.(sass|scss)$/,
+              use: getStyleLoaders(useSassLoader=true),
+            },
+            {
+              test: /\.(bmp|png|gif|jpe?g)$/,
+              use: [
+                {
+                  loader: 'url-loader',
+                  options: {
+                    limit: 16384,
+                    name: 'media/[name].[ext]',
+                  },
+                },
+              ],
+            },
+            // "file" loader makes sure those assets get served by
+            // WebpackDevServer. When you `import` an asset, you get its
+            // (virtual) filename. In production, they would get copied to the
+            // `dist` folder. This loader doesn't use a "test" so it will
+            // catch all modules that fall through the other loaders.
+            {
+              exclude: /\.(js|mjs|jsx|ts|tsx|html|json|css|sass|scss)$/,
+              use: {
+                loader: 'file-loader',
+                options: {
+                  name: 'media/[name].[ext]',
+                },
               },
             },
           ],
-        },
-        // Regular CSS files, mainly from 3rd party libraries.
-        {
-          test: /\.css$/,
-          exclude: /\.module\.css$/,
-          // Don't consider CSS imports dead code even if the
-          // containing package claims to have no side effects.
-          sideEffects: true,
-          use: getStyleLoaders(useSassLoader=false),
-        },
-        // Support CSS module
-        {
-          test: /\.module\.css$/,
-          use: getStyleLoaders(useSassLoader=false),
-        },
-        {
-          test: /\.(sass|scss)$/,
-          exclude: /\.module\.(sass|scss)$/,
-          // Don't consider Sass / SCSS imports dead code even if the
-          // containing package claims to have no side effects.
-          sideEffects: true,
-          use: getStyleLoaders(useSassLoader=true),
-        },
-        // Support css module
-        {
-          test: /\.module\.(sass|scss)$/,
-          use: getStyleLoaders(useSassLoader=true),
-        },
-        {
-          test: /\.(bmp|png|gif|jpe?g)$/,
-          use: [
-            {
-              loader: 'url-loader',
-              options: {
-                limit: 16384,
-                name: 'media/[name].[ext]',
-              },
-            },
-          ],
-        },
-        // "file" loader makes sure those assets get served by WebpackDevServer.
-        // When you `import` an asset, you get its (virtual) filename.
-        // In production, they would get copied to the `dist` folder.
-        // This loader doesn't use a "test" so it will catch all modules
-        // that fall through the other loaders.
-        {
-          exclude: /\.(js|mjs|jsx|ts|tsx|html|json|css|sass|scss)$/,
-          use: {
-            loader: 'file-loader',
-            options: {
-              name: 'media/[name].[ext]',
-            },
-          },
         },
         // ** STOP ** Are you adding a new loader?
         // Make sure to add the new loader(s) before the "file" loader.
@@ -399,9 +408,20 @@ module.exports = (_, argv) => {
         filename: path.resolve(pathConfig.dist, 'relate.html'),
       }),
       isDevelopmentMode && new webpack.HotModuleReplacementPlugin(),
+      new webpack.DefinePlugin({
+        'PUBLIC_URL': JSON.stringify(PUBLIC_URL),
+      }),
       new CaseSensitivePathsPlugin(),
       new MiniCssExtractPlugin({
         filename: '[name].bundle.css',
+      }),
+      new StyleLintPlugin({
+        configFile: pathConfig.stylelint,
+        cache: true,
+        cacheLocation: path.resolve(pathConfig.nodeModules, '.cache'),
+        emitError: true,
+        emitWarning: true,
+        fix: true,
       }),
       new ManifestPlugin({
         fileName: path.resolve(pathConfig.dist, 'manifest.json'),
