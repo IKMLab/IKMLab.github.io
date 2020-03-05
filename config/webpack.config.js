@@ -42,8 +42,12 @@ module.exports = (_, argv) => {
         loader: 'css-loader',
         options: {
           sourceMap: true,
-          modules: true,
           importLoaders: useSassLoader ? 3 : 1,
+          modules: {
+            mode: 'local',
+            localIdentName: isProductionMode ?
+              '[hash:base64]' : '[path][name]__[local]',
+          },
         },
       },
       {
