@@ -12,38 +12,37 @@ export default class Header extends React.Component {
   render() {
     return (
       <AppBar position='static'>
-        <Toolbar className={HeaderStyle['toolbar']}>
+        <Toolbar className={HeaderStyle['header']}>
           <Grid container>
-            <Grid item container lg={2} alignItems='center'>
+            <Grid item container lg={8} alignItems='center'>
               <img
                 src={logo}
                 alt='IKMLab logo'
-                className={HeaderStyle['toolbar-logo']}/>
-            </Grid>
-            <Grid item container lg alignItems='center'>
-              <span className={HeaderStyle['toolbar-lab-name']}>
+                className={HeaderStyle['header-logo']}/>
+              <span
+                className={HeaderStyle['header-lab-name']}>
                 Intelligent Knowledge Management Lab
               </span>
             </Grid>
-            <Grid item lg alignItems='center' justify='flex-end'>
+            <Grid item container lg alignItems='center' justify='flex-end'>
               <Link
                 href={`${PUBLIC_URL}home.html`}
-                className={HeaderStyle['toolbar-link']}>
+                className={HeaderStyle['header-link']}>
                   Home
               </Link>
               <Link
                 href={`${PUBLIC_URL}member.html`}
-                className={HeaderStyle['toolbar-link']}>
+                className={HeaderStyle['header-link']}>
                   Member
               </Link>
               <Link
                 href={`${PUBLIC_URL}research.html`}
-                className={HeaderStyle['toolbar-link']}>
+                className={HeaderStyle['header-link']}>
                   Research
               </Link>
               <Link
                 href={`${PUBLIC_URL}relate.html`}
-                className={HeaderStyle['toolbar-link']}>
+                className={HeaderStyle['header-link']}>
                   Relate
               </Link>
             </Grid>

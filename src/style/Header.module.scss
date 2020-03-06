@@ -1,4 +1,4 @@
-.toolbar {
+.header {
   background-color: rgb(246, 176, 50);
   padding: {
     bottom: 18px;
@@ -9,16 +9,19 @@
 
   &-lab-name {
     font-size: 32px;
-    padding-left: 16px;
+    margin-left: 32px;
     white-space: nowrap;
   }
 
   &-link {
     color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 12px;
   }
 
   &-logo {
     height: auto;
+    max-width: 170px;
     width: 170px;
   }
 }

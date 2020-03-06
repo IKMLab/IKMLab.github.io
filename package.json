@@ -86,7 +86,8 @@
   "license": "MIT",
   "name": "ikmlab.github.io",
   "os": [
-    "linux"
+    "linux",
+    "darwin"
   ],
   "private": true,
   "repository": {
