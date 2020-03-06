@@ -121,20 +121,10 @@ module.exports = (_, argv) => {
     entry: {
       'home':
         path.resolve(pathConfig.src, 'route/home.jsx'),
-      'advisor':
-        path.resolve(pathConfig.src, 'route/advisor.jsx'),
-      'member/alumni':
-        path.resolve(pathConfig.src, 'route/member/alumni.jsx'),
-      'member/master':
-        path.resolve(pathConfig.src, 'route/member/master.jsx'),
-      'member/phd':
-        path.resolve(pathConfig.src, 'route/member/phd.jsx'),
-      'research/competition':
-        path.resolve(pathConfig.src, 'route/research/competition.jsx'),
-      'research/project':
-        path.resolve(pathConfig.src, 'route/research/project.jsx'),
-      'research/publication':
-        path.resolve(pathConfig.src, 'route/research/publication.jsx'),
+      'member':
+        path.resolve(pathConfig.src, 'route/member.jsx'),
+      'research':
+        path.resolve(pathConfig.src, 'route/research.jsx'),
       'relate':
         path.resolve(pathConfig.src, 'route/relate.jsx'),
     },
@@ -338,65 +328,20 @@ module.exports = (_, argv) => {
       new HTMLWebpackPulgin({
         template: path.resolve(pathConfig.src, 'template/index.html'),
         chunks: [
-          'advisor',
-          'vendor~advisor',
-          'runtime-advisor',
+          'member',
+          'vendor~member',
+          'runtime-member',
         ],
-        filename: path.resolve(pathConfig.dist, 'advisor.html'),
+        filename: path.resolve(pathConfig.dist, 'member.html'),
       }),
       new HTMLWebpackPulgin({
         template: path.resolve(pathConfig.src, 'template/index.html'),
         chunks: [
-          'member/alumni',
-          'vendor~member/alumni',
-          'runtime-member/alumni',
+          'research',
+          'vendor~research',
+          'runtime-research',
         ],
-        filename: path.resolve(pathConfig.dist, 'member/alumni.html'),
-      }),
-      new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'template/index.html'),
-        chunks: [
-          'member/master',
-          'vendor~member/master',
-          'runtime-member/master',
-        ],
-        filename: path.resolve(pathConfig.dist, 'member/master.html'),
-      }),
-      new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'template/index.html'),
-        chunks: [
-          'member/phd',
-          'vendor~member/phd',
-          'runtime-member/phd',
-        ],
-        filename: path.resolve(pathConfig.dist, 'member/phd.html'),
-      }),
-      new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'template/index.html'),
-        chunks: [
-          'research/competition',
-          'vendor~research/competition',
-          'runtime-research/competition',
-        ],
-        filename: path.resolve(pathConfig.dist, 'research/competition.html'),
-      }),
-      new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'template/index.html'),
-        chunks: [
-          'research/project',
-          'vendor~research/project',
-          'runtime-research/project',
-        ],
-        filename: path.resolve(pathConfig.dist, 'research/project.html'),
-      }),
-      new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'template/index.html'),
-        chunks: [
-          'research/publication',
-          'vendor~research/publication',
-          'runtime-research/publication',
-        ],
-        filename: path.resolve(pathConfig.dist, 'research/publication.html'),
+        filename: path.resolve(pathConfig.dist, 'research.html'),
       }),
       new HTMLWebpackPulgin({
         template: path.resolve(pathConfig.src, 'template/index.html'),

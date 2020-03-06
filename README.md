@@ -52,6 +52,13 @@ npm run b
 ## Development build
 
 ```sh
+# Use the following snippet to build
+# development version of the website.
+npm run development
+
+# Shortcut command.
+npm run d
+
 # Use the following snippet to run
 # a development server.
 # This should automatically open a browser
@@ -61,15 +68,6 @@ npm run b
 # the following url:
 # https://localhost:3000/home.html
 npm start
-
-# Or use the following snippet to build
-# development version of the website.
-# This should be used when you want to
-# see the actual output to help you debugging.
-npm run development
-
-# Shortcut command.
-npm run d
 ```
 
 ## TODO

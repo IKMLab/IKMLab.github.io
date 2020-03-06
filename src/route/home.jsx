@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from 'src/component/App.jsx'
+import Layout from 'src/component/Layout.jsx'
 
-ReactDOM.render(<App />, document.getElementById('root'))
-console.log(123)
+ReactDOM.render(
+    <Layout>
+      context
+    </Layout>,
+    document.getElementById('root'))
