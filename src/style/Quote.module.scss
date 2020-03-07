@@ -1,0 +1,60 @@
+%quote-style {
+  color: #fff;
+  display: block;
+  letter-spacing: 0.03em;
+  line-height: 82px;
+  width: 100%;
+  font: {
+    family: noto sans;
+    size: 60px;
+    weight: 1000;
+  }
+  padding: {
+    left: 10%;
+    right: 10%;
+  }
+}
+
+.quote-wrapper-out {
+  height: auto;
+  min-height: 600px;
+  width: 100%;
+  background: {
+    attachment: fixed;
+    color: #000;
+    image: url('../res/image/background/1.jpg');
+    position: center;
+    repeat: no-repeat;
+    size: 1920px;
+  }
+
+  .quote-wrapper-in {
+    align-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: auto;
+    justify-content: center;
+    min-height: 600px;
+    width: 100%;
+
+    .quote {
+      &-text {
+        @extend %quote-style;
+
+        &::before {
+          content: '';
+        }
+
+        &::after {
+          content: '';
+        }
+      }
+
+      &-author {
+        @extend %quote-style;
+
+        text-align: right;
+      }
+    }
+  }
+}

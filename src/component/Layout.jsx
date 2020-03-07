@@ -14,11 +14,11 @@ export default class Layout extends React.Component {
   render() {
     return (
       <>
-        <CssBaseline />
+        <CssBaseline/>
         <StylesProvider injectFirst>
-          <Header />
+          <Header/>
           {this.props.children}
-          <Footer />
+          <Footer/>
         </StylesProvider>
       </>
     )

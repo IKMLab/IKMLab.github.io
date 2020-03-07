@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid'
 import Toolbar from '@material-ui/core/Toolbar'
 
 import HeaderStyle from 'src/style/Header.module.scss'
-import logo from 'src/image/logo.png'
+import logo from 'src/res/image/logo.png'
 
 export default class Header extends React.Component {
   render() {
@@ -14,35 +14,42 @@ export default class Header extends React.Component {
       <AppBar position='static'>
         <Toolbar className={HeaderStyle['header']}>
           <Grid container>
-            <Grid item container lg={8} alignItems='center'>
+            <Grid
+              className={HeaderStyle['header-grid-item-1']}
+              container
+              item
+              xl={8}>
               <img
-                src={logo}
                 alt='IKMLab logo'
-                className={HeaderStyle['header-logo']}/>
-              <span
-                className={HeaderStyle['header-lab-name']}>
+                className={HeaderStyle['header-logo']}
+                src={logo}/>
+              <span className={HeaderStyle['header-lab-name']}>
                 Intelligent Knowledge Management Lab
               </span>
             </Grid>
-            <Grid item container lg alignItems='center' justify='flex-end'>
+            <Grid
+              className={HeaderStyle['header-grid-item-2']}
+              container
+              item
+              xl>
               <Link
-                href={`${PUBLIC_URL}home.html`}
-                className={HeaderStyle['header-link']}>
+                className={HeaderStyle['header-link']}
+                href={`${PUBLIC_URL}home.html`}>
                   Home
               </Link>
               <Link
-                href={`${PUBLIC_URL}member.html`}
-                className={HeaderStyle['header-link']}>
+                className={HeaderStyle['header-link']}
+                href={`${PUBLIC_URL}member.html`}>
                   Member
               </Link>
               <Link
-                href={`${PUBLIC_URL}research.html`}
-                className={HeaderStyle['header-link']}>
+                className={HeaderStyle['header-link']}
+                href={`${PUBLIC_URL}research.html`}>
                   Research
               </Link>
               <Link
-                href={`${PUBLIC_URL}relate.html`}
-                className={HeaderStyle['header-link']}>
+                className={HeaderStyle['header-link']}
+                href={`${PUBLIC_URL}relate.html`}>
                   Relate
               </Link>
             </Grid>

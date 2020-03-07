@@ -317,7 +317,7 @@ module.exports = (_, argv) => {
     },
     plugins: [
       new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'template/index.html'),
+        template: path.resolve(pathConfig.src, 'res/template/index.html'),
         chunks: [
           'home',
           'vendor~home',
@@ -326,7 +326,7 @@ module.exports = (_, argv) => {
         filename: path.resolve(pathConfig.dist, 'home.html'),
       }),
       new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'template/index.html'),
+        template: path.resolve(pathConfig.src, 'res/template/index.html'),
         chunks: [
           'member',
           'vendor~member',
@@ -335,7 +335,7 @@ module.exports = (_, argv) => {
         filename: path.resolve(pathConfig.dist, 'member.html'),
       }),
       new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'template/index.html'),
+        template: path.resolve(pathConfig.src, 'res/template/index.html'),
         chunks: [
           'research',
           'vendor~research',
@@ -344,7 +344,7 @@ module.exports = (_, argv) => {
         filename: path.resolve(pathConfig.dist, 'research.html'),
       }),
       new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'template/index.html'),
+        template: path.resolve(pathConfig.src, 'res/template/index.html'),
         chunks: [
           'relate',
           'vendor~relate',

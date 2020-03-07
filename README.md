@@ -73,6 +73,7 @@ npm start
 ## TODO
 
 - Remove `dist` from `.gitignore` once we finish create the website
+- Add RWD
 - Add test
   - for `package.json`
     - `directories.test`

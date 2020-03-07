@@ -7,6 +7,17 @@
     top: 18px;
   }
 
+  &-grid-item-1 {
+    align-content: center;
+    align-items: center;
+  }
+
+  &-grid-item-2 {
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
   &-lab-name {
     font-size: 32px;
     margin-left: 32px;
