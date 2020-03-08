@@ -1,0 +1,51 @@
+.professor-wrapper {
+  align-content: center;
+  align-items: flex-start;
+  justify-content: center;
+  padding: {
+    bottom: 20px;
+    top: 20px;
+  }
+
+  .professor-section-title {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .professor {
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &-name {
+      margin: {
+        bottom: 0;
+        top: 5px;
+      }
+    }
+
+    &-department {
+      font-weight: 300;
+      text-align: center;
+      margin: {
+        bottom: 10px;
+        top: 5px;
+      }
+    }
+
+    &-image {
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  .professor-contact {
+    font-size: 18px;
+
+    &-text {
+      padding-left: 10px;
+    }
+  }
+}
