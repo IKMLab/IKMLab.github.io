@@ -1,4 +1,15 @@
 import placeholder from 'src/res/image/member/placeholder.jpg'
+import ChenHan from 'src/res/image/member/Chen-Han.jpg'
+import ReinaldAdrianPugoy
+  from 'src/res/image/member/Reinald-Adrian-Pugoy.jpg'
+import YiChunChen
+  from 'src/res/image/member/Yi-Chun-Chen.png'
+import YingJiaLin
+  from 'src/res/image/member/Ying-Jia-Lin.jpg'
+import ZhenYiWu
+  from 'src/res/image/member/Zhen-Yi-Wu.png'
+import ZiKuanHuang
+  from 'src/res/image/member/Zi-Kuan-Huang.png'
 
 export const memberData = [
   {
@@ -6,49 +17,44 @@ export const memberData = [
     en: 'Timothy Stephen Niven',
     dept: 0,
     deg: 0,
-    image: placeholder,
   },
   {
     zh: '林雨瑩',
     en: 'Yu-Ying Lin',
     dept: 0,
     deg: 0,
-    image: placeholder,
   },
   {
     zh: '蘇嘉納',
     en: 'Yudianto Sujana',
     dept: 0,
     deg: 0,
-    image: placeholder,
   },
   {
     zh: '李佳文',
     en: 'Jiawen Li',
     dept: 0,
     deg: 0,
-    image: placeholder,
   },
   {
     zh: '李仁傑',
     en: 'Reinald Adrian Pugoy',
     dept: 0,
     deg: 0,
-    image: placeholder,
+    image: ReinaldAdrianPugoy,
   },
   {
     zh: '林英嘉',
     en: 'Ying-Jia Lin',
     dept: 0,
     deg: 0,
-    image: placeholder,
+    image: YingJiaLin,
   },
   {
     zh: '倪仕文',
     en: 'Shiwen Ni',
     dept: 0,
     deg: 0,
-    image: placeholder,
   },
   {
     zh: '周子軒',
@@ -61,61 +67,58 @@ export const memberData = [
     en: 'Sheng-Xuan Lin',
     dept: 0,
     deg: 1,
-    image: placeholder,
   },
   {
     zh: '丁怡婷',
     en: 'Yi Ting Ding',
     dept: 1,
     deg: 1,
-    image: placeholder,
   },
   {
     zh: '王鈺云',
     en: 'Yu Yun Wang',
     dept: 0,
     deg: 1,
-    image: placeholder,
   },
   {
     zh: '潘昌義',
     en: 'Chang Yi Pan',
     dept: 0,
     deg: 1,
-    image: placeholder,
   },
   {
     zh: '陳晗',
     en: 'Han Chen',
     dept: 1,
     deg: 1,
-    image: placeholder,
+    image: ChenHan,
   },
   {
     zh: '蔡文傑',
     en: 'Wen Jie Tsai',
     dept: 0,
     deg: 1,
-    image: placeholder,
   },
   {
     zh: '黃子寬',
     en: 'Zi Kuan Huang',
     dept: 0,
     deg: 0,
-    image: placeholder,
+    image: ZiKuanHuang,
   },
   {
     zh: '陳怡君',
-    en: 'Yi-Chun Chen',
+    en: 'YiChunChen',
     dept: 1,
     deg: 1,
+    image: YiChunChen,
   },
   {
     zh: '吳貞頤',
     en: 'Zhen-Yi Wu',
     dept: 0,
     deg: 1,
+    image: ZhenYiWu,
   },
   {
     zh: '曾敬珊',
