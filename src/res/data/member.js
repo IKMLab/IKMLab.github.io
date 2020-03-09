@@ -4,6 +4,8 @@ import BingGuoChi
   from 'src/res/image/member/Bing-Guo-Chi.png'
 import BoYiWu
   from 'src/res/image/member/Bo-Yi-Wu.png'
+import ChangYiPan
+  from 'src/res/image/member/Chang-Yi-Pan.png'
 import ChenHan
   from 'src/res/image/member/Chen-Han.png'
 import ChingShanTseng
@@ -16,6 +18,8 @@ import HowToTrain
   from 'src/res/image/member/How-To-Train.png'
 import ReinaldAdrianPugoy
   from 'src/res/image/member/Reinald-Adrian-Pugoy.png'
+import ShiWenNi
+  from 'src/res/image/member/Shi-Wen-Ni.png'
 import TimothyStephenNiven
   from 'src/res/image/member/Timothy-Stephen-Niven.png'
 import TzuHsuanChou
@@ -82,9 +86,10 @@ export const memberData = [
   },
   {
     zh: '倪仕文',
-    en: 'Shiwen Ni',
+    en: 'Shi Wen Ni',
     dept: 0,
     deg: 0,
+    image: ShiWenNi,
   },
   {
     zh: '陳奕廷',
@@ -125,6 +130,7 @@ export const memberData = [
     en: 'Chang Yi Pan',
     dept: 0,
     deg: 1,
+    image: ChangYiPan,
   },
   {
     zh: '陳晗',
