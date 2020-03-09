@@ -1,0 +1,43 @@
+.staff-wrapper {
+  align-content: center;
+  align-items: flex-start;
+  background-color: #f5f5f5;
+  justify-content: center;
+  padding: {
+    bottom: 20px;
+    top: 20px;
+  }
+
+  .staff-section-title {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .staff {
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &-name {
+      margin: {
+        bottom: 0;
+        top: 5px;
+      }
+    }
+
+    &-image {
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  .staff-contact {
+    font-size: 18px;
+
+    &-text {
+      padding-left: 10px;
+    }
+  }
+}

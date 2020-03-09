@@ -1,11 +1,35 @@
-import placeholder from 'src/res/image/member/placeholder.jpg'
-import ChenHan from 'src/res/image/member/Chen-Han.jpg'
+import placeholder
+  from 'src/res/image/member/placeholder.jpg'
+import BingGuoChi
+  from 'src/res/image/member/Bing-Guo-Chi.png'
+import BoYiWu
+  from 'src/res/image/member/Bo-Yi-Wu.png'
+import ChenHan
+  from 'src/res/image/member/Chen-Han.png'
+import ChingShanTseng
+  from 'src/res/image/member/Ching-Shan-Tseng.png'
+import CutieP
+  from 'src/res/image/member/Cutie-P.png'
+import DengDengDeng
+  from 'src/res/image/member/Deng-Deng-Deng.png'
+import HowToTrain
+  from 'src/res/image/member/How-To-Train.png'
 import ReinaldAdrianPugoy
-  from 'src/res/image/member/Reinald-Adrian-Pugoy.jpg'
+  from 'src/res/image/member/Reinald-Adrian-Pugoy.png'
+import TimothyStephenNiven
+  from 'src/res/image/member/Timothy-Stephen-Niven.png'
+import TzuHsuanChou
+  from 'src/res/image/member/Tzu-Hsuan-Chou.png'
 import YiChunChen
   from 'src/res/image/member/Yi-Chun-Chen.png'
+import YiTingDing
+  from 'src/res/image/member/Yi-Ting-Ding.png'
 import YingJiaLin
-  from 'src/res/image/member/Ying-Jia-Lin.jpg'
+  from 'src/res/image/member/Ying-Jia-Lin.png'
+import YuYingLin
+  from 'src/res/image/member/Yu-Ying-Lin.png'
+import YudiantoSujana
+  from 'src/res/image/member/Yudianto-Sujana.png'
 import ZhenYiWu
   from 'src/res/image/member/Zhen-Yi-Wu.png'
 import ZiKuanHuang
@@ -17,18 +41,21 @@ export const memberData = [
     en: 'Timothy Stephen Niven',
     dept: 0,
     deg: 0,
+    image: TimothyStephenNiven,
   },
   {
-    zh: '林雨瑩',
-    en: 'Yu-Ying Lin',
+    zh: '周子軒',
+    en: 'Tzu Hsuan Chou',
     dept: 0,
     deg: 0,
+    image: TzuHsuanChou,
   },
   {
     zh: '蘇嘉納',
     en: 'Yudianto Sujana',
     dept: 0,
     deg: 0,
+    image: YudiantoSujana,
   },
   {
     zh: '李佳文',
@@ -45,7 +72,7 @@ export const memberData = [
   },
   {
     zh: '林英嘉',
-    en: 'Ying-Jia Lin',
+    en: 'Ying Jia Lin',
     dept: 0,
     deg: 0,
     image: YingJiaLin,
@@ -57,14 +84,15 @@ export const memberData = [
     deg: 0,
   },
   {
-    zh: '周子軒',
-    en: 'Tzu Hsuan Chou',
+    zh: '林雨瑩',
+    en: 'Yu Ying Lin',
     dept: 0,
-    deg: 0,
+    deg: 1,
+    image: YuYingLin,
   },
   {
     zh: '林聖軒',
-    en: 'Sheng-Xuan Lin',
+    en: 'Sheng Xuan Lin',
     dept: 0,
     deg: 1,
   },
@@ -73,6 +101,7 @@ export const memberData = [
     en: 'Yi Ting Ding',
     dept: 1,
     deg: 1,
+    image: YiTingDing,
   },
   {
     zh: '王鈺云',
@@ -103,34 +132,36 @@ export const memberData = [
     zh: '黃子寬',
     en: 'Zi Kuan Huang',
     dept: 0,
-    deg: 0,
+    deg: 1,
     image: ZiKuanHuang,
   },
   {
     zh: '陳怡君',
-    en: 'YiChunChen',
+    en: 'Yi Chun Chen',
     dept: 1,
     deg: 1,
     image: YiChunChen,
   },
   {
     zh: '吳貞頤',
-    en: 'Zhen-Yi Wu',
+    en: 'Zhen Yi Wu',
     dept: 0,
     deg: 1,
     image: ZhenYiWu,
   },
   {
     zh: '曾敬珊',
-    en: 'Ching-Shan Zheng',
+    en: 'Ching Shan Tseng',
     dept: 0,
     deg: 1,
+    image: ChingShanTseng,
   },
   {
     zh: '吳柏逸',
-    en: 'Bo-Yi Wu',
+    en: 'Bo Yi Wu',
     dept: 0,
     deg: 1,
+    image: BoYiWu,
   },
   {
     zh: '陳比恩',
@@ -153,97 +184,97 @@ export const memberData = [
   },
   {
     zh: '劉昭陽',
-    en: 'Zhao-Yang Liu',
+    en: 'Zhao Yang Liu',
     dept: 0,
     deg: 1,
     year: 2019,
   },
   {
     zh: '魏奇安',
-    en: 'Chi-An Wei',
+    en: 'Chi An Wei',
     dept: 0,
     deg: 1,
     year: 2019,
   },
   {
     zh: '葉修宏',
-    en: 'Siou-Hong Yeh',
+    en: 'Siou Hong Yeh',
     dept: 0,
     deg: 1,
     year: 2018,
   },
   {
     zh: '楊馥謙',
-    en: 'Fu-Chien Yang',
+    en: 'Fu Chien Yang',
     dept: 0,
     deg: 1,
     year: 2018,
   },
   {
     zh: '蔡子健',
-    en: 'ZiJian Cai',
+    en: 'Zi Jian Cai',
     dept: 0,
     deg: 1,
     year: 2018,
   },
   {
     zh: '陳奕廷',
-    en: 'Yi-Ting Chen',
+    en: 'Yi Ting Chen',
     dept: 0,
     deg: 0,
   },
   {
     zh: '陳宜勤',
-    en: 'Yi-Chin Chen',
+    en: 'Yi Chin Chen',
     dept: 0,
     deg: 1,
     year: 2017,
   },
   {
     zh: '李冠霖',
-    en: 'Guan-Lin Li',
+    en: 'Guan Lin Li',
     dept: 0,
     deg: 1,
     year: 2017,
   },
   {
     zh: '許顥瀚',
-    en: 'Hao-Han Hsu',
+    en: 'Hao Han Hsu',
     dept: 0,
     deg: 1,
     year: 2017,
   },
   {
     zh: '王夢昀',
-    en: 'Mengyun Wang',
+    en: 'Meng Yun Wang',
     dept: 0,
     deg: 1,
     year: 2019,
   },
   {
     zh: '梁智堯',
-    en: 'Jhih-Yao Liang',
+    en: 'Jhih Yao Liang',
     dept: 0,
     deg: 1,
     year: 2019,
   },
   {
     zh: '蘇志盛',
-    en: 'Jhih-Sheng Su',
+    en: 'Jhih Sheng Su',
     dept: 0,
     deg: 1,
     year: 2019,
   },
   {
     zh: '楊凱州',
-    en: 'Kai-Chou Yang',
+    en: 'Kai Chou Yang',
     dept: 0,
     deg: 1,
     year: 2019,
   },
   {
     zh: '許湘琪',
-    en: 'Shiang-Chi Hsu',
+    en: 'Shiang Chi Hsu',
     dept: 1,
     deg: 1,
     year: 2019,
@@ -262,12 +293,37 @@ export const memberData = [
     deg: 1,
     year: 2019,
   },
+  // Easter eggs.
+  // Make sure you add member before them.
   {
-    zh: '楊凱州',
-    en: 'Kai-Chou Yang',
+    zh: '登登登',
+    en: 'Deng Deng Deng',
+    dept: 0,
+    deg: 0,
+    image: DengDengDeng,
+  },
+  {
+    zh: '俏皮皮',
+    en: 'Cutie P',
     dept: 0,
     deg: 1,
-    year: 2019,
+    image: CutieP,
+  },
+  {
+    zh: '皓土川',
+    en: 'How To Train',
+    dept: 0,
+    deg: 0,
+    image: HowToTrain,
+    year: 2014,
+  },
+  {
+    zh: '冰過齊',
+    en: 'Guo Chi Bing',
+    dept: 0,
+    deg: 1,
+    image: BingGuoChi,
+    year: 1992,
   },
 ]
 

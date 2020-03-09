@@ -12,9 +12,11 @@ class MemberSection extends React.Component {
   render() {
     let members = memberData
         .filter((member)=>parsingRule.deg[member.deg]===this.props.deg)
+        .sort((memberA, memberB)=>memberA.dept-memberB.dept)
 
     if (this.props.isAlumni) {
       members = members.filter((member)=>member.year)
+      members = members.sort((memberA, memberB)=>memberB.year-memberA.year)
     } else {
       members = members.filter((member)=>!member.year)
     }
