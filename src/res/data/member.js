@@ -95,7 +95,7 @@ export const memberData = [
     zh: '蔡文傑',
     en: 'Wen Jie Tsai',
     dept: 0,
-    deg: 0,
+    deg: 1,
     image: placeholder,
   },
   {
@@ -194,74 +194,77 @@ export const memberData = [
     en: 'Yi-Chin Chen',
     dept: 0,
     deg: 1,
+    year: 2017,
   },
   {
     zh: '李冠霖',
     en: 'Guan-Lin Li',
     dept: 0,
     deg: 1,
+    year: 2017,
   },
   {
     zh: '許顥瀚',
     en: 'Hao-Han Hsu',
     dept: 0,
     deg: 1,
+    year: 2017,
   },
   {
     zh: '王夢昀',
     en: 'Mengyun Wang',
     dept: 0,
     deg: 1,
-    year: 2019
+    year: 2019,
   },
   {
     zh: '梁智堯',
     en: 'Jhih-Yao Liang',
     dept: 0,
     deg: 1,
-    year: 2019
+    year: 2019,
   },
   {
     zh: '蘇志盛',
     en: 'Jhih-Sheng Su',
     dept: 0,
     deg: 1,
-    year: 2019
+    year: 2019,
   },
   {
     zh: '楊凱州',
     en: 'Kai-Chou Yang',
     dept: 0,
     deg: 1,
-    year: 2019
+    year: 2019,
   },
   {
     zh: '許湘琪',
     en: 'Shiang-Chi Hsu',
     dept: 1,
     deg: 1,
-    year: 2019
+    year: 2019,
   },
   {
     zh: '吳昊',
     en: 'Hao Wu',
     dept: 0,
     deg: 1,
-    year: 2019
+    year: 2019,
   },
   {
     zh: '王越',
     en: 'Yue Wang',
     dept: 0,
     deg: 1,
-    year: 2019
+    year: 2019,
   },
   {
     zh: '楊凱州',
     en: 'Kai-Chou Yang',
     dept: 0,
     deg: 1,
-    year: 2019
+    year: 2019,
   },
 ]
 
