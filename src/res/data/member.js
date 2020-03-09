@@ -28,6 +28,8 @@ import YingJiaLin
   from 'src/res/image/member/Ying-Jia-Lin.png'
 import YuYingLin
   from 'src/res/image/member/Yu-Ying-Lin.png'
+import YuYunWang
+  from 'src/res/image/member/Yu-Yun-Wang.png'
 import YudiantoSujana
   from 'src/res/image/member/Yudianto-Sujana.png'
 import ZhenYiWu
@@ -84,6 +86,12 @@ export const memberData = [
     dept: 0,
     deg: 0,
   },
+  {
+    zh: '陳奕廷',
+    en: 'Yi Ting Chen',
+    dept: 0,
+    deg: 0,
+  },
   // Master Students
   {
     zh: '林雨瑩',
@@ -110,6 +118,7 @@ export const memberData = [
     en: 'Yu Yun Wang',
     dept: 0,
     deg: 1,
+    image: YuYunWang,
   },
   {
     zh: '潘昌義',
@@ -186,70 +195,74 @@ export const memberData = [
     year: 2019,
   },
   {
-    zh: '陳奕廷',
-    en: 'Yi Ting Chen',
-    dept: 0,
-    deg: 0,
-  },
-  {
     zh: '林致祿',
     en: 'Chih Lu Lin',
     dept: 0,
     deg: 0,
+    year: 2006,
   },
   {
     zh: '陳欣怡',
     en: 'Hsin Yi Chen',
     dept: 0,
     deg: 0,
+    year: 2009,
   },
   {
     zh: '莊琮暉',
     en: 'Tsung Hui Juang',
     dept: 0,
     deg: 0,
+    year: 2010,
   },
   {
     zh: '郝立仁',
     en: 'Lih Jen Hao',
     dept: 0,
     deg: 0,
+    year: 2012,
   },
   {
     zh: '張嘉倩',
     en: 'Chia Chien Chang',
     dept: 0,
     deg: 0,
+    year: 2012,
   },
   {
     zh: '黃皆富',
     en: 'Jie Fu Huang',
     dept: 0,
     deg: 0,
+    year: 2011,
   },
   {
     zh: '蔡毓娟',
     en: 'Yu Chuan Tsai',
     dept: 0,
     deg: 0,
+    year: 2015,
   },
   {
     zh: '湯鎰聰',
     en: 'Yi Tsung Tang',
     dept: 0,
     deg: 0,
+    year: 2013,
   },
   {
     zh: '魏至軒',
     en: 'Chih Hsuan Wei',
     dept: 0,
     deg: 0,
+    year: 2015,
   },
   {
     zh: '徐褘佑',
     en: 'Yi Yu Hsu',
     dept: 0,
     deg: 0,
+    year: 2015,
   },
   // Graduate Masters
   {
@@ -314,20 +327,6 @@ export const memberData = [
     dept: 0,
     deg: 1,
     year: 2019,
-  },
-  {
-    zh: '張斯琦',
-    en: 'Siqi Zhang',
-    dept: 0,
-    deg: 1,
-    year: 2018,
-  },
-  {
-    zh: '張斯琦',
-    en: 'Siqi Zhang',
-    dept: 0,
-    deg: 1,
-    year: 2018,
   },
   {
     zh: '葉修宏',
