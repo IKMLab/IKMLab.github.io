@@ -4,8 +4,9 @@ import CardActionArea from '@material-ui/core/CardActionArea'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import Chip from '@material-ui/core/Chip'
+import CodeIcon from '@material-ui/icons/Code'
 import Grid from '@material-ui/core/Grid'
-import GitHubIcon from '@material-ui/icons/GitHub'
+import LaunchIcon from '@material-ui/icons/Launch'
 import LinkIcon from '@material-ui/icons/Link'
 import LoyaltyIcon from '@material-ui/icons/Loyalty'
 import PersonIcon from '@material-ui/icons/Person'
@@ -22,7 +23,7 @@ export default class Research extends React.Component {
     // Split into 4 tracks.
     const researchSplits = [[], [], [], []]
     researchData
-        .sort((r1, r2)=>r1.year-r2.year)
+        .sort((r1, r2)=>r2.year-r1.year)
         .sort((r1, r2)=>r1.topic>r2.topic)
         .forEach((research, index)=>{
           researchSplits[index % researchSplits.length].push(research)
@@ -75,7 +76,6 @@ export default class Research extends React.Component {
                       icon={<LoyaltyIcon/>}
                       label={research.topic}
                       size='small'/>
-                    <br/>
                     {research.subfields &&
                    research.subfields.map((subfield)=>(
                      <Chip
@@ -95,7 +95,7 @@ export default class Research extends React.Component {
                   component='a'
                   href={research.url}
                   icon={<LinkIcon/>}
-                  label="Paper"
+                  label='Paper'
                   size='small'/>}
                   {research.code &&
                 <Chip
@@ -103,8 +103,17 @@ export default class Research extends React.Component {
                   clickable
                   component='a'
                   href={research.code}
-                  icon={<GitHubIcon/>}
-                  label="Source code"
+                  icon={<CodeIcon/>}
+                  label='Source code'
+                  size='small'/>}
+                  {research.demo &&
+                <Chip
+                  className={ResearchStyle['research-tag-link']}
+                  clickable
+                  component='a'
+                  href={research.demo}
+                  icon={<LaunchIcon/>}
+                  label='Demo'
                   size='small'/>}
                 </CardActions>
               </Card>
