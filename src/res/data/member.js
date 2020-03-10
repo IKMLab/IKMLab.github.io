@@ -1,5 +1,7 @@
 import placeholder
   from 'src/res/image/member/placeholder.jpg'
+import BiEnTan
+  from 'src/res/image/member/Bi-En-Tan.png'
 import BingGuoChi
   from 'src/res/image/member/Bing-Guo-Chi.png'
 import BoYiWu
@@ -18,6 +20,8 @@ import HowToTrain
   from 'src/res/image/member/How-To-Train.png'
 import ReinaldAdrianPugoy
   from 'src/res/image/member/Reinald-Adrian-Pugoy.png'
+import ShengXuanLin
+  from 'src/res/image/member/Sheng-Xuan-Lin.png'
 import ShiWenNi
   from 'src/res/image/member/Shi-Wen-Ni.png'
 import TimothyStephenNiven
@@ -110,6 +114,7 @@ export const memberData = [
     en: 'Sheng-Xuan Lin',
     dept: 0,
     deg: 1,
+    image: ShengXuanLin,
   },
   {
     zh: '丁怡婷',
@@ -185,6 +190,7 @@ export const memberData = [
     en: 'Daniel (Bi-En) Tan',
     dept: 1,
     deg: 1,
+    image: BiEnTan,
   },
   {
     zh: '陳冠友',

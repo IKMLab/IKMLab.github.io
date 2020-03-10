@@ -54,14 +54,6 @@ export default class Professor extends React.Component {
               <CallIcon/>
               <a
                 className={ProfessorStyle['professor-contact-text']}
-                href='tel:062757575,62546'>
-                  06-275-7575 ext 62546
-              </a>
-            </ListItem>
-            <ListItem>
-              <CallIcon/>
-              <a
-                className={ProfessorStyle['professor-contact-text']}
                 href='tel:+88662757575,62546'>
                   +886-6-275-7575 ext 62546
               </a>

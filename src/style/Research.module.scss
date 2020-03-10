@@ -58,6 +58,16 @@
           }
         }
 
+        &-year {
+          @extend %research-tag;
+
+          background-color: #f7e7bc;
+
+          svg {
+            color: darken(#f7e7bc, 40%);
+          }
+        }
+
         &-topic {
           @extend %research-tag;
 
