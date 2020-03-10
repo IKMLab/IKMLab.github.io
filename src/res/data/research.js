@@ -21,6 +21,43 @@ export const researchData = [
   },
   {
     title:
+      'Fake News Detection as Natural Language Inference',
+    authors: [
+      'Kai-Chou Yang',
+      'Timothy Niven',
+      'Hung-Yu Kao',
+    ],
+    venue: 'arXiv',
+    year: 2019,
+    url:
+      'https://arxiv.org/abs/1907.07347',
+    topic: 'NLP',
+    subfields: [
+      'Natural Language Inference',
+      'Rumor Detection',
+    ],
+  },
+  {
+    title:
+      'Nlitrans at semeval-2018 task 12:'+
+      ' Transfer of semantic knowledge for argument comprehension',
+    authors: [
+      'Tim Niven',
+      'Hung-Yu Kao',
+    ],
+    venue: 'arXiv',
+    year: 2019,
+    code:
+      'https://github.com/IKMLab/arct',
+    url:
+      'https://arxiv.org/abs/1804.08266',
+    topic: 'NLP',
+    subfields: [
+      'NLI',
+    ],
+  },
+  {
+    title:
       'R2-d2: Color-inspired convolutional neural network'+
       ' (cnn)-based android malware detections',
     authors: [
@@ -35,6 +72,24 @@ export const researchData = [
     subfields: [
       'Malware Detection',
       'Security Analysis',
+    ],
+  },
+  {
+    title:
+      'Data-Driven and Deep Learning Methodology for' +
+      ' Deceptive Advertising and Phone Scams Detection',
+    authors: [
+      'TonTon Hsien-De Huang',
+      'Chia-Mu Yu',
+      'Hung-Yu Kao',
+    ],
+    venue: 'TAAI',
+    year: 2017,
+    url:
+      'https://ieeexplore.ieee.org/abstract/document/8356930',
+    topic: 'Text Mining',
+    subfields: [
+      'Scams Detection',
     ],
   },
   {
@@ -54,6 +109,41 @@ export const researchData = [
     subfields: [
       'Stance Detection',
       'Rumor Detection',
+    ],
+  },
+  {
+    title:
+      'K-anonymization of multiple shortest paths',
+    authors: [
+      'Shyue-Liang Wang',
+      'Yu-Chuan Tsai',
+      'Tzung-Pei Hong',
+      'Hung-Yu Kao',
+    ],
+    venue: 'Soft Computing',
+    year: 2017,
+    url:
+      'https://link.springer.com/article/10.1007/s00500-016-2032-2',
+    topic: 'Data Mining',
+    subfields: [
+      'Anonymization',
+    ],
+  },
+  {
+    title:
+      'Word co-occurrence augmented topic model in short text',
+    authors: [
+      'Guan-Bin Chen',
+      'Hung-Yu Kao',
+    ],
+    venue: 'Intelligent Data Analysis',
+    year: 2017,
+    url:
+      'https://content.iospress.com/articles/intelligent-data-analysis/ida872',
+    topic: 'NLP',
+    subfields: [
+      'Topic model',
+      'Document Classfication',
     ],
   },
   {
@@ -117,6 +207,148 @@ export const researchData = [
   },
   {
     title:
+      'LDA based semi-supervised learning from streaming short text',
+    authors: [
+      'Ji-De Chen',
+      'Hung-Yu Kao',
+    ],
+    venue: 'DSAA',
+    year: 2015,
+    url:
+      'https://ieeexplore.ieee.org/abstract/document/7344830',
+    topic: 'Data Mining',
+    subfields: [
+      'Recommender Systems',
+      'Social Networking',
+    ],
+  },
+  {
+    title:
+      'Edge types vs privacy in K-anonymization of shortest paths',
+    authors: [
+      'Yu-Chuan Tsai',
+      'Shyue-Liang Wang',
+      'Hung-Yu Kao',
+      'Tzung-Pei Hong',
+    ],
+    venue: 'Applied Soft Computing',
+    year: 2015,
+    url:
+      'https://www.sciencedirect.com/science/article/pii/S1568494615001489',
+    topic: 'Data Mining',
+    subfields: [
+      'Anonymization',
+    ],
+  },
+  {
+    title:
+      'Word co-occurrence augmented topic model in short text',
+    authors: [
+      'Guan-Bin Chen',
+      'Hung-Yu Kao',
+    ],
+    venue: 'ROCLING/IJCLCLP',
+    year: 2015,
+    url:
+      'https://www.aclweb.org/anthology/O15-3003/',
+    topic: 'NLP',
+    subfields: [
+      'Topic model',
+      'Document Classfication',
+    ],
+  },
+  {
+    title:
+      'Text mining for translational bioinformatics',
+    authors: [
+      'Hong-Jie Dai',
+      'Chih-Hsuan Wei',
+      'Hung-Yu Kao',
+      'Rey-Long Liu',
+      'Richard Tzong-Han Tsai',
+      'Zhiyong Lu',
+    ],
+    venue: 'BioMed Research International',
+    year: 2015,
+    url:
+      'https://www.hindawi.com/journals/bmri/2015/368264/',
+    topic: 'Text Mining',
+    subfields: [
+      'Bioinformatics',
+    ],
+  },
+  {
+    title:
+      'Genealogical-based method for multiple ontology self-extension in MeSH',
+    authors: [
+      'Yu-Wen Guo',
+      'Yi-Tsung Tang',
+      'Hung-Yu Kao',
+    ],
+    venue: 'IEEE Transactions on NanoBioscience',
+    year: 2014,
+    url:
+      'https://ieeexplore.ieee.org/abstract/document/6823764',
+    topic: 'Data Mining',
+    subfields: [
+      'Bioinformatics',
+    ],
+  },
+  {
+    title:
+      'Gene name disambiguation using multi-scope species detection',
+    authors: [
+      'Jui-Chen Hsiao',
+      'Chih-Hsuan Wei',
+      'Hung-Yu Kao',
+    ],
+    venue: 'IEEE/ACM transactions on CBB',
+    year: 2013,
+    url:
+      'https://ieeexplore.ieee.org/abstract/document/6654152',
+    topic: 'Data Mining',
+    subfields: [
+      'Bioinformatics',
+    ],
+  },
+  {
+    title:
+      'Constructing social intentional corpora to predict' +
+      ' click-through rate for search advertising',
+    authors: [
+      'Yi-Ting Chen',
+      'Hung-Yu Kao',
+    ],
+    venue: 'ROCLING 2013',
+    year: 2013,
+    url:
+      'https://www.aclweb.org/anthology/O13-1028.pdf',
+    topic: 'IR',
+    subfields: [
+      'Opinion Mining',
+      'Text Classification',
+    ],
+  },
+  {
+    title:
+      'RSOL: A trust-based recommender system with an opinion leadership '+
+      'measurement for cold start users',
+    authors: [
+      'Jiun-Yuan Wang',
+      'Hung-Yu Kao',
+    ],
+    venue: 'AIRS',
+    year: 2013,
+    url:
+      'https://link.springer.com/chapter/10.1007/978-3-642-45068-6_43',
+    topic: 'IR',
+    subfields: [
+      'Recommender System',
+      'Opinion Mining',
+    ],
+  },
+  {
+    title:
       'IT2FS-based ontology with soft-computing mechanism'+
       ' for malware behavior analysis',
     authors: [
@@ -133,6 +365,79 @@ export const researchData = [
     subfields: [
       'Malware Detection',
       'Ontology',
+    ],
+  },
+  {
+    title:
+      '[K1, K2]-anonymization of Shortest Paths',
+    authors: [
+      'Yu-Chuan Tsai',
+      'Shyue-Liang Wang',
+      'Tzung-Pei Hong',
+      'Hung-Yu Kao',
+    ],
+    venue: 'MoMM',
+    year: 2014,
+    url:
+      'https://dl.acm.org/doi/abs/10.1145/2684103.2684160',
+    topic: 'Data Mining',
+    subfields: [
+      'Anonymization',
+    ],
+  },
+  {
+    title:
+      'Bipartite Editing Prediction in Wikipedia.',
+    authors: [
+      'Yang-Jui Chang',
+      'Yu-Chuan Tsai',
+      'Hung-Yu Kao',
+    ],
+    venue: 'JOURNAL OF INFORMATION SCIENCE AND ENGINEERING',
+    year: 2014,
+    url:
+      'https://pdfs.semanticscholar.org'+
+      '/3018/cda19d8550d37e9e174a73c8179c8c364aba.pdf',
+    topic: 'IR',
+    subfields: [
+      'Link Analysis',
+    ],
+  },
+  {
+    title:
+      'Using hidden Markov models to predict '+
+      'DNA-binding proteins with sequence and structure information',
+    authors: [
+      'Yi-Yu Hsu',
+      'Wei-Jhih Chen',
+      'Shu-Hui Chen',
+      'Hung-Yu Kao',
+    ],
+    venue: 'Soft Computing',
+    year: 2014,
+    url:
+      'https://link.springer.com/article/10.1007/s00500-013-1210-8',
+    topic: 'Data Mining',
+    subfields: [
+      'Bioinformatics',
+    ],
+  },
+  {
+    title:
+      'Text mining tools for assisting literature curation',
+    authors: [
+      'Chih-Hsuan Wei',
+      'Hung-Yu Kao',
+      'Zhiyong Lu',
+    ],
+    venue: 'BCB',
+    year: 2014,
+    url:
+      'https://dl.acm.org/doi/abs/10.1145/2649387.2660786',
+    topic: 'Text Mininig',
+    subfields: [
+      'Bioinformatics',
+      'Biocuration',
     ],
   },
   {
@@ -172,6 +477,48 @@ export const researchData = [
   },
   {
     title:
+      'Question difficulty evaluation by knowledge gap analysis'+
+      'in question answer communities',
+    authors: [
+      'Chih-Lu Lin',
+      'Ying-Liang Chen',
+      'Hung-Yu Kao',
+    ],
+    venue: 'ASONAM',
+    year: 2014,
+    url:
+      'https://ieeexplore.ieee.org/abstract/document/6921606',
+    topic: 'NLP',
+    subfields: [
+      'Difficulty Ranking',
+      'Question Answering',
+    ],
+  },
+  {
+    title:
+      'Fuzzy markup language for malware behavioral analysis',
+    authors: [
+      'Hsien-De Huang',
+      'Giovanni Acampora',
+      'Vincenzo Loia',
+      'Chang-Shing Lee',
+      'Hani Hagras',
+      'Mei-Hui Wang',
+      'Hung-Yu Kao',
+      'Jee-Gong Chang',
+    ],
+    venue: 'On the power of fuzzy markup language',
+    year: 2013,
+    url:
+      'https://link.springer.com/chapter/10.1007/978-3-642-35488-5_7',
+    topic: 'Security',
+    subfields: [
+      'Malware Detection',
+      'Security Analysis',
+    ],
+  },
+  {
+    title:
       'PubTator: a web-based text mining tool for assisting biocuration',
     authors: [
       'Chih-Hsuan Wei',
@@ -188,6 +535,46 @@ export const researchData = [
     subfields: [
       'Biocuration',
       'Bioinformatics',
+    ],
+  },
+  {
+    title:
+      'Using positive and negative patterns to extract information'+
+      ' from journal articles regarding the regulation of'+
+      ' a target gene by a transcription factor',
+    authors: [
+      'Hei Chia Wang',
+      'Tock-Kheng Kooi',
+      'Hung-Yu Kao',
+      'Shih Chieh Lin',
+      'Shaw-Jenq Tsai',
+    ],
+    venue: 'Comput. Biol. Med.',
+    year: 2013,
+    url:
+      'https://www.sciencedirect.com/science/article/pii/S0010482513002904',
+    topic: 'Data Mining',
+    subfields: [
+      'Bioinformatics',
+    ],
+  },
+  {
+    title:
+      'Shortest paths anonymization on weighted graphs',
+    authors: [
+      'Shyue-Liang Wang',
+      'Yu-Chuan Tsai',
+      'Hung-Yu Kao',
+      'I-Hsien Ting',
+      'Tzung-Pei Hong',
+    ],
+    venue: 'IJSEKE',
+    year: 2013,
+    url:
+      'https://www.worldscientific.com/worldscinet/ijseke',
+    topic: 'Data Mining',
+    subfields: [
+      'Anonymization',
     ],
   },
   {
@@ -236,6 +623,24 @@ export const researchData = [
     subfields: [
       'Natural Language Generation',
       'Sentiment Analysis',
+    ],
+  },
+  {
+    title:
+    'CoIN: a network analysis for document triage',
+    authors: [
+      'Yi-Yu Hsu',
+      'Hung-Yu Kao',
+    ],
+    venue: 'Database',
+    year: 2013,
+    url:
+      'https://academic.oup.com/database'+
+      '/article/doi/10.1093/database/bat076/2871251',
+    topic: 'IR',
+    subfields: [
+      'Biocuration',
+      'Bioinformatics',
     ],
   },
   {
@@ -348,6 +753,25 @@ export const researchData = [
   },
   {
     title:
+      'TWMAN+: A Type-2 fuzzy ontology model for malware behavior analysis',
+    authors: [
+      'Hsien-De Huang',
+      'Chang-Shing Lee',
+      'Hani Hagras',
+      'Hung-Yu Kao',
+    ],
+    venue: 'SMC',
+    year: 2012,
+    url:
+      'https://ieeexplore.ieee.org/abstract/document/6378176',
+    topic: 'Security',
+    subfields: [
+      'Malware Detection',
+      'Security Analysis',
+    ],
+  },
+  {
+    title:
       'Question routing by modeling user expertise and activity'+
       ' in cQA services',
     authors: [
@@ -406,6 +830,27 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
       'Gene Normalization',
+    ],
+  },
+  {
+    title: 'Using unsupervised patterns' +
+      'to extract gene regulation relationships for network construction',
+    authors: [
+      'Yi-Tsung Tang',
+      'Shuo-Jang Li',
+      'Hung-Yu Kao',
+      'Shaw-Jenq Tsai',
+      'Hei-Chia Wang',
+    ],
+    venue: 'PloS one',
+    year: 2011,
+    url:
+      'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3091867/',
+    topic: 'Text Mining',
+    subfields: [
+      'Bioinformatics',
+      'Gene Regulation',
+      'Relation Extraction',
     ],
   },
   {
@@ -505,6 +950,24 @@ export const researchData = [
   },
   {
     title:
+      'The clustering of hot topics on plurk',
+    authors: [
+      'Zong-Hua Yang',
+      'Hung-Yu Kao',
+    ],
+    venue: 'Journal of Computers',
+    year: 2011,
+    url:
+      'http://www.csroc.org.tw/journal/Published%20Vol_22_No_2.files/P1.doc',
+    topic: 'IR',
+    subfields: [
+      'Link Analysis',
+      'Social Network Analysis',
+      'Opinion Mining',
+    ],
+  },
+  {
+    title:
       'Blog popularity mining using social interconnection analysis',
     authors: [
       'Chih-Lu Lin',
@@ -540,6 +1003,40 @@ export const researchData = [
   },
   {
     title:
+      'Protein surface search in' +
+      ' DNA-binding protein prediction by Delaunay triangulation modeling',
+    authors: [
+      'Po-Han Cheng',
+      'Hung-Yu Chen',
+      'Hung-Yu Kao',
+    ],
+    venue: 'ICS2010',
+    year: 2010,
+    url:
+      'https://ieeexplore.ieee.org/abstract/document/5685406',
+    topic: 'Data Mining',
+    subfields: [
+      'Bioinformatics',
+    ],
+  },
+  {
+    title: 'Finding hard questions'+
+      ' by knowledge gap analysis in question answer communities',
+    authors: [
+      'Ying-Liang Chen',
+      'Hung-Yu Kao',
+    ],
+    venue: 'AIRS',
+    year: 2010,
+    url:
+      'https://link.springer.com/chapter/10.1007/978-3-642-17187-1_36',
+    topic: 'IR',
+    subfields: [
+      'Question Answering',
+    ],
+  },
+  {
+    title:
       'Anonymizing set-valued social data',
     authors: [
       'Shyue-Liang Wang',
@@ -555,6 +1052,65 @@ export const researchData = [
     subfields: [
       'Anonymization',
       'Social Network Analysis',
+    ],
+  },
+  {
+    title:
+      'Multi-table association rules hiding',
+    authors: [
+      'Shyue-Liang Wang',
+      'Tzung-Pei Hong',
+      'Yu-Chuan Tsai',
+      'Hung-Yu Kao',
+    ],
+    venue: 'ISDA',
+    year: 2010,
+    url:
+      'https://ieeexplore.ieee.org/abstract/document/5687088',
+    topic: 'Data Mining',
+    subfields: [
+      'Anonymization',
+      'Association Rules',
+    ],
+  },
+  {
+    title:
+      'Top Stories Identification From Blog to News In TREC 2010 Blog Track',
+    authors: [
+      'Yu-Fan Lin',
+      'Jing-Hau Wang',
+      'Liang-Cheng Lai',
+      'Hung-Yu Kao',
+    ],
+    venue: 'TREC',
+    year: 2010,
+    url:
+      'https://www.researchgate.net/profile/Hung-Yu_Kao/publication/'+
+      '221038098_Top_Stories_Identification_From_Blog_to_News_in_'+
+      'TREC_2010_Blog_Track/links/0a85e52f596f4e51ca000000.pdf',
+    topic: 'IR',
+    subfields: [
+      'Link Analysis',
+      'Blog Track',
+    ],
+  },
+  {
+    title:
+      'Hiding sensitive association rules on stars',
+    authors: [
+      'Shyue-Liang Wang',
+      'Tzung-Pei Hong',
+      'Yu-Chuan Tsai',
+      'Hung-Yu Kao',
+    ],
+    venue: 'GRC',
+    year: 2010,
+    url:
+      'https://ieeexplore.ieee.org/abstract/document/5575977',
+    topic: 'Data Mining',
+    subfields: [
+      'Anonymation',
+      'Association Rules',
     ],
   },
   {
@@ -575,6 +1131,40 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
       'Named Entity Recognition',
+    ],
+  },
+  {
+    title:
+      'Utilizing social relationships for blog popularity mining',
+    authors: [
+      'Chih-Lu Lin',
+      'Hao-Lun Tang',
+      'Hung-Yu Kao',
+    ],
+    venue: 'AIRS',
+    year: 2009,
+    url:
+      'https://link.springer.com/chapter/10.1007/978-3-642-04769-5_36',
+    topic: 'IR',
+    subfields: [
+      'Link Analysis',
+    ],
+  },
+  {
+    title:
+      'Entropy-based visual tree evaluation on block extraction',
+    authors: [
+      'Wei-Ting Cho',
+      'Yu-Min Lin',
+      'Hung-Yu Kao',
+    ],
+    venue: 'IEEE/WIC/ACM WI-IAT',
+    year: 2009,
+    url:
+      'https://ieeexplore.ieee.org/abstract/document/5286011',
+    topic: 'IR',
+    subfields: [
+      'Information Extraction',
     ],
   },
   {
