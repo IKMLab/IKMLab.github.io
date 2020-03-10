@@ -43,4 +43,15 @@
       width: 32px;
     }
   }
+
+  .footer-related-section {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    .footer-related-icon {
+      height: 32px;
+      width: auto;
+    }
+  }
 }

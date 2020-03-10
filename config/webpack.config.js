@@ -125,8 +125,6 @@ module.exports = (_, argv) => {
         path.resolve(pathConfig.src, 'route/member.jsx'),
       'research':
         path.resolve(pathConfig.src, 'route/research.jsx'),
-      'relate':
-        path.resolve(pathConfig.src, 'route/relate.jsx'),
     },
     output: {
       path: pathConfig.dist,

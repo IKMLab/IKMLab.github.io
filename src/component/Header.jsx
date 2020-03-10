@@ -47,11 +47,6 @@ export default class Header extends React.Component {
                 href={`${PUBLIC_URL}research.html`}>
                   Research
               </Link>
-              <Link
-                className={HeaderStyle['header-link']}
-                href={`${PUBLIC_URL}relate.html`}>
-                  Relate
-              </Link>
             </Grid>
           </Grid>
         </Toolbar>
