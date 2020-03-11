@@ -102,9 +102,9 @@ class IntroResearch extends React.Component {
         className={IntroStyle['intro-research-section']}
         container>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-          <h1 className={IntroStyle['intro-research-title']}>
+          <h2 className={IntroStyle['intro-research-title']}>
             WHAT WE DO?
-          </h1>
+          </h2>
         </Grid>
         {
           topics.map((topic)=>(
@@ -136,9 +136,9 @@ class IntroGoal extends React.Component {
         className={IntroStyle['intro-goal-section']}
         container>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-          <h1 className={IntroStyle['intro-goal-title']}>
+          <h2 className={IntroStyle['intro-goal-title']}>
             GOAL
-          </h1>
+          </h2>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <p

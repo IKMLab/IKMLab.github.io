@@ -1,5 +1,7 @@
+@import './Variable.module';
+
 .contact-wrapper-out {
-  height: 600px;
+  height: auto;
   width: 100%;
   background: {
     attachment: fixed;
@@ -7,7 +9,7 @@
     image: url('../res/image/background/2.png');
     position: center;
     repeat: no-repeat;
-    size: 1920px;
+    size: 100% auto;
   };
 
   .contact-wrapper-in {
@@ -24,16 +26,26 @@
 
     .contact-title {
       color: #f5f5f5;
-      font-size: 40px;
+      font-size: 28px;
       text-align: center;
+
+      @media screen and (min-width: $sm) {
+        font-size: 34px;
+      }
+
+      @media screen and (min-width: $md) {
+        font-size: 40px;
+      }
     }
 
     .contact-info-list {
       background-color: #f5f5f5;
       font-size: 18px;
+      margin-bottom: 10px;
       opacity: 0.9;
 
       .contact-info {
+        word-break: break-word;
         padding: {
           left: 10px;
         }
