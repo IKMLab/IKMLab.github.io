@@ -1,5 +1,17 @@
-import placeholder
-  from 'src/res/image/member/placeholder.jpg'
+import placeholder0
+  from 'src/res/image/member/ikm0.png'
+import placeholder1
+  from 'src/res/image/member/ikm1.png'
+import placeholder2
+  from 'src/res/image/member/ikm2.png'
+import placeholder3
+  from 'src/res/image/member/ikm3.png'
+import placeholder4
+  from 'src/res/image/member/ikm4.png'
+import placeholder5
+  from 'src/res/image/member/ikm5.png'
+import placeholder6
+  from 'src/res/image/member/ikm6.png'
 import BiEnTan
   from 'src/res/image/member/Bi-En-Tan.png'
 import BingGuoChi
@@ -803,11 +815,22 @@ const schemaCheck = () => {
     throw new Error(`memberData is not type array.`)
   }
 
+  const placeholder = [
+    placeholder0,
+    placeholder1,
+    placeholder2,
+    placeholder3,
+    placeholder4,
+    placeholder5,
+    placeholder6,
+  ]
+  let placeholderCounter = 0
   memberData.forEach((member) => {
     // Items in `memberData` must be an object, so this one will
     // also be written explicitly.
     if (!validator(member, 'object')) {
-      throw new Error(`memberData is not type object.`)
+      console.error(member)
+      throw new Error(`member is not type object.`)
     }
 
     // Check if Chinese name is filled.
@@ -815,8 +838,9 @@ const schemaCheck = () => {
     if (member.zh) {
       useZh = true
       if (!validator(member.zh, schema.items.properties.zh.type)) {
+        console.error(member)
         throw new Error(
-            `memberData.zh is not type ${schema.items.properties.zh.type}.`,
+            `member.zh is not type ${schema.items.properties.zh.type}.`,
         )
       }
     }
@@ -826,31 +850,35 @@ const schemaCheck = () => {
     if (member.en) {
       useEn = true
       if (!validator(member.en, schema.items.properties.en.type)) {
+        console.error(member)
         throw new Error(
-            `memberData.en is not type ${schema.items.properties.en.type}.`,
+            `member.en is not type ${schema.items.properties.en.type}.`,
         )
       }
     }
 
     // Throw if both names are not filled.
     if (!(useZh || useEn)) {
+      console.error(member)
       throw new Error(
-          `At least one of memberData.zh or memberData.en must be filled.`,
+          `At least one of member.zh or member.en must be filled.`,
       )
     }
 
     // Check if degree is filled with correct range.
     if (!validator(member.deg, schema.items.properties.deg.type) ||
     !validator(parsingRule.deg[member.deg], 'string')) {
+      console.error(member)
       throw new Error(
-          `memberData.deg must be in range [0, ${parsingRule.deg.length - 1}].`,
+          `member.deg must be in range [0, ${parsingRule.deg.length - 1}].`,
       )
     }
     // Check if department is filled with correct range.
     if (!validator(member.dept, schema.items.properties.dept.type) ||
     !validator(parsingRule.dept[member.dept], 'string')) {
+      console.error(member)
       throw new Error(
-          `memberData.dept must be in range [0, ${
+          `member.dept must be in range [0, ${
             parsingRule.dept.length - 1
           }].`,
       )
@@ -861,8 +889,9 @@ const schemaCheck = () => {
       if (!validator(member.year, schema.items.properties.year.type) ||
       member.year < 1990 ||
       member.year > new Date(Date.now()).getFullYear()) {
+        console.error(member)
         throw new Error(
-            `memberData.year must be in range [1990, ${
+            `member.year must be in range [1990, ${
               new Date(Date.now()).getFullYear()
             }].`,
         )
@@ -871,6 +900,7 @@ const schemaCheck = () => {
 
     if (member.image) {
       if (!validator(member.image, schema.items.properties.image.type)) {
+        console.error(member)
         throw new Error(
             'member.image should be imported in file: '+
           'src/res/data/member.js',
@@ -878,7 +908,9 @@ const schemaCheck = () => {
       }
     } else {
       // Use a placeholde for member's image.
-      member.image = placeholder
+      member.image = placeholder[placeholderCounter]
+      placeholderCounter += 1
+      placeholderCounter = placeholderCounter % placeholder.length
     }
   })
 }

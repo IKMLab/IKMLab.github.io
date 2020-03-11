@@ -15,13 +15,12 @@ class MemberSection extends React.Component {
 
     if (this.props.isAlumni) {
       members = members.filter((member)=>member.year)
-      members = members
-          .sort((memberA, memberB)=>{
-            if (memberA.year!==memberB.year) {
-              return memberB.year-memberA.year
-            }
-            return memberA.dept-memberB.dept
-          })
+      members = members.sort((memberA, memberB)=>{
+        if (memberA.year!==memberB.year) {
+          return memberB.year-memberA.year
+        }
+        return memberA.dept-memberB.dept
+      })
     } else {
       members = members.filter((member)=>!member.year)
           .sort((memberA, memberB)=>memberA.dept-memberB.dept)
@@ -42,7 +41,7 @@ class MemberSection extends React.Component {
       <Grid
         className={MemberStyle[`${this.props.deg}-section`]}
         container>
-        <Grid item xl={12}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <h1
             className={MemberStyle['member-section-title']}>
             {title}
@@ -51,11 +50,10 @@ class MemberSection extends React.Component {
         {
           members.map((member)=>(
             <Grid
-              className={MemberStyle['member-wrapper']}
+              className={MemberStyle['member']}
               container
-              item
-              key={member.zh + member.en + member.dept + member.deg}
-              xl={2}>
+              item xs={12} sm={4} md={3} lg={2} xl={2}
+              key={member.zh + member.en + member.dept + member.deg}>
               <img
                 className={MemberStyle['member-image']}
                 src={member.image}/>
