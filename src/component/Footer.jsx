@@ -1,5 +1,6 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
+import Link from '@material-ui/core/Link'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import CallIcon from '@material-ui/icons/Call'
@@ -18,89 +19,93 @@ export default class Footer extends React.Component {
   render() {
     return (
       <Grid
-        className={FooterStyle['footer-wrapper']}
+        className={FooterStyle['footer-section']}
         container>
         <Grid
-          className={FooterStyle['footer-logo-section']}
-          item
-          xl={1}>
+          className={FooterStyle['footer-signature']}
+          item xs={12} sm={6} md={3} lg={2} xl={2}>
           <img
             alt='IKMLab logo'
-            className={FooterStyle['footer-logo']}
+            className={FooterStyle['logo']}
             src={logo}/>
-        </Grid>
-        <Grid
-          className={FooterStyle['footer-copyright-section']}
-          item
-          xl={1}>
-          <p className={FooterStyle['footer-copyright']}>
-              Copyright © {new Date(Date.now()).getFullYear()} IKMLab.<br/>
-              All right reserved.
+          <p className={FooterStyle['copyright']}>
+            Copyright © {new Date(Date.now()).getFullYear()} IKMLab.<br/>
+            All right reserved.
           </p>
         </Grid>
         <Grid
-          className={FooterStyle['footer-contact-section']}
-          item
-          xl={2}>
-          <List className={''}>
+          className={FooterStyle['footer-contact']}
+          item xs={12} sm={6} md={3} lg={2} xl={2}>
+          <List>
             <ListItem>
               <CallIcon/>
-              <a
-                className={''}
+              <Link
+                className={FooterStyle['contact']}
                 href='tel:+88662757575,62520,2903'>
                   +886-6-275-7575 ext 62520 ext 2903
-              </a>
+              </Link>
             </ListItem>
             <ListItem>
               <EmailIcon/>
-              <a
-                className={''}
+              <Link
+                className={FooterStyle['contact']}
                 href='mailto:ikmlab@mail.csie.ncku.edu.tw'>
                   ikmlab@mail.csie.ncku.edu.tw
-              </a>
+              </Link>
             </ListItem>
           </List>
         </Grid>
         <Grid
-          className={FooterStyle['footer-power-by-section']}
-          item
-          xl={1}>
-          <h2>Power By</h2>
-          <img
-            className={FooterStyle['footer-power-by-icon']}
-            src={reactIcon}/>
-          <img
-            className={FooterStyle['footer-power-by-icon']}
-            src={webpackIcon}/>
-          <img
-            className={FooterStyle['footer-power-by-icon']}
-            src={materialUIIcon}/>
-          <img
-            className={FooterStyle['footer-power-by-icon']}
-            src={sassIcon}/>
+          className={FooterStyle['footer-power-by']}
+          item xs={12} sm={6} md={3} lg={2} xl={2}>
+          <h2 className={FooterStyle['power-by-title']}>
+            Power By
+          </h2>
+          <figure>
+            <Link href='https://reactjs.org/'>
+              <img
+                className={FooterStyle['power-by-icon']}
+                src={reactIcon}/>
+            </Link>
+            <Link href='https://webpack.js.org/'>
+              <img
+                className={FooterStyle['power-by-icon']}
+                src={webpackIcon}/>
+            </Link>
+            <Link href='https://material-ui.com/'>
+              <img
+                className={FooterStyle['power-by-icon']}
+                src={materialUIIcon}/>
+            </Link>
+            <Link href='https://sass-lang.com/'>
+              <img
+                className={FooterStyle['power-by-icon']}
+                src={sassIcon}/>
+            </Link>
+          </figure>
         </Grid>
         <Grid
-          className={FooterStyle['footer-related-section']}
-          item
-          xl={1}>
-          <h2>Related Link</h2>
-          <a
-            href='https://web.ncku.edu.tw/index.php'>
-            <img
-              className={FooterStyle['footer-related-icon']}
-              src={NCKUIcon}/>
-          </a>
-          <a
-            href='http://www.csie.ncku.edu.tw/ncku_csie/'>
-            <img
-              className={FooterStyle['footer-related-icon']}
-              src={CSIEIcon}/>
-          </a>
-          <a
-            href='https://github.com/IKMLab'>
-            <GitHubIcon
-              className={FooterStyle['footer-related-icon']}/>
-          </a>
+          className={FooterStyle['footer-related']}
+          item xs={12} sm={6} md={3} lg={2} xl={2}>
+          <h2 className={FooterStyle['related-title']}>
+            Related Link
+          </h2>
+          <figure>
+            <Link href='https://web.ncku.edu.tw/index.php'>
+              <img
+                className={FooterStyle['related-icon']}
+                src={NCKUIcon}/>
+            </Link>
+            <Link href='http://www.csie.ncku.edu.tw/ncku_csie/'>
+              <img
+                className={FooterStyle['related-icon']}
+                src={CSIEIcon}/>
+            </Link>
+            <Link href='https://github.com/IKMLab'>
+              <GitHubIcon
+                className={FooterStyle['related-icon']}/>
+            </Link>
+          </figure>
         </Grid>
       </Grid>
     )

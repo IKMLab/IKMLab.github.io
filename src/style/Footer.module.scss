@@ -1,4 +1,4 @@
-.footer-wrapper {
+.footer-section {
   align-items: center;
   background-color: rgb(246, 176, 50);
   justify-content: center;
@@ -8,48 +8,64 @@
     top: 10px;
   }
 
-  .footer-logo-section {
-    align-content: center;
+  .footer-signature {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    .footer-logo {
+    .logo {
       height: auto;
       max-width: 150px;
       width: 150px;
     }
-  }
 
-  .footer-copyright-section {
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-
-    .footer-copyright {
+    .copyright {
       text-align: center;
       width: 100%;
     }
   }
 
-  .footer-power-by-section {
-    align-content: center;
+  .footer-contact {
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .contact {
+      word-break: break-word;
+    }
+  }
+
+  .footer-power-by {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 
-    .footer-power-by-icon {
+    .power-by-title {
+      text-align: center;
+      width: 100%;
+    }
+
+    .power-by-icon {
       height: auto;
       width: 32px;
     }
   }
 
-  .footer-related-section {
-    align-content: center;
+  .footer-related {
     align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 
-    .footer-related-icon {
+    .related-title {
+      text-align: center;
+      width: 100%;
+    }
+
+    .related-icon {
       height: 32px;
       width: auto;
     }
