@@ -1,7 +1,13 @@
-.research-wrapper {
+%research-tag {
+  margin: 5px;
+}
+
+.research-filter-wrapper {
   align-content: center;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  width: 100%;
   padding: {
     bottom: 20px;
     left: 100px;
@@ -13,6 +19,38 @@
     font-weight: 500;
     text-align: center;
     text-decoration: underline;
+  }
+
+  .research-filter {
+    &-time {
+      width: 500px;
+    }
+
+    &-topic {
+      @extend %research-tag;
+
+      background-color: #c6eafd;
+
+      svg {
+        color: darken(#c6eafd, 50%);
+      }
+    }
+
+    &-subfield {
+      @extend %research-tag;
+    }
+  }
+}
+
+.research-wrapper {
+  align-content: center;
+  align-items: flex-start;
+  justify-content: center;
+  padding: {
+    bottom: 20px;
+    left: 100px;
+    right: 100px;
+    top: 20px;
   }
 
   .research {
@@ -38,10 +76,6 @@
     &-tags {
       padding: 8px;
       width: 100%;
-
-      %research-tag {
-        margin: 5px;
-      }
 
       .research-tag {
         &-author {
