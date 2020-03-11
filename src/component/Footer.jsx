@@ -4,12 +4,15 @@ import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import CallIcon from '@material-ui/icons/Call'
 import EmailIcon from '@material-ui/icons/Email'
+import GitHubIcon from '@material-ui/icons/GitHub'
 import FooterStyle from 'src/style/Footer.module.scss'
 import logo from 'src/res/image/logo.png'
 import reactIcon from 'src/res/image/tech/react.png'
 import materialUIIcon from 'src/res/image/tech/material-ui.svg'
 import webpackIcon from 'src/res/image/tech/webpack.svg'
 import sassIcon from 'src/res/image/tech/sass.png'
+import NCKUIcon from 'src/res/image/relate/NCKU.png'
+import CSIEIcon from 'src/res/image/relate/NCKU-CSIE.png'
 
 export default class Footer extends React.Component {
   render() {
@@ -40,14 +43,6 @@ export default class Footer extends React.Component {
           item
           xl={2}>
           <List className={''}>
-            <ListItem>
-              <CallIcon/>
-              <a
-                className={''}
-                href='tel:062757575,62520,2903'>
-                  06-275-7575 ext 62520 ext 2903
-              </a>
-            </ListItem>
             <ListItem>
               <CallIcon/>
               <a
@@ -83,6 +78,29 @@ export default class Footer extends React.Component {
           <img
             className={FooterStyle['footer-power-by-icon']}
             src={sassIcon}/>
+        </Grid>
+        <Grid
+          className={FooterStyle['footer-related-section']}
+          item
+          xl={1}>
+          <h2>Related Link</h2>
+          <a
+            href='https://web.ncku.edu.tw/index.php'>
+            <img
+              className={FooterStyle['footer-related-icon']}
+              src={NCKUIcon}/>
+          </a>
+          <a
+            href='http://www.csie.ncku.edu.tw/ncku_csie/'>
+            <img
+              className={FooterStyle['footer-related-icon']}
+              src={CSIEIcon}/>
+          </a>
+          <a
+            href='https://github.com/IKMLab'>
+            <GitHubIcon
+              className={FooterStyle['footer-related-icon']}/>
+          </a>
         </Grid>
       </Grid>
     )

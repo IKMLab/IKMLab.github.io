@@ -8,6 +8,6 @@ import Member from 'src/component/Member.jsx'
 ReactDOM.render(
     <Layout>
       <Professor/>
-      <Staff/>
       <Member/>
+      <Staff/>
     </Layout>, document.getElementById('root'))

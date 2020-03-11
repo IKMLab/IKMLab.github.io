@@ -1,0 +1,22 @@
+@import './Variable.module';
+
+.banner {
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+
+  &-image {
+    height: auto;
+    object-fit: cover;
+    transform: translateX(-17.75%);
+    width: 150%;
+
+    @media screen and (min-width: $lg) {
+      height: 500px;
+      max-width: 100%;
+      object-fit: cover;
+      transform: none;
+      width: auto;
+    }
+  }
+}

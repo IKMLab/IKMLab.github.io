@@ -27,14 +27,14 @@ class IntroLab extends React.Component {
   render() {
     return (
       <Grid
-        className={IntroStyle['intro-lab-wrapper']}
+        className={IntroStyle['intro-lab-section']}
         container>
-        <Grid item xl={12}>
-          <h1 className={IntroStyle['intro-lab-title']}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <h2 className={IntroStyle['intro-lab-title']}>
             WHO ARE WE?
-          </h1>
+          </h2>
         </Grid>
-        <Grid item xl={12}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <p
             author='Reinald Rein Adrian & Tzu Hsuan Chou'
             className={IntroStyle['intro-lab']}>
@@ -71,75 +71,56 @@ class IntroResearch extends React.Component {
     super(props)
   }
   render() {
+    const topics = [
+      {
+        image: naturalLanguageProcessing,
+        text: 'Natural Language Processing',
+      },
+      {
+        image: medicalInformatics,
+        text: 'Medical Informatics',
+      },
+      {
+        image: deepLearning,
+        text: 'Deep Learning',
+      },
+      {
+        image: dataMining,
+        text: 'Data Mining',
+      },
+      {
+        image: knowledgeManagement,
+        text: 'Knowledge Management',
+      },
+      {
+        image: informationRetrieval,
+        text: 'Information Retrieval',
+      },
+    ]
     return (
       <Grid
-        className={IntroStyle['intro-research-wrapper']}
+        className={IntroStyle['intro-research-section']}
         container>
-        <Grid item xl={12}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <h1 className={IntroStyle['intro-research-title']}>
             WHAT WE DO?
           </h1>
         </Grid>
-        <Grid item xl={4}>
-          <Card className={IntroStyle['intro-research-topic-wrapper']}>
-            <CardMedia
-              className={IntroStyle['intro-research-topic-pic']}
-              image={naturalLanguageProcessing}/>
-            <CardContent className={IntroStyle['intro-research-topic']}>
-              Natural Language Processing
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xl={4}>
-          <Card className={IntroStyle['intro-research-topic-wrapper']}>
-            <CardMedia
-              className={IntroStyle['intro-research-topic-pic']}
-              image={medicalInformatics}/>
-            <CardContent className={IntroStyle['intro-research-topic']}>
-              Medical Informatics
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xl={4}>
-          <Card className={IntroStyle['intro-research-topic-wrapper']}>
-            <CardMedia
-              className={IntroStyle['intro-research-topic-pic']}
-              image={deepLearning}/>
-            <CardContent className={IntroStyle['intro-research-topic']}>
-              Deep Learning
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xl={4}>
-          <Card className={IntroStyle['intro-research-topic-wrapper']}>
-            <CardMedia
-              className={IntroStyle['intro-research-topic-pic']}
-              image={dataMining}/>
-            <CardContent className={IntroStyle['intro-research-topic']}>
-              Data Mining
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xl={4}>
-          <Card className={IntroStyle['intro-research-topic-wrapper']}>
-            <CardMedia
-              className={IntroStyle['intro-research-topic-pic']}
-              image={knowledgeManagement}/>
-            <CardContent className={IntroStyle['intro-research-topic']}>
-              Knowledge Management
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xl={4}>
-          <Card className={IntroStyle['intro-research-topic-wrapper']}>
-            <CardMedia
-              className={IntroStyle['intro-research-topic-pic']}
-              image={informationRetrieval}/>
-            <CardContent className={IntroStyle['intro-research-topic']}>
-              Information Retrieval
-            </CardContent>
-          </Card>
-        </Grid>
+        {
+          topics.map((topic)=>(
+            <Grid item xs={12} sm={6} md={4} lg={4} xl={2}
+              key={topic.text}>
+              <Card className={IntroStyle['intro-research-topic-card']}>
+                <CardMedia
+                  className={IntroStyle['intro-research-topic-pic']}
+                  image={topic.image}/>
+                <CardContent className={IntroStyle['intro-research-topic']}>
+                  {topic.text}
+                </CardContent>
+              </Card>
+            </Grid>
+          ))
+        }
       </Grid>
     )
   }
@@ -152,14 +133,14 @@ class IntroGoal extends React.Component {
   render() {
     return (
       <Grid
-        className={IntroStyle['intro-goal-wrapper']}
+        className={IntroStyle['intro-goal-section']}
         container>
-        <Grid item xl={12}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <h1 className={IntroStyle['intro-goal-title']}>
             GOAL
           </h1>
         </Grid>
-        <Grid item xl={12}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <p
             author='Reinald Rein Adrian'
             className={IntroStyle['intro-goal']}>
