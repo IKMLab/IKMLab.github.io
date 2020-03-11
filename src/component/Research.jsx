@@ -39,6 +39,8 @@ class ResearchFilter extends React.Component {
     this.handleSubfieldChange=this.handleSubfieldChange.bind(this)
   }
 
+  onDeletePlaceHolder() {}
+
   handleTimeChange(_, value) {
     this.props.handleFilterChange({
       yearBegin: value[0],
@@ -126,7 +128,8 @@ class ResearchFilter extends React.Component {
                 key={topic}
                 label={topic}
                 onClick={()=>this.handleTopicChange(topic)}
-                onDelete={this.props.topic === topic ? ()=>{}:null}
+                onDelete={this.props.topic === topic ?
+                  this.onDeletePlaceHolder:null}
               />
             ))
           }
@@ -145,7 +148,8 @@ class ResearchFilter extends React.Component {
                 key={subfield}
                 label={subfield}
                 onClick={()=>this.handleSubfieldChange(subfield)}
-                onDelete={this.props.subfields.includes(subfield)?()=>{}:null}
+                onDelete={this.props.subfields.includes(subfield)?
+                  this.onDeletePlaceHolder:null}
               />
             ))
           }

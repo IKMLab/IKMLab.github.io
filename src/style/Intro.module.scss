@@ -1,35 +1,74 @@
+@import './Variable.module';
+
 %intro-wrapper {
-  align-content: center;
   align-items: center;
   height: auto;
   justify-content: center;
   min-height: 300px;
   width: 100%;
   padding: {
-    bottom: 60px;
-    left: 20%;
-    right: 20%;
-    top: 60px;
+    bottom: 5px;
+    left: 18px;
+    right: 18px;
+    top: 5px;
+  }
+
+  @media screen and (min-width: $sm) {
+    padding: {
+      bottom: 18px;
+      left: 36px;
+      right: 36px;
+      top: 18px;
+    }
   }
 }
 
-.intro-lab-wrapper {
+%intro-title {
+  font-size: 28px;
+  margin-bottom: 0;
+  text-align: center;
+
+  @media screen and (min-width: $sm) {
+    font-size: 34px;
+  }
+
+  @media screen and (min-width: $md) {
+    font-size: 40px;
+  }
+}
+
+%intro-text {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: $md;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+
+  @media screen and (min-width: $sm) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $md) {
+    font-size: 30px;
+  }
+}
+
+.intro-lab-section {
   @extend %intro-wrapper;
 
   background-color: darken(#fdecd6, 10%);
 
   .intro-lab-title {
-    font-size: 40px;
-    text-align: center;
+    @extend %intro-title;
   }
 
   .intro-lab {
+    @extend %intro-text;
+
     color: #1b1b1b;
-    line-height: 1.5;
-    font: {
-      size: 30px;
-      weight: 300;
-    }
+    font-weight: 300;
 
     strong {
       font-weight: 500;
@@ -37,19 +76,17 @@
   }
 }
 
-.intro-research-wrapper {
+.intro-research-section {
   @extend %intro-wrapper;
 
   background-color: #f5f5f5;
   justify-content: space-between;
 
   .intro-research-title {
-    font-size: 40px;
-    text-align: center;
+    @extend %intro-title;
   }
 
-  .intro-research-topic-wrapper {
-    align-content: center;
+  .intro-research-topic-card {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -76,31 +113,40 @@
       margin: 0;
       margin-top: 10px;
       padding: 0;
+      text-align: center;
     }
   }
 }
 
-.intro-goal-wrapper {
+.intro-goal-section {
   @extend %intro-wrapper;
 
   background-color: #1b1b1b;
 
   .intro-goal-title {
+    @extend %intro-title;
+
     color: #f5f5f5;
-    font-size: 40px;
-    text-align: center;
   }
 
   .intro-goal {
+    @extend %intro-text;
+
     color: #f5f5f5;
-    font-size: 30px;
-    line-height: 1.5;
 
     strong {
       color: darken(#fdecd6, 10%);
       font: {
-        size: 40px;
+        size: 20px;
         weight: 700;
+      }
+
+      @media screen and (min-width: $sm) {
+        font-size: 30px;
+      }
+
+      @media screen and (min-width: $md) {
+        font-size: 40px;
       }
     }
   }
