@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday'
 import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
 import CardContent from '@material-ui/core/CardContent'
@@ -7,6 +8,7 @@ import Chip from '@material-ui/core/Chip'
 import CodeIcon from '@material-ui/icons/Code'
 import DoneIcon from '@material-ui/icons/Done'
 import Grid from '@material-ui/core/Grid'
+import Hidden from '@material-ui/core/Hidden'
 import LaunchIcon from '@material-ui/icons/Launch'
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks'
 import LoyaltyIcon from '@material-ui/icons/Loyalty'
@@ -20,7 +22,7 @@ import {researchData} from 'src/res/data/research.js'
 // Get all topics.
 const allTopics = Array.from(
     new Set(researchData.map((research)=>research.topic)),
-)
+).sort()
 
 // Get all subfields.
 const allSubfields = Array.from(
@@ -29,7 +31,8 @@ const allSubfields = Array.from(
             .map((research)=>research.subfields)
             .filter(Boolean),
     )),
-)
+).sort()
+
 class ResearchFilter extends React.Component {
   constructor(props) {
     super(props)
@@ -38,8 +41,6 @@ class ResearchFilter extends React.Component {
     this.handleTopicChange=this.handleTopicChange.bind(this)
     this.handleSubfieldChange=this.handleSubfieldChange.bind(this)
   }
-
-  onDeletePlaceHolder() {}
 
   handleTimeChange(_, value) {
     this.props.handleFilterChange({
@@ -87,22 +88,12 @@ class ResearchFilter extends React.Component {
 
   render() {
     return (
-      <Grid
-        className={ResearchStyle['research-filter-wrapper']}
-        container>
+      <>
         <Grid
-          item
-          xl={12}>
-          <h1
-            className={ResearchStyle['research-section-title']}>
-            Research
-          </h1>
-        </Grid>
-        <Grid
-          className={ResearchStyle['research-filter-time']}
-          item
-          xl={8}>
+          className={ResearchStyle['research-time-filter']}
+          item xs={12} sm={12} md={12} lg={12} xl={12}>
           <Slider
+            className={ResearchStyle['time-filter']}
             value={[
               this.props.yearBegin,
               this.props.yearEnd,
@@ -115,13 +106,12 @@ class ResearchFilter extends React.Component {
           />
         </Grid>
         <Grid
-          className={ResearchStyle['research-filter-tag']}
-          item
-          xl={8}>
+          className={ResearchStyle['research-topic-filter']}
+          item xs={12} sm={12} md={12} lg={12} xl={12}>
           {
             allTopics.map((topic)=>(
               <Chip
-                className={ResearchStyle['research-filter-topic']}
+                className={ResearchStyle['topic-filter']}
                 clickable
                 deleteIcon={<DoneIcon/>}
                 icon={<LoyaltyIcon/>}
@@ -129,32 +119,33 @@ class ResearchFilter extends React.Component {
                 label={topic}
                 onClick={()=>this.handleTopicChange(topic)}
                 onDelete={this.props.topic === topic ?
-                  this.onDeletePlaceHolder:null}
+                  ()=>{}:null}
               />
             ))
           }
         </Grid>
         <Grid
-          className={ResearchStyle['research-filter-tag']}
-          item
-          xl={8}>
-          {
-            allSubfields.map((subfield)=>(
-              <Chip
-                className={ResearchStyle['research-filter-subfield']}
-                clickable
-                deleteIcon={<DoneIcon/>}
-                icon={<LoyaltyIcon/>}
-                key={subfield}
-                label={subfield}
-                onClick={()=>this.handleSubfieldChange(subfield)}
-                onDelete={this.props.subfields.includes(subfield)?
-                  this.onDeletePlaceHolder:null}
-              />
-            ))
-          }
+          className={ResearchStyle['research-subfield-filter']}
+          item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <Hidden mdDown>
+            {
+              allSubfields.map((subfield)=>(
+                <Chip
+                  className={ResearchStyle['subfield-filter']}
+                  clickable
+                  deleteIcon={<DoneIcon/>}
+                  icon={<LoyaltyIcon/>}
+                  key={subfield}
+                  label={subfield}
+                  onClick={()=>this.handleSubfieldChange(subfield)}
+                  onDelete={this.props.subfields.includes(subfield)?
+                  ()=>{}:null}
+                />
+              ))
+            }
+          </Hidden>
         </Grid>
-      </Grid>
+      </>
     )
   }
 }
@@ -180,8 +171,13 @@ class ResearchCard extends React.Component {
     const chipMarginWidth = 3
     const breakPoint = 30
     // Split into 4 tracks.
-    const researchSplits = [[], [], [], []]
-    const researchSplitsHeight = [0, 0, 0, 0]
+    const researchSplits = []
+    const researchSplitsHeight = []
+    console.log(this.props.split)
+    for (let i=0; i<this.props.split; ++i) {
+      researchSplits.push([])
+      researchSplitsHeight.push(0)
+    }
     // Split into different tracks according to component's total height.
     this.props.researchs.forEach((research)=>{
       // Consider all text fields.
@@ -229,6 +225,9 @@ class ResearchCard extends React.Component {
   }
 
   shouldComponentUpdate(nextProps) {
+    if (this.props.split !== nextProps.split) {
+      return true
+    }
     // We already sorted before, so we only need to compare index.
     if (this.props.researchs.length && this.props.researchs.every(
         (research, index)=>research===nextProps[index])
@@ -241,14 +240,11 @@ class ResearchCard extends React.Component {
   render() {
     const researchSplits = this.heightAlgorithm()
     return (
-      <Grid
-        className={ResearchStyle['research-wrapper']}
-        container>
+      <>
         {researchSplits.map((researchSplit, index)=>(
           <Grid
-            item
             key={index}
-            xl={2}>
+            item xs={12} sm={6} md={4} lg={3} xl={2}>
             {researchSplit.map((research, index)=>(
               <Card
                 className={ResearchStyle['research']}
@@ -276,7 +272,7 @@ class ResearchCard extends React.Component {
                       size='small'/>
                     <Chip
                       className={ResearchStyle['research-tag-year']}
-                      icon={<SchoolIcon/>}
+                      icon={<CalendarTodayIcon/>}
                       label={research.year}
                       size='small'/>
                     <Chip
@@ -328,13 +324,14 @@ class ResearchCard extends React.Component {
             ))}
           </Grid>
         ))}
-      </Grid>
+      </>
     )
   }
 }
 
 ResearchCard.propTypes = {
   researchs: PropTypes.array,
+  split: PropTypes.number,
 }
 
 export default class Research extends React.Component {
@@ -342,7 +339,6 @@ export default class Research extends React.Component {
     super(props)
 
     const currentYear = new Date(Date.now()).getFullYear()
-
     this.state = {
       yearBegin: 2006,
       yearBeginDefault: 2006,
@@ -350,8 +346,32 @@ export default class Research extends React.Component {
       yearEndDefault: currentYear,
       topic: 'all',
       subfields: [],
+      split: this.constructor.getSplitAlgorithm(),
     }
+    this.handleWindowResize = this.handleWindowResize.bind(this)
     this.handleFilterChange = this.handleFilterChange.bind(this)
+  }
+
+  static getSplitAlgorithm() {
+    const currentWindowWidth = window.innerWidth
+    return currentWindowWidth < 600 ? 1 :
+      currentWindowWidth < 960 ? 2 :
+      currentWindowWidth < 1280 ? 3 :
+      currentWindowWidth < 1920 ? 4 : 6
+  }
+
+  componentDidMount() {
+    window.onresize = this.handleWindowResize
+  }
+
+  handleWindowResize() {
+    const split = this.constructor.getSplitAlgorithm()
+    if (split !== this.state.split) {
+      this.setState((prevState)=>({
+        ...prevState,
+        split,
+      }))
+    }
   }
 
   handleFilterChange({
@@ -397,7 +417,15 @@ export default class Research extends React.Component {
         })
 
     return (
-      <>
+      <Grid
+        className={ResearchStyle['research-section']}
+        container>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <h1
+            className={ResearchStyle['research-section-title']}>
+            Research
+          </h1>
+        </Grid>
         <ResearchFilter
           yearBegin={this.state.yearBegin}
           yearBeginDefault={this.state.yearBeginDefault}
@@ -407,9 +435,12 @@ export default class Research extends React.Component {
           subfields={this.state.subfields}
           handleFilterChange={this.handleFilterChange}
         />
-        <ResearchCard
-          researchs={researchs}/>
-      </>
+        <Grid container item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <ResearchCard
+            researchs={researchs}
+            split={this.state.split}/>
+        </Grid>
+      </Grid>
     )
   }
 }

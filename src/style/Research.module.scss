@@ -1,60 +1,82 @@
-%research-tag {
-  margin: 5px;
-}
+@import './Variable.module';
 
-.research-filter-wrapper {
-  align-content: center;
-  align-items: center;
-  flex-direction: column;
+.research-section {
+  align-items: flex-start;
   justify-content: center;
-  width: 100%;
+
   padding: {
     bottom: 20px;
-    left: 100px;
-    right: 100px;
+    left: 40px;
+    right: 40px;
     top: 20px;
   }
 
-  .research-section-title {
+  @media screen and (min-width: $md) {
+    padding: {
+      bottom: 20px;
+      left: 100px;
+      right: 100px;
+      top: 20px;
+    }
+  }
+
+  &-title {
     font-weight: 500;
     text-align: center;
     text-decoration: underline;
   }
 
-  .research-filter {
-    &-time {
-      width: 500px;
+  .research-time-filter {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .time-filter {
+      margin-top: 20px;
+      width: 100%;
+
+      @media screen and (min-width: $sm) {
+        width: 500px;
+      }
     }
+  }
 
-    &-topic {
-      @extend %research-tag;
+  .research-topic-filter {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
 
+    .topic-filter {
       background-color: #c6eafd;
+      margin: 5px;
 
       svg {
         color: darken(#c6eafd, 50%);
       }
     }
-
-    &-subfield {
-      @extend %research-tag;
-    }
   }
-}
 
-.research-wrapper {
-  align-content: center;
-  align-items: flex-start;
-  justify-content: center;
-  padding: {
-    bottom: 20px;
-    left: 100px;
-    right: 100px;
-    top: 20px;
+  .research-subfield-filter {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1000px;
+    margin: {
+      bottom: 10px;
+      left: auto;
+      right: auto;
+    }
+
+    .subfield-filter {
+      margin: 5px;
+    }
   }
 
   .research {
-    align-content: center;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -79,13 +101,12 @@
 
       .research-tag {
         &-author {
-          @extend %research-tag;
+          margin: 5px;
         }
 
         &-venue {
-          @extend %research-tag;
-
           background-color: #c8f2b7;
+          margin: 5px;
 
           svg {
             color: darken(#c8f2b7, 50%);
@@ -93,9 +114,8 @@
         }
 
         &-year {
-          @extend %research-tag;
-
           background-color: #f7e7bc;
+          margin: 5px;
 
           svg {
             color: darken(#f7e7bc, 40%);
@@ -103,9 +123,8 @@
         }
 
         &-topic {
-          @extend %research-tag;
-
           background-color: #c6eafd;
+          margin: 5px;
 
           svg {
             color: darken(#c6eafd, 50%);
@@ -113,14 +132,13 @@
         }
 
         &-subfield {
-          @extend %research-tag;
+          margin: 5px;
         }
 
         &-link {
-          @extend %research-tag;
-
           background-color: #000;
           color: #fff;
+          margin: 5px;
 
           svg {
             color: #fff;

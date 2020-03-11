@@ -16,7 +16,7 @@ export const researchData = [
     subfields: [
       'Argument Comprehension',
       'Dataset Bias',
-      'NLU',
+      'Natural Language Understanding',
     ],
   },
   {
@@ -164,10 +164,10 @@ export const researchData = [
     year: 2017,
     url:
       'https://link.springer.com/article/10.1007/s00500-016-2392-7',
-    topic: 'Soft Computing',
+    topic: 'Data Mining',
     subfields: [
-      'Knowledge management',
-      'Web applications',
+      'Natural Language Inference',
+      'Ontology',
     ],
   },
   {
@@ -183,7 +183,7 @@ export const researchData = [
       'https://ieeexplore.ieee.org/abstract/document/8217678',
     topic: 'NLP',
     subfields: [
-      'NER',
+      'Named Entity Recognition',
       'Bioinformatics',
     ],
   },
@@ -201,7 +201,7 @@ export const researchData = [
       'https://pdfs.semanticscholar.org/227b/a29beaf5eba6bfcc1c953bbfb32ec7c19ec3.pdf',
     topic: 'NLP',
     subfields: [
-      'CRF',
+      'Named Entity Recognition',
       'Bioinformatics',
     ],
   },
@@ -220,7 +220,7 @@ export const researchData = [
       'https://ieeexplore.ieee.org/abstract/document/8356930',
     topic: 'Text Mining',
     subfields: [
-      'Scams Detection',
+      'Scam Detection',
     ],
   },
   {
@@ -273,8 +273,8 @@ export const researchData = [
       'https://content.iospress.com/articles/intelligent-data-analysis/ida872',
     topic: 'NLP',
     subfields: [
-      'Topic model',
-      'Document Classfication',
+      'Topic Model',
+      'Text Classification',
     ],
   },
   {
@@ -293,25 +293,6 @@ export const researchData = [
     subfields: [
       'Opinion Mining',
       'Question Answering',
-    ],
-  },
-  {
-    title:
-      'Proceedings of the 28th Conference on Computational'+
-      ' Linguistics and Speech Processing',
-    authors: [
-      'Chung-Hsien Wu',
-      'Yuen-Hsien Tseng',
-      'Hung-Yu Kao',
-    ],
-    venue: 'ROCLING',
-    year: 2016,
-    url:
-      'https://www.aclweb.org/anthology/O16-1000.pdf',
-    topic: 'NLP',
-    subfields: [
-      'Computational Linguistics',
-      'Speech Processing',
     ],
   },
   {
@@ -416,9 +397,9 @@ export const researchData = [
     year: 2015,
     url:
       'https://dl.acm.org/doi/abs/10.1145/2818869.2818875',
-    topic: 'Text mining',
+    topic: 'Text Mining',
     subfields: [
-      'Topic Modeling',
+      'Topic Model',
     ],
   },
   {
@@ -470,8 +451,8 @@ export const researchData = [
       'https://www.aclweb.org/anthology/O15-3003/',
     topic: 'NLP',
     subfields: [
-      'Topic model',
-      'Document Classfication',
+      'Topic Model',
+      'Text Classification',
     ],
   },
   {
@@ -656,7 +637,7 @@ export const researchData = [
     year: 2014,
     url:
       'https://dl.acm.org/doi/abs/10.1145/2649387.2660786',
-    topic: 'Text Mininig',
+    topic: 'Text Mining',
     subfields: [
       'Bioinformatics',
       'Biocuration',
@@ -764,7 +745,7 @@ export const researchData = [
       'https://ieeexplore.ieee.org/abstract/document/6783867',
     topic: 'IR',
     subfields: [
-      'Search Engines',
+      'Search Engine',
     ],
   },
   {
@@ -886,7 +867,7 @@ export const researchData = [
     year: 2013,
     url:
       'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3865345/',
-    topic: 'Text mining',
+    topic: 'Text Mining',
     subfields: [
       'Bioinformatics',
     ],
@@ -1149,7 +1130,7 @@ export const researchData = [
     '379664347b3f8e92e22576ccc7e93a0547916f08cb2c14af9fa15277bd9e4f97#page=46',
     topic: 'Text Mining',
     subfields: [
-      'Bioinfomatics',
+      'Bioinformatics',
       'Biocuration',
     ],
   },
@@ -1281,7 +1262,7 @@ export const researchData = [
     topic: 'NLP',
     subfields: [
       'Question Answering',
-      'Question Routing',
+      'Text Classification',
     ],
   },
   {
@@ -1765,8 +1746,8 @@ export const researchData = [
       'https://ieeexplore.ieee.org/abstract/document/5575977',
     topic: 'Data Mining',
     subfields: [
-      'Anonymation',
-      'Association Rules',
+      'Anonymization',
+      'Pattern Recognition',
     ],
   },
   {
@@ -1961,13 +1942,15 @@ const schemaCheck = () => {
     // Items in `researchData` must be an object, so this one will
     // also be written explicitly.
     if (!validator(research, 'object')) {
-      throw new Error(`researchData is not type object.`)
+      console.error(research)
+      throw new Error(`research is not type object.`)
     }
 
     // Check if title is filled.
     if (!validator(research.title, schema.items.properties.title.type)) {
+      console.error(research)
       throw new Error(
-          `researchData.title is not type ${
+          `research.title is not type ${
             schema.items.properties.title.type
           }.`,
       )
@@ -1977,14 +1960,16 @@ const schemaCheck = () => {
     // `researchData.authors` must be an array,
     // so this one will be written explicitly.
     if (!validator(research.authors, 'array')) {
+      console.error(research)
       throw new Error(
-          `researchData.authors is not type array.`,
+          `research.authors is not type array.`,
       )
     }
     research.authors.forEach((author)=>{
       if (!validator(author, schema.items.properties.authors.items.type)) {
+        console.error(research)
         throw new Error(
-            `researchData.authors is not type array of ${
+            `research.authors is not type array of ${
               schema.items.properties.authors.items.type
             }.`,
         )
@@ -1993,8 +1978,9 @@ const schemaCheck = () => {
 
     // Check if publication venue is filled.
     if (!validator(research.venue, schema.items.properties.venue.type)) {
+      console.error(research)
       throw new Error(
-          `researchData.venue is not type ${research.venue}.`,
+          `research.venue is not type ${research.venue}.`,
       )
     }
 
@@ -2003,8 +1989,9 @@ const schemaCheck = () => {
       if (!validator(research.year, schema.items.properties.year.type) ||
       research.year < 1990 ||
       research.year > new Date(Date.now()).getFullYear()) {
+        console.error(research)
         throw new Error(
-            `researchData.year must be in range [1990, ${
+            `research.year must be in range [1990, ${
               new Date(Date.now()).getFullYear()
             }].`,
         )
@@ -2014,31 +2001,35 @@ const schemaCheck = () => {
     // Check if publication source code is filled.
     if (research.code) {
       if (!validator(research.code, schema.items.properties.code.type)) {
+        console.error(research)
         throw new Error(
-            `researchData.code is not type ${research.code}.`,
+            `research.code is not type ${research.code}.`,
         )
       }
     }
     // Check if publication demo is filled.
     if (research.demo) {
       if (!validator(research.demo, schema.items.properties.demo.type)) {
+        console.error(research)
         throw new Error(
-            `researchData.demo is not type ${research.demo}.`,
+            `research.demo is not type ${research.demo}.`,
         )
       }
     }
     // Check if publication url is filled.
     if (research.url) {
       if (!validator(research.url, schema.items.properties.url.type)) {
+        console.error(research)
         throw new Error(
-            `researchData.url is not type ${research.url}.`,
+            `research.url is not type ${research.url}.`,
         )
       }
     }
     // Check if research topic is filled.
     if (!validator(research.topic, schema.items.properties.topic.type)) {
+      console.error(research)
       throw new Error(
-          `researchData.topic is not type ${research.topic}.`,
+          `research.topic is not type ${research.topic}.`,
       )
     }
     // Check if research subfields is filled.
@@ -2046,15 +2037,17 @@ const schemaCheck = () => {
     // so this one will be written explicitly.
     if (research.subfields) {
       if (!validator(research.subfields, 'array')) {
+        console.error(research)
         throw new Error(
-            `researchData.subfields is not type array.`,
+            `research.subfields is not type array.`,
         )
       }
       research.subfields.forEach((subfield)=>{
         if (!validator(subfield,
             schema.items.properties.subfields.items.type)) {
+          console.error(research)
           throw new Error(
-              `researchData.subfields is not type array of ${
+              `research.subfields is not type array of ${
                 schema.items.properties.subfields.items.type
               }.`,
           )
