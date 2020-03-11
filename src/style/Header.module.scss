@@ -1,38 +1,57 @@
-.header {
+@import './Variable.module';
+
+.toolbar {
   background-color: rgb(246, 176, 50);
   padding: {
-    bottom: 18px;
-    left: 36px;
-    right: 36px;
-    top: 18px;
+    bottom: 10px;
+    left: 18px;
+    right: 18px;
+    top: 10px;
   }
 
-  &-grid-item-1 {
-    align-content: center;
+  @media screen and (min-width: $sm) {
+    padding: {
+      bottom: 18px;
+      left: 36px;
+      right: 36px;
+      top: 18px;
+    }
+  }
+
+  .toolbar-logo {
+    text-align: center;
+
+    .logo {
+      height: auto;
+      width: 170px;
+    }
+  }
+
+  .toolbar-lab-name {
     align-items: center;
-  }
-
-  &-grid-item-2 {
-    align-content: center;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  &-lab-name {
+    display: inline-flex;
     font-size: 32px;
-    margin-left: 32px;
-    white-space: nowrap;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (min-width: $md) {
+      justify-content: flex-start;
+    }
   }
 
-  &-link {
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    margin: 12px;
-  }
+  .toolbar-link {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
 
-  &-logo {
-    height: auto;
-    max-width: 170px;
-    width: 170px;
+    @media screen and (min-width: $md) {
+      justify-content: flex-end;
+    }
+
+    .link {
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+      margin: 12px;
+    }
   }
 }
