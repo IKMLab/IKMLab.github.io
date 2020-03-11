@@ -1,5 +1,6 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
+import Link from '@material-ui/core/Link'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import CallIcon from '@material-ui/icons/Call'
@@ -16,21 +17,17 @@ export default class Staff extends React.Component {
   render() {
     return (
       <Grid
-        className={StaffStyle['staff-wrapper']}
+        className={StaffStyle['staff-section']}
         container>
-        <Grid
-          item
-          xl={12}>
-          <h1
-            className={StaffStyle['staff-section-title']}>
-              Staff
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <h1 className={StaffStyle['staff-section-title']}>
+            Staff
           </h1>
         </Grid>
         <Grid
           className={StaffStyle['staff']}
           container
-          item
-          xl={2}>
+          item xs={12} sm={6} md={5} lg={4} xl={2}>
           <img
             className={StaffStyle['staff-image']}
             src={MeiFengLee}/>
@@ -42,24 +39,24 @@ export default class Staff extends React.Component {
           </h2>
         </Grid>
         <Grid
-          item
-          xl={2}>
-          <List className={StaffStyle['staff-contact']}>
+          className={StaffStyle['staff-contact']}
+          item xs={12} sm={6} md={5} lg={4} xl={2}>
+          <List>
             <ListItem>
               <CallIcon/>
-              <a
+              <Link
                 className={StaffStyle['staff-contact-text']}
                 href='tel:+88662757575,62520,2903'>
-                  +886-6-275-7575 ext 62520 ext 2903
-              </a>
+                +886-6-275-7575 ext 62520 ext 2903
+              </Link>
             </ListItem>
             <ListItem>
               <EmailIcon/>
-              <a
+              <Link
                 className={StaffStyle['staff-contact-text']}
                 href='mailto:michelle.hyk99@gmail.com'>
-                  michelle.hyk99@gmail.com
-              </a>
+                michelle.hyk99@gmail.com
+              </Link>
             </ListItem>
             <ListItem>
               <LocationOnIcon/>

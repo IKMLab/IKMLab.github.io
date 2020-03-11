@@ -1,5 +1,6 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
+import Link from '@material-ui/core/Link'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import CallIcon from '@material-ui/icons/Call'
@@ -17,21 +18,17 @@ export default class Professor extends React.Component {
   render() {
     return (
       <Grid
-        className={ProfessorStyle['professor-wrapper']}
+        className={ProfessorStyle['professor-section']}
         container>
-        <Grid
-          item
-          xl={12}>
-          <h1
-            className={ProfessorStyle['professor-section-title']}>
-              Professor
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <h1 className={ProfessorStyle['professor-section-title']}>
+            Professor
           </h1>
         </Grid>
         <Grid
           className={ProfessorStyle['professor']}
           container
-          item
-          xl={2}>
+          item xs={12} sm={6} md={5} lg={4} xl={2}>
           <img
             className={ProfessorStyle['professor-image']}
             src={HungYuKao}/>
@@ -47,41 +44,41 @@ export default class Professor extends React.Component {
           </h3>
         </Grid>
         <Grid
-          item
-          xl={2}>
-          <List className={ProfessorStyle['professor-contact']}>
+          className={ProfessorStyle['professor-contact']}
+          item xs={12} sm={6} md={5} lg={4} xl={2}>
+          <List>
             <ListItem>
               <CallIcon/>
-              <a
+              <Link
                 className={ProfessorStyle['professor-contact-text']}
                 href='tel:+88662757575,62546'>
-                  +886-6-275-7575 ext 62546
-              </a>
+                +886-6-275-7575 ext 62546
+              </Link>
             </ListItem>
             <ListItem>
               <EmailIcon/>
-              <a
+              <Link
                 className={ProfessorStyle['professor-contact-text']}
                 href='mailto:hykao@mail.ncku.edu.tw'>
-                  hykao@mail.ncku.edu.tw
-              </a>
+                hykao@mail.ncku.edu.tw
+              </Link>
             </ListItem>
             <ListItem>
               <LocationOnIcon/>
               <address
                 className={ProfessorStyle['professor-contact-text']}>
-                  Rm. 65C11, CSIE new building,<br/>
-                  No. 1, Daxue Rd., East Dist., Tainan City 701,<br/>
-                  Taiwan (R.O.C.)
+                Rm. 65C11, CSIE new building,<br/>
+                No. 1, Daxue Rd., East Dist., Tainan City 701,<br/>
+                Taiwan (R.O.C.)
               </address>
             </ListItem>
             <ListItem>
               <LinkIcon/>
-              <a
+              <Link
                 className={ProfessorStyle['professor-contact-text']}
                 href='http://myweb.ncku.edu.tw/~hykao/'>
                 http://myweb.ncku.edu.tw/~hykao/
-              </a>
+              </Link>
             </ListItem>
           </List>
         </Grid>

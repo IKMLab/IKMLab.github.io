@@ -1,4 +1,4 @@
-.staff-wrapper {
+.staff-section {
   align-content: center;
   align-items: flex-start;
   background-color: #f5f5f5;
@@ -34,10 +34,13 @@
   }
 
   .staff-contact {
+    display: flex;
     font-size: 18px;
+    justify-content: center;
 
     &-text {
       padding-left: 10px;
+      word-break: break-word;
     }
   }
 }
