@@ -107,6 +107,7 @@
     "build": "webpack --config config/webpack.config.js --mode=production",
     "d": "npm run develop",
     "develop": "webpack --config config/webpack.config.js --mode=development",
+    "deploy": "npm run build && sudo cp -r dist /var/www",
     "start": "webpack-dev-server --config config/webpack.config.js --mode=development --color --progress"
   },
   "version": "1.0.0"
