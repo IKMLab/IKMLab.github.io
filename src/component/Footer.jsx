@@ -56,30 +56,30 @@ export default class Footer extends React.Component {
           </List>
         </Grid>
         <Grid
-          className={FooterStyle['footer-power-by']}
+          className={FooterStyle['footer-powered-by']}
           item xs={12} sm={6} md={3} lg={2} xl={2}>
-          <h2 className={FooterStyle['power-by-title']}>
-            Power By
+          <h2 className={FooterStyle['powered-by-title']}>
+            Powered By
           </h2>
           <figure>
             <Link href='https://reactjs.org/'>
               <img
-                className={FooterStyle['power-by-icon']}
+                className={FooterStyle['powered-by-icon']}
                 src={reactIcon}/>
             </Link>
             <Link href='https://webpack.js.org/'>
               <img
-                className={FooterStyle['power-by-icon']}
+                className={FooterStyle['powered-by-icon']}
                 src={webpackIcon}/>
             </Link>
             <Link href='https://material-ui.com/'>
               <img
-                className={FooterStyle['power-by-icon']}
+                className={FooterStyle['powered-by-icon']}
                 src={materialUIIcon}/>
             </Link>
             <Link href='https://sass-lang.com/'>
               <img
-                className={FooterStyle['power-by-icon']}
+                className={FooterStyle['powered-by-icon']}
                 src={sassIcon}/>
             </Link>
           </figure>

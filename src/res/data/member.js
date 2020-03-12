@@ -30,6 +30,10 @@ import DengDengDeng
   from 'src/res/image/member/Deng-Deng-Deng.png'
 import HowToTrain
   from 'src/res/image/member/How-To-Train.png'
+import KuanYuChen
+  from 'src/res/image/member/Kuan-Yu-Chen.png'
+import LiTingTang
+  from 'src/res/image/member/Li-Ting-Tang.png'
 import ReinaldAdrianPugoy
   from 'src/res/image/member/Reinald-Adrian-Pugoy.png'
 import ShengXuanLin
@@ -209,6 +213,7 @@ export const memberData = [
     en: 'Kuan-Yu Chen',
     dept: 2,
     deg: 1,
+    image: KuanYuChen,
   },
   // Graduate PhDs
   {
@@ -289,6 +294,14 @@ export const memberData = [
     year: 2015,
   },
   // Graduate Masters
+  {
+    zh: '湯立婷',
+    en: 'Li-Ting-Tang',
+    dept: 1,
+    deg: 1,
+    year: 2019,
+    image: LiTingTang,
+  },
   {
     zh: '劉昭陽',
     en: 'Zhao-Yang Liu',

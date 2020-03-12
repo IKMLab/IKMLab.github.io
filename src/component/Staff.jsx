@@ -32,10 +32,10 @@ export default class Staff extends React.Component {
             className={StaffStyle['staff-image']}
             src={MeiFengLee}/>
           <h2 className={StaffStyle['staff-name']}>
-            李美鳳
+            米雪兒
           </h2>
           <h2 className={StaffStyle['staff-name']}>
-            Mei Feng Lee
+            Michelle
           </h2>
         </Grid>
         <Grid
