@@ -2,6 +2,8 @@
 
 NCKU IKMLAB's Official Website.
 
+[TOC]
+
 ## Environment setup
 
 We use [nvm](https://github.com/nvm-sh/nvm) to setup virtual environment for Node.js.
@@ -49,7 +51,7 @@ npm run build
 npm run b
 ```
 
-## Deploy
+## Deployment
 
 ```sh
 # We use nginx to host our webiste. Get help from manager
@@ -79,9 +81,42 @@ npm run d
 npm start
 ```
 
-## TODO
+## FAQ
+
+### Need to update website information
+
+- You should send an email to us, with **title 'Update website information'** and **content** following the format:
+
+```txt
+identification:
+  (optional) If you claim some content on website may
+  related to or owned by you, then please also send
+  reference which can help us to prove your identity.
+page:
+  http://ikmlab.csie.ncku.edu.tw/which-page.html
+content:
+  The problematic image or text on the website.
+description:
+  Describe the problem.
+```
+
+- If you are a **current member of our lab**, then ask the lab's **network manager** for help.
+
+### Add functionality to website
+
+- You can **fork** our repo and issue a **pull request**. The branch name must begin with `feature-`.
+  - For example: `feature-deep-learning`
+- If you are a **current member of our lab**, then ask the lab's **network manager** to add you as a **collaborator**.
+- If you are an **alumnus**, send an mail to us with **title 'Feature request'** and **content** following the format in [this section](#need-to-update-website-information).
+
+## ToDo
 
 - Add test
   - for `package.json`
     - `directories.test`
     - `script.test`
+- Write documents for all files in `src`
+
+## License
+
+MIT
