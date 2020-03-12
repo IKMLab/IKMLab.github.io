@@ -2,7 +2,17 @@
 
 NCKU IKMLAB's Official Website.
 
-[TOC]
+## Table of Content
+
+- [Environment setup](#environment-setup)
+- [Production build](#production-build)
+- [Deployment](#deployment)
+- [Development build](#development-build)
+- [FAQ](#faq)
+  - [Need to update website information](#need-to-update-website-information)
+  - [Add functionality to website](#add-functionality-to-website)
+- [To Do](#to-do)
+- [License](#license)
 
 ## Environment setup
 
@@ -109,7 +119,7 @@ description:
 - If you are a **current member of our lab**, then ask the lab's **network manager** to add you as a **collaborator**.
 - If you are an **alumnus**, send an mail to us with **title 'Feature request'** and **content** following the format in [this section](#need-to-update-website-information).
 
-## ToDo
+## To Do
 
 - Add test
   - for `package.json`
