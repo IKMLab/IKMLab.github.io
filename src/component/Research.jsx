@@ -170,7 +170,7 @@ class ResearchCard extends React.Component {
     const iconWidth = 2
     const chipMarginWidth = 3
     const breakPoint = 30
-    // Split into 4 tracks.
+    // Split into `this.props.split` tracks.
     const researchSplits = []
     const researchSplitsHeight = []
     console.log(this.props.split)
@@ -354,6 +354,11 @@ export default class Research extends React.Component {
 
   static getSplitAlgorithm() {
     const currentWindowWidth = window.innerWidth
+    // We follow Material UI's break point. For screen size smaller than 600px
+    // we use only 1 split. For screen size between 600px and 960px we use 2
+    // splits. For screen size between 960px and 1280px we use 3 splits. For
+    // screen size between 1280px and 1920px we use 4 splits. For screen size
+    // above 1920px we use 6 splits.
     return currentWindowWidth < 600 ? 1 :
       currentWindowWidth < 960 ? 2 :
       currentWindowWidth < 1280 ? 3 :

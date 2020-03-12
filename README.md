@@ -49,6 +49,15 @@ npm run build
 npm run b
 ```
 
+## Deploy
+
+```sh
+# We use nginx to host our webiste. Get help from manager
+# if you don't know where to deploy. (`ssh` to server first,
+# do `git pull` from GitHub repo, then run the following snippet.)
+npm run deploy
+```
+
 ## Development build
 
 ```sh
@@ -72,8 +81,6 @@ npm start
 
 ## TODO
 
-- Remove `dist` from `.gitignore` once we finish create the website
-- Add RWD
 - Add test
   - for `package.json`
     - `directories.test`
