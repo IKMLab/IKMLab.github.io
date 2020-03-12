@@ -44,6 +44,8 @@ import TimothyStephenNiven
   from 'src/res/image/member/Timothy-Stephen-Niven.png'
 import TzuHsuanChou
   from 'src/res/image/member/Tzu-Hsuan-Chou.png'
+import WenJieTsai
+  from 'src/res/image/member/Wen-Jie-Tsai.png'
 import YiChunChen
   from 'src/res/image/member/Yi-Chun-Chen.png'
 import YiTingDing
@@ -165,6 +167,7 @@ export const memberData = [
     en: 'Wen-Jie Tsai',
     dept: 0,
     deg: 1,
+    image: WenJieTsai,
   },
   {
     zh: '黃子寬',
