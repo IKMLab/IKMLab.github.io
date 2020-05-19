@@ -113,12 +113,6 @@ export const memberData = [
     deg: 0,
     image: ShiWenNi,
   },
-  {
-    zh: '陳奕廷',
-    en: 'Yi-Ting Chen',
-    dept: 0,
-    deg: 0,
-  },
   // Master Students
   {
     zh: '林雨瑩',
