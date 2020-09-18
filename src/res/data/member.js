@@ -62,8 +62,8 @@ import ZhenYiWu
   from 'src/res/image/member/Zhen-Yi-Wu.png'
 import ZiKuanHuang
   from 'src/res/image/member/Zi-Kuan-Huang.png'
-import HanChiang
-  from 'src/res/image/member/Han-Chiang.png'
+import ShengHanChiang
+  from 'src/res/image/member/Sheng-Han-Chiang.png'
 import ChienLiangLiu
   from 'src/res/image/member/Chien-Liang-Liu.png'
 import MingJiChen
@@ -196,10 +196,10 @@ export const memberData = [
   },
   {
     zh: '江昇翰',
-    en: 'Han Chiang',
+    en: 'Sheng-Han Chiang',
     dept: 1,
     deg: 1,
-    image: HanChiang,
+    image: ShengHanChiang,
   },
   {
     zh: '劉建良',
