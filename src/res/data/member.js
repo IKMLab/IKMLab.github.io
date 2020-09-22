@@ -62,6 +62,16 @@ import ZhenYiWu
   from 'src/res/image/member/Zhen-Yi-Wu.png'
 import ZiKuanHuang
   from 'src/res/image/member/Zi-Kuan-Huang.png'
+import ShengHanChiang
+  from 'src/res/image/member/Sheng-Han-Chiang.png'
+import ChienLiangLiu
+  from 'src/res/image/member/Chien-Liang-Liu.png'
+import MingJiChen
+  from 'src/res/image/member/Ming-Ji-Chen.png'
+import SzuTungLin
+  from 'src/res/image/member/Szu-Tung-Lin.png'
+import HsiuWenLi
+  from 'src/res/image/member/Hsiu-Wen-Li.png'
 
 export const memberData = [
   // PhD Students
@@ -120,34 +130,6 @@ export const memberData = [
     dept: 0,
     deg: 1,
     image: YuYingLin,
-  },
-  {
-    zh: '林聖軒',
-    en: 'Sheng-Xuan Lin',
-    dept: 0,
-    deg: 1,
-    image: ShengXuanLin,
-  },
-  {
-    zh: '丁怡婷',
-    en: 'Yi-Ting Ding',
-    dept: 1,
-    deg: 1,
-    image: YiTingDing,
-  },
-  {
-    zh: '王鈺云',
-    en: 'Yu-Yun Wang',
-    dept: 0,
-    deg: 1,
-    image: YuYunWang,
-  },
-  {
-    zh: '潘昌義',
-    en: 'Chang-Yi Pan',
-    dept: 0,
-    deg: 1,
-    image: ChangYiPan,
   },
   {
     zh: '陳晗',
@@ -211,6 +193,41 @@ export const memberData = [
     dept: 2,
     deg: 1,
     image: KuanYuChen,
+  },
+  {
+    zh: '江昇翰',
+    en: 'Sheng-Han Chiang',
+    dept: 1,
+    deg: 1,
+    image: ShengHanChiang,
+  },
+  {
+    zh: '劉建良',
+    en: 'Chien-Liang Liu',
+    dept: 0,
+    deg: 1,
+    image: ChienLiangLiu,
+  },
+  {
+    zh: '黎修文',
+    en: 'Hsiu-Wen Li',
+    dept: 0,
+    deg: 1,
+    image: HsiuWenLi,
+  },
+  {
+    zh: '陳明吉',
+    en: 'Ming-Ji Chen',
+    dept: 0,
+    deg: 1,
+    image: MingJiChen,
+  },
+  {
+    zh: '林思彤',
+    en: 'Szu-Tung Lin',
+    dept: 0,
+    deg: 1,
+    image: SzuTungLin,
   },
   // Graduate PhDs
   {
@@ -291,6 +308,38 @@ export const memberData = [
     year: 2015,
   },
   // Graduate Masters
+  {
+    zh: '林聖軒',
+    en: 'Sheng-Xuan Lin',
+    dept: 0,
+    deg: 1,
+    year: 2020,
+    image: ShengXuanLin,
+  },
+  {
+    zh: '丁怡婷',
+    en: 'Yi-Ting Ding',
+    dept: 1,
+    deg: 1,
+    year: 2020,
+    image: YiTingDing,
+  },
+  {
+    zh: '王鈺云',
+    en: 'Yu-Yun Wang',
+    dept: 0,
+    deg: 1,
+    year: 2020,
+    image: YuYunWang,
+  },
+  {
+    zh: '潘昌義',
+    en: 'Chang-Yi Pan',
+    dept: 0,
+    deg: 1,
+    year: 2020,
+    image: ChangYiPan,
+  },
   {
     zh: '湯立婷',
     en: 'Li-Ting-Tang',
