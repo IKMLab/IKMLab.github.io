@@ -22,24 +22,42 @@ import ChangYiPan
   from 'src/res/image/member/Chang-Yi-Pan.png'
 import ChenHan
   from 'src/res/image/member/Chen-Han.png'
+import ChienLiangLiu
+  from 'src/res/image/member/Chien-Liang-Liu.png'
+import ChihWeiHsu
+  from 'src/res/image/member/Chih-Wei-Hsu.png'
 import ChingShanTseng
   from 'src/res/image/member/Ching-Shan-Tseng.png'
 import CutieP
   from 'src/res/image/member/Cutie-P.png'
+import DarrenChang
+  from 'src/res/image/member/Darren-Chang.png'
 import DengDengDeng
   from 'src/res/image/member/Deng-Deng-Deng.png'
 import HowToTrain
   from 'src/res/image/member/How-To-Train.png'
+import HsiuWenLi
+  from 'src/res/image/member/Hsiu-Wen-Li.png'
+import HuiLangPeng
+  from 'src/res/image/member/Hui-Lang-Peng.png'
+import JiunManChen
+  from 'src/res/image/member/Jiun-Man-Chen.png'
 import KuanYuChen
   from 'src/res/image/member/Kuan-Yu-Chen.png'
 import LiTingTang
   from 'src/res/image/member/Li-Ting-Tang.png'
+import MingJiChen
+  from 'src/res/image/member/Ming-Ji-Chen.png'
 import ReinaldAdrianPugoy
   from 'src/res/image/member/Reinald-Adrian-Pugoy.png'
+import ShengHanChiang
+  from 'src/res/image/member/Sheng-Han-Chiang.png'
 import ShengXuanLin
   from 'src/res/image/member/Sheng-Xuan-Lin.png'
 import ShiWenNi
   from 'src/res/image/member/Shi-Wen-Ni.png'
+import SzuTungLin
+  from 'src/res/image/member/Szu-Tung-Lin.png'
 import TimothyStephenNiven
   from 'src/res/image/member/Timothy-Stephen-Niven.png'
 import TzuHsuanChou
@@ -62,24 +80,6 @@ import ZhenYiWu
   from 'src/res/image/member/Zhen-Yi-Wu.png'
 import ZiKuanHuang
   from 'src/res/image/member/Zi-Kuan-Huang.png'
-import ShengHanChiang
-  from 'src/res/image/member/Sheng-Han-Chiang.png'
-import ChienLiangLiu
-  from 'src/res/image/member/Chien-Liang-Liu.png'
-import MingJiChen
-  from 'src/res/image/member/Ming-Ji-Chen.png'
-import SzuTungLin
-  from 'src/res/image/member/Szu-Tung-Lin.png'
-import HsiuWenLi
-  from 'src/res/image/member/Hsiu-Wen-Li.png'
-import ChihWeiHsu
-  from 'src/res/image/member/Chih-Wei-Hsu.png'
-import HuiLangPeng
-  from 'src/res/image/member/Hui-Lang-Peng.png'
-import JiunManChen
-  from 'src/res/image/member/Jiun-Man-Chen.png'
-import DarrenChang
-  from 'src/res/image/member/Darren-Chang.png'
 
 export const memberData = [
   // PhD Students
