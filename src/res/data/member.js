@@ -72,6 +72,14 @@ import SzuTungLin
   from 'src/res/image/member/Szu-Tung-Lin.png'
 import HsiuWenLi
   from 'src/res/image/member/Hsiu-Wen-Li.png'
+import ChihWeiHsu
+  from 'src/res/image/member/Chih-Wei-Hsu.png'
+import HuiLangPeng
+  from 'src/res/image/member/Hui-Lang-Peng.png'
+import JiunManChen
+  from 'src/res/image/member/Jiun-Man-Chen.png'
+import DarrenChang
+  from 'src/res/image/member/Darren-Chang.png'
 
 export const memberData = [
   // PhD Students
@@ -122,6 +130,20 @@ export const memberData = [
     dept: 0,
     deg: 0,
     image: ShiWenNi,
+  },
+  {
+    zh: '許智維',
+    en: 'Chih-Wei Hsu',
+    dept: 0,
+    deg: 0,
+    image: ChihWeiHsu,
+  },
+  {
+    zh: '彭輝郎',
+    en: 'Hui-Lang Peng',
+    dept: 0,
+    deg: 0,
+    image: HuiLangPeng,
   },
   // Master Students
   {
@@ -228,6 +250,20 @@ export const memberData = [
     dept: 0,
     deg: 1,
     image: SzuTungLin,
+  },
+  {
+    zh: '陳均嫚',
+    en: 'Jiun-Man Chen',
+    dept: 0,
+    deg: 1,
+    image: JiunManChen,
+  },
+  {
+    zh: '張博鈞',
+    en: 'Darren Chang',
+    dept: 0,
+    deg: 1,
+    image: DarrenChang,
   },
   // Graduate PhDs
   {
