@@ -40,6 +40,8 @@ import HsiuWenLi
   from 'src/res/image/member/Hsiu-Wen-Li.png'
 import HuiLangPeng
   from 'src/res/image/member/Hui-Lang-Peng.png'
+import IrwanSetiawan
+  from 'src/res/image/member/Irwan-Setiawan.png'
 import JiunManChen
   from 'src/res/image/member/Jiun-Man-Chen.png'
 import KuanYuChen
@@ -144,6 +146,13 @@ export const memberData = [
     dept: 0,
     deg: 0,
     image: HuiLangPeng,
+  },
+  {
+    zh: '艾爾灣',
+    en: 'Irwan Setiawan',
+    dept: 0,
+    deg: 0,
+    image: IrwanSetiawan,
   },
   // Master Students
   {
