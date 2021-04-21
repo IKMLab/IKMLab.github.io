@@ -40,6 +40,8 @@ import HsiuWenLi
   from 'src/res/image/member/Hsiu-Wen-Li.png'
 import HuiLangPeng
   from 'src/res/image/member/Hui-Lang-Peng.png'
+import IrwanSetiawan
+  from 'src/res/image/member/Irwan-Setiawan.png'
 import JiunManChen
   from 'src/res/image/member/Jiun-Man-Chen.png'
 import KuanYuChen
@@ -145,14 +147,14 @@ export const memberData = [
     deg: 0,
     image: HuiLangPeng,
   },
-  // Master Students
   {
-    zh: '林雨瑩',
-    en: 'Yu-Ying Lin',
+    zh: '艾爾灣',
+    en: 'Irwan Setiawan',
     dept: 0,
-    deg: 1,
-    image: YuYingLin,
+    deg: 0,
+    image: IrwanSetiawan,
   },
+  // Master Students
   {
     zh: '陳晗',
     en: 'Han Chen',
@@ -161,25 +163,11 @@ export const memberData = [
     image: ChenHan,
   },
   {
-    zh: '蔡文傑',
-    en: 'Wen-Jie Tsai',
-    dept: 0,
-    deg: 1,
-    image: WenJieTsai,
-  },
-  {
     zh: '黃子寬',
     en: 'Zi-Kuan Huang',
     dept: 0,
     deg: 1,
     image: ZiKuanHuang,
-  },
-  {
-    zh: '陳怡君',
-    en: 'Yi-Chun Chen',
-    dept: 1,
-    deg: 1,
-    image: YiChunChen,
   },
   {
     zh: '吳貞頤',
@@ -344,6 +332,30 @@ export const memberData = [
     year: 2015,
   },
   // Graduate Masters
+  {
+    zh: '林雨瑩',
+    en: 'Yu-Ying Lin',
+    dept: 0,
+    deg: 1,
+    year: 2020,
+    image: YuYingLin,
+  },
+  {
+    zh: '陳怡君',
+    en: 'Yi-Chun Chen',
+    dept: 1,
+    deg: 1,
+    year: 2020,
+    image: YiChunChen,
+  },
+  {
+    zh: '蔡文傑',
+    en: 'Wen-Jie Tsai',
+    dept: 0,
+    deg: 1,
+    year: 2020,
+    image: WenJieTsai,
+  },
   {
     zh: '林聖軒',
     en: 'Sheng-Xuan Lin',
