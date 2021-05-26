@@ -6,11 +6,13 @@ const postcssPresetEnv = require('postcss-preset-env')
 const postcssNormalize = require('postcss-normalize')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+// const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const HTMLWebpackPulgin = require('html-webpack-plugin')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
+const ESLintPlugin = require('eslint-webpack-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
 const pathConfig = {
   src: path.resolve(__dirname, '../src'),
@@ -41,37 +43,32 @@ module.exports = (_, argv) => {
 
   const getStyleLoaders = (useSassLoader = false) => {
     const loaders = [
-      {
-        loader: MiniCssExtractPlugin.loader,
-        options: {
-          hmr: isDevelopmentMode,
-          reloadAll: true,
-        },
-      },
+      MiniCssExtractPlugin.loader,
       {
         loader: 'css-loader',
         options: {
-          sourceMap: true,
           importLoaders: useSassLoader ? 3 : 1,
           modules: {
-            mode: 'local',
             localIdentName: isProductionMode ?
               '[hash:base64]' : '[path][name]__[local]',
+            mode: 'local',
           },
+          sourceMap: isDevelopmentMode,
         },
       },
       {
         loader: 'postcss-loader',
         options: {
-          indent: 'postcss',
-          sourceMap: true,
-          plugins: () => [
-            postcssFlexbugsFixes,
-            postcssPresetEnv({
-              stage: 3,
-            }),
-            postcssNormalize(),
-          ],
+          postcssOptions: {
+            plugins: [
+              postcssFlexbugsFixes(),
+              postcssPresetEnv({
+                stage: 3,
+              }),
+              postcssNormalize(),
+            ],
+          },
+          sourceMap: isDevelopmentMode,
         },
       },
     ]
@@ -83,12 +80,12 @@ module.exports = (_, argv) => {
           sourceMap: true,
         },
       },
-      {
-        loader: 'sass-loader',
-        options: {
-          sourceMap: true,
-        },
-      })
+        {
+          loader: 'sass-loader',
+          options: {
+            sourceMap: true,
+          },
+        })
     }
 
     return loaders
@@ -99,8 +96,8 @@ module.exports = (_, argv) => {
     mode: isProductionMode ?
       'production' :
       isDevelopmentMode ?
-      'development' :
-      'none',
+        'development' :
+        'none',
     bail: isProductionMode,
     devtool: isProductionMode ?
       'source-map' :
@@ -145,36 +142,38 @@ module.exports = (_, argv) => {
     },
     optimization: {
       minimize: isProductionMode,
-      minimizer: [
-        new TerserPlugin({
-          extractComments: false,
-          sourceMap: true,
-          terserOptions: {
-            parse: {
-              ecma: 8,
-            },
-            compress: {
-              ecma: 6,
-            },
-            mangle: {
-              safari10: true,
-            },
-            output: {
-              // Turned on because emoji and regex is not minified properly
-              // using default. see:
-              // https://github.com/facebook/create-react-app/issues/2488
-              ascii_only: true,
-              comments: false,
-              ecma: 6,
-              safari10: true,
-              webkit: true,
-            },
-            // Sorry.
-            ie8: false,
-          },
-        }),
-        new OptimizeCSSAssetsPlugin(),
-      ],
+      // minimizer: [
+      //   new TerserPlugin({
+      //     extractComments: false,
+      //     sourceMap: true,
+      //     terserOptions: {
+      //       parse: {
+      //         ecma: 8,
+      //       },
+      //       compress: {
+      //         ecma: 6,
+      //       },
+      //       mangle: {
+      //         safari10: true,
+      //       },
+      //       output: {
+      //         // Turned on because emoji and regex is not minified properly
+      //         // using default. see:
+      //         // https://github.com/facebook/create-react-app/issues/2488
+      //         ascii_only: true,
+      //         comments: false,
+      //         ecma: 6,
+      //         safari10: true,
+      //         webkit: true,
+      //       },
+      //       // Sorry.
+      //       ie8: false,
+      //     },
+      //   }),
+      //   new CssMinimizerPlugin(),
+      //   // new OptimizeCSSAssetsPlugin(),
+      // ],
+
       // HTMLWebpackPlugin does not inject vendor chunks.
       // See issue:
       // https://github.com/jantimon/html-webpack-plugin/issues/882
@@ -211,25 +210,26 @@ module.exports = (_, argv) => {
     },
     module: {
       rules: [
-        // First, run the linter.
-        // It's important to do this before Babel processes the JS.
-        {
-          test: /\.(jsx?|tsx?)$/,
-          include: [
-            pathConfig.src,
-          ],
-          enforce: 'pre',
-          use: [
-            {
-              loader: 'eslint-loader',
-              options: {
-                cache: true,
-                fix: true,
-                configFile: pathConfig.eslint,
-              },
-            },
-          ],
-        },
+        // Eslint loader is deprecated.
+        // // First, run the linter.
+        // // It's important to do this before Babel processes the JS.
+        // {
+        //   test: /\.(jsx?|tsx?)$/,
+        //   include: [
+        //     pathConfig.src,
+        //   ],
+        //   enforce: 'pre',
+        //   use: [
+        //     {
+        //       loader: 'eslint-loader',
+        //       options: {
+        //         cache: true,
+        //         fix: true,
+        //         configFile: pathConfig.eslint,
+        //       },
+        //     },
+        //   ],
+        // },
         {
           // `oneOf` will traverse all following loaders until one will
           // match the requirements. When no loader matches it will fall
@@ -261,12 +261,12 @@ module.exports = (_, argv) => {
               // Don't consider CSS imports dead code even if the
               // containing package claims to have no side effects.
               sideEffects: true,
-              use: getStyleLoaders(useSassLoader=false),
+              use: getStyleLoaders(useSassLoader = false),
             },
             // Support CSS module
             {
               test: /\.module\.css$/,
-              use: getStyleLoaders(useSassLoader=false),
+              use: getStyleLoaders(useSassLoader = false),
             },
             {
               test: /\.(sass|scss)$/,
@@ -274,12 +274,12 @@ module.exports = (_, argv) => {
               // Don't consider Sass / SCSS imports dead code even if the
               // containing package claims to have no side effects.
               sideEffects: true,
-              use: getStyleLoaders(useSassLoader=true),
+              use: getStyleLoaders(useSassLoader = true),
             },
             // Support css module
             {
               test: /\.module\.(sass|scss)$/,
-              use: getStyleLoaders(useSassLoader=true),
+              use: getStyleLoaders(useSassLoader = true),
             },
             {
               test: /\.(bmp|png|gif|jpe?g)$/,
@@ -314,6 +314,11 @@ module.exports = (_, argv) => {
       ],
     },
     plugins: [
+      new ESLintPlugin({
+        cache: true,
+        fix: true,
+        overrideConfigFile: pathConfig.eslint,
+      }),
       new HTMLWebpackPulgin({
         template: path.resolve(pathConfig.src, 'res/template/index.html'),
         chunks: [
@@ -366,9 +371,9 @@ module.exports = (_, argv) => {
         emitWarning: true,
         fix: true,
       }),
-      new ManifestPlugin({
-        fileName: path.resolve(pathConfig.dist, 'manifest.json'),
-      }),
+      // new ManifestPlugin({
+      //   fileName: path.resolve(pathConfig.dist, 'manifest.json'),
+      // }),
     ].filter(Boolean),
   }
 }

@@ -8,8 +8,7 @@
       5,
       {
         "ignore": [
-          "blockless-at-rules",
-          "pseudo-classes"
+          "blockless-at-rules"
         ]
       }
     ],
