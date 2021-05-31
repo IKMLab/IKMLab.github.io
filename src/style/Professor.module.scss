@@ -1,4 +1,6 @@
-.professor-section {
+@import './Variable.module';
+
+.profile-container {
   align-content: center;
   align-items: flex-start;
   justify-content: center;
@@ -7,25 +9,20 @@
     top: 20px;
   }
 
-  .professor-section-title {
-    text-align: center;
-    text-decoration: underline;
-  }
-
-  .professor {
+  .profile {
     align-content: center;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 
-    &-name {
+    .name {
       margin: {
         bottom: 0;
         top: 5px;
       }
     }
 
-    &-department {
+    .department {
       font-weight: 300;
       text-align: center;
       margin: {
@@ -34,21 +31,54 @@
       }
     }
 
-    &-image {
+    .image {
       border-radius: 50%;
       height: 200px;
       width: 200px;
     }
   }
 
-  .professor-contact {
+  .contact {
     display: flex;
     font-size: 18px;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+}
 
-    &-text {
-      padding-left: 10px;
-      word-break: break-word;
+.intro {
+  padding: 20px;
+
+  @media screen and (min-width: $lg) {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-text {
+    font-size: 18px;
+
+    @media screen and (min-width: $lg) {
+      max-width: $lg;
     }
   }
+}
+
+.course,
+.education,
+.experience,
+.honor,
+.personal-activities,
+.publication,
+.research {
+  display: flex;
+  font-size: 18px;
+  justify-content: flex-start;
+  max-width: 600px;
+
+  &-nested {
+    padding-left: 16px;
+  }
+}
+
+.publication {
+  max-width: 1200px;
 }

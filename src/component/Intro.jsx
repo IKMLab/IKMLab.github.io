@@ -107,13 +107,13 @@ class IntroResearch extends React.Component {
           </h2>
         </Grid>
         {
-          topics.map((topic)=>(
+          topics.map((topic) => (
             <Grid item xs={12} sm={6} md={4} lg={4} xl={2}
               key={topic.text}>
               <Card className={IntroStyle['intro-research-topic-card']}>
                 <CardMedia
                   className={IntroStyle['intro-research-topic-pic']}
-                  image={topic.image}/>
+                  image={topic.image} />
                 <CardContent className={IntroStyle['intro-research-topic']}>
                   {topic.text}
                 </CardContent>
@@ -147,7 +147,7 @@ class IntroGoal extends React.Component {
             We aim to construct novel and innovative models, improve
             {' '}existing methods, and build {' '}
             <strong>S</strong>tate-<strong>O</strong>f-<strong>
-            T</strong>he-<strong>A</strong>rt applications that
+              T</strong>he-<strong>A</strong>rt applications that
             {' '}can contribute to the body of knowledge in research.
           </p>
         </Grid>
@@ -163,9 +163,9 @@ export default class Intro extends React.Component {
   render() {
     return (
       <>
-        <IntroLab/>
-        <IntroResearch/>
-        <IntroGoal/>
+        <IntroLab />
+        <IntroResearch />
+        <IntroGoal />
       </>
     )
   }

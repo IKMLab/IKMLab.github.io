@@ -121,6 +121,24 @@ description:
 
 ## To Do
 
+- Change to dart.sass
+- Fix terser plugin
+- Fix hot module reload plugin
+- Fix postcss plugin
+- Check eslint rules and eslint-webpack-plugin
+- Check stylelint rules
+- Rename import images with "*Image"
+- Fix research render speed
+- Check webpack configuration
+- Check webpack-cli configuration
+- Optimize CSS webpack plugin is deprecated, use css-minimizer-webpack-plugin instead
+- Fix webpack-manifest-plugin
+- Try webpack-nano
+- Understand Hot Module Reloading
+- Check postcss-loader configuration
+- Migrate to Typescript
+- Optimize React, Mui, Mui-icons bundle size
+- [Minimize mui](https://material-ui.com/guides/minimizing-bundle-size/#option-2)
 - Add test
   - for `package.json`
     - `directories.test`

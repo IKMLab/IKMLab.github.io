@@ -1,6 +1,8 @@
+@import './Variable.module';
+
 .footer-section {
   align-items: center;
-  background-color: rgb(246, 176, 50);
+  background-color: $main-color;
   justify-content: center;
   width: 100%;
   padding: {

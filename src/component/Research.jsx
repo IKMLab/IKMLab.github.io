@@ -16,30 +16,30 @@ import PersonIcon from '@material-ui/icons/Person'
 import SchoolIcon from '@material-ui/icons/School'
 import Slider from '@material-ui/core/Slider'
 import ResearchStyle from 'src/style/Research.module.scss'
-import {researchData} from 'src/res/data/research.js'
+import { researchData } from 'src/res/data/research.js'
 
 
 // Get all topics.
 const allTopics = Array.from(
-    new Set(researchData.map((research)=>research.topic)),
+  new Set(researchData.map((research) => research.topic)),
 ).sort()
 
 // Get all subfields.
 const allSubfields = Array.from(
-    new Set([].concat(
-        ...researchData
-            .map((research)=>research.subfields)
-            .filter(Boolean),
-    )),
+  new Set([].concat(
+    ...researchData
+      .map((research) => research.subfields)
+      .filter(Boolean),
+  )),
 ).sort()
 
 class ResearchFilter extends React.Component {
   constructor(props) {
     super(props)
 
-    this.handleTimeChange=this.handleTimeChange.bind(this)
-    this.handleTopicChange=this.handleTopicChange.bind(this)
-    this.handleSubfieldChange=this.handleSubfieldChange.bind(this)
+    this.handleTimeChange = this.handleTimeChange.bind(this)
+    this.handleTopicChange = this.handleTopicChange.bind(this)
+    this.handleSubfieldChange = this.handleSubfieldChange.bind(this)
   }
 
   handleTimeChange(_, value) {
@@ -71,10 +71,10 @@ class ResearchFilter extends React.Component {
       this.props.handleFilterChange({
         subfields:
           this.props.subfields.slice(0, index).concat(
-              this.props.subfields.slice(
-                  index+1,
-                  this.props.subfields.length,
-              ),
+            this.props.subfields.slice(
+              index + 1,
+              this.props.subfields.length,
+            ),
           ),
       })
       return
@@ -109,17 +109,17 @@ class ResearchFilter extends React.Component {
           className={ResearchStyle['research-topic-filter']}
           item xs={12} sm={12} md={12} lg={12} xl={12}>
           {
-            allTopics.map((topic)=>(
+            allTopics.map((topic) => (
               <Chip
                 className={ResearchStyle['topic-filter']}
                 clickable
-                deleteIcon={<DoneIcon/>}
-                icon={<LoyaltyIcon/>}
+                deleteIcon={<DoneIcon />}
+                icon={<LoyaltyIcon />}
                 key={topic}
                 label={topic}
-                onClick={()=>this.handleTopicChange(topic)}
+                onClick={() => this.handleTopicChange(topic)}
                 onDelete={this.props.topic === topic ?
-                  ()=>{}:null}
+                  () => { } : null}
               />
             ))
           }
@@ -129,17 +129,17 @@ class ResearchFilter extends React.Component {
           item xs={12} sm={12} md={12} lg={12} xl={12}>
           <Hidden mdDown>
             {
-              allSubfields.map((subfield)=>(
+              allSubfields.map((subfield) => (
                 <Chip
                   className={ResearchStyle['subfield-filter']}
                   clickable
-                  deleteIcon={<DoneIcon/>}
-                  icon={<LoyaltyIcon/>}
+                  deleteIcon={<DoneIcon />}
+                  icon={<LoyaltyIcon />}
                   key={subfield}
                   label={subfield}
-                  onClick={()=>this.handleSubfieldChange(subfield)}
-                  onDelete={this.props.subfields.includes(subfield)?
-                  ()=>{}:null}
+                  onClick={() => this.handleSubfieldChange(subfield)}
+                  onDelete={this.props.subfields.includes(subfield) ?
+                    () => { } : null}
                 />
               ))
             }
@@ -174,12 +174,12 @@ class ResearchCard extends React.Component {
     const researchSplits = []
     const researchSplitsHeight = []
     console.log(this.props.split)
-    for (let i=0; i<this.props.split; ++i) {
+    for (let i = 0; i < this.props.split; ++i) {
       researchSplits.push([])
       researchSplitsHeight.push(0)
     }
     // Split into different tracks according to component's total height.
-    this.props.researchs.forEach((research)=>{
+    this.props.researchs.forEach((research) => {
       // Consider all text fields.
       // Non-existed fields will be filtered.
       const heightTarget = [].concat(...[
@@ -201,7 +201,7 @@ class ResearchCard extends React.Component {
       let researchHeight = 0
       // Current line length.
       let currentLength = 0
-      heightTarget.forEach((target)=>{
+      heightTarget.forEach((target) => {
         // Each chip have icon.
         currentLength += (iconWidth + target.length)
         // Switch line when current line is longer then breakpoint.
@@ -216,7 +216,7 @@ class ResearchCard extends React.Component {
 
       // Find the minimum height track and put element into it.
       const minLenIndex = researchSplitsHeight
-          .indexOf(Math.min(...researchSplitsHeight))
+        .indexOf(Math.min(...researchSplitsHeight))
       researchSplits[minLenIndex].push(research)
       // Update tracks total height.
       researchSplitsHeight[minLenIndex] += researchHeight
@@ -230,7 +230,7 @@ class ResearchCard extends React.Component {
     }
     // We already sorted before, so we only need to compare index.
     if (this.props.researchs.length && this.props.researchs.every(
-        (research, index)=>research===nextProps[index])
+      (research, index) => research === nextProps[index])
     ) {
       return false
     }
@@ -241,11 +241,11 @@ class ResearchCard extends React.Component {
     const researchSplits = this.heightAlgorithm()
     return (
       <>
-        {researchSplits.map((researchSplit, index)=>(
+        {researchSplits.map((researchSplit, index) => (
           <Grid
             key={index}
             item xs={12} sm={6} md={4} lg={3} xl={2}>
-            {researchSplit.map((research, index)=>(
+            {researchSplit.map((research, index) => (
               <Card
                 className={ResearchStyle['research']}
                 key={index}>
@@ -256,68 +256,68 @@ class ResearchCard extends React.Component {
                     </h2>
                   </CardContent>
                   <CardContent className={ResearchStyle['research-tags']}>
-                    {research.authors.map((author)=>(
+                    {research.authors.map((author) => (
                       <Chip
                         className={ResearchStyle['research-tag-author']}
                         key={author}
-                        icon={<PersonIcon/>}
+                        icon={<PersonIcon />}
                         label={author}
                         size='small'
-                        variant='outlined'/>
+                        variant='outlined' />
                     ))}
                     <Chip
                       className={ResearchStyle['research-tag-venue']}
-                      icon={<SchoolIcon/>}
+                      icon={<SchoolIcon />}
                       label={research.venue}
-                      size='small'/>
+                      size='small' />
                     <Chip
                       className={ResearchStyle['research-tag-year']}
-                      icon={<CalendarTodayIcon/>}
+                      icon={<CalendarTodayIcon />}
                       label={research.year}
-                      size='small'/>
+                      size='small' />
                     <Chip
                       className={ResearchStyle['research-tag-topic']}
-                      icon={<LoyaltyIcon/>}
+                      icon={<LoyaltyIcon />}
                       label={research.topic}
-                      size='small'/>
+                      size='small' />
                     {research.subfields &&
-                   research.subfields.map((subfield)=>(
-                     <Chip
-                       className={ResearchStyle['research-tag-subfield']}
-                       icon={<LoyaltyIcon/>}
-                       key={subfield}
-                       label={subfield}
-                       size='small'/>
-                   ))}
+                      research.subfields.map((subfield) => (
+                        <Chip
+                          className={ResearchStyle['research-tag-subfield']}
+                          icon={<LoyaltyIcon />}
+                          key={subfield}
+                          label={subfield}
+                          size='small' />
+                      ))}
                   </CardContent>
                   <CardContent className={ResearchStyle['research-tags']}>
                     {research.url &&
-                <Chip
-                  className={ResearchStyle['research-tag-link']}
-                  clickable
-                  component='a'
-                  href={research.url}
-                  icon={<LibraryBooksIcon/>}
-                  label='Paper'
-                  size='small'/>}
+                      <Chip
+                        className={ResearchStyle['research-tag-link']}
+                        clickable
+                        component='a'
+                        href={research.url}
+                        icon={<LibraryBooksIcon />}
+                        label='Paper'
+                        size='small' />}
                     {research.code &&
-                <Chip
-                  className={ResearchStyle['research-tag-link']}
-                  clickable
-                  component='a'
-                  href={research.code}
-                  icon={<CodeIcon/>}
-                  label='Source code'
-                  size='small'/>}
+                      <Chip
+                        className={ResearchStyle['research-tag-link']}
+                        clickable
+                        component='a'
+                        href={research.code}
+                        icon={<CodeIcon />}
+                        label='Source code'
+                        size='small' />}
                     {research.demo &&
-                <Chip
-                  className={ResearchStyle['research-tag-link']}
-                  clickable
-                  component='a'
-                  href={research.demo}
-                  icon={<LaunchIcon/>}
-                  label='Demo'
-                  size='small'/>}
+                      <Chip
+                        className={ResearchStyle['research-tag-link']}
+                        clickable
+                        component='a'
+                        href={research.demo}
+                        icon={<LaunchIcon />}
+                        label='Demo'
+                        size='small' />}
                   </CardContent>
                 </CardActionArea>
               </Card>
@@ -340,8 +340,8 @@ export default class Research extends React.Component {
 
     const currentYear = new Date(Date.now()).getFullYear()
     this.state = {
-      yearBegin: 2006,
-      yearBeginDefault: 2006,
+      yearBegin: 1990,
+      yearBeginDefault: 1990,
       yearEnd: currentYear,
       yearEndDefault: currentYear,
       topic: 'all',
@@ -361,8 +361,8 @@ export default class Research extends React.Component {
     // above 1920px we use 6 splits.
     return currentWindowWidth < 600 ? 1 :
       currentWindowWidth < 960 ? 2 :
-      currentWindowWidth < 1280 ? 3 :
-      currentWindowWidth < 1920 ? 4 : 6
+        currentWindowWidth < 1280 ? 3 :
+          currentWindowWidth < 1920 ? 4 : 6
   }
 
   componentDidMount() {
@@ -372,7 +372,7 @@ export default class Research extends React.Component {
   handleWindowResize() {
     const split = this.constructor.getSplitAlgorithm()
     if (split !== this.state.split) {
-      this.setState((prevState)=>({
+      this.setState((prevState) => ({
         ...prevState,
         split,
       }))
@@ -385,7 +385,7 @@ export default class Research extends React.Component {
     topic,
     subfields,
   } = {}) {
-    this.setState((prevState)=>({
+    this.setState((prevState) => ({
       yearBegin:
         yearBegin ? yearBegin : prevState.yearBegin,
       yearEnd:
@@ -399,27 +399,27 @@ export default class Research extends React.Component {
 
   render() {
     const researchs = researchData
-        .filter((research)=>research.year >= this.state.yearBegin)
-        .filter((research)=>research.year <= this.state.yearEnd)
-        // Only one `topics` is active at the same time.
-        // Let user select topics they interest.
-        // If no topic were choose, then all topic will be show.
-        .filter((research)=>(this.state.topic === 'all' ||
-          this.state.topic === research.topic))
-        // Perform AND operation on `subfields`.
-        // Let user select subfields combination they interest.
-        .filter((research)=>!this.state.subfields.length ||
-          this.state.subfields.every(
-              (subfield)=>research.subfields.includes(subfield),
-          ))
-        // Sort `researchData` according to year and topic.
-        // This must be done in order to compare fast.
-        .sort((r1, r2)=>{
-          if (r1.year !== r2.year) {
-            return r2.year-r1.year
-          }
-          return r1.topic>r2.topic
-        })
+      .filter((research) => research.year >= this.state.yearBegin)
+      .filter((research) => research.year <= this.state.yearEnd)
+      // Only one `topics` is active at the same time.
+      // Let user select topics they interest.
+      // If no topic were choose, then all topic will be show.
+      .filter((research) => (this.state.topic === 'all' ||
+        this.state.topic === research.topic))
+      // Perform AND operation on `subfields`.
+      // Let user select subfields combination they interest.
+      .filter((research) => !this.state.subfields.length ||
+        this.state.subfields.every(
+          (subfield) => research.subfields.includes(subfield),
+        ))
+      // Sort `researchData` according to year and topic.
+      // This must be done in order to compare fast.
+      .sort((r1, r2) => {
+        if (r1.year !== r2.year) {
+          return r2.year - r1.year
+        }
+        return r1.topic > r2.topic
+      })
 
     return (
       <Grid
@@ -443,7 +443,7 @@ export default class Research extends React.Component {
         <Grid container item xs={12} sm={12} md={12} lg={12} xl={12}>
           <ResearchCard
             researchs={researchs}
-            split={this.state.split}/>
+            split={this.state.split} />
         </Grid>
       </Grid>
     )

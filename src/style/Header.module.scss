@@ -1,57 +1,42 @@
 @import './Variable.module';
 
 .toolbar {
-  background-color: rgb(246, 176, 50);
-  padding: {
-    bottom: 10px;
-    left: 18px;
-    right: 18px;
-    top: 10px;
+  background-color: $main-color;
+  display: grid;
+  grid-template-areas: 'icon logo .';
+  justify-content: space-between;
+}
+
+.menu-icon {
+  grid-area: 'icon';
+}
+
+.logo-link {
+  align-self: center;
+  grid-area: 'logo';
+  justify-self: center;
+
+  .logo {
+    height: auto;
+    width: 100px;
   }
+}
 
-  @media screen and (min-width: $sm) {
-    padding: {
-      bottom: 18px;
-      left: 36px;
-      right: 36px;
-      top: 18px;
-    }
-  }
+.drawer-paper {
+  background-color: #424242;
 
-  .toolbar-logo {
-    text-align: center;
+  .list {
+    width: 250px;
 
-    .logo {
-      height: auto;
-      width: 170px;
-    }
-  }
+    &-item- {
+      &divider {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
 
-  .toolbar-lab-name {
-    align-items: center;
-    display: inline-flex;
-    font-size: 32px;
-    justify-content: center;
-    text-align: center;
-
-    @media screen and (min-width: $md) {
-      justify-content: flex-start;
-    }
-  }
-
-  .toolbar-link {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-
-    @media screen and (min-width: $md) {
-      justify-content: flex-end;
-    }
-
-    .link {
-      color: rgb(255, 255, 255);
-      font-size: 18px;
-      margin: 12px;
+      &icon,
+      &text {
+        color: #fff;
+      }
     }
   }
 }

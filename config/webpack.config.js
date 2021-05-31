@@ -1,18 +1,18 @@
 const path = require('path')
 
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const ESLintPlugin = require('eslint-webpack-plugin')
+const HTMLWebpackPulgin = require('html-webpack-plugin')
+const ManifestPlugin = require('webpack-manifest-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+// const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const StyleLintPlugin = require('stylelint-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 const webpack = require('webpack')
 const postcssFlexbugsFixes = require('postcss-flexbugs-fixes')
 const postcssPresetEnv = require('postcss-preset-env')
 const postcssNormalize = require('postcss-normalize')
-const StyleLintPlugin = require('stylelint-webpack-plugin')
-const TerserPlugin = require('terser-webpack-plugin')
-// const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const HTMLWebpackPulgin = require('html-webpack-plugin')
-const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const ManifestPlugin = require('webpack-manifest-plugin')
-const ESLintPlugin = require('eslint-webpack-plugin')
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
 const pathConfig = {
   src: path.resolve(__dirname, '../src'),
@@ -74,18 +74,20 @@ module.exports = (_, argv) => {
     ]
 
     if (useSassLoader) {
-      loaders.push({
-        loader: 'resolve-url-loader',
-        options: {
-          sourceMap: true,
+      loaders.push(
+        {
+          loader: 'resolve-url-loader',
+          options: {
+            sourceMap: true,
+          },
         },
-      },
         {
           loader: 'sass-loader',
           options: {
             sourceMap: true,
           },
-        })
+        },
+      )
     }
 
     return loaders
@@ -118,6 +120,8 @@ module.exports = (_, argv) => {
     entry: {
       'home':
         path.resolve(pathConfig.src, 'route/home.jsx'),
+      'advisor':
+        path.resolve(pathConfig.src, 'route/advisor.jsx'),
       'member':
         path.resolve(pathConfig.src, 'route/member.jsx'),
       'research':
@@ -331,6 +335,15 @@ module.exports = (_, argv) => {
       new HTMLWebpackPulgin({
         template: path.resolve(pathConfig.src, 'res/template/index.html'),
         chunks: [
+          'advisor',
+          'vendor~advisor',
+          'runtime-advisor',
+        ],
+        filename: path.resolve(pathConfig.dist, 'advisor.html'),
+      }),
+      new HTMLWebpackPulgin({
+        template: path.resolve(pathConfig.src, 'res/template/index.html'),
+        chunks: [
           'member',
           'vendor~member',
           'runtime-member',
@@ -345,15 +358,6 @@ module.exports = (_, argv) => {
           'runtime-research',
         ],
         filename: path.resolve(pathConfig.dist, 'research.html'),
-      }),
-      new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'res/template/index.html'),
-        chunks: [
-          'relate',
-          'vendor~relate',
-          'runtime-relate',
-        ],
-        filename: path.resolve(pathConfig.dist, 'relate.html'),
       }),
       isDevelopmentMode && new webpack.HotModuleReplacementPlugin(),
       new webpack.DefinePlugin({
