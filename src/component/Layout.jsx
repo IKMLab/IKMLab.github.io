@@ -1,10 +1,10 @@
+import CssBaseline from '@material-ui/core/CssBaseline'
 import React from 'react'
 import PropTypes from 'prop-types'
-import CssBaseline from '@material-ui/core/CssBaseline'
 import { StylesProvider } from '@material-ui/core/styles'
 
-import Header from 'src/component/Header.jsx'
 import Footer from 'src/component/Footer.jsx'
+import Header from 'src/component/Header.jsx'
 
 export default function Layout(props) {
   return (

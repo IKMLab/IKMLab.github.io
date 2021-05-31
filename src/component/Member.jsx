@@ -1,8 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import Grid from '@material-ui/core/Grid'
-import { memberData, parsingRule } from 'src/res/data/member.js'
+import PropTypes from 'prop-types'
+import React from 'react'
+
 import MemberStyle from 'src/style/Member.module.scss'
+import { memberData, parsingRule } from 'src/res/data/member.js'
 
 function MemberSection(props) {
   let members = memberData
@@ -52,22 +53,31 @@ function MemberSection(props) {
             <img
               className={MemberStyle['member-image']}
               src={member.image} />
-            {member.zh &&
+            {
+              member.zh
+              &&
               <h2 className={MemberStyle['member-name']}>
                 {member.zh}
-              </h2>}
-            {member.en &&
+              </h2>
+            }
+            {
+              member.en
+              &&
               <h2 className={MemberStyle['member-name']}>
                 {member.en}
-              </h2>}
+              </h2>
+            }
             <span className={MemberStyle['member-tags']}>
               <span className={MemberStyle['member-tag']}>
                 {parsingRule.dept[member.dept]}
               </span>
-              {member.year &&
+              {
+                member.year
+                &&
                 <span className={MemberStyle['member-tag']}>
                   {member.year}
-                </span>}
+                </span>
+              }
             </span>
           </Grid>
         ))

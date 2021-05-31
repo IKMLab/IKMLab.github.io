@@ -1,5 +1,3 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday'
 import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
@@ -13,9 +11,12 @@ import LaunchIcon from '@material-ui/icons/Launch'
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks'
 import LoyaltyIcon from '@material-ui/icons/Loyalty'
 import PersonIcon from '@material-ui/icons/Person'
+import PropTypes from 'prop-types'
+import React from 'react'
+import ResearchStyle from 'src/style/Research.module.scss'
 import SchoolIcon from '@material-ui/icons/School'
 import Slider from '@material-ui/core/Slider'
-import ResearchStyle from 'src/style/Research.module.scss'
+
 import { researchData } from 'src/res/data/research.js'
 
 
@@ -173,7 +174,7 @@ class ResearchCard extends React.Component {
     // Split into `this.props.split` tracks.
     const researchSplits = []
     const researchSplitsHeight = []
-    console.log(this.props.split)
+
     for (let i = 0; i < this.props.split; ++i) {
       researchSplits.push([])
       researchSplitsHeight.push(0)

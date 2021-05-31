@@ -1,13 +1,14 @@
-import React from 'react'
+import CallIcon from '@material-ui/icons/Call'
+import EmailIcon from '@material-ui/icons/Email'
 import Grid from '@material-ui/core/Grid'
 import Link from '@material-ui/core/Link'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
-import CallIcon from '@material-ui/icons/Call'
-import EmailIcon from '@material-ui/icons/Email'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
-import StaffStyle from 'src/style/Staff.module.scss'
+import React from 'react'
+
 import MeiFengLee from 'src/res/image/member/Mei-Feng-Lee.png'
+import StaffStyle from 'src/style/Staff.module.scss'
 
 export default function Staff() {
   return (

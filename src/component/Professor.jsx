@@ -1,31 +1,31 @@
-import React from 'react'
-import Grid from '@material-ui/core/Grid'
-import Link from '@material-ui/core/Link'
-import List from '@material-ui/core/List'
-import ListSubheader from '@material-ui/core/ListSubheader';
-import Typography from '@material-ui/core/Typography'
-import ListItem from '@material-ui/core/ListItem'
-import ListItemText from '@material-ui/core/ListItemText'
+import AssignmentIcon from '@material-ui/icons/Assignment';
+import BookmarksIcon from '@material-ui/icons/Bookmarks';
 import CallIcon from '@material-ui/icons/Call'
-import HighlightIcon from '@material-ui/icons/Highlight'
+import Collapse from '@material-ui/core/Collapse';
 import EmailIcon from '@material-ui/icons/Email'
-import LocationOnIcon from '@material-ui/icons/LocationOn'
-import SchoolIcon from '@material-ui/icons/School';
-import MenuBookIcon from '@material-ui/icons/MenuBook';
-import WorkIcon from '@material-ui/icons/Work';
 import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
+import EventSeatIcon from '@material-ui/icons/EventSeat';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
-import Collapse from '@material-ui/core/Collapse';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import EventSeatIcon from '@material-ui/icons/EventSeat';
-import AssignmentIcon from '@material-ui/icons/Assignment';
+import Grid from '@material-ui/core/Grid'
 import GroupIcon from '@material-ui/icons/Group';
-import BookmarksIcon from '@material-ui/icons/Bookmarks';
+import HighlightIcon from '@material-ui/icons/Highlight'
+import Link from '@material-ui/core/Link'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText'
+import ListSubheader from '@material-ui/core/ListSubheader';
+import LocationOnIcon from '@material-ui/icons/LocationOn'
+import MenuBookIcon from '@material-ui/icons/MenuBook';
+import React from 'react'
+import SchoolIcon from '@material-ui/icons/School';
+import Typography from '@material-ui/core/Typography'
+import WorkIcon from '@material-ui/icons/Work';
 
-import { researchData } from 'src/res/data/research.js'
-import ProfessorStyle from 'src/style/Professor.module.scss'
 import HungYuKao from 'src/res/image/member/Hung-Yu-Kao.png'
+import ProfessorStyle from 'src/style/Professor.module.scss'
+import { researchData } from 'src/res/data/research.js'
 
 
 const journalsAPA = researchData.filter(research => research.venueType === 'journal')

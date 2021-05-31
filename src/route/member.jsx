@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+
 import Layout from 'src/component/Layout.jsx'
-import Staff from 'src/component/Staff.jsx'
 import Member from 'src/component/Member.jsx'
+import Staff from 'src/component/Staff.jsx'
 
 ReactDOM.render(
   <Layout>

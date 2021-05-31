@@ -1,5 +1,6 @@
-import React from 'react'
 import Box from '@material-ui/core/Box'
+import React from 'react'
+
 import BannerStyle from 'src/style/Banner.module.scss'
 import bannerImage from 'src/res/image/background/3.png'
 
