@@ -11,15 +11,6 @@
     top: 20px;
   }
 
-  @media screen and (min-width: $md) {
-    padding: {
-      bottom: 20px;
-      left: 100px;
-      right: 100px;
-      top: 20px;
-    }
-  }
-
   &-title {
     font-weight: 500;
     text-align: center;
@@ -145,6 +136,24 @@
           }
         }
       }
+    }
+  }
+
+  .research-page {
+
+    justify-content: center;
+    margin: {
+      bottom: 20px;
+      top: 20px;
+    }
+  }
+
+  @media screen and (min-width: $md) {
+    padding: {
+      bottom: 20px;
+      left: 100px;
+      right: 100px;
+      top: 20px;
     }
   }
 }
