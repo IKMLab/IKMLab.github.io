@@ -4,15 +4,14 @@ const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
 const HTMLWebpackPulgin = require('html-webpack-plugin')
-const ManifestPlugin = require('webpack-manifest-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-// const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
-const webpack = require('webpack')
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
 const postcssFlexbugsFixes = require('postcss-flexbugs-fixes')
 const postcssPresetEnv = require('postcss-preset-env')
 const postcssNormalize = require('postcss-normalize')
+const webpack = require('webpack')
 
 const pathConfig = {
   src: path.resolve(__dirname, '../src'),
@@ -146,66 +145,61 @@ module.exports = (_, argv) => {
     },
     optimization: {
       minimize: isProductionMode,
-      // minimizer: [
-      //   new TerserPlugin({
-      //     extractComments: false,
-      //     sourceMap: true,
-      //     terserOptions: {
-      //       parse: {
-      //         ecma: 8,
-      //       },
-      //       compress: {
-      //         ecma: 6,
-      //       },
-      //       mangle: {
-      //         safari10: true,
-      //       },
-      //       output: {
-      //         // Turned on because emoji and regex is not minified properly
-      //         // using default. see:
-      //         // https://github.com/facebook/create-react-app/issues/2488
-      //         ascii_only: true,
-      //         comments: false,
-      //         ecma: 6,
-      //         safari10: true,
-      //         webkit: true,
-      //       },
-      //       // Sorry.
-      //       ie8: false,
-      //     },
-      //   }),
-      //   new CssMinimizerPlugin(),
-      //   // new OptimizeCSSAssetsPlugin(),
-      // ],
-
-      // HTMLWebpackPlugin does not inject vendor chunks.
-      // See issue:
-      // https://github.com/jantimon/html-webpack-plugin/issues/882
-      // This must be solve using next version of HTMLWebpackPlugin
-      // See issue:
-      // https://github.com/jantimon/html-webpack-plugin/issues/878
-      runtimeChunk: {
-        name: (entrypoint) => `runtime-${entrypoint.name}`,
-      },
+      minimizer: [
+        new TerserPlugin({
+          // Discard comments.
+          extractComments: false,
+          terserOptions: {
+            // Compress to ECMA-2015.
+            ecma: 2015,
+            format: {
+              // Turned on because emoji and regex is not minified properly
+              // using default. see:
+              // https://github.com/facebook/create-react-app/issues/2488
+              ascii_only: true,
+              // Remove comments.
+              comments: false,
+              // Fix WebKit bugs.
+              webkit: true,
+            },
+            // Sorry we do not support ie8.
+            ie8: false,
+            // Fix Safari bugs.
+            safari10: true,
+            // Remove unused top level variables and functions.
+            toplevel: true,
+          },
+        }),
+        new CssMinimizerPlugin(),
+      ],
       splitChunks: {
-        // chunks: 'all',
+        chunks: 'all',
         cacheGroups: {
-          vendor: {
-            test: /[\\/]node_modules[\\/]/,
-            name: false, // some problem here "vendors"
+          commons: {
             chunks: 'all',
+            name: 'commons',
+            priority: 0,
+            reuseExistingChunk: true,
+          },
+          mui: {
+            test: /[\\/]node_modules[\\/]@material-ui.*[\\/]/,
+            chunks: 'all',
+            name: 'mui',
+            priority: 2,
             reuseExistingChunk: true,
           },
           react: {
-            test: /[\\/](react|react-dom)[\\/]/,
-            name: false, // some problem here "react"
+            test: /[\\/]node_modules[\\/]react.*[\\/]/,
             chunks: 'all',
+            name: 'react',
+            priority: 3,
             reuseExistingChunk: true,
           },
-          styles: {
-            test: /\.css$/,
-            name: false, // some problem here "styles"
+          vendor: {
+            test: /[\\/]node_modules[\\/](!react.*|!@material-ui.*)[\\/]/,
             chunks: 'all',
+            name: 'vendor',
+            priority: 1,
             reuseExistingChunk: true,
           },
           default: false,
@@ -214,26 +208,6 @@ module.exports = (_, argv) => {
     },
     module: {
       rules: [
-        // Eslint loader is deprecated.
-        // // First, run the linter.
-        // // It's important to do this before Babel processes the JS.
-        // {
-        //   test: /\.(jsx?|tsx?)$/,
-        //   include: [
-        //     pathConfig.src,
-        //   ],
-        //   enforce: 'pre',
-        //   use: [
-        //     {
-        //       loader: 'eslint-loader',
-        //       options: {
-        //         cache: true,
-        //         fix: true,
-        //         configFile: pathConfig.eslint,
-        //       },
-        //     },
-        //   ],
-        // },
         {
           // `oneOf` will traverse all following loaders until one will
           // match the requirements. When no loader matches it will fall
@@ -320,44 +294,57 @@ module.exports = (_, argv) => {
     plugins: [
       new ESLintPlugin({
         cache: true,
+        extensions: ['js', 'jsx'],
         fix: true,
         overrideConfigFile: pathConfig.eslint,
       }),
       new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'res/template/index.html'),
         chunks: [
           'home',
-          'vendor~home',
-          'runtime-home',
+          'commons',
+          'mui',
+          'react',
+          'vendor',
         ],
         filename: path.resolve(pathConfig.dist, 'home.html'),
+        hash: isProductionMode,
+        template: path.resolve(pathConfig.src, 'res/template/index.html'),
       }),
       new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'res/template/index.html'),
         chunks: [
           'advisor',
-          'vendor~advisor',
-          'runtime-advisor',
+          'commons',
+          'mui',
+          'react',
+          'vendor',
         ],
         filename: path.resolve(pathConfig.dist, 'advisor.html'),
+        hash: isProductionMode,
+        template: path.resolve(pathConfig.src, 'res/template/index.html'),
       }),
       new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'res/template/index.html'),
         chunks: [
           'member',
-          'vendor~member',
-          'runtime-member',
+          'commons',
+          'mui',
+          'react',
+          'vendor',
         ],
         filename: path.resolve(pathConfig.dist, 'member.html'),
+        hash: isProductionMode,
+        template: path.resolve(pathConfig.src, 'res/template/index.html'),
       }),
       new HTMLWebpackPulgin({
-        template: path.resolve(pathConfig.src, 'res/template/index.html'),
         chunks: [
           'research',
-          'vendor~research',
-          'runtime-research',
+          'commons',
+          'mui',
+          'react',
+          'vendor',
         ],
         filename: path.resolve(pathConfig.dist, 'research.html'),
+        hash: isProductionMode,
+        template: path.resolve(pathConfig.src, 'res/template/index.html'),
       }),
       isDevelopmentMode && new webpack.HotModuleReplacementPlugin(),
       new webpack.DefinePlugin({
@@ -375,9 +362,10 @@ module.exports = (_, argv) => {
         emitWarning: true,
         fix: true,
       }),
-      // new ManifestPlugin({
-      //   fileName: path.resolve(pathConfig.dist, 'manifest.json'),
-      // }),
+      new WebpackManifestPlugin({
+        basePath: pathConfig.dist,
+        fileName: 'manifest.json',
+      }),
     ].filter(Boolean),
   }
 }

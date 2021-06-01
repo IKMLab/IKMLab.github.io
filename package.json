@@ -105,11 +105,13 @@
   },
   "scripts": {
     "b": "npm run build",
-    "build": "webpack --config config/webpack.config.js --mode production",
+    "build": "webpack --color --config config/webpack.config.js --mode production --progress",
     "d": "npm run develop",
-    "develop": "webpack --config config/webpack.config.js --mode development",
+    "develop": "webpack --color --config config/webpack.config.js --mode development --progress",
     "deploy": "npm run build && sudo cp -r dist /var/www",
-    "start": "webpack serve --config config/webpack.config.js --mode development --color --progress"
+    "start": "webpack serve --color --config config/webpack.config.js --mode development --progress",
+    "test-webpack": "webpack configtest config/webpack.config.js",
+    "tw": "npm run test-webpack"
   },
   "version": "1.0.1"
 }
