@@ -1,11 +1,11 @@
 import CssBaseline from '@material-ui/core/CssBaseline'
-import Fab from '@material-ui/core/Fab';
-import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import Fab from '@material-ui/core/Fab'
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp'
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StylesProvider } from '@material-ui/core/styles'
-import Zoom from '@material-ui/core/Zoom';
-import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import {StylesProvider} from '@material-ui/core/styles'
+import Zoom from '@material-ui/core/Zoom'
+import useScrollTrigger from '@material-ui/core/useScrollTrigger'
 
 import Footer from 'src/component/Footer.jsx'
 import Header from 'src/component/Header.jsx'
@@ -19,10 +19,10 @@ export default function Layout(props) {
 
   const handleFabClick = (event) => {
     const anchor = (event.target.ownerDocument || document)
-      .querySelector('#back-to-top-anchor');
+        .querySelector('#back-to-top-anchor')
 
     if (anchor) {
-      anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      anchor.scrollIntoView({behavior: 'smooth', block: 'start'})
     }
   }
 

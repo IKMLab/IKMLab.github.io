@@ -7,9 +7,9 @@ import Intro from 'src/component/Intro.jsx'
 import Layout from 'src/component/Layout.jsx'
 
 ReactDOM.render(
-  <Layout>
-    <Banner />
-    <Intro />
-    <Contact />
-  </Layout>,
-  document.getElementById('root'))
+    <Layout>
+      <Banner />
+      <Intro />
+      <Contact />
+    </Layout>,
+    document.getElementById('root'))

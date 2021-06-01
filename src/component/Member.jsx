@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import MemberStyle from 'src/style/Member.module.scss'
-import { memberData, parsingRule } from 'src/res/data/member.js'
+import {memberData, parsingRule} from 'src/res/data/member.js'
 
 function MemberSection(props) {
   let members = memberData
-    .filter((member) => parsingRule.deg[member.deg] === props.deg)
+      .filter((member) => parsingRule.deg[member.deg] === props.deg)
 
   if (props.isAlumni) {
     members = members.filter((member) => member.year)
@@ -19,7 +19,7 @@ function MemberSection(props) {
     })
   } else {
     members = members.filter((member) => !member.year)
-      .sort((memberA, memberB) => memberA.dept - memberB.dept)
+        .sort((memberA, memberB) => memberA.dept - memberB.dept)
   }
 
   let title = ''
@@ -54,15 +54,13 @@ function MemberSection(props) {
               className={MemberStyle['member-image']}
               src={member.image} />
             {
-              member.zh
-              &&
+              member.zh &&
               <h2 className={MemberStyle['member-name']}>
                 {member.zh}
               </h2>
             }
             {
-              member.en
-              &&
+              member.en &&
               <h2 className={MemberStyle['member-name']}>
                 {member.en}
               </h2>
@@ -72,8 +70,7 @@ function MemberSection(props) {
                 {parsingRule.dept[member.dept]}
               </span>
               {
-                member.year
-                &&
+                member.year &&
                 <span className={MemberStyle['member-tag']}>
                   {member.year}
                 </span>

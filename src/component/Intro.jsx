@@ -6,17 +6,17 @@ import Link from '@material-ui/core/Link'
 import React from 'react'
 
 import IntroStyle from 'src/style/Intro.module.scss'
-import dataMining
+import dataMiningImage
   from 'src/res/image/research/data-mining.png'
-import deepLearning
+import deepLearningImage
   from 'src/res/image/research/deep-learning.png'
-import informationRetrieval
+import informationRetrievalImage
   from 'src/res/image/research/information-retrieval.png'
-import knowledgeManagement
+import knowledgeManagementImage
   from 'src/res/image/research/knowledge-management.png'
-import medicalInformatics
+import medicalInformaticsImage
   from 'src/res/image/research/medical-informatics.png'
-import naturalLanguageProcessing
+import naturalLanguageProcessingImage
   from 'src/res/image/research/natural-language-processing.png'
 
 function IntroLab() {
@@ -63,27 +63,27 @@ function IntroLab() {
 function IntroResearch() {
   const topics = [
     {
-      image: naturalLanguageProcessing,
+      image: naturalLanguageProcessingImage,
       text: 'Natural Language Processing',
     },
     {
-      image: medicalInformatics,
+      image: medicalInformaticsImage,
       text: 'Medical Informatics',
     },
     {
-      image: deepLearning,
+      image: deepLearningImage,
       text: 'Deep Learning',
     },
     {
-      image: dataMining,
+      image: dataMiningImage,
       text: 'Data Mining',
     },
     {
-      image: knowledgeManagement,
+      image: knowledgeManagementImage,
       text: 'Knowledge Management',
     },
     {
-      image: informationRetrieval,
+      image: informationRetrievalImage,
       text: 'Information Retrieval',
     },
   ]

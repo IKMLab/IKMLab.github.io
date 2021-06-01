@@ -6,7 +6,7 @@ import Member from 'src/component/Member.jsx'
 import Staff from 'src/component/Staff.jsx'
 
 ReactDOM.render(
-  <Layout>
-    <Member />
-    <Staff />
-  </Layout>, document.getElementById('root'))
+    <Layout>
+      <Member />
+      <Staff />
+    </Layout>, document.getElementById('root'))

@@ -10,7 +10,7 @@ import React from 'react'
 import CSIEIcon from 'src/res/image/relate/NCKU-CSIE.png'
 import FooterStyle from 'src/style/Footer.module.scss'
 import NCKUIcon from 'src/res/image/relate/NCKU.png'
-import logo from 'src/res/image/logo.png'
+import logoImage from 'src/res/image/logo.png'
 import materialUIIcon from 'src/res/image/tech/material-ui.svg'
 import reactIcon from 'src/res/image/tech/react.png'
 import sassIcon from 'src/res/image/tech/sass.png'
@@ -27,11 +27,11 @@ export default function Footer() {
         <img
           alt='IKMLab logo'
           className={FooterStyle['logo']}
-          src={logo} />
+          src={logoImage} />
         <p className={FooterStyle['copyright']}>
           Copyright © {new Date(Date.now()).getFullYear()} IKMLab.<br />
             All right reserved.
-          </p>
+        </p>
       </Grid>
       <Grid
         className={FooterStyle['footer-contact']}
@@ -43,7 +43,7 @@ export default function Footer() {
               className={FooterStyle['contact']}
               href='tel:+88662757575,62520,2903'>
               +886-6-275-7575 ext 62520 ext 2903
-              </Link>
+            </Link>
           </ListItem>
           <ListItem>
             <EmailIcon />
@@ -51,7 +51,7 @@ export default function Footer() {
               className={FooterStyle['contact']}
               href='mailto:ikmlab@mail.csie.ncku.edu.tw'>
               ikmlab@mail.csie.ncku.edu.tw
-              </Link>
+            </Link>
           </ListItem>
         </List>
       </Grid>
@@ -60,7 +60,7 @@ export default function Footer() {
         item xs={12} sm={6} md={3} lg={2} xl={2}>
         <h2 className={FooterStyle['powered-by-title']}>
           Powered By
-          </h2>
+        </h2>
         <figure>
           <Link href='https://reactjs.org/'>
             <img
@@ -89,7 +89,7 @@ export default function Footer() {
         item xs={12} sm={6} md={3} lg={2} xl={2}>
         <h2 className={FooterStyle['related-title']}>
           Related Link
-          </h2>
+        </h2>
         <figure>
           <Link href='https://web.ncku.edu.tw/index.php'>
             <img

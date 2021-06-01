@@ -24,7 +24,9 @@ export default function Header() {
   const toggleDrawer = (open) => {
     // function copy directly from mui's drawer demo code.
     return (event) => {
-      if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      if (event &&
+        event.type === 'keydown' &&
+        (event.key === 'Tab' || event.key === 'Shift')) {
         return
       }
 
@@ -62,7 +64,7 @@ export default function Header() {
           onOpen={toggleDrawer(true)}
           open={isOpen}
           PaperProps={{
-            className: HeaderStyle['drawer-paper']
+            className: HeaderStyle['drawer-paper'],
           }}
           variant='temporary'
         >

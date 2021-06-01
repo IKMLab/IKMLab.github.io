@@ -10,7 +10,7 @@ import Hidden from '@material-ui/core/Hidden'
 import LaunchIcon from '@material-ui/icons/Launch'
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks'
 import LoyaltyIcon from '@material-ui/icons/Loyalty'
-import Pagination from '@material-ui/lab/Pagination';
+import Pagination from '@material-ui/lab/Pagination'
 import PersonIcon from '@material-ui/icons/Person'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -18,29 +18,31 @@ import ResearchStyle from 'src/style/Research.module.scss'
 import SchoolIcon from '@material-ui/icons/School'
 import Slider from '@material-ui/core/Slider'
 
-import { researchData } from 'src/res/data/research.js'
+import {researchData} from 'src/res/data/research.js'
 
 // Get all topics.
 const allTopics = Array.from(
-  new Set(researchData.map((research) => research.topic)),
+    new Set(researchData.map((research) => research.topic)),
 ).sort()
 
 // Get all subfields.
 const allSubfields = Array.from(
-  new Set([].concat(
-    ...researchData
-      .map((research) => research.subfields)
-      .filter(Boolean),
-  )),
+    new Set([].concat(
+        ...researchData
+            .map((research) => research.subfields)
+            .filter(Boolean),
+    )),
 ).sort()
 
-const allYr = Array.from(new Set(researchData.map((research => research.year))))
+const allYr = Array.from(
+    new Set(researchData.map(((research) => research.year))),
+)
 const defaultStartYr = Math.min(...allYr)
 const defaultEndYr = Math.max(...allYr)
 const defaultTopic = 'all'
 const defaultSubfields = []
 const defaultPage = 1
-const maxNumItemPerPage = 12;
+const maxNumItemPerPage = 12
 
 function ResearchFilter(props) {
   return (
@@ -106,9 +108,9 @@ ResearchFilter.propTypes = {
   endYr: PropTypes.number,
   topic: PropTypes.string,
   subfields: PropTypes.array,
-  handleFilterChange: PropTypes.func,
-  handleTimeChange: PropTypes.func,
   handleSubfieldChange: PropTypes.func,
+  handleTimeChange: PropTypes.func,
+  handleTopicChange: PropTypes.func,
 }
 
 function ResearchCard(props) {
@@ -148,8 +150,7 @@ function ResearchCard(props) {
             label={props.topic}
             size='small' />
           {
-            props.subfields
-            &&
+            props.subfields &&
             props.subfields.map((subfield) => (
               <Chip
                 className={ResearchStyle['research-tag-subfield']}
@@ -162,8 +163,7 @@ function ResearchCard(props) {
         </CardContent>
         <CardContent className={ResearchStyle['research-tags']}>
           {
-            props.url
-            &&
+            props.url &&
             <Chip
               className={ResearchStyle['research-tag-link']}
               clickable
@@ -174,8 +174,7 @@ function ResearchCard(props) {
               size='small' />
           }
           {
-            props.code
-            &&
+            props.code &&
             <Chip
               className={ResearchStyle['research-tag-link']}
               clickable
@@ -186,8 +185,7 @@ function ResearchCard(props) {
               size='small' />
           }
           {
-            props.demo
-            &&
+            props.demo &&
             <Chip
               className={ResearchStyle['research-tag-link']}
               clickable
@@ -224,26 +222,31 @@ export default function Research() {
 
 
   const handleTimeChange = (_, [newStartYr, newEndYr]) => {
-    if (startYr !== newStartYr)
+    if (startYr !== newStartYr) {
       setStartYr(newStartYr)
-    if (endYr !== newEndYr)
+    }
+    if (endYr !== newEndYr) {
       setEndYr(newEndYr)
+    }
   }
   const handleTopicChange = (newTopic) => {
-    if (topic === newTopic)
+    if (topic === newTopic) {
       setTopic(defaultTopic)
-    else
+    } else {
       setTopic(newTopic)
+    }
   }
   const handleSubfieldChange = (newSubfield) => {
-    const newSubfields = subfields.filter(subfield => subfield !== newSubfield)
+    const newSubfields = subfields
+        .filter((subfield) => subfield !== newSubfield)
 
-    // Add newSubfield to selected group if not selected.
-    if (newSubfields.length === subfields.length)
+    if (newSubfields.length === subfields.length) {
+      // Add newSubfield to selected group if not selected.
       setSubfields([...subfields, newSubfield])
-    // Remove newSubfield from selected group.
-    else
+    } else {
+      // Remove newSubfield from selected group.
       setSubfields(newSubfields)
+    }
   }
   const handlePageChange = (event, newPage) => {
     if (page !== newPage) {
@@ -251,32 +254,36 @@ export default function Research() {
 
       // Scroll to begin after page changed.
       const anchor = (event.target.ownerDocument || document)
-        .querySelector('#back-to-top-anchor');
+          .querySelector('#back-to-top-anchor')
 
       if (anchor) {
-        anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        anchor.scrollIntoView({behavior: 'smooth', block: 'start'})
       }
     }
   }
 
   // Filter out data by year range, topic and subfields.
   const filteredResearchData = researchData
-    .filter(research => startYr <= research.year && research.year <= endYr)
-    .filter(research => topic === defaultTopic || topic === research.topic)
-    .filter(research => {
+      .filter((research) => startYr <= research.year && research.year <= endYr)
+      .filter((research) => topic === defaultTopic || topic === research.topic)
+      .filter((research) => {
       // (OR operation) If no subfields were selected, than keep all subfields.
-      if (subfields.length === 0)
-        return true
-      // (AND operation) if some subfields were selected, than keep data which
-      // subfields including the selected subfields.
-      if (subfields.every((subfield) => research.subfields.includes(subfield)))
-        return true
-      return false
-    })
+        if (subfields.length === 0) {
+          return true
+        }
+        // (AND operation) if some subfields were selected, than keep data which
+        // subfields including the selected subfields.
+        if (subfields
+            .every((subfield) => research.subfields.includes(subfield))) {
+          return true
+        }
+        return false
+      })
 
   let totalPage = Math.floor(filteredResearchData.length / maxNumItemPerPage)
-  if (filteredResearchData.length % maxNumItemPerPage > 0)
+  if (filteredResearchData.length % maxNumItemPerPage > 0) {
     totalPage += 1
+  }
 
   const startIdx = (page - 1) * maxNumItemPerPage
   const endIdx = startIdx + maxNumItemPerPage
@@ -305,7 +312,7 @@ export default function Research() {
         id='back-to-top-anchor'
         item xs={12} sm={12} md={12} lg={12} xl={12}>
         {
-          filteredResearchData.slice(startIdx, endIdx).map(research => (
+          filteredResearchData.slice(startIdx, endIdx).map((research) => (
             <Grid
               item xs={12} sm={6} md={4} lg={3} xl={2}
               key={research.title + research.venue}>
@@ -336,8 +343,7 @@ export default function Research() {
                 onChange={handlePageChange}
                 page={page}
                 siblingCount={0}
-                size='small' />
-              :
+                size='small' /> :
               '0 matched result'
           }
         </Hidden>
@@ -349,8 +355,7 @@ export default function Research() {
                 onChange={handlePageChange}
                 page={page}
                 siblingCount={1}
-                size='large' />
-              :
+                size='large' /> :
               '0 matched result'
           }
         </Hidden>

@@ -20,7 +20,7 @@ export default function Contact() {
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <h2 className={ContactStyle['contact-title']}>
             GET IN TOUCH
-            </h2>
+          </h2>
         </Grid>
         <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
           <List className={ContactStyle['contact-info-list']}>
@@ -30,7 +30,7 @@ export default function Contact() {
                 className={ContactStyle['contact-info']}
                 href='tel:+88662757575,62520,2903'>
                 +886-6-275-7575 ext 62520 ext 2903
-                </Link>
+              </Link>
             </ListItem>
             <ListItem>
               <EmailIcon />
@@ -38,7 +38,7 @@ export default function Contact() {
                 className={ContactStyle['contact-info']}
                 href='mailto:ikmlab@mail.csie.ncku.edu.tw'>
                 ikmlab@mail.csie.ncku.edu.tw
-                </Link>
+              </Link>
             </ListItem>
             <ListItem>
               <AccessTimeIcon />
@@ -47,7 +47,7 @@ export default function Contact() {
                 Office Hour:<br />
                   AM 08:00 - PM 05:00 GMT+0800<br />
                   (Taipei Standard Time)
-                </span>
+              </span>
             </ListItem>
             <ListItem>
               <LocationOnIcon />
@@ -56,7 +56,7 @@ export default function Contact() {
                 Rm. 65903, CSIE new building,<br />
                   No. 1, Daxue Rd., East Dist., Tainan City 701,<br />
                   Taiwan (R.O.C.)
-                </address>
+              </address>
             </ListItem>
           </List>
         </Grid>

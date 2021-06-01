@@ -1,57 +1,53 @@
 @import './Variable.module';
 
-.profile-container {
+.container {
   align-content: center;
   align-items: flex-start;
   justify-content: center;
+  width: 100%;
   padding: {
     bottom: 20px;
     top: 20px;
   }
+}
 
-  .profile {
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+.profile {
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
-    .name {
-      margin: {
-        bottom: 0;
-        top: 5px;
-      }
-    }
-
-    .department {
-      font-weight: 300;
-      text-align: center;
-      margin: {
-        bottom: 10px;
-        top: 5px;
-      }
-    }
-
-    .image {
-      border-radius: 50%;
-      height: 200px;
-      width: 200px;
+  .name {
+    margin: {
+      bottom: 0;
+      top: 5px;
     }
   }
 
-  .contact {
-    display: flex;
-    font-size: 18px;
-    justify-content: flex-start;
+  .department {
+    font-weight: 300;
+    text-align: center;
+    margin: {
+      bottom: 10px;
+      top: 5px;
+    }
   }
+
+  .image {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.contact {
+  display: flex;
+  font-size: 18px;
+  justify-content: flex-start;
 }
 
 .intro {
   padding: 20px;
-
-  @media screen and (min-width: $lg) {
-    display: flex;
-    justify-content: center;
-  }
 
   &-text {
     font-size: 18px;
@@ -59,6 +55,11 @@
     @media screen and (min-width: $lg) {
       max-width: $lg;
     }
+  }
+
+  @media screen and (min-width: $lg) {
+    display: flex;
+    justify-content: center;
   }
 }
 
