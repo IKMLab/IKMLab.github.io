@@ -42,7 +42,7 @@ export default function Professor() {
     PCMembers: false,
   })
 
-  const handleClick = (clickItem) => {
+  const handleListClick = (clickItem) => {
     return () => {
       setOpen({ ...isOpen, ...clickItem })
     }
@@ -455,7 +455,7 @@ export default function Professor() {
           </ListItem>
           <ListItem
             button
-            onClick={handleClick({ ConferenceChair: !isOpen.ConferenceChair })}>
+            onClick={handleListClick({ ConferenceChair: !isOpen.ConferenceChair })}>
             <ListItemIcon>
               <EventSeatIcon />
             </ListItemIcon>
@@ -479,7 +479,7 @@ export default function Professor() {
           </Collapse>
           <ListItem
             button
-            onClick={handleClick({ ProgramChairAndCoChair: !isOpen.ProgramChairAndCoChair })}>
+            onClick={handleListClick({ ProgramChairAndCoChair: !isOpen.ProgramChairAndCoChair })}>
             <ListItemIcon>
               <EventSeatIcon />
             </ListItemIcon>
@@ -539,7 +539,7 @@ export default function Professor() {
           </Collapse>
           <ListItem
             button
-            onClick={handleClick({ PCMembers: !isOpen.PCMembers })}>
+            onClick={handleListClick({ PCMembers: !isOpen.PCMembers })}>
             <ListItemIcon>
               <GroupIcon />
             </ListItemIcon>

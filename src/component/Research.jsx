@@ -245,9 +245,18 @@ export default function Research() {
     else
       setSubfields(newSubfields)
   }
-  const handlePageChange = (_, newPage) => {
-    if (newPage && page !== newPage)
+  const handlePageChange = (event, newPage) => {
+    if (page !== newPage) {
       setPage(newPage)
+
+      // Scroll to begin after page changed.
+      const anchor = (event.target.ownerDocument || document)
+        .querySelector('#back-to-top-anchor');
+
+      if (anchor) {
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }
   }
 
   // Filter out data by year range, topic and subfields.
@@ -291,7 +300,10 @@ export default function Research() {
         handleTopicChange={handleTopicChange}
         handleSubfieldChange={handleSubfieldChange}
       />
-      <Grid container item xs={12} sm={12} md={12} lg={12} xl={12}>
+      <Grid
+        container
+        id='back-to-top-anchor'
+        item xs={12} sm={12} md={12} lg={12} xl={12}>
         {
           filteredResearchData.slice(startIdx, endIdx).map(research => (
             <Grid
