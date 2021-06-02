@@ -1,6 +1,81 @@
 export const researchData = [
   {
     title:
+      'Month of birth and mental disorders: A population-based study and ' +
+      'validation using global meta-analysis',
+    authors: [
+      'Chih-Wei Hsu',
+      'Ping-Tao Tseng',
+      'Yu-Kang Tu',
+      'Pao-Yen Lin',
+      'Chi-Fa Hung',
+      'Chih-Sung Liang',
+      'Yun-Yu Hsieh',
+      'Yao-Hsu Yang',
+      'Liang-Jen Wang',
+      'Hung-Yu Kao',
+    ],
+    venue: 'APS',
+    venueType: 'journal',
+    year: 2021,
+    url: 'https://onlinelibrary.wiley.com/doi/10.1111/acps.13313',
+    topic: 'Data Mining',
+    subfields: [
+      'Bioinformatics',
+    ],
+    apa:
+      'Hsu, C.W., Tseng, P.T., Tu, Y.K., Lin, P.Y., Hung, C.F., Liang, C.S., ' +
+      'Hsieh, Y.Y., Yang, Y.H., Wang, L.J., & Kao, H.Y. (2021). Month of ' +
+      'Birth and Mental Disorders: A Population-Based Study and Validation ' +
+      'Using Global Meta-Analysis. Acta Psychiatrica Scandinavica.',
+  },
+  {
+    title:
+      'Unsupervised Extractive Summarization-Based Representations for ' +
+      'Accurate and Explainable Collaborative Filtering',
+    authors: [
+      'Reinald Adrian Pugoy',
+      'Hung-Yu Kao',
+    ],
+    venue: 'ACL',
+    venueType: 'conference',
+    year: 2021,
+    url: '#',
+    topic: 'Data Mining',
+    subfields: [
+      'Bioinformatics',
+    ],
+    apa:
+      'R. A. Pugoy and H.-Y. Kao, "Unsupervised Extractive ' +
+      'Summarization-Based Representations for Accurate and Explainable ' +
+      'Collaborative Filtering," Proc. of the 59th Annual Meeting of the ' +
+      'Association for Computational Linguistics (ACL-2021), 2021.',
+  },
+  {
+    title:
+      'Meet The Truth: Leverage Objective Facts and Subjective Views for ' +
+      'Interpretable Rumor Detection. ',
+    authors: [
+      'Jiawen Li',
+      'Shiwen Ni',
+      'Hung-Yu Kao',
+    ],
+    venue: 'ACL',
+    venueType: 'conference',
+    year: 2021,
+    url: '#',
+    topic: 'NLP',
+    subfields: [
+      'Rumor Detection',
+    ],
+    apa:
+      'J.-W. Li, S.-W. Ni and H.-Y. Kao, "Meet The Truth: Leverage Objective ' +
+      'Facts and Subjective Views for Interpretable Rumor Detection. " Proc. ' +
+      'of the 59th Annual Meeting of the Association for Computational ' +
+      'Linguistics (Findings of ACL-2021) , 2021.',
+  },
+  {
+    title:
       'Birds of a Feather Rumor Together? Exploring Homogeneity and ' +
       'Conversation Structure in Social Media for Rumor Detection',
     authors: [
