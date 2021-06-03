@@ -23,11 +23,11 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
     ],
-    apa:
-      'Hsu, C.W., Tseng, P.T., Tu, Y.K., Lin, P.Y., Hung, C.F., Liang, C.S., ' +
-      'Hsieh, Y.Y., Yang, Y.H., Wang, L.J., & Kao, H.Y. (2021). Month of ' +
-      'Birth and Mental Disorders: A Population-Based Study and Validation ' +
-      'Using Global Meta-Analysis. Acta Psychiatrica Scandinavica.',
+    professorPreferredFormat:
+      'C.-W. Hsu, P.-T. Tseng, Y.-K. Tu, P.-Y. Lin, C.-F. Hung, C.-S. Liang, ' +
+      'Y.-Y. Hsieh, Y.-H. Yang, L.-J. Wang and H.-Y. Kao, "Month of birth ' +
+      'and mental disorders: A population-based study and validation using ' +
+      'global meta-analysi," Acta Psychiatr Scand., 2021;00:1–15.,2021',
   },
   {
     title:
@@ -45,10 +45,10 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
     ],
-    apa:
+    professorPreferredFormat:
       'R. A. Pugoy and H.-Y. Kao, "Unsupervised Extractive ' +
       'Summarization-Based Representations for Accurate and Explainable ' +
-      'Collaborative Filtering," Proc. of the 59th Annual Meeting of the ' +
+      'Collaborative Filtering", Proc. of the 59th Annual Meeting of the ' +
       'Association for Computational Linguistics (ACL-2021), 2021.',
   },
   {
@@ -68,11 +68,11 @@ export const researchData = [
     subfields: [
       'Rumor Detection',
     ],
-    apa:
+    professorPreferredFormat:
       'J.-W. Li, S.-W. Ni and H.-Y. Kao, "Meet The Truth: Leverage Objective ' +
-      'Facts and Subjective Views for Interpretable Rumor Detection. " Proc. ' +
+      'Facts and Subjective Views for Interpretable Rumor Detection," Proc. ' +
       'of the 59th Annual Meeting of the Association for Computational ' +
-      'Linguistics (Findings of ACL-2021) , 2021.',
+      'Linguistics (Findings of ACL-2021), 2021.',
   },
   {
     title:
@@ -91,10 +91,11 @@ export const researchData = [
     subfields: [
       'Rumor Detection',
     ],
-    apa:
-      'Li, J., Ni, S., & Kao, H.Y. (2020). Birds of a Feather Rumor ' +
-      'Together? Exploring Homogeneity and Conversation Structure in ' +
-      'Social Media for Rumor Detection. IEEE Access, 8, 212865-212875.',
+    professorPreferredFormat:
+      'J.-W. Li, S.-W. Ni and H.-Y. Kao, "Birds of a Feather Rumor ' +
+      'Together? Exploring Homogeneity and Conversation Structure in Social ' +
+      'Media for Rumor Detection," Vol. 8, pp. 212865-212875, ' +
+      'DOI:10.1109/ACCESS.2020.3040263, IEEE ACCESS, 2020.',
   },
   {
     title:
@@ -119,12 +120,13 @@ export const researchData = [
     subfields: [
       'Bioinfomatics',
     ],
-    apa:
-      'Chung, Y.T., Yeh, C.Y., Shu, Y.C., Chuang, K.T., Chen, C.C., ' +
-      'Kao, H.Y., Ko, W.C., Chen, P.L., & Ko, N.Y. (2020). Continuous ' +
+    professorPreferredFormat:
+      'Y.-T. Chung, C.-Y. Yeh, Y.-C. Shu, K.-T. Chuang, C.-C. Chen, ' +
+      'H.-Y. Kao, W.-C. Chen, P.-L. Chen and N.-Y. Ko, "Continuous ' +
       'temperature monitoring by a wearable device for early detection of ' +
-      'febrile events in the SARS-CoV-2 outbreak in Taiwan, 2020. Journal ' +
-      'of Microbiology, Immunology, and Infection, 53(3), 503.',
+      'febrile events in the SARS-CoV-2 outbreak in Taiwan, 2020," Journal ' +
+      'of Microbiology, Immunology and Infection, 53, 3, p. 503-504 2 p, ' +
+      '2020.',
   },
   {
     title:
@@ -145,11 +147,11 @@ export const researchData = [
       'Knowledge Distillation',
       'Summarization',
     ],
-    apa:
-      'Lin, Y.J., Tan, D., Chou, T.H., Kao, H.Y., & Wang, H.Y. (2020). ' +
-      'Knowledge Distillation on Extractive Summarization. In 2020 IEEE ' +
-      'Third International Conference on Artificial Intelligence and ' +
-      'Knowledge Engineering (AIKE) (pp. 71–76).',
+    professorPreferredFormat:
+      'Y.-J. Lin, D. Tan, T.-H. Chou, H.-Y. Kao and H.-Y. Wang. ' +
+      '"Knowledge Distillation on Extractive Summarization," Proc. of the ' +
+      'Third IEEE International Conference on Artificial Intelligence and ' +
+      'Knowledge Engineering (AIKE 2020), Irvine, USA, Dec. 10-12, 2020.',
   },
   {
     title:
@@ -167,10 +169,11 @@ export const researchData = [
     subfields: [
       'Rumor Detection',
     ],
-    apa:
-      'Li, J., Sujana, Y., & Kao, H.Y. (2020). Exploiting Microblog ' +
-      'Conversation Structures to Detect Rumors. In Proceedings of the 28th ' +
-      'International Conference on Computational Linguistics (pp. 5420–5429).',
+    professorPreferredFormat:
+      'J.-W. Li, Y. Sujana and H.-Y. Kao, "Exploiting Microblog ' +
+      'Conversation Structures to Detect Rumors," Proc. of The 28th ' +
+      'International Conference on Computational Linguistics (COLING 2020), ' +
+      'Barcelona, Spain, Dec. 8-13, 2020.',
   },
   {
     title:
@@ -187,11 +190,11 @@ export const researchData = [
     subfields: [
       'Linguistic Alignment',
     ],
-    apa:
-      'Niven, T., & Kao, H.Y. (2020). Measuring Alignment to Authoritarian ' +
-      'State Media as Framing Bias. In Proceedings of the 3rd NLP4IF ' +
-      'Workshop on NLP for Internet Freedom: Censorship, Disinformation, and ' +
-      'Propaganda (pp. 11–21).',
+    professorPreferredFormat:
+      'T. Niven and H.-Y. Kao, "Measuring Alignment to Authoritarian State ' +
+      'Media as Framing Bias," Proceedings of the 3rd NLP4IF Workshop on NLP ' +
+      'for Internet Freedom: Censorship, Disinformation, and Propaganda ' +
+      '(NLP4IF, COLING 2020), , Barcelona, Spain, Dec. 8-13, 2020.',
   },
   {
     title:
@@ -210,10 +213,12 @@ export const researchData = [
     subfields: [
       'Rumor Detection',
     ],
-    apa:
-      'Sujana, Y., Li, J., & Kao, H.Y. (2020). Rumor Detection on Twitter ' +
-      'Using Multiloss Hierarchical BiLSTM with an Attenuation Factor. arXiv ' +
-      'preprint arXiv:2011.00259.',
+    professorPreferredFormat:
+      'Y. Sujana, J.-W. Li and H.-Y. Kao, "Rumor Detection on Twitter ' +
+      'Using Multiloss Hierarchical BiLSTM with an Attenuation Factor," ' +
+      'Proc. of The 1st Conference of the Asia-Pacific Chapter of the ' +
+      'Association for Computational Linguistics (AACL 2020), China, ' +
+      'Dec. 4-7, 2020.',
   },
   {
     title:
@@ -231,12 +236,11 @@ export const researchData = [
     subfields: [
       'Recommender System',
     ],
-    apa:
-      'Pugoy, R., & Kao, H.Y. (2020). BERT-Based Neural Collaborative ' +
-      'Filtering and Fixed-Length Contiguous Tokens Explanation. In ' +
-      'Proceedings of the 1st Conference of the Asia-Pacific Chapter of the ' +
-      'Association for Computational Linguistics and the 10th International ' +
-      'Joint Conference on Natural Language Processing (pp. 143–153).',
+    professorPreferredFormat:
+      'R. A. Pugoy and H.-Y. Kao, "BERT-Based Neural Collaborative ' +
+      'Filtering and Fixed-Length Contiguous Tokens Explanation," Proc. of ' +
+      'The 1st Conference of the Asia-Pacific Chapter of the Association for ' +
+      'Computational Linguistics (AACL 2020), China, Dec. 4-7, 2020.',
   },
   {
     title:
@@ -259,11 +263,11 @@ export const researchData = [
     subfields: [
       'Stance Detection',
     ],
-    apa:
-      'Lin, S.X., Wu, B.Y., Chou, T.H., Lin, Y.J., & Kao, H.Y. (2020). ' +
-      'Bidirectional Perspective with Topic Information for Stance ' +
-      'Detection. In 2020 International Conference on Pervasive Artificial ' +
-      'Intelligence (ICPAI) (pp. 1–8).',
+    professorPreferredFormat:
+      'S.-X. Lin, B.-Y. Wu, T.-H. Chou, Y.-J. Lin, and H.-Y. Kao, ' +
+      '"Bidirectional Perspective with Topic Information for Stance ' +
+      'Detection," Proc. of the First International Conference on Pervasive ' +
+      'Artificial Intelligence (ICPAI-2020), Dec. 3-5, 2020.',
   },
   {
     title:
@@ -288,11 +292,11 @@ export const researchData = [
       'Natural Language Inference',
       'Summarization',
     ],
-    apa:
-      'Wang, Y.Y., Wu, J.Y., Chou, T.H., Lin, Y.J., & Kao, H.Y. (2020). ' +
-      'Enhance Content Selection for Multi-Document Summarization with ' +
-      'Entailment Relation. In 2020 International Conference on Technologies ' +
-      'and Applications of Artificial Intelligence (TAAI) (pp. 119–124).',
+    professorPreferredFormat:
+      'Y.-Y. Wang, J.-Y. Wu, T.-H. Chou, Y.-J. Lin, and H.-Y. Kao, "Enhance ' +
+      'Content Selection for Multi-Document Summarization with Entailment ' +
+      'Relation," Proc. of the 2020 Conference on Technologies and ' +
+      'Applications of Artificial Intelligence (TAAI-2020), Dec. 3-5, 2020.',
   },
   {
     title:
@@ -310,10 +314,10 @@ export const researchData = [
     subfields: [
       'Pattern Recognition',
     ],
-    apa:
-      'Ni, S., & Kao, H.Y. (2020). PSForest: Improving Deep Forest via ' +
-      'Feature Pooling and Error Screening. In Asian Conference on Machine ' +
-      'Learning (pp. 769–781).',
+    professorPreferredFormat:
+      'S.-W. Ni, and H.-Y. Kao, "PSForest: Improving Deep Forest via Feature ' +
+      'Pooling and Error Screening," Proc. of The 12th Asian Conference on ' +
+      'Machine Learning, (ACML 2020) , Bangkok, Thailand, Nov. 18-20, 2020.',
   },
   {
     title:
@@ -332,10 +336,10 @@ export const researchData = [
       'Natural Language Inference',
       'Representational Learning',
     ],
-    apa:
-      'Yang, K.C., & Kao, H.Y. (2020). Generalize Sentence Representation ' +
-      'with Self-Inference. In Proceedings of the AAAI Conference on ' +
-      'Artificial Intelligence (pp. 9394–9401).',
+    professorPreferredFormat:
+      'K.-C. Yang and H.-Y. Kao, "Generalize Sentence Representation with ' +
+      'Self-Inference," Proc. of the thirty-Fourth AAAI Conference on ' +
+      'Artificial Intelligence (AAAI-20), NY, USA, Feb. 7-12, 2020.',
   },
   {
     title:
@@ -357,11 +361,11 @@ export const researchData = [
       'Dataset Bias',
       'Natural Language Understanding',
     ],
-    apa:
-      'Niven, T., & Kao, H.Y. (2019). Probing Neural Network Comprehension ' +
-      'of Natural Language Arguments. In Proceedings of the 57th Annual ' +
-      'Meeting of the Association for Computational Linguistics (pp. ' +
-      '4658–4664).',
+    professorPreferredFormat:
+      'T. Niven and H.-Y. Kao, "Probing Neural Network Comprehension of ' +
+      'Natural Language Arguments," Proc. of the 57th Annual Meeting of the ' +
+      'Association for Computational Linguistics (ACL-2019), Florence, ' +
+      'Italy, July 28 - August 2, 2019.',
   },
   {
     title:
@@ -382,11 +386,12 @@ export const researchData = [
       'Linguistic Alignment',
       'Argument Comprehension',
     ],
-    apa:
-      'Niven, T., & Gao, H.Y. (2019). Detecting Argumentative Discourse ' +
-      'Units with Linguistic Alignment. In 6th Workshop on Argument Mining, ' +
-      'in conjunction with 57st Annual Meeting of the Association for ' +
-      'Computational Linguistics (ACL-2019).',
+    professorPreferredFormat:
+      'T. Niven and H.-Y. Kao, "Detecting Argumentative Discourse Units ' +
+      'with Linguistic Alignment," 6th Workshop on Argument Mining, in ' +
+      'conjunction with 57st Annual Meeting of the Association for ' +
+      'Computational Linguistics (ACL-2019), Florence, Italy, July ' +
+      '29-August. 2, 2019.',
   },
   {
     title:
@@ -408,10 +413,12 @@ export const researchData = [
     subfields: [
       'Pronoun Resolution',
     ],
-    apa:
-      'Yang, K.C., Niven, T., Chou, T., & Kao, H.Y. (2019). Fill the GAP: ' +
-      'Exploiting BERT for Pronoun Resolution. In Proceedings of the First ' +
-      'Workshop on Gender Bias in Natural Language Processing (pp. 102–106).',
+    professorPreferredFormat:
+      'K.-C. Yang, T. Niven, T.-H. Chou and H.-Y. Kao, "Fill the GAP: ' +
+      'Exploiting BERT for pronoun resolution," First Workshop on Gender ' +
+      'Bias for Natural Language Processing, in conjunction with 57st Annual ' +
+      'Meeting of the Association for Computational Linguistics (ACL-2019), ' +
+      'Florence, Italy, July 29-August. 2, 2019.',
   },
   {
     title:
@@ -431,10 +438,11 @@ export const researchData = [
     subfields: [
       'Recommender System',
     ],
-    apa:
-      'Li, G.L., Lin, Y.Y., & Kao, H.Y. (2019). Latent Aspect Mining for ' +
-      'Short and Unrated Reviews. In International Conference on Innovative ' +
-      'Computing and Management Science (ICMS-2019).',
+    professorPreferredFormat:
+      'G.-L. Li, Y.-Y. Lin and H.-Y. Kao, "Latent Aspect Mining for Short ' +
+      'and Unrated Reviews," Proc. of the International Conference on ' +
+      'Innovative Computing and Management Science (ICMS-2019), Osaka, ' +
+      'Japan, July 19-22, 2019. (Best Paper Award)',
   },
   {
     title:
@@ -444,7 +452,7 @@ export const researchData = [
       'Timothy Niven',
       'Hung-Yu Kao',
     ],
-    venue: 'arXiv',
+    venue: 'WSDM',
     venueType: 'conference',
     year: 2019,
     url:
@@ -454,9 +462,11 @@ export const researchData = [
       'Natural Language Inference',
       'Rumor Detection',
     ],
-    apa:
-      'Yang, K.C., Niven, T., & Kao, H.Y. (2019). Fake news detection as ' +
-      'natural language inference. arXiv preprint arXiv:1907.07347.',
+    professorPreferredFormat:
+      'K.-C. Yang, T. Niven and H.-Y. Kao, "Fake News Detection as Natural ' +
+      'Language Inference," Proc. of the 12th ACM International Conference ' +
+      'on Web Search and Data Mining (WSDM-2019)(in Fake News Classification ' +
+      'Challenge, WSDM Cup 2019), Melbourne, Australia, February 11–15, 2019.',
   },
   {
     title:
@@ -478,10 +488,10 @@ export const researchData = [
       'Natural Language Inference',
       'Argument Comprehension',
     ],
-    apa:
-      'Niven, T., & Kao, H.Y. (2018). NLITrans at SemEval-2018 task 12: ' +
-      'Transfer of semantic knowledge for argument comprehension. arXiv ' +
-      'preprint arXiv:1804.08266.',
+    professorPreferredFormat:
+      'T. Niven and H.-Y. Kao, "NLITrans at SemEval-2018 task 12: ' +
+      'Transfer of semantic knowledge for argument comprehension," arXiv ' +
+      'preprint arXiv:1804.08266, 2018',
   },
   {
     title:
@@ -504,11 +514,11 @@ export const researchData = [
     subfields: [
       'Sentiment Analysis',
     ],
-    apa:
-      'Huang, T.D., Hong, P.W., Lee, Y.T., Wang, Y.L., Lok, C.L., & Kao, ' +
-      'H.Y. (2018). SOC: hunting the underground inside story of the ' +
-      'ethereum Social-network Opinion and Comment. arXiv preprint ' +
-      'arXiv:1811.11136.',
+    professorPreferredFormat:
+      'T.-D. Huang, P.-W. Hong, Y.-T. Lee, Y.-L. Wang, C.-L. Lok and ' +
+      'H.-Y. Kao, "SOC: hunting the underground inside story of the ' +
+      'ethereum Social-network Opinion and Comment," arXiv preprint ' +
+      'arXiv:1811.11136, 2018',
   },
   {
     title:
@@ -527,10 +537,10 @@ export const researchData = [
     subfields: [
       'Opinion Mining',
     ],
-    apa:
-      'De Huang, T., & Kao, H. (2019). C-3PO: Click-sequence-aware deeP ' +
-      'neural network (DNN)-based Pop-uPs recOmmendation: I know you’ll ' +
-      'click. Soft Computing, 23(22), 11793–11799.',
+    professorPreferredFormat:
+      'H.-D. Huang and H.-Y. Kao, "C-3PO: Click-sequence-aware DeeP Neural ' +
+      'Network (DNN)-based Pop-uPs Recommendation," Soft Computing, Volume ' +
+      '23, Issue 22, pp 11793–11799, November 2019.',
   },
   {
     title:
@@ -550,11 +560,10 @@ export const researchData = [
       'Malware Detection',
       'Security Analysis',
     ],
-    apa:
-      'Hsien-De Huang, T., & Kao, H.Y. (2018). R2-d2: Color-inspired ' +
-      'convolutional neural network (cnn)-based android malware detections. ' +
-      'In 2018 IEEE International Conference on Big Data (Big Data) (pp. ' +
-      '2633–2642).',
+    professorPreferredFormat:
+      'H.-D. Huang and H.-Y. Kao, "R2-D2: Color-inspired Convolutional ' +
+      'Neural Network (CNN)-based Android Malware Detections," Proc. of the ' +
+      '2018 IEEE BigData 2018, Seattle, WA, USA. Dec 10-13. 2018.',
   },
   {
     title:
@@ -574,9 +583,9 @@ export const researchData = [
       'Natural Language Inference',
       'Ontology',
     ],
-    apa:
-      'Lee, C.S., & Kao, H.Y.. (2017). Special issue on soft computing ' +
-      'for knowledge management and web applications.',
+    professorPreferredFormat:
+      'C.-S. Lee and H.-Y. Kao, "Special issue on soft computing ' +
+      'for knowledge management and web applications," 2017.',
   },
   {
     title: 'CDRnN: A high performance' +
@@ -595,11 +604,11 @@ export const researchData = [
       'Named Entity Recognition',
       'Bioinformatics',
     ],
-    apa:
-      'Lee, H.C., & Kao, H.Y. (2017). CDRnN: A high performance ' +
-      'chemical-disease recognizer in biomedical literature. In 2017 IEEE ' +
-      'International Conference on Bioinformatics and Biomedicine (BIBM) ' +
-      '(pp. 374–379).',
+    professorPreferredFormat:
+      'H.-C. Lee and H.-Y. Kao, "CDRnN: a high performance Chemical-Disease ' +
+      'Recognizer in biomedical literature," Proc. of 2017 IEEE ' +
+      'International Conference on Bioinformatics & Biomedicine (BIBM-2017), ' +
+      'Nov. 11-16, 2017.',
   },
   {
     title: 'Organism named entity recognition on an enhanced CRF-based model' +
@@ -613,18 +622,19 @@ export const researchData = [
     venueType: 'conference',
     year: 2017,
     url:
-      'https://pdfs.semanticscholar.org/227b/a29beaf5eba6bfcc1c953bbfb32ec7c19ec3.pdf',
+      'https://pdfs.semanticscholar.org/227b/' +
+      'a29beaf5eba6bfcc1c953bbfb32ec7c19ec3.pdf',
     topic: 'NLP',
     subfields: [
       'Named Entity Recognition',
       'Bioinformatics',
     ],
-    apa:
-      'Yang, F.C., Hsu, S.C., & Kao, H.Y. (2017). Organism named entity ' +
+    professorPreferredFormat:
+      'F.-C. Yang, S.-C. Hsu and H.-Y. Kao, "Organism named entity ' +
       'recognition on an enhanced CRF-based model and normalization for ' +
-      'BioCreative VI bioentity normalization task. In Proceedings of the ' +
-      'BioCreative VI Challenge and Workshop (October 18–20). DoubleTree by ' +
-      'Hilton Hotel, Bethesda, Maryland, USA (pp. 28–31).',
+      'BioCreative VI bioentity normalization task," In Proceedings of the ' +
+      'BioCreative VI Challenge and Workshop (October 18–20), DoubleTree by ' +
+      'Hilton Hotel, Bethesda, Maryland, USA (pp. 28–31), 2017.',
   },
   {
     title:
@@ -644,11 +654,11 @@ export const researchData = [
     subfields: [
       'Scam Detection',
     ],
-    apa:
-      'Hsien-De Huang, T., Yu, C.M., & Kao, H.Y. (2017). Data-driven and ' +
-      'deep learning methodology for deceptive advertising and phone scams ' +
-      'detection. In 2017 Conference on Technologies and Applications of ' +
-      'Artificial Intelligence (TAAI) (pp. 166–171).',
+    professorPreferredFormat:
+      'H.-D. Huang, C.-M. Yu and H.-Y. Kao, "Data-Driven and Deep Learning ' +
+      'Methodology for Deceptive Advertising and Phone Scams Detection," ' +
+      'Proc. of the 2017 Conference on Technologies and Applications of ' +
+      'Artificial Intelligence (TAAI-2017), Dec. 1-3, 2017.',
   },
   {
     title:
@@ -669,11 +679,13 @@ export const researchData = [
       'Stance Detection',
       'Rumor Detection',
     ],
-    apa:
-      'Chen, Y.C., Liu, Z.Y., & Kao, H.Y. (2017). Ikm at semeval-2017 task ' +
-      '8: Convolutional neural networks for stance detection and rumor ' +
-      'verification. In Proceedings of the 11th international workshop on ' +
-      'semantic evaluation (SemEval-2017) (pp. 465–469).',
+    professorPreferredFormat:
+      'Y.-C. Chen, Z.-Y. Liu and H.-Y. Kao, "IKM at SemEval-2017 Task 8: ' +
+      'Convolutional Neural Networks for stance detection and rumor ' +
+      'verification," Proc. of International Workshop on Semantic ' +
+      'Evaluation 2017 (SemEval 2017), in conjunction with 55st Annual ' +
+      'Meeting of the Association for Computational Linguistics (ACL 2017), ' +
+      'July 30-August. 4, 2017.',
   },
   {
     title:
@@ -693,31 +705,10 @@ export const researchData = [
     subfields: [
       'Anonymization',
     ],
-    apa:
-      'Wang, S.L., Tsai, Y.C., Hong, T.P., & Kao, H.Y. (2017). ' +
-      'k^{-}–anonymization of multiple shortest paths. Soft Computing, ' +
-      '21(15), 4215–4226.',
-  },
-  {
-    title:
-      'Word co-occurrence augmented topic model in short text',
-    authors: [
-      'Guan-Bin Chen',
-      'Hung-Yu Kao',
-    ],
-    venue: 'Intelligent Data Analysis',
-    venueType: 'journal',
-    year: 2017,
-    url:
-      'https://content.iospress.com/articles/intelligent-data-analysis/ida872',
-    topic: 'NLP',
-    subfields: [
-      'Topic Model',
-      'Text Classification',
-    ],
-    apa:
-      'Chen, G.B., & Kao, H.Y. (2017). Word co-occurrence augmented topic ' +
-      'model in short text. Intelligent Data Analysis, 21(S1), S55–S70.',
+    professorPreferredFormat:
+      'S.-L. Wang, Y.-C. Tsai, T.-P. Hong and H.-Y. Kao, ' +
+      '"k^{-}–anonymization of multiple shortest paths. Soft Computing", ' +
+      '21(15), 4215–4226, 2017',
   },
   {
     title:
@@ -737,11 +728,11 @@ export const researchData = [
       'Opinion Mining',
       'Question Answering',
     ],
-    apa:
-      'Tumenbayar, G., & Kao, H. (2016). Topic suggestion by Bayesian ' +
-      'network enhanced tag inference in community question answering. In ' +
+    professorPreferredFormat:
+      'G. Tumenbayar and H.-Y. Kao, "Topic Suggestion by Bayesian Network ' +
+      'Enhanced Tag Inference in Community Question Answering," Proc. of the ' +
       '2016 Conference on Technologies and Applications of Artificial ' +
-      'Intelligence (TAAI) (pp. 178–185).',
+      'Intelligence (TAAI-2016), November 25-27, 2016.',
   },
   {
     title:
@@ -763,9 +754,10 @@ export const researchData = [
       'Bioinformatics',
       'Named Entity Recognition',
     ],
-    apa:
-      'Lee, H.C., Hsu, Y.Y., & Kao, H.Y. (2016). AuDis: an automatic ' +
-      'CRF-enhanced disease normalization in biomedical text. Database, 2016.',
+    professorPreferredFormat:
+      'H.-C. Lee, Y.-Y. Hsu, and H.-Y. Kao, "AuDis: an automatic ' +
+      'CRF-enhanced disease normalization in biomedical text," Database Vol. ' +
+      '2016: article ID baw091; doi:10.1093/database/baw091, 2016.',
   },
   {
     title:
@@ -784,10 +776,11 @@ export const researchData = [
     subfields: [
       'Opinion Mining',
     ],
-    apa:
-      'Huang, S.T., Li, P.S., & Kao, H.Y. (2015). Identification of item ' +
-      'features in microblogging data. In 2015 Conference on Technologies ' +
-      'and Applications of Artificial Intelligence (TAAI) (pp. 396–403).',
+    professorPreferredFormat:
+      'S.-T. Huang, P.-S. Li and H.-Y. Kao, "Identification of item features ' +
+      'in microblogging data," Proc. of the 2015 Conference on Technologies ' +
+      'and Applications of Artificial Intelligence (TAAI-2015), November ' +
+      '20-22, 2015.',
   },
   {
     title:
@@ -808,10 +801,11 @@ export const researchData = [
       'Bioinformatics',
       'Named Entity Recognition',
     ],
-    apa:
-      'Wei, C.H., Kao, H.Y., & Lu, Z. (2015). GNormPlus: an integrative ' +
-      'approach for tagging genes, gene families, and protein domains. ' +
-      'BioMed research international, 2015.',
+    professorPreferredFormat:
+      'C.-H. Wei, H.-Y. Kao, and Zhiyong Lu, "GNormPlus: An Integrative ' +
+      'Approach for Tagging Genes, Gene Families, and Protein Domains," ' +
+      'BioMed Research International, vol. 2015, Article ID 918710, 7 pages, ' +
+      '2015. doi:10.1155/2015/918710',
   },
   {
     title:
@@ -833,11 +827,11 @@ export const researchData = [
       'Bioinformatics',
       'Named Entity Recognition',
     ],
-    apa:
-      'Lee, H.C., Hsu, Y.Y., & Kao, H.Y. (2015). An enhanced CRF-based ' +
-      'system for disease name entity recognition and normalization on ' +
-      'BioCreative V DNER Task. In Proceedings of the fifth biocreative ' +
-      'challenge evaluation workshop (pp. 226–233).',
+    professorPreferredFormat:
+      'H.-C. Lee, Y.-Y. Hsu and H.-Y. Kao, "An enhanced CRF-based system ' +
+      'for disease name entity recognition and normalization on ' +
+      'BioCreative V DNER Task, " Proc. of the Fifth BioCreative Challenge ' +
+      'Evaluation Workshop, 2015.',
   },
   {
     title:
@@ -855,10 +849,11 @@ export const researchData = [
     subfields: [
       'Natural Language Generation',
     ],
-    apa:
-      'Chen, J.D., & Kao, H.Y. (2015). LDA based semi-supervised learning ' +
-      'from streaming short text. In 2015 IEEE International Conference on ' +
-      'Data Science and Advanced Analytics (DSAA) (pp. 1–8).',
+    professorPreferredFormat:
+      'J.-D. Chen and H.-Y. Kao, "LDA Based Semi-supervised Learning from ' +
+      'Streaming Short Text," Proc. of the 2nd IEEE International ' +
+      'Conference on Data Science and Advanced Analytics (DSAA-2015), ' +
+      'Oct. 19-21, 2015.',
   },
   {
     title: 'Re-organized Topic Modeling for Micro-blogging Data',
@@ -875,10 +870,10 @@ export const researchData = [
     subfields: [
       'Topic Model',
     ],
-    apa:
-      'Chen, G. B., & Kao, H. Y. (2015). Re-Organized Topic Modeling for ' +
-      'Micro-Blogging Data. In Proceedings of the ASE BigData & ' +
-      'SocialInformatics 2015 (pp. 1-8).',
+    professorPreferredFormat:
+      'G.-B. Chen and H.-Y. Kao, "Re-organized Topic Modeling for ' +
+      'Micro-blogging Data," Proc. of the 5th ASE International Conference ' +
+      'on Big Data (BigData 2015), Oct 7-9, 2015.',
   },
   {
     title:
@@ -898,11 +893,11 @@ export const researchData = [
     subfields: [
       'Anonymization',
     ],
-    apa:
-      'Tsai, Y.C., Wang, S.L., Hong, T.P., & Kao, H.Y. (2015). Extending ' +
-      '[K 1, K 2] Anonymization of Shortest Paths for Social Networks. In ' +
-      'International Conference on Multidisciplinary Social Networks ' +
-      'Research (pp. 187–199).',
+    professorPreferredFormat:
+      'Y.-C. Tsai, S.-L. Wang, T.-P. Hong and H.-Y. Kao, "Extending [K 1, ' +
+      'K 2] Anonymization of Shortest Paths for Social Networks," Proc. of ' +
+      'the 2015 International Conference on Multidisciplinary Social ' +
+      'Networks Research, 2015.',
   },
   {
     title:
@@ -922,10 +917,10 @@ export const researchData = [
     subfields: [
       'Anonymization',
     ],
-    apa:
-      'Tsai, Y.C., Wang, S.L., Kao, H.Y., & Hong, T.P. (2015). Edge types ' +
-      'vs privacy in K-anonymization of shortest paths. Applied Soft ' +
-      'Computing, 31, 348–359.',
+    professorPreferredFormat:
+      'Y.-C. Tsai, S.-L. Wang, H.-Y. Kao and T.-P. Hong, "Edge types ' +
+      'vs privacy in K-anonymization of shortest paths," Applied Soft ' +
+      'Computing, 31, 348–359, 2015.',
   },
   {
     title:
@@ -944,11 +939,10 @@ export const researchData = [
       'Topic Model',
       'Text Classification',
     ],
-    apa:
-      'Chen, G.B., & Kao, H.Y. (2015). Word co-occurrence augmented ' +
-      'topic model in short text. In International Journal of Computational ' +
-      'Linguistics & Chinese Language Processing, Volume 20, Number 2, ' +
-      'December 2015-Special Issue on Selected Papers from ROCLING XXVII.',
+    professorPreferredFormat:
+      'G.-B. Chen and H.-Y. Kao, "Word Co-occurrence Augmented Topic Model ' +
+      'in Short Text," International Journal of Computational Linguistics ' +
+      '& Chinese Language Processing, Vol. 20, No. 2, December 2015.',
   },
   {
     title:
@@ -970,9 +964,10 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
     ],
-    apa:
-      'Cohen, K., & Hunter, L. (2013). Text mining for translational ' +
-      'bioinformatics. PLoS Comput Biol, 9(4), e1003044.',
+    professorPreferredFormat:
+      'H.-J. Dai, C.-H. Wei, H.-Y. Kao, R.-L. Liu, R. T.-H. Tsai and Z. Lu, ' +
+      '"Text Mining for Translational Bioinformatics," BioMed Research ' +
+      'International, 2015.',
   },
   {
     title:
@@ -991,11 +986,12 @@ export const researchData = [
     subfields: [
       'Recommender System',
     ],
-    apa:
+    professorPreferredFormat:
       'Y.-C. Chen and H.-Y. Kao, "One-Class Recommendation System with PU ' +
-      'learning, " Proc. of 6th International Workshop on Social Recommender ' +
-      'Systems (SRS 2015), in conjunction with 21st ACM SIGKDD Conference on ' +
-      'Knowledge Discovery and Data Mining (KDD 2015), Aug. 10, 2015.',
+      'learning," Proc. of 6th International Workshop on Social ' +
+      'Recommender Systems (SRS 2015), in conjunction with 21st ACM SIGKDD ' +
+      'Conference on Knowledge Discovery and Data Mining (KDD 2015), Aug. ' +
+      '10, 2015.',
   },
   {
     title:
@@ -1014,14 +1010,14 @@ export const researchData = [
     subfields: [
       'Opinion Mining',
     ],
-    apa:
-      'Yang, C.H., Chen, J.D., & Kao, H.Y. (2014). Competition component ' +
-      'identification on twitter. In Pacific-Asia Conference on Knowledge ' +
-      'Discovery and Data Mining (pp. 584–595).',
+    professorPreferredFormat:
+      'C.-H. Yang, J.-D. Chen and H.-Y. Kao, "Competition component ' +
+      'identification on twitter," In Pacific-Asia Conference on Knowledge ' +
+      'Discovery and Data Mining, 2014.',
   },
   {
     title:
-      'Latent Features Based Prediction on New Users’ Tastes',
+      'Latent Features Based Prediction on New Users\' Tastes',
     authors: [
       'Ming-Chu Chen',
       'Hung-Yu Kao',
@@ -1035,10 +1031,10 @@ export const researchData = [
     subfields: [
       'Recommender System',
     ],
-    apa:
-      'Chen, M.C., & Kao, H.Y. (2014). Latent Features Based Prediction on ' +
-      'New Users’ Tastes. In Pacific-Asia Conference on Knowledge Discovery ' +
-      'and Data Mining (pp. 176–187).',
+    professorPreferredFormat:
+      'M.-C. Chen and H.-Y. Kao, "Latent Features Based Prediction on New ' +
+      'Users" Tastes," Proc. of the 18th Pacific-Asia Conference on ' +
+      'Knowledge Discovery and Data Mining (PAKDD-2014), May 13-16, 2014.',
   },
   {
     title:
@@ -1057,10 +1053,11 @@ export const researchData = [
     subfields: [
       'Recommender System',
     ],
-    apa:
-      'Yang, Z.H., & Kao, H.Y. (2014). User preference space partition ' +
-      'and product filters for reverse top-k queries. In 2014 International ' +
-      'Conference on Data Science and Advanced Analytics (DSAA) (pp. 498–504).',
+    professorPreferredFormat:
+      'Z.-H. Yang and H.-Y. Kao, "User preference space partition and ' +
+      'product filters for reverse top-k queries," Prof. of the 1st IEEE ' +
+      'International Conference on Data Science and Advanced Analytics ' +
+      '(DSAA-2014), Oct. 30 - Nov. 1, 2014.',
   },
   {
     title:
@@ -1088,12 +1085,11 @@ export const researchData = [
       'Bioinformatics',
       'Gene Regulation',
     ],
-    apa:
-      'Tang, Y.T., Kao, H.Y., Tsai, S.J., & Wang, H.C. (2014). A ' +
-      'semi-supervised, weighted pattern-learning approach for extraction ' +
-      'of gene regulation relationships from scientific literature. ' +
-      'International journal of data mining and bioinformatics, 9(4), ' +
-      '401–416.',
+    professorPreferredFormat:
+      'Y.-T. Tang, H.-Y. Kao, S.-J. Tsai and H.-C. Wang, "A semi-supervised, ' +
+      'weighted pattern-learning approach for extraction of gene regulation ' +
+      'relationships from scientific literature," International Journal of ' +
+      'Data Mining and Bioinformatics Vol. 9, No. 4, pp.401 - 416, 2014.',
   },
   {
     title:
@@ -1112,10 +1108,10 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
     ],
-    apa:
-      'Guo, Y.W., Tang, Y.T., & Kao, H.Y. (2014). Genealogical-based method ' +
-      'for multiple ontology self-extension in MeSH. IEEE transactions on ' +
-      'nanobioscience, 13(2), 124–130.',
+    professorPreferredFormat:
+      'Y.-W. Guo, Y.-T. Tang and H.-Y. Kao, "Genealogical-based Method for ' +
+      'Multiple Ontology Self-extension in MeSH, "IEEE Transactions on ' +
+      'NanoBioscience (IEEE TNB), Vol. 13, No. 2, PP 785-792, June 2014.',
   },
   {
     title:
@@ -1137,10 +1133,10 @@ export const researchData = [
       'Malware Detection',
       'Ontology',
     ],
-    apa:
-      'Huang, H.D., Lee, C.S., Wang, M.H., & Kao, H.Y. (2014). IT2FS-based ' +
+    professorPreferredFormat:
+      'H.-D. Huang, C.-S. Lee, M.-H. Wang and H.-Y. Kao, "IT2FS-based ' +
       'ontology with soft-computing mechanism for malware behavior ' +
-      'analysis. Soft Computing, 18(2), 267–284.',
+      'analysis," Soft Computing 18(2): 267-284, 2014.',
   },
   {
     title:
@@ -1160,11 +1156,11 @@ export const researchData = [
     subfields: [
       'Anonymization',
     ],
-    apa:
-      'Tsai, Y.C., Wang, S.L., Hong, T.P., & Kao, H.Y. (2014). ' +
-      '[K1, K2]-anonymization of Shortest Paths. In Proceedings of the 12th ' +
-      'International Conference on Advances in Mobile Computing and ' +
-      'Multimedia (pp. 317–321).',
+    professorPreferredFormat:
+      'Y.-C. Tsai, S.-L. Wang, T.-P. Hong and H.-Y. Kao, ' +
+      '"[K1, K2]-anonymization of Shortest Paths," In Proceedings of the ' +
+      '12th International Conference on Advances in Mobile Computing and ' +
+      'Multimedia, 2014',
   },
   {
     title:
@@ -1185,10 +1181,11 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
     ],
-    apa:
-      'Hsu, Y.Y., Chen, W.J., Chen, S.H., & Kao, H.Y. (2014). Using hidden ' +
-      'Markov models to predict DNA-binding proteins with sequence and ' +
-      'structure information. Soft Computing, 18(12), 2365–2376.',
+    professorPreferredFormat:
+      'Y.-Y. Hsu, W.-J. Chen, S.-H. Chen and H.-Y. Kao, "Using Hidden ' +
+      'Markov Models to Predict DNA-binding Proteins with Sequence and ' +
+      'Structure Information," Soft Computing DOI 10.1007/s00500-013-1210-8, ' +
+      'Dec 2013.',
   },
   {
     title:
@@ -1208,11 +1205,11 @@ export const researchData = [
       'Bioinformatics',
       'Biocuration',
     ],
-    apa:
-      'Wei, C.H., Kao, H.Y., & Lu, Z. (2014). Text mining tools for ' +
-      'assisting literature curation. In Proceedings of the 5th ACM ' +
+    professorPreferredFormat:
+      'C.-H. Wei, H.-Y. Kao and Z. Lu, "Text mining tools for ' +
+      'assisting literature curation," In Proceedings of the 5th ACM ' +
       'Conference on Bioinformatics, Computational Biology, and Health ' +
-      'Informatics (pp. 590–591).',
+      'Informatics, 2014',
   },
   {
     title:
@@ -1232,10 +1229,10 @@ export const researchData = [
     subfields: [
       'Anonymization',
     ],
-    apa:
-      'Wang, S.L., Tsai, Y.C., Kao, H.Y., & Hong, T.P. (2014). On ' +
-      'anonymizing transactions with sensitive items. Applied intelligence, ' +
-      '41(4), 1043–1058.',
+    professorPreferredFormat:
+      'S.-L. Wang, Y.-C. Tsai, H.-Y. Kao and T.-P. Hong, "On anonymizing ' +
+      'transactions with sensitive items, " Applied Intelligence, Vol. 4, ' +
+      'No.41, pp. 1043-1-58, 2014.',
   },
   {
     title:
@@ -1254,10 +1251,10 @@ export const researchData = [
       'Bioinformatics',
       'Named Entity Recognition',
     ],
-    apa:
-      'Hsu, Y.Y., & Kao, H.Y. (2014). Curatable named-entity recognition ' +
-      'using semantic relations. IEEE/ACM transactions on computational ' +
-      'biology and bioinformatics, 12(4), 785–792.',
+    professorPreferredFormat:
+      'Y.-Y. Hsu and H.-Y. Kao, "Curatable Named-entity Recognition using ' +
+      'Semantic Relations," Proc. of the 25th International Conference on ' +
+      'Genome Informatics (GIW-2014), Dec. 15-17, 2014.',
   },
   {
     title:
@@ -1278,11 +1275,11 @@ export const researchData = [
       'Difficulty Ranking',
       'Question Answering',
     ],
-    apa:
-      'Lin, C.L., Chen, Y.L., & Kao, H.Y. (2014). Question difficulty ' +
-      'evaluation by knowledge gap analysis in question answer communities. ' +
+    professorPreferredFormat:
+      'C.-L. Lin, Y.-L. Chen and H.-Y. Kao, "Question difficulty ' +
+      'evaluation by knowledge gap analysis in question answer communities," ' +
       'In 2014 IEEE/ACM International Conference on Advances in Social ' +
-      'Networks Analysis and Mining (ASONAM 2014) (pp. 336–339).',
+      'Networks Analysis and Mining (ASONAM 2014), 2014',
   },
   {
     title:
@@ -1302,10 +1299,10 @@ export const researchData = [
     subfields: [
       'Link Analysis',
     ],
-    apa:
-      'Chang, Y.J., Tsai, Y.C., & Kao, H.Y. (2014). Bipartite Editing ' +
-      'Prediction in Wikipedia. Journal of Information Science & ' +
-      'Engineering, 30(3).',
+    professorPreferredFormat:
+      'Y.-J. Chang, Y.-C. Tsai and H.-Y. Kao, "Bipartite Editing Prediction ' +
+      'in Wikipedia," Journal of Information Science and Engineering Vol. ' +
+      '30, No. 3, 587-603, May 2014.',
   },
   {
     title:
@@ -1323,10 +1320,10 @@ export const researchData = [
     subfields: [
       'Biocuration',
     ],
-    apa:
-      'Guo, Y.W., & Kao, H.Y. (2013). Genealogical-based method for ' +
-      'ontology self-extension in MeSH. In 2013 IEEE International ' +
-      'Conference on Bioinformatics and Biomedicine (pp. 428–433).',
+    professorPreferredFormat:
+      'Y.-W. Guo and H.-Y. Kao, "Genealogical-based Method for Ontology ' +
+      'Self-extension in MeSH," Proc. of 2013 IEEE International Conference ' +
+      'on Bioinformatics & Biomedicine (BIBM-2013), December 18-21, 2013.',
   },
   {
     title:
@@ -1345,10 +1342,11 @@ export const researchData = [
     subfields: [
       'Search Engine',
     ],
-    apa:
-      'Lin, Y.X., & Kao, H.Y. (2013). An Adaptive Page Clustering Based ' +
-      'Weighting Method for Information Retrieval. In 2013 Conference on ' +
-      'Technologies and Applications of Artificial Intelligence (pp. 199–204).',
+    professorPreferredFormat:
+      'Y.-X. Lin and H.-Y. Kao, "An Adaptive Page Clustering Based weighting ' +
+      'Method for Information Retrieval," Proc. of the 2013 Conference on ' +
+      'Technologies and Applications of Artificial Intelligence (TAAI 2013), ' +
+      'December 6-8, 2013.',
   },
   {
     title:
@@ -1367,11 +1365,11 @@ export const researchData = [
     subfields: [
       'Recommender System',
     ],
-    apa:
-      'Chen, Y.T., & Kao, H.Y. (2013). Up or Down? Click-Through Rate ' +
-      'Prediction from Social Intention for Search Advertising. In ' +
-      'Proceedings of International Conference on Information Integration ' +
-      'and Web-based Applications & Services (pp. 102–106).',
+    professorPreferredFormat:
+      'Y.-T. Chen and H.-Y. Kao, "Up or Down? Click-Through Rate Prediction ' +
+      'from Social Intention for Search Advertising," Proc. of the 15th ' +
+      'International Conference on Information Integration and Web-based ' +
+      'Applications & Services (iiWAS-2013), pp. 102-106, December 2-4, 2013.',
   },
   {
     title:
@@ -1392,11 +1390,11 @@ export const researchData = [
     subfields: [
       'Malware Analysis',
     ],
-    apa:
-      'Huang, H.D., Lee, C.S., Wang, M.H., & Kao, H.Y. (2013). ' +
-      'An IT2FLS-based malware analysis mechanism: Malware analysis network ' +
-      'in Taiwan (MIT). In 2013 IEEE International Conference on Systems, ' +
-      'Man, and Cybernetics (pp. 4652–4657).',
+    professorPreferredFormat:
+      'H.-D. Huang, C.-S. Lee, M.-H. Wang and H.-Y. Kao, ' +
+      '"An IT2FLS-based malware analysis mechanism: Malware analysis network ' +
+      'in Taiwan (MIT)," In 2013 IEEE International Conference on Systems, ' +
+      'Man, and Cybernetics, 2013.',
   },
   {
     title:
@@ -1415,10 +1413,11 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
     ],
-    apa:
-      'Hsiao, J.C., Wei, C.H., & Kao, H.Y. (2013). Gene name disambiguation ' +
-      'using multi-scope species detection. IEEE/ACM transactions on ' +
-      'computational biology and bioinformatics, 11(1), 55–62.',
+    professorPreferredFormat:
+      'J.-C. Hsiao, C.-H. Wei and H.-Y. Kao, "Gene Name Disambiguation using ' +
+      'Multi-Scope Species Detection," IEEE/ACM Transactions on ' +
+      'Computational Biology and Bioinformatics (IEEE TCBB), doi: ' +
+      '10.1109/TCBB.2013.139, Vol. 11, NO. 1, Jan/Feb, 2014.',
   },
   {
     title:
@@ -1438,11 +1437,11 @@ export const researchData = [
       'Opinion Mining',
       'Text Classification',
     ],
-    apa:
-      'Chen, Y.T., & Kao, H.Y. (2013). Constructing social intentional ' +
-      'corpora to predict click-through rate for search advertising. ' +
+    professorPreferredFormat:
+      'Y.-T. Chen and H.-Y. Kao, "Constructing social intentional ' +
+      'corpora to predict click-through rate for search advertising," ' +
       'In Proceedings of the 25th Conference on Computational Linguistics ' +
-      'and Speech Processing (ROCLING 2013) (pp. 278–287).',
+      'and Speech Processing (ROCLING 2013), 2013.',
   },
   {
     title:
@@ -1462,10 +1461,11 @@ export const researchData = [
       'Recommender System',
       'Opinion Mining',
     ],
-    apa:
-      'Wang, J.Y., & Kao, H.Y. (2013). RSOL: A trust-based recommender ' +
-      'system with an opinion leadership measurement for cold start users. ' +
-      'In Asia Information Retrieval Symposium (pp. 500–512).',
+    professorPreferredFormat:
+      'J.-Y. Wang and H.-Y. Kao, "RSOL: A Trust-based Recommender System ' +
+      'with an Opinion Leadership Measurement for Cold Start Users," Proc. ' +
+      'of the Ninth Asia Information Retrieval Symposium (AIRS-2013), ' +
+      'December 9-11, 2013.',
   },
   {
     title:
@@ -1484,10 +1484,10 @@ export const researchData = [
       'Relation Extraction',
       'Representational Learning',
     ],
-    apa:
-      'Yang, W.T., & Kao, H.Y. (2013). Measuring Semantic Relatedness using ' +
-      'Wikipedia Signed Network. Journal of Information Science & ' +
-      'Engineering, 29(4).',
+    professorPreferredFormat:
+      'W.-T. Yang and H.-Y. Kao, "Measuring Semantic Relatedness using ' +
+      'Wikipedia Signed Network," Journal of Information Science and ' +
+      'Engineering Vol. 29, No. 4, 615-630, July 2013.',
   },
   {
     title:
@@ -1507,10 +1507,11 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
     ],
-    apa:
-      'Hsu, Y.Y., Chen, H.Y., & Kao, H.Y. (2013). Using a search ' +
-      'engine-based mutually reinforcing approach to assess the semantic ' +
-      'relatedness of biomedical terms. PloS one, 8(11), e77868.',
+    professorPreferredFormat:
+      'Y.-Y. Hsu, H.-Y. Chen and H.-Y. Kao, "Using a Search Engine-based ' +
+      'Mutually Reinforcing Approach to Assess the Semantic Relatedness of ' +
+      'Biomedical Terms," PLoS ONE 8(11): e77868. ' +
+      'doi:10.1371/journal.pone.0077868, Nov 2013.',
   },
   {
     title:
@@ -1535,11 +1536,11 @@ export const researchData = [
       'Bioinformatics',
       'Species Detection',
     ],
-    apa:
-      'Wei, C.H., & Kao, H.Y. (2013). Unsupervised corpus distillation for ' +
-      'represented indicator measurement on focus species detection. ' +
-      'International journal of data mining and bioinformatics, 8(4), ' +
-      '413–426.',
+    professorPreferredFormat:
+      'C.-H. Wei and H.-Y. Kao, "Unsupervised Corpus Distillation for ' +
+      'Represented Indicator Measurement on Focus Species Detection," ' +
+      'International Journal of Data Mining and Bioinformatics, 8(4): ' +
+      '413-426, 2013.',
   },
   {
     title:
@@ -1565,11 +1566,11 @@ export const researchData = [
       'Malware Detection',
       'Security Analysis',
     ],
-    apa:
-      'Huang, H.D., Acampora, G., Loia, V., Lee, C.S., Hagras, H., ' +
-      'Wang, M.H., Kao, H.Y., & Chang, J.G. (2013). Fuzzy markup language ' +
-      'for malware behavioral analysis. In On the Power of Fuzzy Markup ' +
-      'Language (pp. 113–132). Springer.',
+    professorPreferredFormat:
+      'H.-D. Huang, G. Acampora, V. Loia, C.-S. Lee, H. Hagras, ' +
+      'M.-H. Wang, H.-Y. Kao and J.-G. Chang, "Fuzzy markup language ' +
+      'for malware behavioral analysis," In On the Power of Fuzzy Markup ' +
+      'Language (pp. 113–132), Springer, 2013.',
   },
   {
     title:
@@ -1591,10 +1592,11 @@ export const researchData = [
       'Biocuration',
       'Bioinformatics',
     ],
-    apa:
-      'Wei, C.H., Kao, H.Y., & Lu, Z. (2013). PubTator: a web-based text ' +
-      'mining tool for assisting biocuration. Nucleic acids research, ' +
-      '41(W1), W518–W522.',
+    professorPreferredFormat:
+      'C.-H. Wei, H.-Y. Kao and Z. Lu, "PubTator: a Web-based text mining ' +
+      'tool for assisting Biocuration," Nucleic Acids Research 2013 ' +
+      'Jul;41(Web Server issue):W518-22, doi: 10.1093/nar/gkt441 ' +
+      '(SCI IF: 8.026, Rank=26/290)',
   },
   {
     title:
@@ -1617,12 +1619,12 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
     ],
-    apa:
-      'Wang, H., Kooi, T.K., Kao, H.Y., Lin, S., & Tsai, S.J. (2013). Using ' +
+    professorPreferredFormat:
+      'H.-C. Wang, T.-K. Kooi, H.-Y. Kao, S.-C. Lin and S.-J. Tsai, "Using ' +
       'positive and negative patterns to extract information from journal ' +
-      'articles regarding the regulation of a target gene by a ' +
-      'transcription factor. Computers in biology and medicine, 43(12), ' +
-      '2214–2221.',
+      'articles regarding the regulation of a target gene by a transcription ' +
+      'factor," Computers in Biology and Medicine, DOI: ' +
+      '10.1016/j.compbiomed.2013.10.011, 2013.',
   },
   {
     title:
@@ -1643,11 +1645,11 @@ export const researchData = [
     subfields: [
       'Anonymization',
     ],
-    apa:
-      'Wang, S.L., Tsai, Y.C., Kao, H.Y., Ting, I.H., & Hong, T.P. (2013). ' +
-      'Shortest paths anonymization on weighted graphs. International ' +
-      'Journal of Software Engineering and Knowledge Engineering, 23(01), ' +
-      '65–79.',
+    professorPreferredFormat:
+      'S.-L. Wang, Y.-C. Tsai, H.-Y. Kao, I-H. Ting and T.-P. Hong, ' +
+      '"Shortest Paths Anonymization on Weighted Graphs," International ' +
+      'Journal of Software Engineering and Knowledge Engineering 23(1): ' +
+      '65-80, 2013.',
   },
   {
     title:
@@ -1679,11 +1681,12 @@ export const researchData = [
       'Bioinformatics',
       'Relation Extraction',
     ],
-    apa:
-      'Van Landeghem, S., Björne, J., Wei, C.H., Hakala, K., Pyysalo, S., ' +
-      'Ananiadou, S., Kao, H.Y., Lu, Z., Salakoski, T., Peer, Y., & others ' +
-      '(2013). Large-scale event extraction from literature with ' +
-      'multi-level gene normalization. PloS one, 8(4), e55814.',
+    professorPreferredFormat:
+      'S. V. Landeghem, J. Bjorne, C.-H. Wei, K. Hakala, S. Pyysalo, ' +
+      'S. Ananiadou, H.-Y. Kao, Z. Lu, T. Salakoski, Y. V. de Peer and ' +
+      'F. Ginter, "Large-Scale Event Extraction from Literature with ' +
+      'Multi-Level Gene Normalization," PLoS ONE, April 2013. ' +
+      'doi/10.1371/journal.pone.0055814.',
   },
   {
     title:
@@ -1703,11 +1706,11 @@ export const researchData = [
       'Natural Language Generation',
       'Sentiment Analysis',
     ],
-    apa:
-      'Tai, Y.J., & Kao, H.Y. (2013). Automatic domain-specific sentiment ' +
-      'lexicon generation with label propagation. In Proceedings of ' +
-      'International Conference on Information Integration and Web-based ' +
-      'Applications & Services (pp. 53–62).',
+    professorPreferredFormat:
+      'Y.-J. Tai and H.-Y. Kao, "Automatic Domain-Specific Sentiment Lexicon ' +
+      'Generation with Label Propagation, "Proc. of the 15th International ' +
+      'Conference on Information Integration and Web-based Applications & ' +
+      'Services (iiWAS-2013), pp. 53-62, December 2-4, 2013.',
   },
   {
     title:
@@ -1727,9 +1730,10 @@ export const researchData = [
       'Biocuration',
       'Bioinformatics',
     ],
-    apa:
-      'Hsu, Y.Y., & Kao, H.Y. (2013). CoIN: a network analysis for document ' +
-      'triage. Database, 2013.',
+    professorPreferredFormat:
+      'Y.-Y. Hsu and H.-Y. Kao, "CoIN: a network analysis for document ' +
+      'triage," Database-The Journal of Biological Databases and Curation, ' +
+      'Vol. 2013: bat076 doi:10.1093/database/bat076, November 11, 2013.',
   },
   {
     title:
@@ -1755,10 +1759,11 @@ export const researchData = [
       'Bioinformatics',
       'Mutation Extraction',
     ],
-    apa:
-      'Wei, C.H., Harris, B., Kao, H.Y., & Lu, Z. (2013). tmVar: a text ' +
-      'mining approach for extracting sequence variants in biomedical ' +
-      'literature. Bioinformatics, 29(11), 1433–1439.',
+    professorPreferredFormat:
+      'C.-H. Wei, B. R. Harris, H.-Y. Kao and Z. Lu, "tmVar: A text mining ' +
+      'approach for extracting sequence variants in biomedical literature," ' +
+      'Bioinformatics, 29(11):1433-9, 2013, ' +
+      'doi:10.1093/bioinformatics/btt156.',
   },
   {
     title:
@@ -1784,11 +1789,13 @@ export const researchData = [
     subfields: [
       'Biocuration',
     ],
-    apa:
-      'Wei, C.H., Harris, B., Li, D., Berardini, T., Huala, E., Kao, H.Y., ' +
-      '& Lu, Z. (2012). Accelerating literature curation with text-mining ' +
-      'tools: a case study of using PubTator to curate genes in PubMed ' +
-      'abstracts. Database, 2012.',
+    professorPreferredFormat:
+      'C.-H. Wei, B. R. Harris, D. Li, T. Z. Berardini, E. H., H.-Y. Kao, ' +
+      'and Z. Lu, "Accelerating literature curation with text mining tools: ' +
+      'A case study of using PubTator to curate genes in PubMed abstracts," ' +
+      'Database-The Journal of Biological Databases and Curation, 2012 Nov ' +
+      '17;2012:bas041. doi: 10.1093/database/bas041, 2012 (SCI IF: 3.179, ' +
+      'Rank=4/47).',
   },
   {
     title:
@@ -1805,10 +1812,10 @@ export const researchData = [
     subfields: [
       'Sequence Analysis',
     ],
-    apa:
-      'Yang, Z., & Kao, H. (2013). Location-aware time-series clustering on ' +
-      'optimal sensor arrangement. International Journal of Electrical ' +
-      'Engineering, 20(2), 65–71.',
+    professorPreferredFormat:
+      'Z.-H. Yang and H.-Y. Kao, "Location-Aware Time-Series Clustering on ' +
+      'Optimal Sensor Arrangement, " International Journal of Electrical ' +
+      'Engineering, Vol.20, No.2, PP.65-71, April 2013.',
   },
   {
     title:
@@ -1837,9 +1844,9 @@ export const researchData = [
       'Bioinformatics',
       'Biocuration',
     ],
-    apa:
-      'Hsu, Y.Y., & Kao, H.Y. (2012). CoIN: a network exploration for ' +
-      'document triage. In 2012 BioCreative Workshop (pp. 39).',
+    professorPreferredFormat:
+      'Y.-Y. Hsu and H.-Y. Kao, "CoIN: a network exploration for document ' +
+      'triage," BioCreative 2012 workshop, Washington DC, USA, 39-44, 2012.',
   },
   {
     title:
@@ -1861,9 +1868,10 @@ export const researchData = [
       'Bioinformatics',
       'Gene Normalization',
     ],
-    apa:
-      'Wei, C.H., Kao, H.Y., & Lu, Z. (2012). SR4GN: a species recognition ' +
-      'software tool for gene normalization. PloS one, 7(6), e38460.',
+    professorPreferredFormat:
+      'C.-H. Wei, H.-Y. Kao and Z. Lu, "SR4GN: A Species Recognition ' +
+      'Software Tool for Gene Normalization," PLoS ONE 7(6): e38460. ' +
+      'doi:10.1371/journal.pone.0038460, 2012. (SCI IF=4.351 Rank=12/86)',
   },
   {
     title:
@@ -1887,11 +1895,10 @@ export const researchData = [
       'Biocuration',
       'Bioinformatics',
     ],
-    apa:
-      'Wei, C.H., Kao, H.Y., & Lu, Z. (2012). PubTator: A PubMed-like ' +
-      'interactive curation system for document triage and literature ' +
-      'curation. In Proceedings of the BioCreative 2012 Workshop, ' +
-      'Washington, DC (pp. 20–24).',
+    professorPreferredFormat:
+      'C.-H. Wei, H.-Y. Kao and Z. Lu, "PubTator: A PubMed-like interactive ' +
+      'curation system for document triage and literature curation," ' +
+      'BioCreative 2012 workshop, Washington DC, USA, 145-150, 2012.',
   },
   {
     title:
@@ -1911,11 +1918,11 @@ export const researchData = [
       'Link Analysis',
       'Social Network Analysis',
     ],
-    apa:
-      'Chang, Y.J., & Kao, H.Y. (2012). Link prediction in a bipartite ' +
-      'network using Wikipedia revision information. In 2012 Conference ' +
-      'on Technologies and Applications of Artificial Intelligence (pp. ' +
-      '50–55).',
+    professorPreferredFormat:
+      'Y.-J. Chang and H.-Y. Kao, "Link Prediction in a Bipartite Network ' +
+      'using Wikipedia Revision Information," Proc. of the 2012 Conference ' +
+      'on Technologies and Applications of Artificial Intelligence ' +
+      '(TAAI 2012), Nov. 16-18, 2012.',
   },
   {
     title:
@@ -1936,11 +1943,11 @@ export const researchData = [
       'Malware Detection',
       'Security Analysis',
     ],
-    apa:
-      'Huang, H.D., Lee, C.S., Hagras, H., & Kao, H.Y. (2012). TWMAN+: A ' +
-      'Type-2 fuzzy ontology model for malware behavior analysis. In 2012 ' +
-      'IEEE International Conference on Systems, Man, and Cybernetics (SMC) ' +
-      '(pp. 2821–2826).',
+    professorPreferredFormat:
+      'H.-D. Huang, C.-S. Lee, H. Hagras, H.-Y. Kao, "TWMAN+: A Type-2 ' +
+      'fuzzy ontology model for malware behavior analysis," IEEE ' +
+      'International Conference on Systems, Man, and Cybernetics (SMC-2012), ' +
+      '2821-2826, Korea, 2012.',
   },
   {
     title:
@@ -1958,10 +1965,10 @@ export const researchData = [
     subfields: [
       'Pattern Recognition',
     ],
-    apa:
-      'Yang, Z.H., & Kao, H.Y. (2012). Location Time-Series Clustering on ' +
-      'Optimal Sensor Arrangement. In 2012 Conference on Technologies and ' +
-      'Applications of Artificial Intelligence (pp. 113–118).',
+    professorPreferredFormat:
+      'Z.-H. Yang and H.-Y. Kao, "Location Time-series Clustering on Optimal ' +
+      'Sensor Arrangement," Proc. of the 2012 Conference on Technologies and ' +
+      'Applications of Artificial Intelligence (TAAI 2012), Nov. 16-18, 2012.',
   },
   {
     title:
@@ -1980,11 +1987,11 @@ export const researchData = [
     subfields: [
       'Link Analysis',
     ],
-    apa:
-      'Lin, Y.F., & Kao, H.Y. (2012). The Retrieval of Important News ' +
-      'Stories by Influence Propagation among Communities and Categories. ' +
-      'In 2012 IEEE/WIC/ACM International Conferences on Web Intelligence ' +
-      'and Intelligent Agent Technology (pp. 32–39).',
+    professorPreferredFormat:
+      'Y.-F. Lin and H.-Y. Kao, "The Retrieval of Important News Stories by ' +
+      'Influence Propagation among Communities and Categories," Proc. of ' +
+      'IEEE/WIC/ACM International Conference on Web Intelligence (WI-2012), ' +
+      'Dec. 4 - Dec. 6, 2012.',
   },
   {
     title:
@@ -2003,11 +2010,12 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
     ],
-    apa:
-      'Tang, Y.T., & Kao, H.Y. (2012). Augmented transitive relationships ' +
-      'with high impact protein distillation in protein interaction ' +
-      'prediction. Biochimica et Biophysica Acta (BBA)-Proteins and ' +
-      'Proteomics, 1824(12), 1468–1475.',
+    professorPreferredFormat:
+      'Y.-T. Tang and H.-Y. Kao, "Augmented Transitive Relationships with ' +
+      'High Impact Protein Distillation in Protein Interaction Prediction," ' +
+      'BBA - Proteins and Proteomics, Volume 1824, Issue 12, December 2012, ' +
+      'Pages 1468-1475, DOI:10.1016/j.bbapap.2012.05.013. (SCI IF=2.773 ' +
+      'Rank=36/73)',
   },
   {
     title: 'Confining edge types in k-anonymization of shortest paths',
@@ -2026,11 +2034,11 @@ export const researchData = [
     subfields: [
       'Anonymization',
     ],
-    apa:
-      'Tsai, Y.C., Wang, S.L., Kao, H.Y., & Hong, T.P. (2012). Confining ' +
-      'edge types in k-anonymization of shortest paths. In 2012 Third ' +
+    professorPreferredFormat:
+      'Y.-C. Tsai, S.-L. Wang, H.-Y. Kao and T.-P. Hong, "Confining ' +
+      'edge types in k-anonymization of shortest paths," In 2012 Third ' +
       'International Conference on Innovations in Bio-Inspired Computing ' +
-      'and Applications (pp. 318–322).',
+      'and Applications, 2012',
   },
   {
     title:
@@ -2051,10 +2059,10 @@ export const researchData = [
       'Question Answering',
       'Text Classification',
     ],
-    apa:
-      'Lai, L.C., & Kao, H.Y. (2012). Question routing by modeling user ' +
-      'expertise and activity in cQA services. In 人工知能学会全国大会論文集 第 ' +
-      '26 回全国大会 (2012) (pp. 3M1IOS3a2–3M1IOS3a2).',
+    professorPreferredFormat:
+      'L.-C. Lai and H.-Y. Kao, "Question Routing by Modeling User Expertise ' +
+      'and Activity in cQA services," Proc. of the 26th Annual Conference of ' +
+      'JSAI, Yamaguchi, Japan, 2012.',
   },
   {
     title:
@@ -2099,10 +2107,10 @@ export const researchData = [
       'Bioinformatics',
       'Gene Normalization',
     ],
-    apa:
-      'Lu, Z., Kao, H.Y., Wei, C.H., Huang, M., Liu, J., Kuo, C.J., Hsu, ' +
-      'C.N., Tsai, R.H., Dai, H.J., Okazaki, N., & others (2011). The gene ' +
-      'normalization task in BioCreative III. BMC bioinformatics, 12(8), 1–19.',
+    professorPreferredFormat:
+      'Z. Lu, H.-Y. Kao, C.-H. Wei, et. al., "The Gene Normalization Task in ' +
+      'BioCreative III, "BMC Bioinformatics 12(Suppl 8):S2, 2011. ' +
+      '(SCI IF= 4.029 Rank=4/37)',
   },
   {
     title: 'Measuring Semantic Relatedness Using ' +
@@ -2121,11 +2129,11 @@ export const researchData = [
       'Relation Extraction',
       'Representational Learning',
     ],
-    apa:
-      'Yang, W.T., & Kao, H.Y. (2011). Measuring Semantic Relatedness Using ' +
-      'Wikipedia Revision Information in a Signed Network. In 2011 ' +
-      'International Conference on Technologies and Applications of ' +
-      'Artificial Intelligence (pp. 69–74).',
+    professorPreferredFormat:
+      'Wen-Teng Yang and H.-Y. Kao, "Measuring Semantic Relatedness using ' +
+      'Wikipedia Revision Information in a Signed Network," Proc. of the ' +
+      '2011 Conference on Technologies and Applications of Artificial ' +
+      'Intelligence (TAAI 2011), Nov. 11-13.',
   },
   {
     title:
@@ -2144,11 +2152,11 @@ export const researchData = [
       'Social Network Analysis',
       'Link Analysis',
     ],
-    apa:
-      'Huang, H.C., & Kao, H.Y. (2011). CAIS: Community Based Annotation ' +
-      'Insight Search in a Folksonomy Network. In 2011 International ' +
-      'Conference on Advances in Social Networks Analysis and Mining (pp. ' +
-      '353–360).',
+    professorPreferredFormat:
+      'H.-C. Huang and H.-Y. Kao , "CAIS: Community based Annotation ' +
+      'Insight Search in a Folksonomy Network," Proc. of 2011 International ' +
+      'Conference on Social Networks Analysis and Mining (ASONAM-2011), ' +
+      'July 25-July 27, 2011. (acceptance rate 25%)',
   },
   {
     title: 'Using unsupervised patterns' +
@@ -2171,10 +2179,11 @@ export const researchData = [
       'Gene Regulation',
       'Relation Extraction',
     ],
-    apa:
-      'Tang, Y.T., Li, S.J., Kao, H.Y., Tsai, S.J., & Wang, H.C. (2011). ' +
-      'Using unsupervised patterns to extract gene regulation relationships ' +
-      'for network construction. PloS one, 6(5), e19633.',
+    professorPreferredFormat:
+      'Y.-T. Tang, S.-J. Li, H.-Y. Kao, S.-J. Tsai and H.-C. Wang, "Using ' +
+      'Unsupervised Patterns to Extract Gene Regulation Relationships for ' +
+      'Network Construction," PLoS ONE 6(5): e19633. ' +
+      'doi:10.1371/journal.pone.0019633, May 2011. (SCI IF=4.351 Rank=12/86)',
   },
   {
     title: 'K-anonymity on sensitive transaction items',
@@ -2193,14 +2202,14 @@ export const researchData = [
     subfields: [
       'Anonymization',
     ],
-    apa:
-      'Wang, S.L., Tsai, Y.C., Kao, H.Y., & Hong, T.P. (2011). K-anonymity ' +
-      'on sensitive transaction items. In 2011 IEEE International Conference ' +
-      'on Granular Computing (pp. 723–727).',
+    professorPreferredFormat:
+      'S.-L. Wang, Y.-C. Tsai, H.-Y. Kao, Tzung-Pei Hong, "K-anonymity on ' +
+      'sensitive transaction items," IEEE International Conference on ' +
+      'Granular Computing, GrC-2011 (GrC-2011), 723-727, 2011.',
   },
   {
-    title: 'Evolutional dependency parse trees' +
-      ' for biological relation extraction',
+    title:
+      'Evolutional dependency parse trees for biological relation extraction',
     authors: [
       'Hung-Yu Kao',
       'Yi-Tsung Tang',
@@ -2216,11 +2225,11 @@ export const researchData = [
       'Bioinformatics',
       'Relation Extraction',
     ],
-    apa:
-      'Kao, H.Y., Tang, Y.T., & Wang, J.F. (2011). Evolutional dependency ' +
-      'parse trees for biological relation extraction. In 2011 IEEE 11th ' +
-      'International Conference on Bioinformatics and Bioengineering (pp. ' +
-      '167–174).',
+    professorPreferredFormat:
+      'H.-Y. Kao, Y.-T. Tang and J.-F. Wang, "Evolutional dependency parse ' +
+      'trees for biological relation extraction," Proc. of 2011 IEEE ' +
+      'International Conference on Bioinformatics and Bioengineering ' +
+      '(BIBE-2011), Oct. 24-26, 2011.',
   },
   {
     title:
@@ -2240,9 +2249,10 @@ export const researchData = [
       'Gene Normalization',
       'Bioinformatics',
     ],
-    apa:
-      'Wei, C.H., & Kao, H.Y. (2011). Cross-species gene normalization by ' +
-      'species inference. BMC bioinformatics, 12(8), 1–11.',
+    professorPreferredFormat:
+      'C.-H. Wei and H.-Y. Kao, "Cross-species gene normalization by ' +
+      'species inference," BMC Bioinformatics 12(Suppl 8):S5, 2011. ' +
+      '(SCI IF= 4.029 Rank=4/37)',
   },
   {
     title:
@@ -2264,10 +2274,10 @@ export const researchData = [
       'Malware Detection',
       'Security Analysis',
     ],
-    apa:
-      'Huang, H.D., Lee, C.S., Kao, H.Y., Tsai, Y.L., & Chang, J.G. (2011). ' +
-      'Malware behavioral analysis system: TWMAN. In 2011 IEEE Symposium on ' +
-      'Intelligent Agent (IA) (pp. 1–8).',
+    professorPreferredFormat:
+      'H.-D. Huang, C.-S. Lee, H.-Y. Kao, Y.-L. Tsai and J.-G. Chang, ' +
+      '"Malware behavioral analysis system: TWMAN," In 2011 IEEE Symposium ' +
+      'on Intelligent Agent (IA), 2011',
   },
   {
     title:
@@ -2287,11 +2297,11 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
     ],
-    apa:
-      'Tang, Y.T., & Kao, H.Y. (2011). Augmented Transitive Relationships ' +
-      'in Direct Protein-Protein Interaction Prediction. In 2011 ' +
-      'International Conference on Complex, Intelligent, and Software ' +
-      'Intensive Systems (pp. 530–535).',
+    professorPreferredFormat:
+      'Y.-T. Tang and H.-Y. Kao, "Augmented Transitive Relationships in ' +
+      'Direct Protein-VProtein Interaction Prediction," Proc. of 4th ' +
+      'International Workshop on Intelligent Informatics in Biology and ' +
+      'Medicine (IIBM-2011), June 30- July 2, 2011.',
   },
   {
     title:
@@ -2312,11 +2322,11 @@ export const researchData = [
       'Bioinformatics',
       'Link Analysis',
     ],
-    apa:
-      'Tang, Y.T., & Kao, H.Y. (2011). TransDomain: A Transitive ' +
-      'Domain-Based Method in Protein–Protein Interaction Prediction. In ' +
+    professorPreferredFormat:
+      'Y.-T. Tang and H.-Y. Kao, "TransDomain: A Transitive Domain-Based ' +
+      'Method in Protein-VProtein Interaction Prediction," Proc. of 7th ' +
       'International Symposium on Bioinformatics Research and Applications ' +
-      '(pp. 240–252).',
+      '(ISBRA-2011), May 27-29, 2011.',
   },
   {
     title:
@@ -2338,11 +2348,11 @@ export const researchData = [
       'Malware Detection',
       'Ontology',
     ],
-    apa:
-      'Huang, H.D., Acampora, G., Loia, V., Lee, C.S., & Kao, H.Y. (2011). ' +
-      'Applying FML and fuzzy ontologies to malware behavioural analysis. ' +
-      'In 2011 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE ' +
-      '2011) (pp. 2018–2025).',
+    professorPreferredFormat:
+      'H.-D. Huang, G. Acampora, V. Loia, C.-S. Lee and H.-Y. Kao, "Applying ' +
+      'FML and Fuzzy Ontologies to malware behavioural analysis," IEEE ' +
+      'International Conference on Fuzzy Systems (FUZZ-IEEE-2011), ' +
+      '2018-2025, Taiwan, 2011.',
   },
   {
     title:
@@ -2364,10 +2374,10 @@ export const researchData = [
       'Bioinformatics',
       'Relation Classification',
     ],
-    apa:
-      'Wang, H.C., Chen, Y.H., Kao, H.Y., & Tsai, S.J. (2011). Inference of ' +
-      'transcriptional regulatory network by bootstrapping patterns. ' +
-      'Bioinformatics, 27(10), 1422–1428.',
+    professorPreferredFormat:
+      'H.-C. Wang, Y.-S. Chen, H.-Y. Kao and S.-J. Tsai, "Inference of ' +
+      'transcriptional regulatory network by bootstrapping patterns," ' +
+      'Bioinformatics, 27(10), 1422-1428, 2011. (SCI IF= 4.926 Rank=2/37)',
   },
   {
     title:
@@ -2386,11 +2396,11 @@ export const researchData = [
     subfields: [
       'Anonymization',
     ],
-    apa:
-      'Wang, S.L., Tsai, Y.C., Kao, H.Y., & others (2011). Extending ' +
-      'suppression for anonymization on set-valued data. In International ' +
+    professorPreferredFormat:
+      'S.-L. Wang, Y.-C. Tsai, H.-Y. Kao, et. al, "Extending ' +
+      'suppression for anonymization on set-valued data," In International ' +
       'Journal of Innovative Computing, Information and Control (IJICIC), ' +
-      'Vol. 7, No. 12 (pp. 6849–6863).',
+      'Vol. 7, No. 12, 2011.',
   },
   {
     title:
@@ -2410,9 +2420,9 @@ export const researchData = [
       'Social Network Analysis',
       'Opinion Mining',
     ],
-    apa:
-      'Yang, Z.H., & Kao, H.Y. (2011). The clustering of hot topics on ' +
-      'plurk. Journal of Computers, 22(2), 3–10.',
+    professorPreferredFormat:
+      'Z.-H. Yang, H.-Y. Kao, "The clustering of hot topics on ' +
+      'plurk," Journal of Computers, 22(2), 3–10, 2011.',
   },
   {
     title:
@@ -2432,11 +2442,11 @@ export const researchData = [
       'Bioinformatics',
       'Species Detection',
     ],
-    apa:
-      'Wei, C.H., & Kao, H.Y. (2010). Represented indicator measurement and ' +
-      'corpus distillation on focus species detection. In 2010 IEEE ' +
-      'International Conference on Bioinformatics and Biomedicine (BIBM) ' +
-      '(pp. 657–662).',
+    professorPreferredFormat:
+      'C.-H. Wei and H.-Y. Kao, "Represented Indicator Measurement and ' +
+      'Corpus Distillation on Focus Species Detection," Proc. of 2010 IEEE ' +
+      'International Conference on Bioinformatics & Biomedicine (BIBM-2010), ' +
+      'Dec. 18-21, 2010. (acceptance rate 18.8%)',
   },
   {
     title:
@@ -2457,10 +2467,10 @@ export const researchData = [
       'Named Entity Recognition',
       'Gene Normalization',
     ],
-    apa:
-      'Kao, H.Y., & Wei, C.H. (2010). Inference network method on cross ' +
-      'species gene normalization in full-text articles. In Proceedings ' +
-      'of BioCreative III Workshop (pp. 68).',
+    professorPreferredFormat:
+      'H.-Y. Kao and C.-H. Wei, "Inference network method on cross species ' +
+      'gene normalization in full-text articles," Proc. of 2010 BioCreative ' +
+      'III workshop, Bethesda, Maryland, 73-81, 2010.',
   },
   {
     title:
@@ -2479,9 +2489,10 @@ export const researchData = [
       'Link Analysis',
       'Social Network Analysis',
     ],
-    apa:
-      'Lin, C.L., & Kao, H.Y. (2010). Blog popularity mining using social ' +
-      'interconnection analysis. IEEE Internet Computing, 14(4), 41–49.',
+    professorPreferredFormat:
+      'C.-L. Lin and H.-Y. Kao, "Blog Popularity Mining Using Social ' +
+      'Interconnection Analysis," IEEE Internet Computing, vol. 14, no. 4, ' +
+      'pp. 41-49, July/August, 2010. (SCI IF= 2.514 Rank=7/99)',
   },
   {
     title:
@@ -2501,11 +2512,11 @@ export const researchData = [
       'Sentiment Analysis',
       'Opinion Mining',
     ],
-    apa:
-      'Kao, H.Y., & Lin, Z.Y. (2010). A categorized sentiment analysis of ' +
-      'chinese reviews by mining dependency in product features and opinions ' +
-      'from blogs. In 2010 IEEE/WIC/ACM International Conference on Web ' +
-      'Intelligence and Intelligent Agent Technology (pp. 456–459).',
+    professorPreferredFormat:
+      'H.-Y. Kao and Z.-Y. Lin, "A Categorized Sentiment Analysis of Chinese ' +
+      'Reviews by Mining Dependency in Product Features and Opinions from ' +
+      'Blogs," Proc. of IEEE/WIC/ACM International Conference on Web ' +
+      'Intelligence (WI-2010), Sept 1-3, 2010.',
   },
   {
     title:
@@ -2525,10 +2536,10 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
     ],
-    apa:
-      'Cheng, P.H., Chen, H.Y., & Kao, H.Y. (2010). Protein surface search ' +
-      'in DNA-binding protein prediction by Delaunay triangulation modeling. ' +
-      'In 2010 International Computer Symposium (ICS2010) (pp. 783–788).',
+    professorPreferredFormat:
+      'P.-H. Cheng, H.-Y. Chen and H.-Y. Kao, "Protein surface search ' +
+      'in DNA-binding protein prediction by Delaunay triangulation ' +
+      'modeling," In 2010 International Computer Symposium (ICS2010), 2010.',
   },
   {
     title: 'Finding hard questions' +
@@ -2546,10 +2557,10 @@ export const researchData = [
     subfields: [
       'Question Answering',
     ],
-    apa:
-      'Chen, Y.L., & Kao, H.Y. (2010). Finding hard questions by knowledge ' +
-      'gap analysis in question answer communities. In Asia information ' +
-      'retrieval symposium (pp. 370–378).',
+    professorPreferredFormat:
+      'Y.-L. Chen and H.-Y. Kao, "Finding Hard Questions by Knowledge Gap ' +
+      'Analysis in Question Answer Communities," Proc. of the Sixth Asia ' +
+      'Information Retrieval Symposium (AIRS-2010), December 1-3, 2010.',
   },
   {
     title:
@@ -2570,11 +2581,11 @@ export const researchData = [
       'Anonymization',
       'Social Network Analysis',
     ],
-    apa:
-      'Wang, S.L., Tsai, Y.C., Kao, H.Y., & Hong, T.P. (2010). ' +
-      'Anonymizing set-valued social data. In 2010 IEEE/ACM Int\'l ' +
+    professorPreferredFormat:
+      'S.-L. Wang, Y.-C. Tsai, H.-Y. Kao and T.-P. Hong, ' +
+      '"Anonymizing set-valued social data," In 2010 IEEE/ACM Int\'l ' +
       'Conference on Green Computing and Communications & Int\'l Conference ' +
-      'on Cyber, Physical and Social Computing (pp. 809–812).',
+      'on Cyber, Physical and Social Computing, 2010.',
   },
   {
     title:
@@ -2595,10 +2606,10 @@ export const researchData = [
     subfields: [
       'Association Rules',
     ],
-    apa:
-      'Lin, C.W., Hong, T.P., Lan, G.C., Chen, H.Y., & Kao, H.Y. (2010). ' +
-      'Incrementally Mining High Utility Itemsets in Dynamic Databases. In ' +
-      '2010 IEEE International Conference on Granular Computing (pp. 303–307).',
+    professorPreferredFormat:
+      'C.-W. Lin, T.-P. Hong, G.-C. Lan, H.-Y. Chen and H.-Y. Kao, ' +
+      '"Incrementally Mining High Utility Itemsets in Dynamic Databases", In ' +
+      '2010 IEEE International Conference on Granular Computing, 2010,',
   },
   {
     title:
@@ -2619,10 +2630,10 @@ export const researchData = [
       'Anonymization',
       'Association Rules',
     ],
-    apa:
-      'Wang, S.L., Hong, T.P., Tsai, Y.C., & Kao, H.Y. (2010). Multi-table ' +
-      'association rules hiding. In 2010 10th International Conference on ' +
-      'Intelligent Systems Design and Applications (pp. 1298–1302).',
+    professorPreferredFormat:
+      'S.-L. Wang, T.-P. Hong, Y.-C. Tsai and H.-Y. Kao, "Multi-table ' +
+      'association rules hiding," In 2010 10th International Conference on ' +
+      'Intelligent Systems Design and Applications, 2010.',
   },
   {
     title:
@@ -2645,9 +2656,10 @@ export const researchData = [
       'Link Analysis',
       'Blog Track',
     ],
-    apa:
-      'Lin, Y.F., Wang, J.H., Lai, L.C., & Kao, H.Y. (2010). Top Stories ' +
-      'Identification From Blog to News in TREC 2010 Blog Track. In TREC.',
+    professorPreferredFormat:
+      'Y.-F. Lin, J.-H. Wang, L.-C. Lai and H.-Y. Kao, "Top Stories ' +
+      'Identification From Blog to News In TREC 2010 Blog Track," Proc. of ' +
+      'TREC-2010, 2010.',
   },
   {
     title:
@@ -2668,10 +2680,10 @@ export const researchData = [
       'Anonymization',
       'Pattern Recognition',
     ],
-    apa:
-      'Wang, S.L., Hong, T.P., Tsai, Y.C., & Kao, H.Y. (2010). Hiding ' +
-      'sensitive association rules on stars. In 2010 IEEE International ' +
-      'Conference on Granular Computing (pp. 505–508).',
+    professorPreferredFormat:
+      'S.-L. Wang, T.-P. Hong, Y.-C. Tsai and H.-Y. Kao, "Hiding ' +
+      'sensitive association rules on stars," In 2010 IEEE International ' +
+      'Conference on Granular Computing, 2010.',
   },
   {
     title:
@@ -2693,11 +2705,11 @@ export const researchData = [
       'Bioinformatics',
       'Named Entity Recognition',
     ],
-    apa:
-      'Wei, C.H., Huang, I.C., Hsu, Y.Y., & Kao, H.Y. (2009). Normalizing ' +
+    professorPreferredFormat:
+      'C.-H. Wei, I.-C. Huang, Y.-Y. Hsu and H.-Y. Kao, "Normalizing ' +
       'biomedical name entities by similarity-based inference network and ' +
-      'de-ambiguity mining. In 2009 Ninth IEEE International Conference on ' +
-      'Bioinformatics and Bioengineering (pp. 461–466).',
+      'de-ambiguity mining," In 2009 Ninth IEEE International Conference on ' +
+      'Bioinformatics and Bioengineering, 2009.',
   },
   {
     title:
@@ -2717,10 +2729,11 @@ export const researchData = [
     subfields: [
       'Bioinformatics',
     ],
-    apa:
-      'Chen, W.J., Chuang, P.C., & Kao, H.Y. (2009). Hidden Markov Model ' +
-      'Based DNA-binding Proteins Prediction by Mining on Sequence and ' +
-      'Structure Information. International Computer Symposium.',
+    professorPreferredFormat:
+      'W.-J. Chen, P.-C. Chuang and H.-Y. Kao, "Hidden Markov Model Based ' +
+      'DNA-binding Proteins Prediction by Mining on Sequence and Structure ' +
+      'Information," Proc. of 2008 International Computer Symposium ' +
+      '(ICS-2008), Nov13-15. 2008.',
   },
   {
     title:
@@ -2739,10 +2752,10 @@ export const researchData = [
     subfields: [
       'Link Analysis',
     ],
-    apa:
-      'Lin, C.L., Tang, H.L., & Kao, H.Y. (2009). Utilizing social ' +
-      'relationships for blog popularity mining. In Asia Information ' +
-      'Retrieval Symposium (pp. 409–419).',
+    professorPreferredFormat:
+      'C.-L. Lin, H.-L. Tang and H.-Y. Kao, "Utilizing Social Relationships ' +
+      'for Blog Popularity Mining," Proc. of the The Fifth Asia Information ' +
+      'Retrieval Symposium (AIRS-2009), October 21-23, 2009.',
   },
   {
     title:
@@ -2761,11 +2774,10 @@ export const researchData = [
     subfields: [
       'Information Extraction',
     ],
-    apa:
-      'Cho, W.T., Lin, Y.M., & Kao, H.Y. (2009). Entropy-based visual tree ' +
-      'evaluation on block extraction. In 2009 IEEE/WIC/ACM International ' +
-      'Joint Conference on Web Intelligence and Intelligent Agent ' +
-      'Technology (pp. 580–583).',
+    professorPreferredFormat:
+      'H.-Y. Kao and W.-T. Cho, "Entropy-based Visual Tree Evaluation on ' +
+      'Block Extraction," Proc. of IEEE/WIC/ACM International Conference on ' +
+      'Web Intelligence (WI-2009), Sept 15-18, 2009.',
   },
   {
     title:
@@ -2786,10 +2798,11 @@ export const researchData = [
       'Link Analysis',
       'Search Engine',
     ],
-    apa:
-      'Kao, H.Y., Liu, C.S., Tsai, Y.C., Shih, C., & Tsai, T.M. (2008). ' +
-      'DRANK+: A Directory Based Pagerank Prediction Method for Fast ' +
-      'Pagerank Convergence. In WEBIST (2) (pp. 175–180).',
+    professorPreferredFormat:
+      'H.-Y. Kao, C.-S. Liu, C.-C. Shih and T.-M. Tsai, "DRANK+: a directory ' +
+      'based pagerank prediction method for fast pagerank convergence," ' +
+      'Proc. of 4th International Conference on Web Information Systems and ' +
+      'Technologies (WEBIST-08), May 4-7, 2008.',
   },
   {
     title:
@@ -2811,11 +2824,11 @@ export const researchData = [
     subfields: [
       'Link Analysis',
     ],
-    apa:
-      'Hung-Yu, K., Hsin-Wei, H., Chih-Lu, L., Chia-Chun, S., & Tse-Ming, ' +
-      'T. (2008). An entropy-based hierarchical search result clustering ' +
-      'method by utilizing augmented information. In Asia Information ' +
-      'Retrieval Symposium (pp. 670–675).',
+    professorPreferredFormat:
+      'H.-Y. Kao, H.-W. Hsiao, C.-L. Lin, C.-C. Shih and T.-M. Tsai, ' +
+      '"An Entropy-Based Hierarchical Search Result Clustering Method by ' +
+      'Utilizing Augmented Information," Proc. of the Asia Information ' +
+      'Retrieval Symposium (AIRS-08), January 16-18, 2008.',
   },
   {
     title:
@@ -2833,10 +2846,10 @@ export const researchData = [
     subfields: [
       'Link Analysis',
     ],
-    apa:
-      'Kao, H.Y., & Lin, S.F. (2007). A fast pagerank convergence method ' +
-      'based on the cluster prediction. In IEEE/WIC/ACM International ' +
-      'Conference on Web Intelligence (WI\'07) (pp. 593–599).',
+    professorPreferredFormat:
+      'H.-Y. Kao and S.-F. Lin, "A Fast PageRank Convergence Method based on ' +
+      'the Cluster Prediction," Proc. of IEEE/WIC/ACM International ' +
+      'Conference on Web Intelligence (WI-2007), Nov. 2-5, 2007.',
   },
   {
     title:
@@ -2854,10 +2867,10 @@ export const researchData = [
     subfields: [
       'Link Analysis',
     ],
-    apa:
-      'Lin, C.L., & Kao, H.Y. (2007). Query Result Aggregation on Multiple ' +
-      'Search Engines. International Workshop on Software Engineering, ' +
-      'Databases, and Knowledge Discovery.',
+    professorPreferredFormat:
+      'C.-L. Lin and H.-Y. Kao, "Query Result Aggregation on Multiple ' +
+      'Search Engines," Proc. of International Workshop on Software ' +
+      'Engineering, Databases, and Knowledge Discovery, 2006.',
   },
   {
     title:
@@ -2876,12 +2889,11 @@ export const researchData = [
     subfields: [
       'Pattern Recognition',
     ],
-    apa:
-      'Tseng, Y.F., & Kao, H.Y. (2006). The mining and extraction of ' +
-      'primary informative blocks and data objects from systematic Web ' +
-      'pages. In 2006 IEEE/WIC/ACM International Conference on Web ' +
-      'Intelligence (WI 2006 Main Conference Proceedings)(WI\'06) (pp. ' +
-      '370–373).',
+    professorPreferredFormat:
+      'Y.-F. Tseng and H.-Y. Kao, "The Mining and Extraction of Primary ' +
+      'Informative Blocks and Data Objects from Systematic Web Pages," Proc. ' +
+      'of IEEE/WIC/ACM International Conference on Web Intelligence ' +
+      '(WI-2006), 2006.',
   },
   {
     title:
@@ -2903,10 +2915,11 @@ export const researchData = [
     subfields: [
       'Information Extraction',
     ],
-    apa:
-      'Kao, H.Y., Ho, J.M., & Chen, M.S. (2005). WISDOM: Web intrapage ' +
-      'informative structure mining based on document object model. IEEE ' +
-      'Transactions on Knowledge and Data Engineering, 17(5), 614–627.',
+    professorPreferredFormat:
+      'H.-Y. Kao, J.-M. Ho and M.-S. Chen, "WISDOM: Web Intra-page ' +
+      'Informative Structure Mining based on Document Object Model," ' +
+      'IEEE Trans. on Knowledge and Data Engineering, Vol. 17, No. 5, May ' +
+      '2005.',
   },
   {
     title:
@@ -2929,10 +2942,11 @@ export const researchData = [
     subfields: [
       'Information Extraction',
     ],
-    apa:
-      'Kao, H.Y., Lin, S.H., Ho, J.M., & Chen, M.S. (2004). Mining web ' +
-      'informative structures and contents based on entropy analysis. IEEE ' +
-      'Transactions on Knowledge and Data Engineering, 16(1), 41–55.',
+    professorPreferredFormat:
+      'H.-Y. Kao, S.-H. Lin, J.-M. Ho and M.-S. Chen, "Mining Web ' +
+      'Information Structures and Contents based on Entropy Analysis," ' +
+      'IEEE Trans. on Knowledge and Data Engineering, Vol. 16, No. 1, ' +
+      'January 2004.',
   },
   {
     title:
@@ -2951,10 +2965,11 @@ export const researchData = [
     subfields: [
       'Link Analysis',
     ],
-    apa:
-      'Feng, T.Y., & Kao, H.Y. (2005). Web information hierarchy and ' +
-      'importance mining based on DOM information distillation. In ' +
-      'Conference, Emerging Information Technology 2005. (pp. 4–pp).',
+    professorPreferredFormat:
+      'Y.-F. Tseng and H.-Y. Kao, "Web Information Hierarchy and Importance ' +
+      'Mining Based on DOM Information Distillation," Proceedings of the ' +
+      '5th Emerging Information Technology Conference (EITC-05), ' +
+      'August 15-16, 2005.',
   },
   {
     title:
@@ -2974,11 +2989,11 @@ export const researchData = [
     subfields: [
       'Link Analysis',
     ],
-    apa:
-      'Kao, H.Y., Ho, J.M., & Chen, M.S. (2004). DOMISA: DOM-based ' +
-      'information space adsorption for web information hierarchy mining. ' +
-      'In Proceedings of the 2004 SIAM International Conference on Data ' +
-      'Mining (pp. 312–320).',
+    professorPreferredFormat:
+      'H.-Y. Kao, J.-M. Ho and M.-S. Chen, "DOMISA: DOM-based Information ' +
+      'Space Adsorption for Web Information Hierarchy Mining," Proc. of the ' +
+      '4th SIAM Intern\'l Conference on Data Mining (SDM-04), April ' +
+      '22-24, 2004.',
   },
   {
     title:
@@ -2998,11 +3013,11 @@ export const researchData = [
     subfields: [
       'Link Analysis',
     ],
-    apa:
-      'Huang, I.A., Ho, J.M., Kao, H.Y., & Lin, W.C. (2004). Extracting ' +
-      'citation metadata from online publication lists using BLAST. In ' +
-      'Pacific-Asia Conference on Knowledge Discovery and Data Mining (pp. ' +
-      '539–548).',
+    professorPreferredFormat:
+      'I-A. Huang, J.-M. Ho, H.-Y. Kao and W.-C. Lin, "Extracting Citation ' +
+      'Metadata from Online Publication Lists Using BLAST," Proc. of the ' +
+      'Eighth Pacific-Asia Conference on Knowledge Discovery and Data ' +
+      'Mining (PAKDD-04), May 26-28, 2004.',
   },
   {
     title:
@@ -3021,10 +3036,10 @@ export const researchData = [
     subfields: [
       'Link Analysis',
     ],
-    apa:
-      'Kao, H.Y., Chen, M.S., & Ho, J.M. (2003). Clustering for Web ' +
-      'information hierarchy mining. In Proceedings IEEE/WIC International ' +
-      'Conference on Web Intelligence (WI 2003) (pp. 698–701).',
+    professorPreferredFormat:
+      'H.-Y. Kao, J.-M. Ho and M.-S. Chen, "Clustering for Web Information ' +
+      'Hierarchy Mining," Proc. of the IEEE 2003 Intern\'l Conf. on Web ' +
+      'Intelligence (WI-2003), October 13-17, 2003.',
   },
   {
     title:
@@ -3044,11 +3059,11 @@ export const researchData = [
     subfields: [
       'Link Analysis',
     ],
-    apa:
-      'Kao, H.Y., Chen, M.S., Lin, S.H., & Ho, J.M. (2002). Entropy-based ' +
-      'link analysis for mining web informative structures. In ' +
-      'Proceedings of the eleventh international conference on ' +
-      'Information and knowledge management (pp. 574–581).',
+    professorPreferredFormat:
+      'H.-Y. Kao, S.-H. Lin, J.-M. Ho and M.-S. Chen, "Entropy-Based Link ' +
+      'Analysis for Mining Web Informative Structures," Proc. of the ACM ' +
+      '11th International Conf. on Information and Knowledge Management ' +
+      '(CIKM-02), November 4-9, 2002.',
   },
   {
     title:
@@ -3071,11 +3086,12 @@ export const researchData = [
     subfields: [
       'Recommender System',
     ],
-    apa:
-      'Wang, C.H., Kao, H.Y., & Chang, S.H. (2006). Design and ' +
-      'Implementation of an Interactive True VOD System on ADSL with Scarce ' +
-      'Resources at the Set-top Box. The International Computer Symposium on ' +
-      'Workshop on Computer Networks, Internet, and Multimedia.',
+    professorPreferredFormat:
+      'Chia-Hui Wang, H.-Y. Kao, Shin-Hung Chang, Ray-I Chang, Shun-Chin ' +
+      'Hsu and Jan-Ming Ho, "Design and Implementation of an Interactive ' +
+      'True VOD System on ADSL with Scarce Resources at the Set-top Box," ' +
+      'The International Computer Symposium on Workshop on Computer ' +
+      'Networks, Internet, and Multimedia, Taiwan, Aug., 2000.',
   },
   {
     title:
@@ -3103,11 +3119,10 @@ export const researchData = [
     subfields: [
       'Recommender System',
     ],
-    apa:
-      'Kao, H.Y., Iap, S.Y., Lee, Y.T., Lin, S.H., Shih, C.S., Wang, Y.C., ' +
-      'Chen, M.C., Ho, J.M., & Ko, M.T. (1999). Design and implementation of ' +
-      'ASIS multimedia digital library. In Multimedia Systems and ' +
-      'Applications (pp. 557–565).',
+    professorPreferredFormat:
+      'H.-Y. Kao, S.-Y. Iap, Y.-T. Lee, S.-H. Lin, et. al. "Design and ' +
+      'Implementation of ASIS Multimedia Digital Library," Proc. of SPIE on ' +
+      'Multimedia Systems and Applications, 1999.',
   },
   {
     title:
@@ -3129,11 +3144,11 @@ export const researchData = [
     subfields: [
       'Recommender System',
     ],
-    apa:
-      'Kao, H.Y., Kuo, Y.C., Huang, S.T., & Wang, B.F. (1998). Design and ' +
-      'implementation of a PC-based video-on-demand system. In Proceedings ' +
-      'Twelfth International Conference on Information Networking (ICOIN-12) ' +
-      '(pp. 42–45).',
+    professorPreferredFormat:
+      'H.-Y. Kao, Y.-C. Kuo, S.-T. Huang and B.-F. Wang, "Design and ' +
+      'Implementation of a PC-based Video-On-Demand System," The 12th ' +
+      'International Conference on information Networking (ICOIN-12), ' +
+      'Jan. 1998.',
   },
   {
     title:
@@ -3161,10 +3176,12 @@ export const researchData = [
     subfields: [
       'Recommender System',
     ],
-    apa:
-      'Iap, S.Y., Kao, H.Y., Ku, C.F., Lee, Y.T., Lin, S.H., Pan, Y.C., ' +
-      'Shih, C.S., Wang, C.H., Wang, Y.C., Chen, M.C., & others (1998). ' +
-      'ASIS MDL: A prototype electronic content service. IEEE DARE.',
+    professorPreferredFormat:
+      'H.-Y. Kao, S.-Y. Iap, C.-F. Ku, Y.-T. Lee, S.-H. Lin, Y.-C. Pan, ' +
+      'C.-S. Shih, C.-H. Wang, Y.-C. Wang, M.-C. Chen, J.-M. Ho and ' +
+      'M.-T. Kao, "ASIS MDL: a prototype electronic content service," IEEE ' +
+      'workshop on Dependable and Real-time E-Commerce Systems, Denver, ' +
+      'U.S.A , 1998.',
   },
 ]
 
@@ -3236,8 +3253,8 @@ const schemaCheck = () => {
             type: 'string',
           },
         },
-        apa: {
-          description: 'APA format of the publication',
+        professorPreferredFormat: {
+          description: 'professor preferred format of the publication',
           type: 'string',
         },
       },
@@ -3374,11 +3391,13 @@ const schemaCheck = () => {
     }
 
 
-    // Check if apa format is filled.
-    if (!validator(research.apa, schema.items.properties.apa.type)) {
+    // Check if professorPreferredFormat format is filled.
+    if (!validator(
+        research.professorPreferredFormat,
+        schema.items.properties.professorPreferredFormat.type)) {
       console.error(research)
-      const tp = schema.items.properties.apa.type
-      throw new Error(`research.apa is not type ${tp}.`)
+      const tp = schema.items.properties.professorPreferredFormat.type
+      throw new Error(`research.professorPreferredFormat is not type ${tp}.`)
     }
   })
 }

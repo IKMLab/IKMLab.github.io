@@ -75,6 +75,18 @@
   justify-content: flex-start;
   max-width: 600px;
 
+  &-item {
+    padding: 0;
+  }
+
+  &-text {
+    font-size: 18px;
+
+    span {
+      line-height: 20px;
+    }
+  }
+
   &-nested {
     padding-left: 16px;
   }
