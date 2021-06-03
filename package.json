@@ -125,5 +125,5 @@
     "test-webpack": "webpack configtest config/webpack.config.js",
     "tw": "npm run test-webpack"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }

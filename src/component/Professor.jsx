@@ -923,8 +923,8 @@ export default function Professor() {
               </ListItemIcon>
               <ListItemText className={ProfessorStyle['publication-text']}>
                 H.-Y. Kao,
-                &quote;Informative Structure and Information Hierarchy Mining in
-                a Systematic Web Site,&quote;
+                &quot;Informative Structure and Information Hierarchy Mining in
+                a Systematic Web Site,&quot;
                 Ph.D Thesis,
                 Department of Electrical Engineering at National Taiwan
                 University,
@@ -937,8 +937,8 @@ export default function Professor() {
               </ListItemIcon>
               <ListItemText className={ProfessorStyle['publication-text']}>
                 H.-Y. Kao,
-                &quote;Design and Implementation of a PC-based Video-On-Demand
-                System&quote;
+                &quot;Design and Implementation of a PC-based Video-On-Demand
+                System&quot;
                 Master Thesis,
                 Department of Computer Science at National Tsing Hua University,
                 R.O.C.
