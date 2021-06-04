@@ -76,7 +76,10 @@
   max-width: 600px;
 
   &-item {
-    padding: 0;
+    padding: {
+      bottom: 0;
+      top: 0;
+    }
   }
 
   &-text {
@@ -89,6 +92,17 @@
 
   &-nested {
     padding-left: 16px;
+  }
+}
+
+.publication-divider {
+  padding: 0;
+
+  div {
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
   }
 }
 

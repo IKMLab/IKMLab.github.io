@@ -1,4 +1,5 @@
 import AssignmentIcon from '@material-ui/icons/Assignment'
+import Breadcrumbs from '@material-ui/core/Breadcrumbs'
 import CallIcon from '@material-ui/icons/Call'
 import Collapse from '@material-ui/core/Collapse'
 import EmailIcon from '@material-ui/icons/Email'
@@ -855,6 +856,36 @@ export default function Professor() {
               </ListItemText>
             </ListItem>
           </List>
+        </Grid>
+      </Grid>
+      <Grid
+        className={ProfessorStyle['publication-divider']}
+        container>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          Publications
+        </Grid>
+      </Grid>
+      <Grid
+        className={ProfessorStyle['publication-divider']}
+        container>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <Breadcrumbs aria-label='breadcrumb'>
+            <Link href='https://www.researchgate.net/profile/Hung-Yu-Kao?ev=hdr_xprf'>
+              RG
+            </Link>
+            <Link href='https://scholar.google.com.tw/citations?user=X5Is2lAAAAAJ&hl=zh-TW'>
+              Google Scholar
+            </Link>
+            <Link href='https://dblp.uni-trier.de/pid/64/5833.html'>
+              DBLP
+            </Link>
+            <Link href='https://www.semanticscholar.org/author/Hung-Yu-Kao/1738550'>
+              Semantic Scholar
+            </Link>
+            <Link href='https://orcid.org/0000-0002-8890-8544'>
+              ORCID
+            </Link>
+          </Breadcrumbs>
         </Grid>
       </Grid>
       <Grid
