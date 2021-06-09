@@ -209,6 +209,14 @@ export default function Professor() {
                 <MenuBookIcon />
               </ListItemIcon>
               <ListItemText className={ProfessorStyle['research-text']}>
+                Natural Language Processing
+              </ListItemText>
+            </ListItem>
+            <ListItem className={ProfessorStyle['research-item']}>
+              <ListItemIcon>
+                <MenuBookIcon />
+              </ListItemIcon>
+              <ListItemText className={ProfessorStyle['research-text']}>
                 Information Retrieval / Extraction
               </ListItemText>
             </ListItem>
