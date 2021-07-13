@@ -49,6 +49,14 @@ export default function Professor() {
       setOpen({...isOpen, ...clickItem})
     }
   }
+  // TODO:
+  const educationContent = generateEducation()
+  const researchContent = generateResearch()
+  const experienceContent = generateExperience()
+  const honorContent = generateHonor()
+  const courseContent = generateCourse()
+  console.log(courseContent)
+
 
   return (
     <>
@@ -127,7 +135,7 @@ export default function Professor() {
           </List>
         </Grid>
       </Grid>
-      <Grid
+      <Grid // Professor intro
         className={ProfessorStyle['container']}
         container>
         <Grid
@@ -157,86 +165,11 @@ export default function Professor() {
         container>
         <Grid className={ProfessorStyle['education']}
           item xs={12} sm={6} md={6} lg={6} xl={6}>
-          <List subheader={
-            <ListSubheader disableSticky={true}>
-              Education
-            </ListSubheader>
-          }>
-            <ListItem className={ProfessorStyle['education-item']}>
-              <ListItemIcon>
-                <SchoolIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['education-text']}>
-                Ph.D.,
-                Department of Electrical Engineering,
-                National Taiwan University <br />
-                1999.8 ~ 2003.7
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['education-item']}>
-              <ListItemIcon>
-                <SchoolIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['education-text']}>
-                M.S.,
-                Department of Computer Science,
-                National Tsing Hua University <br />
-                1994.8 ~ 1996.7
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['education-item']}>
-              <ListItemIcon>
-                <SchoolIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['education-text']}>
-                B.S.,
-                Department of Computer Science,
-                National Tsing Hua University <br />
-                1990.8 ~ 1994.7
-              </ListItemText>
-            </ListItem>
-          </List>
+          {educationContent}
         </Grid>
         <Grid className={ProfessorStyle['research']}
           item xs={12} sm={6} md={6} lg={6} xl={12}>
-          <List subheader={
-            <ListSubheader disableSticky={true}>
-              Research
-            </ListSubheader>
-          }>
-            <ListItem className={ProfessorStyle['research-item']}>
-              <ListItemIcon>
-                <MenuBookIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['research-text']}>
-                Natural Language Processing
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['research-item']}>
-              <ListItemIcon>
-                <MenuBookIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['research-text']}>
-                Information Retrieval / Extraction
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['research-item']}>
-              <ListItemIcon>
-                <MenuBookIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['research-text']}>
-                Big / Web Data Mining
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['research-item']}>
-              <ListItemIcon>
-                <MenuBookIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['research-text']}>
-                Bioinformatics
-              </ListItemText>
-            </ListItem>
-          </List>
+          {researchContent}
         </Grid>
       </Grid>
       <Grid
@@ -244,230 +177,11 @@ export default function Professor() {
         container>
         <Grid className={ProfessorStyle['experience']}
           item xs={12} sm={6} md={6} lg={6} xl={6}>
-          <List subheader={
-            <ListSubheader disableSticky={true}>
-              Experience
-            </ListSubheader>
-          }>
-            <ListItem className={ProfessorStyle['experience-item']}>
-              <ListItemIcon>
-                <WorkIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['experience-text']}>
-                Director,
-                Department of Computer Science and Information Engineering
-                (CSIE), NCKU <br />
-                2018.2 ~ present
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['experience-item']}>
-              <ListItemIcon>
-                <WorkIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['experience-text']}>
-                Director,
-                Institute of Medical Informatics (IMI),
-              NCKU <br />
-              2015.8 ~ present
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['experience-item']}>
-              <ListItemIcon>
-                <WorkIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['experience-text']}>
-                Chair,
-                IEEE Computational Intelligence Society (CIS) Tainan Chapter
-                <br />
-                2017.8 ~ present
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['experience-item']}>
-              <ListItemIcon>
-                <WorkIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['experience-text']}>
-                Vice Chair,
-                IEEE Computational Intelligence Society (CIS) Tainan Chapter
-                <br />
-                2015.8 ~ 2017.7
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['experience-item']}>
-              <ListItemIcon>
-                <WorkIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['experience-text']}>
-                Professor,
-                Department of Computer Science and Information Engineering
-                (CSIE), NCKU <br />
-                2014.8 ~ present
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['experience-item']}>
-              <ListItemIcon>
-                <WorkIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['experience-text']}>
-                Adjunct Professor,
-                Institute of Medical Informatics (IMI),
-                NCKU <br />
-                2014.8 ~ present
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['experience-item']}>
-              <ListItemIcon>
-                <WorkIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['experience-text']}>
-                Associate Professor,
-                Department of Computer Science and Information Engineering
-                (CSIE), NCKU <br />
-                2011.8 ~ 2014.7
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['experience-item']}>
-              <ListItemIcon>
-                <WorkIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['experience-text']}>
-                Adjunct Associate Professor,
-                Institute of Medical Informatics (IMI),
-                NCKU <br />
-                2011.8 ~ 2014.7
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['experience-item']}>
-              <ListItemIcon>
-                <WorkIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['experience-text']}>
-                Secretary General,
-                IEEE Computational Intelligence Society (CIS) Tainan Chapter
-                <br />
-                2013.8 ~ 2015.7
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['experience-item']}>
-              <ListItemIcon>
-                <WorkIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['experience-text']}>
-                Assistant Professor,
-                Department of Computer Science and Information Engineering
-                (CSIE), NCKU <br />
-                2004.8 ~ 2011.7
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['experience-item']}>
-              <ListItemIcon>
-                <WorkIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['experience-text']}>
-                Post-doctoral Fellow,
-                Computer System and Communication Laboratory,
-                Institute of Information Science,
-                Academia Sinica
-              </ListItemText>
-            </ListItem>
-          </List>
+          {experienceContent}
         </Grid>
         <Grid className={ProfessorStyle['honor']}
           item xs={12} sm={6} md={6} lg={6} xl={6}>
-          <List subheader={
-            <ListSubheader disableSticky={true}>
-              Honor
-            </ListSubheader>
-          }>
-            <ListItem className={ProfessorStyle['honor-item']}>
-              <ListItemIcon>
-                <EmojiEventsIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['honor-text']}>
-                National Cheng Kung University Teaching Award <br />
-                2015
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['honor-item']}>
-              <ListItemIcon>
-                <EmojiEventsIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['honor-text']}>
-                Natinal Cheng Kung University College EECS Outstanding Mentoring
-                Award <br />
-                2014
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['honor-item']}>
-              <ListItemIcon>
-                <EmojiEventsIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['honor-text']}>
-                National Cheng Kung University Distinguished Teaching Award
-                <br />
-                2011 to 2013.
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['honor-item']}>
-              <ListItemIcon>
-                <EmojiEventsIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['honor-text']}>
-                BioCreAtIvE III Competition, Gene Normalization Task, 1st award
-                Winner <br />
-                2010
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['honor-item']}>
-              <ListItemIcon>
-                <EmojiEventsIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['honor-text']}>
-                Research Grant of Intel Research Quad Core Seeding Program
-                <br />
-                2007
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['honor-item']}>
-              <ListItemIcon>
-                <EmojiEventsIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['honor-text']}>
-                Biographical Listings in IBC (International Biographical Centre,
-                Cambridge, England) Leading Scientists of the World <br />
-                2008
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['honor-item']}>
-              <ListItemIcon>
-                <EmojiEventsIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['honor-text']}>
-                Biographical Listings in Marquis&apos;s Who&apos;s Who in the
-                World 25th ~ 27th Silver Anniversary Edition <br />
-                2008 ~ 2010
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['honor-item']}>
-              <ListItemIcon>
-                <EmojiEventsIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['honor-text']}>
-                Biographical Listings in Marquis&apos;s Who&apos;s Who in
-                Science and Engineering 9th, 10th Anniversary Edition <br />
-                2006 ~ 2007, 2007 ~ 2008
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['honor-item']}>
-              <ListItemIcon>
-                <EmojiEventsIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['honor-text']}>
-                Long Term Award for PhD Thesis, Acer Foundation <br />
-                2003
-              </ListItemText>
-            </ListItem>
-          </List>
+          {honorContent}
         </Grid>
       </Grid>
       <Grid
@@ -786,84 +500,7 @@ export default function Professor() {
         </Grid>
         <Grid className={ProfessorStyle['course']}
           item xs={12} sm={6} md={6} lg={6} xl={6}>
-          <List subheader={
-            <ListSubheader disableSticky={true}>
-              Course
-            </ListSubheader>
-          }>
-            <ListItem className={ProfessorStyle['course-item']}>
-              <ListItemIcon>
-                <MenuBookIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['course-text']}>
-                Data Mining <br />
-                2017 Fall
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['course-item']}>
-              <ListItemIcon>
-                <MenuBookIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['course-text']}>
-                Discrete Mathematics <br />
-                2008 ~ 2015 Spring
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['course-item']}>
-              <ListItemIcon>
-                <MenuBookIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['course-text']}>
-                Web Programming I <br />
-                2004 ~ 2008 Fall
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['course-item']}>
-              <ListItemIcon>
-                <MenuBookIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['course-text']}>
-                Algorithms <br />
-                2004 ~ 2007 Fall
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['course-item']}>
-              <ListItemIcon>
-                <MenuBookIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['course-text']}>
-                Web Information Retrieval and Text Mining <br />
-                2005 ~ 2007 Spring, 2008 ~ 2012 Fall
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['course-item']}>
-              <ListItemIcon>
-                <MenuBookIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['course-text']}>
-                Special Topics in Text Data Mining <br />
-                2009 ~ 2012 Fall
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['course-item']}>
-              <ListItemIcon>
-                <MenuBookIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['course-text']}>
-                Web Information Retrieval and Text Mining <br />
-                2005 ~ 2007 Spring, 2008 ~ 2012 Fall
-              </ListItemText>
-            </ListItem>
-            <ListItem className={ProfessorStyle['course-item']}>
-              <ListItemIcon>
-                <MenuBookIcon />
-              </ListItemIcon>
-              <ListItemText className={ProfessorStyle['course-text']}>
-                Bioinformatics Programming <br />
-                2005 ~ 2009 Summer
-              </ListItemText>
-            </ListItem>
-          </List>
+          {courseContent}
         </Grid>
       </Grid>
       <Grid
@@ -989,3 +626,233 @@ export default function Professor() {
     </>
   )
 }
+
+const generateEducation = () => {
+  const textContent = [
+    [`Ph.D.,
+    Department of Electrical Engineering,
+    National Taiwan University`,
+    `1999.8 ~ 2003.7`,
+    ],
+    [`M.S.,
+    Department of Computer Science,
+    National Tsing Hua University`,
+    `1994.8 ~ 1996.7`,
+    ],
+    [`B.S.,
+    Department of Computer Science,
+    National Tsing Hua University `,
+    `1990.8 ~ 1994.7`,
+    ],
+  ]
+
+  return (
+    <List subheader={
+      <ListSubheader disableSticky={true}>
+        Education
+      </ListSubheader>
+    }>
+      {textContent.map((text, index) => {
+        return (
+          <ListItem key={index} className={ProfessorStyle['education-item']}>
+            <ListItemIcon>
+              <SchoolIcon />
+            </ListItemIcon>
+            <ListItemText className={ProfessorStyle['education-text']}>
+              {text[0]} <br /> {text[1]}
+            </ListItemText>
+          </ListItem>)
+      })}
+    </List>
+  )
+}
+
+const generateResearch = () => {
+  const textContent = [
+    `Natural Language Processing`,
+    `Information Retrieval / Extraction`,
+    `Big / Web Data Mining`,
+    `Bioinformatics`,
+  ]
+  return (
+    <List subheader={
+      <ListSubheader disableSticky={true}>
+        Research
+      </ListSubheader>
+    }>
+      {textContent.map((text, index) => {
+        return (
+          <ListItem key={index} className={ProfessorStyle['research-item']}>
+            <ListItemIcon>
+              <MenuBookIcon />
+            </ListItemIcon>
+            <ListItemText className={ProfessorStyle['research-text']}>
+              {text}
+            </ListItemText>
+          </ListItem>
+        )
+      })}
+    </List>
+  )
+}
+
+const generateExperience = () => {
+  const textContent = [
+    [`Director,
+    Department of Computer Science and Information Engineering
+    (CSIE), NCKU`,
+    `2018.2 ~ present`],
+    [`Director,
+    Institute of Medical Informatics (IMI),
+    NCKU`,
+    `2015.8 ~ present`],
+    [`Chair,
+    IEEE Computational Intelligence Society (CIS) Tainan Chapter`,
+    `2017.8 ~ present`],
+    [`Vice Chair,
+    IEEE Computational Intelligence Society (CIS) Tainan Chapter`,
+    `2015.8 ~ 2017.7`],
+    [`Professor,
+    Department of Computer Science and Information Engineering
+    (CSIE), NCKU`,
+    `2014.8 ~ present`],
+    [`Adjunct Professor,
+    Institute of Medical Informatics (IMI),
+    NCKU`,
+    `2014.8 ~ present`],
+    [`Associate Professor,
+    Department of Computer Science and Information Engineering
+    (CSIE), NCKU`,
+    `2011.8 ~ 2014.7`],
+    [`Adjunct Associate Professor,
+    Institute of Medical Informatics (IMI),
+    NCKU`,
+    `2011.8 ~ 2014.7`],
+    [`Secretary General,
+    IEEE Computational Intelligence Society (CIS) Tainan Chapter`,
+    `2013.8 ~ 2015.7`],
+    [`Assistant Professor,
+    Department of Computer Science and Information Engineering
+    (CSIE), NCKU`,
+    `2004.8 ~ 2011.7`],
+    [`Post-doctoral Fellow,
+    Computer System and Communication Laboratory,
+    Institute of Information Science,
+    Academia Sinica`,
+    ``],
+  ]
+
+  return (
+    <List subheader={
+      <ListSubheader disableSticky={true}>
+        Experience
+      </ListSubheader>
+    }>
+      {textContent.map((text, index) => {
+        return (
+          <ListItem key={index} className={ProfessorStyle['experience-item']}>
+            <ListItemIcon>
+              <WorkIcon />
+            </ListItemIcon>
+            <ListItemText className={ProfessorStyle['experience-text']}>
+              {text[0]} <br /> {text[1]}
+            </ListItemText>
+          </ListItem>
+        )
+      })}
+    </List>
+  )
+}
+
+
+const generateHonor = () => {
+  const textContent = [
+    [`National Cheng Kung University Teaching Award`,
+      `2015`],
+    [`National Cheng Kung University College EECS Outstanding Mentoring
+    Award`,
+    `2014`],
+    [`National Cheng Kung University Distinguished Teaching Award`,
+      `2011 to 2013.`],
+    [`BioCreAtIvE III Competition, Gene Normalization Task, 1st award
+    Winner`,
+    `2010`],
+    [`Research Grant of Intel Research Quad Core Seeding Program`,
+      `2007`],
+    [`Biographical Listings in IBC (International Biographical Centre,
+      Cambridge, England) Leading Scientists of the World`,
+    `2008`],
+    [`Biographical Listings in Marquis's Who's Who in the
+    World 25th ~ 27th Silver Anniversary Edition`,
+    `2008 ~ 2010`],
+    [`Biographical Listings in Marquis's Who's Who in
+    Science and Engineering 9th, 10th Anniversary Edition`,
+    `2006 ~ 2007, 2007 ~ 2008`],
+    [`Long Term Award for PhD Thesis, Acer Foundation`,
+      `2003`],
+  ]
+
+  return (
+    <List subheader={
+      <ListSubheader disableSticky={true}>
+        Honor
+      </ListSubheader>
+    }>
+      {textContent.map((text, index) => {
+        return (
+          <ListItem key={index} className={ProfessorStyle['honor-item']}>
+            <ListItemIcon>
+              <EmojiEventsIcon />
+            </ListItemIcon>
+            <ListItemText className={ProfessorStyle['honor-text']}>
+              {text[0]} <br /> {text[1]}
+            </ListItemText>
+          </ListItem>
+        )
+      })}
+    </List>
+  )
+}
+
+const generateCourse = () => {
+  const textContent = [
+    [`Data Mining`,
+      `2017 Fall`],
+    [`Discrete Mathematics`,
+      `2008 ~ 2015 Spring`],
+    [`Web Programming I`,
+      `2004 ~ 2008 Fall`],
+    [`Algorithms`,
+      `2004 ~ 2007 Fall`],
+    [`Web Information Retrieval and Text Mining`,
+      `2005 ~ 2007 Spring, 2008 ~ 2012 Fall`],
+    [`Special Topics in Text Data Mining`,
+      `2009 ~ 2012 Fall`],
+    [`Web Information Retrieval and Text Mining`,
+      `2005 ~ 2007 Spring, 2008 ~ 2012 Fall`],
+    [`Bioinformatics Programming`,
+      `2005 ~ 2009 Summer`],
+  ]
+
+  return (
+    <List subheader={
+      <ListSubheader disableSticky={true}>
+        Course
+      </ListSubheader>
+    }>
+      {textContent.map((text, index) => {
+        return (
+          <ListItem key={index} className={ProfessorStyle['course-item']}>
+            <ListItemIcon>
+              <MenuBookIcon />
+            </ListItemIcon>
+            <ListItemText className={ProfessorStyle['course-text']}>
+              {text[0]} <br /> {text[1]}
+            </ListItemText>
+          </ListItem>
+        )
+      })}
+    </List>
+  )
+}
+
