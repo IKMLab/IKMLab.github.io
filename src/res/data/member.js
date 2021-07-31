@@ -224,7 +224,7 @@ export const memberData = [
     image: ShengHanChiang,
   },
   {
-    zh: '劉建良',
+    zh: '劉建良(測試)',
     en: 'Chien-Liang Liu',
     dept: 0,
     deg: 1,
@@ -962,7 +962,7 @@ const schemaCheck = () => {
 
     // Check if degree is filled with correct range.
     if (!validator(member.deg, schema.items.properties.deg.type) ||
-    !validator(parsingRule.deg[member.deg], 'string')) {
+      !validator(parsingRule.deg[member.deg], 'string')) {
       console.error(member)
       throw new Error(
           `member.deg must be in range [0, ${parsingRule.deg.length - 1}].`,
@@ -970,11 +970,10 @@ const schemaCheck = () => {
     }
     // Check if department is filled with correct range.
     if (!validator(member.dept, schema.items.properties.dept.type) ||
-    !validator(parsingRule.dept[member.dept], 'string')) {
+      !validator(parsingRule.dept[member.dept], 'string')) {
       console.error(member)
       throw new Error(
-          `member.dept must be in range [0, ${
-            parsingRule.dept.length - 1
+          `member.dept must be in range [0, ${parsingRule.dept.length - 1
           }].`,
       )
     }
@@ -982,12 +981,11 @@ const schemaCheck = () => {
     // Check if graduate year is filled with correct range.
     if (member.year) {
       if (!validator(member.year, schema.items.properties.year.type) ||
-      member.year < 1990 ||
-      member.year > new Date(Date.now()).getFullYear()) {
+        member.year < 1990 ||
+        member.year > new Date(Date.now()).getFullYear()) {
         console.error(member)
         throw new Error(
-            `member.year must be in range [1990, ${
-              new Date(Date.now()).getFullYear()
+            `member.year must be in range [1990, ${new Date(Date.now()).getFullYear()
             }].`,
         )
       }
@@ -997,7 +995,7 @@ const schemaCheck = () => {
       if (!validator(member.image, schema.items.properties.image.type)) {
         console.error(member)
         throw new Error(
-            'member.image should be imported in file: '+
+            'member.image should be imported in file: ' +
           'src/res/data/member.js',
         )
       }
