@@ -1,42 +1,87 @@
 @import './Variable.module';
-
 .toolbar {
-  background-color: $main-color;
-  display: grid;
-  grid-template-areas: 'icon logo .';
-  justify-content: space-between;
+    align-items: center;
+    background-color: $main-color;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 120px repeat(8, 110px) 50%;
+    grid-template-areas: "logo";
+    justify-content: space-between;
+    @media only screen and (max-width: 800px) {
+        align-items: center;
+        justify-content: space-between;
+        display: grid;
+        grid-gap: 10px;
+        align-items: center;
+        grid-template-columns: 100px 25px auto 150px;
+        grid-template-areas: "icon . logo";
+    }
 }
 
 .menu-icon {
-  grid-area: 'icon';
+    display: none;
+    @media only screen and (max-width: 800px) {
+        min-height: 90%;
+        display: flex;
+        font-size: 18px;
+        grid-area: icon;
+    }
+    &:hover {
+        background-color: unset;
+    }
 }
 
 .logo-link {
-  align-self: center;
-  grid-area: 'logo';
-  justify-self: center;
-
-  .logo {
-    height: auto;
-    width: 100px;
-  }
+    align-self: center;
+    grid-area: logo;
+    justify-self: center;
+    .logo {
+        height: auto;
+        width: 100px;
+    }
 }
 
 .drawer-paper {
-  background-color: #424242;
-
-  .list {
-    width: 250px;
-
-    &-item- {
-      &divider {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-
-      &icon,
-      &text {
-        color: #fff;
-      }
+    background-color: #424242;
+    .list {
+        width: 250px;
+        &-item- {
+            &divider {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            &icon,
+            &text {
+                color: #fff;
+            }
+        }
     }
-  }
+}
+
+.hotbar {
+    width: 110%;
+    border-radius: 0px;
+    &:hover {
+        border-radius: 0px;
+        background-color: #3b3a3a;
+        text-decoration: none;
+    }
+    @media only screen and (max-width: 800px) {
+        display: none;
+    }
+    &-icon {
+        min-height: 65px;
+        color: #fff;
+    }
+    &-text {
+        padding: {
+            top: 25px;
+            left: 5px;
+        }
+        min-height: 65px;
+        font-size: 18px;
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }

@@ -14,6 +14,7 @@ import PersonIcon from '@material-ui/icons/Person'
 import React from 'react'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
 import Toolbar from '@material-ui/core/Toolbar'
+import "@fontsource/roboto";
 
 import HeaderStyle from 'src/style/Header.module.scss'
 import logoImage from 'src/res/image/logo.png'
@@ -40,15 +41,6 @@ export default function Header() {
         className={HeaderStyle['toolbar']}
         variant='regular'
       >
-        <IconButton
-          aria-label='button'
-          className={HeaderStyle['menu-icon']}
-          color='inherit'
-          edge='start'
-          onClick={toggleDrawer(true)}
-        >
-          <MenuIcon />
-        </IconButton>
         <Link
           className={HeaderStyle['logo-link']}
           href={`${PUBLIC_URL}home.html`}>
@@ -58,6 +50,55 @@ export default function Header() {
             role='img'
             src={logoImage} />
         </Link>
+        <IconButton
+          aria-label='button'
+          className={HeaderStyle['menu-icon']}
+          color='inherit'
+          edge='start'
+          onClick={toggleDrawer(true)}
+        >
+          <MenuIcon />
+        </IconButton>
+        <IconButton className={HeaderStyle['hotbar']}>
+           <HomeIcon
+                  className={HeaderStyle['hotbar-icon']}
+                  titleAccess='Home' />
+           <Link
+                  className={HeaderStyle['hotbar-text']}
+                  href={`${PUBLIC_URL}home.html`}>
+                  Home
+        </Link>
+        </IconButton>
+        <IconButton className={HeaderStyle['hotbar']}>
+           <PersonIcon
+                  className={HeaderStyle['hotbar-icon']}
+                  titleAccess='Advisor' />
+            <Link
+                  className={HeaderStyle['hotbar-text']}
+                  href={`${PUBLIC_URL}advisor.html`}>
+                  Advisor
+            </Link>
+        </IconButton>
+        <IconButton className={HeaderStyle['hotbar']}>
+            <PeopleIcon
+                  className={HeaderStyle['hotbar-icon']}
+                  titleAccess='Member' />
+            <Link
+                  className={HeaderStyle['hotbar-text']}
+                  href={`${PUBLIC_URL}member.html`}>
+                  Member
+            </Link>
+        </IconButton>
+        <IconButton className={HeaderStyle['hotbar']}>
+            <LibraryBooksIcon
+                  className={HeaderStyle['hotbar-icon']}
+                  titleAccess='Research' />
+            <Link
+                  className={HeaderStyle['hotbar-text']}
+                  href={`${PUBLIC_URL}research.html`}>
+                  Research
+            </Link>
+        </IconButton>
         <SwipeableDrawer
           anchor='left'
           onClose={toggleDrawer(false)}

@@ -1,12 +1,13 @@
 @import './Variable.module';
-
 .fab {
-  background-color: $main-color;
-  bottom: 20px;
-  position: fixed;
-  right: 20px;
-
-  &:hover {
-    background-color: darken($main-color, 10%);
-  }
+    background-color: $main-color;
+    bottom: 20px;
+    position: fixed;
+    right: 20px;
+    &:hover {
+        background-color: darken($main-color, 10%);
+    }
+    &body {
+        font-family: "Roboto";
+    }
 }
