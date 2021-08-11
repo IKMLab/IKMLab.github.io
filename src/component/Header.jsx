@@ -50,6 +50,48 @@ export default function Header() {
             role='img'
             src={logoImage} />
         </Link>
+        <List className={HeaderStyle['list-hotbar']}>
+          <IconButton className={HeaderStyle['hotbar']}>
+            <HomeIcon
+                    className={HeaderStyle['hotbar-icon']}
+                    titleAccess='Home' />
+                <Link
+                        className={HeaderStyle['hotbar-text']}
+                        href={`${PUBLIC_URL}home.html`}>
+                        Home
+                </Link>
+          </IconButton>
+          <IconButton className={HeaderStyle['hotbar']}>
+            <PersonIcon
+                    className={HeaderStyle['hotbar-icon']}
+                    titleAccess='Advisor' />
+                <Link
+                        className={HeaderStyle['hotbar-text']}
+                        href={`${PUBLIC_URL}advisor.html`}>
+                        Advisor
+                </Link>
+          </IconButton>
+          <IconButton className={HeaderStyle['hotbar']}>
+              <PeopleIcon
+                    className={HeaderStyle['hotbar-icon']}
+                    titleAccess='Member' />
+                <Link
+                      className={HeaderStyle['hotbar-text']}
+                      href={`${PUBLIC_URL}member.html`}>
+                      Member
+                </Link>
+          </IconButton>
+          <IconButton className={HeaderStyle['hotbar']}>
+              <LibraryBooksIcon
+                    className={HeaderStyle['hotbar-icon']}
+                    titleAccess='Research' />
+                <Link
+                      className={HeaderStyle['hotbar-text']}
+                      href={`${PUBLIC_URL}research.html`}>
+                      Research
+                </Link>
+          </IconButton>
+        </List>
         <IconButton
           aria-label='button'
           className={HeaderStyle['menu-icon']}
@@ -58,46 +100,6 @@ export default function Header() {
           onClick={toggleDrawer(true)}
         >
           <MenuIcon />
-        </IconButton>
-        <IconButton className={HeaderStyle['hotbar']}>
-           <HomeIcon
-                  className={HeaderStyle['hotbar-icon']}
-                  titleAccess='Home' />
-           <Link
-                  className={HeaderStyle['hotbar-text']}
-                  href={`${PUBLIC_URL}home.html`}>
-                  Home
-        </Link>
-        </IconButton>
-        <IconButton className={HeaderStyle['hotbar']}>
-           <PersonIcon
-                  className={HeaderStyle['hotbar-icon']}
-                  titleAccess='Advisor' />
-            <Link
-                  className={HeaderStyle['hotbar-text']}
-                  href={`${PUBLIC_URL}advisor.html`}>
-                  Advisor
-            </Link>
-        </IconButton>
-        <IconButton className={HeaderStyle['hotbar']}>
-            <PeopleIcon
-                  className={HeaderStyle['hotbar-icon']}
-                  titleAccess='Member' />
-            <Link
-                  className={HeaderStyle['hotbar-text']}
-                  href={`${PUBLIC_URL}member.html`}>
-                  Member
-            </Link>
-        </IconButton>
-        <IconButton className={HeaderStyle['hotbar']}>
-            <LibraryBooksIcon
-                  className={HeaderStyle['hotbar-icon']}
-                  titleAccess='Research' />
-            <Link
-                  className={HeaderStyle['hotbar-text']}
-                  href={`${PUBLIC_URL}research.html`}>
-                  Research
-            </Link>
         </IconButton>
         <SwipeableDrawer
           anchor='left'

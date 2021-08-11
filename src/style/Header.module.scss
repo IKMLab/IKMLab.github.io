@@ -1,30 +1,25 @@
 @import './Variable.module';
 .toolbar {
-    align-items: center;
+    height: 56px;
     background-color: $main-color;
+    justify-content: space-between;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 120px repeat(8, 110px) 50%;
-    grid-template-areas: "logo";
-    justify-content: space-between;
-    @media only screen and (max-width: 800px) {
-        align-items: center;
-        justify-content: space-between;
-        display: grid;
-        grid-gap: 10px;
-        align-items: center;
-        grid-template-columns: 100px 25px auto 150px;
-        grid-template-areas: "icon . logo";
+    align-items: center;
+    grid-template-areas: "icon1 logo .";
+    @media only screen and (min-width: 800px) {
+        grid-template-columns: 120px repeat(4, minmax(12%, 12%)) 50%;
+        grid-template-areas: "logo hotbar hotbar hotbar hotbar .";
     }
 }
 
 .menu-icon {
     display: none;
     @media only screen and (max-width: 800px) {
-        min-height: 90%;
         display: flex;
+        min-height: 90%;
         font-size: 18px;
-        grid-area: icon;
+        grid-area: icon1;
     }
     &:hover {
         background-color: unset;
@@ -32,8 +27,8 @@
 }
 
 .logo-link {
-    align-self: center;
     grid-area: logo;
+    align-self: center;
     justify-self: center;
     .logo {
         height: auto;
@@ -57,31 +52,33 @@
     }
 }
 
-.hotbar {
-    width: 110%;
-    border-radius: 0px;
-    &:hover {
+.list-hotbar {
+    padding: {
+        top: 0px;
+    }
+    display: flex;
+    .hotbar {
+        width: auto;
+        height: 64px;
         border-radius: 0px;
-        background-color: #3b3a3a;
-        text-decoration: none;
-    }
-    @media only screen and (max-width: 800px) {
-        display: none;
-    }
-    &-icon {
-        min-height: 65px;
-        color: #fff;
-    }
-    &-text {
-        padding: {
-            top: 25px;
-            left: 5px;
-        }
-        min-height: 65px;
-        font-size: 18px;
-        color: #fff;
+        vertical-align: baseline;
         &:hover {
+            background-color: #3b3a3a;
             text-decoration: none;
+        }
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
+        &-icon {
+            color: #fff;
+        }
+        &-text {
+            padding-left: 5px;
+            font-size: 18px;
+            color: #fff;
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }
