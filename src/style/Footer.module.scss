@@ -1,75 +1,118 @@
 @import './Variable.module';
-
 .footer-section {
-  align-items: center;
-  background-color: $main-color;
-  justify-content: center;
-  width: 100%;
-  padding: {
-    bottom: 10px;
-    top: 10px;
-  }
-
-  .footer-signature {
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    background-color: $main-color;
+    grid-gap: 20px;
     justify-content: center;
-
-    .logo {
-      height: auto;
-      max-width: 150px;
-      width: 150px;
-    }
-
-    .copyright {
-      text-align: center;
-      width: 100%;
-    }
-  }
-
-  .footer-contact {
-    align-items: center;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    .contact {
-      word-break: break-word;
+    flex-direction: row;
+    height: 100%;
+    padding: {
+        bottom: 10px;
+        top: 10px;
     }
-  }
-
-  .footer-powered-by {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    .powered-by-title {
-      text-align: center;
-      width: 100%;
+    .footer-contact {
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        align-items: center;
+        vertical-align: center;
+        .divider {
+            width: 60%;
+            border-style: solid;
+            border-width: 0px 0px 1px 0px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .contact {
+            padding-left: 5px;
+            word-break: break-word;
+            flex-wrap: nowrap;
+            color: #3b3a3a;
+            font-size: 12px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
-
-    .powered-by-icon {
-      height: auto;
-      width: 32px;
+    .footer-powered-by {
+        order: 1;
+        height: 50%;
+        align-items: center;
+        display: grid;
+        grid-template-areas: "powered-by-title ""powered-by-icon";
+        grid-template-rows: auto auto;
+        justify-content: left;
+        line-height: 1;
+        .powered-by-title {
+            text-align: center;
+            grid-area: powered-by-title;
+        }
+        .powered-by-icon {
+            grid-area: powered-by-icon;
+            width: 120px;
+            height: 36px;
+            display: flex;
+            flex-direction: row;
+            line-height: 1;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .powered-by-icon-image {
+            height: 32px;
+            width: 32px;
+        }
+        .powered-by-icon-name {
+            white-space: nowrap;
+            padding-left: 5px;
+            width: 45px;
+            font-size: 12px;
+            color: #3b3a3a;
+        }
     }
-  }
-
-  .footer-related {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    .related-title {
-      text-align: center;
-      width: 100%;
+    .footer-related {
+        padding-bottom: 50px;
+        order: 2;
+        display: grid;
+        grid-template-areas: "related-title""related-icon";
+        grid-template-rows: auto auto;
+        align-items: center;
+        justify-content: left;
+        line-height: 1;
+        width: 100%;
+        .related-title {
+            padding: {
+                top: 15px;
+                left: 50px;
+            }
+            height: 50%;
+            grid-area: related-title;
+        }
+        .related-icon {
+            grid-area: related-icon;
+            display: flex;
+            flex-direction: row;
+            height: 36px;
+            line-height: 1;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .related-icon-image {
+            vertical-align: middle;
+            height: 32px;
+            width: 32px;
+            object-fit: scale-down;
+        }
+        .related-icon-name {
+            vertical-align: top;
+            padding-left: 5px;
+            padding-top: 0px;
+            height: 32px;
+            width: 200px;
+            font-size: 12px;
+            color: #3b3a3a;
+        }
     }
-
-    .related-icon {
-      height: 32px;
-      width: auto;
-    }
-  }
 }
