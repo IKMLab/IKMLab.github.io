@@ -1,6 +1,57 @@
 export const researchData = [
   {
     title:
+      'MVAN: Multi-View Attention Networks for Fake News Detection ' +
+      'on Social Media',
+    authors: [
+      'Shiwen Ni',
+      'Jiawen Li',
+      'Hung-Yu Kao',
+    ],
+    venue: 'IEEE ACCESS',
+    venueType: 'journal',
+    year: 2021,
+    url: 'https://ieeexplore.ieee.org/document/9497048',
+    topic: 'NLP',
+    subfields: [
+      'Rumor Detection',
+    ],
+    professorPreferredFormat:
+      'S.-W. Ni, J.-W. Li, H.-Y. Kao, "MVAN: Multi-View Attention ' +
+      'Networks for Fake News Detection on Social Media", IEEE ACCESS ' +
+      'DOI:10.1109/ACCESS.2021.3100245, 2021',
+  },
+  {
+    title:
+      'Differences in Psychiatric Comorbidities and Gender Distribution ' +
+      'among Three Clusters of Personality Disorders: A Nationwide ' +
+      'Population-Based Study',
+    authors: [
+      'Chih-Wei Hsu',
+      'Liang-Jen Wang',
+      'Pao-Yen Lin',
+      'Chi-Fa Hung',
+      'Yao-Hsu Yang',
+      'Yu-Ming Chen',
+      'Hung-Yu Kao',
+    ],
+    venue: 'JCM',
+    venueType: 'journal',
+    year: 2021,
+    url: 'https://doi.org/10.3390/jcm10153294',
+    topic: 'Bio-Medical',
+    subfields: [
+      'Bioinformatics',
+    ],
+    professorPreferredFormat:
+      'C.-W. Hsu, L.-J. Wang, P.-Y. Lin, C.-F. Hung, Y.-H. Yang, ' +
+      'Y.-M. Chen and H.-Y. Kao, "Differences in Psychiatric ' +
+      'Comorbidities and Gender Distribution among Three Clusters of ' +
+      'Personality Disorders: A Nationwide Population-Based," ' +
+      'J. Clin. Med. 2021, 10(15), 3294, 2021',
+  },
+  {
+    title:
       'Month of birth and mental disorders: A population-based study and ' +
       'validation using global meta-analysis',
     authors: [
