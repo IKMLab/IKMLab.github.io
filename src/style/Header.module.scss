@@ -1,84 +1,121 @@
 @import './Variable.module';
+
 .toolbar {
-    height: 56px;
-    background-color: $main-color;
-    justify-content: space-between;
-    display: grid;
-    grid-gap: 10px;
-    align-items: center;
-    grid-template-areas: "icon1 logo .";
-    @media only screen and (min-width: 800px) {
-        grid-template-columns: 120px repeat(4, minmax(12%, 12%)) 50%;
-        grid-template-areas: "logo hotbar hotbar hotbar hotbar .";
-    }
+  background-color: $main-color;
+  display: grid;
+  grid-template-areas: 'icon logo .';
+  justify-content: space-between;
+
+  // PC mode.
+  @media only screen and (min-width: $sm) {
+    grid-template-areas: 'logo pc-mode-route';
+    justify-content: start;
+  }
 }
 
 .menu-icon {
+  grid-area: icon;
+
+  // PC mode.
+  @media only screen and (min-width: $sm) {
     display: none;
-    @media only screen and (max-width: 800px) {
-        display: flex;
-        min-height: 90%;
-        font-size: 18px;
-        grid-area: icon1;
-    }
-    &:hover {
-        background-color: unset;
-    }
+  }
 }
 
 .logo-link {
-    grid-area: logo;
-    align-self: center;
-    justify-self: center;
-    .logo {
-        height: auto;
-        width: 100px;
-    }
+  display: flex;
+  flex-direction: column;
+  grid-area: logo;
+  justify-content: center;
+
+  .logo {
+    height: auto;
+    width: 100px;
+  }
 }
 
 .drawer-paper {
-    background-color: #424242;
-    .list {
-        width: 250px;
-        &-item- {
-            &divider {
-                background-color: rgba(255, 255, 255, 0.2);
-            }
-            &icon,
-            &text {
-                color: #fff;
-            }
-        }
+  background-color: #424242;
+
+  .mobile-mode-list {
+    width: 250px;
+    padding: {
+      bottom: 0;
+      top: 0;
     }
+
+    &-item- {
+      &link {
+        color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+      }
+
+      &divider {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      &icon {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &text {
+        color: #fff;
+      }
+    }
+  }
 }
 
-.list-hotbar {
-    padding: {
-        top: 0px;
-    }
+.pc-mode-route-list {
+  display: none;
+
+  @media only screen and (min-width: $sm) {
     display: flex;
-    .hotbar {
-        width: auto;
-        height: 64px;
-        border-radius: 0px;
-        vertical-align: baseline;
-        &:hover {
-            background-color: #3b3a3a;
-            text-decoration: none;
-        }
-        @media only screen and (max-width: 800px) {
-            display: none;
-        }
-        &-icon {
-            color: #fff;
-        }
-        &-text {
-            padding-left: 5px;
-            font-size: 18px;
-            color: #fff;
-            &:hover {
-                text-decoration: none;
-            }
-        }
+    grid-area: pc-mode-route;
+    height: 100%;
+    justify-content: flex-start;
+    padding: {
+      bottom: 0;
+      left: 20px;
+      top: 0;
     }
+  }
+
+  &-item {
+    height: 100%;
+    padding: 0;
+
+    &-link {
+      height: 100%;
+      transition: background-color 0.25s;
+
+      &:hover {
+        background-color: #3b3a3a;
+        text-decoration: none;
+      }
+    }
+
+    &-button {
+      border-radius: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      width: auto;
+    }
+
+    &-icon {
+      color: #fff;
+    }
+
+    &-text {
+      color: #fff;
+      font-size: 18px;
+      padding-left: 5px;
+    }
+  }
 }
