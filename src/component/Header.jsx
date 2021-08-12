@@ -14,11 +14,20 @@ import PersonIcon from '@material-ui/icons/Person'
 import React from 'react'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
 import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import '@fontsource/roboto'
 
 import HeaderStyle from 'src/style/Header.module.scss'
 import logoImage from 'src/res/image/logo.png'
 
-export default function Header() {
+
+/**
+ * Mobile mode only routes.
+ * @return {HTMLElement}
+ *
+ * Only show up in mobile mode.
+ */
+function MobileModeRoutes() {
   const [isOpen, setOpen] = React.useState(false)
 
   const toggleDrawer = (open) => {
@@ -35,20 +44,195 @@ export default function Header() {
   }
 
   return (
+    <>
+      <IconButton
+        aria-label='button'
+        className={HeaderStyle['menu-icon']}
+        color='inherit'
+        edge='start'
+        onClick={toggleDrawer(true)}
+      >
+        <MenuIcon />
+      </IconButton>
+      <SwipeableDrawer
+        anchor='left'
+        onClose={toggleDrawer(false)}
+        onOpen={toggleDrawer(true)}
+        open={isOpen}
+        PaperProps={{
+          className: HeaderStyle['drawer-paper'],
+        }}
+        variant='temporary'
+      >
+        <List className={HeaderStyle['mobile-mode-list']}>
+          <ListItem>
+            <Link
+              className={HeaderStyle['mobile-mode-list-item-link']}
+              href={`${PUBLIC_URL}home.html`}>
+              <ListItemIcon
+                className={HeaderStyle['mobile-mode-list-item-icon']}>
+                <HomeIcon titleAccess='Home' />
+              </ListItemIcon>
+              <ListItemText
+                className={HeaderStyle['mobile-mode-list-item-text']}>
+                <Typography>
+                  Home
+                </Typography>
+              </ListItemText>
+            </Link>
+          </ListItem>
+          <Divider className={HeaderStyle['mobile-mode-list-item-divider']} />
+          <ListItem>
+            <Link
+              className={HeaderStyle['mobile-mode-list-item-link']}
+              href={`${PUBLIC_URL}advisor.html`}>
+              <ListItemIcon
+                className={HeaderStyle['mobile-mode-list-item-icon']}>
+                <PersonIcon titleAccess='Advisor' />
+              </ListItemIcon>
+              <ListItemText
+                className={HeaderStyle['mobile-mode-list-item-text']}>
+                <Typography>
+                  Advisor
+                </Typography>
+              </ListItemText>
+            </Link>
+          </ListItem>
+          <Divider className={HeaderStyle['mobile-mode-list-item-divider']} />
+          <ListItem>
+            <Link
+              className={HeaderStyle['mobile-mode-list-item-link']}
+              href={`${PUBLIC_URL}member.html`}>
+              <ListItemIcon
+                className={HeaderStyle['mobile-mode-list-item-icon']}>
+                <PeopleIcon titleAccess='Member' />
+              </ListItemIcon>
+              <ListItemText
+                className={HeaderStyle['mobile-mode-list-item-text']}>
+                <Typography>
+                  Member
+                </Typography>
+              </ListItemText>
+            </Link>
+          </ListItem>
+          <Divider className={HeaderStyle['mobile-mode-list-item-divider']} />
+          <ListItem>
+            <Link
+              className={HeaderStyle['mobile-mode-list-item-link']}
+              href={`${PUBLIC_URL}research.html`}>
+              <ListItemIcon
+                className={HeaderStyle['mobile-mode-list-item-icon']}>
+                <LibraryBooksIcon titleAccess='Research' />
+              </ListItemIcon>
+              <ListItemText
+                className={HeaderStyle['mobile-mode-list-item-text']}>
+                <Typography>
+                  Research
+                </Typography>
+              </ListItemText>
+            </Link>
+          </ListItem>
+        </List>
+      </SwipeableDrawer>
+    </>
+  )
+}
+
+/**
+ * PC mode only routes.
+ * @return {HTMLElement}
+ *
+ * Only show up in PC mode.
+ */
+function PCModeRoutes() {
+  return (
+    <>
+
+      <List className={HeaderStyle['pc-mode-route-list']}>
+        <ListItem className={HeaderStyle['pc-mode-route-list-item']}>
+          <Link
+            className={HeaderStyle['pc-mode-route-list-item-link']}
+            href={`${PUBLIC_URL}home.html`}>
+            <IconButton
+              className={HeaderStyle['pc-mode-route-list-item-button']}>
+              <HomeIcon
+                className={HeaderStyle['pc-mode-route-list-item-icon']}
+                titleAccess='Home' />
+              <ListItemText
+                className={HeaderStyle['pc-mode-route-list-item-text']}>
+                <Typography>
+                  Home
+                </Typography>
+              </ListItemText>
+            </IconButton>
+          </Link>
+        </ListItem>
+        <ListItem className={HeaderStyle['pc-mode-route-list-item']}>
+          <Link
+            className={HeaderStyle['pc-mode-route-list-item-link']}
+            href={`${PUBLIC_URL}advisor.html`}>
+            <IconButton
+              className={HeaderStyle['pc-mode-route-list-item-button']}>
+              <PersonIcon
+                className={HeaderStyle['pc-mode-route-list-item-icon']}
+                titleAccess='Advisor' />
+              <ListItemText
+                className={HeaderStyle['pc-mode-route-list-item-text']}>
+                <Typography>
+                  Advisor
+                </Typography>
+              </ListItemText>
+            </IconButton>
+          </Link>
+        </ListItem>
+        <ListItem className={HeaderStyle['pc-mode-route-list-item']}>
+          <Link
+            className={HeaderStyle['pc-mode-route-list-item-link']}
+            href={`${PUBLIC_URL}member.html`}>
+            <IconButton
+              className={HeaderStyle['pc-mode-route-list-item-button']}>
+              <PeopleIcon
+                className={HeaderStyle['pc-mode-route-list-item-icon']}
+                titleAccess='Member' />
+              <ListItemText
+                className={HeaderStyle['pc-mode-route-list-item-text']}>
+                <Typography>
+                  Member
+                </Typography>
+              </ListItemText>
+            </IconButton>
+          </Link>
+        </ListItem>
+        <ListItem className={HeaderStyle['pc-mode-route-list-item']}>
+          <Link
+            className={HeaderStyle['pc-mode-route-list-item-link']}
+            href={`${PUBLIC_URL}research.html`}>
+            <IconButton
+              className={HeaderStyle['pc-mode-route-list-item-button']}>
+              <LibraryBooksIcon
+                className={HeaderStyle['pc-mode-route-list-item-icon']}
+                titleAccess='Research' />
+              <ListItemText
+                className={HeaderStyle['pc-mode-route-list-item-text']}>
+                <Typography>
+                  Research
+                </Typography>
+              </ListItemText>
+            </IconButton>
+          </Link>
+        </ListItem>
+      </List>
+    </>
+  )
+}
+
+export default function Header() {
+  return (
     <AppBar position='static'>
       <Toolbar
         className={HeaderStyle['toolbar']}
         variant='regular'
       >
-        <IconButton
-          aria-label='button'
-          className={HeaderStyle['menu-icon']}
-          color='inherit'
-          edge='start'
-          onClick={toggleDrawer(true)}
-        >
-          <MenuIcon />
-        </IconButton>
         <Link
           className={HeaderStyle['logo-link']}
           href={`${PUBLIC_URL}home.html`}>
@@ -58,78 +242,8 @@ export default function Header() {
             role='img'
             src={logoImage} />
         </Link>
-        <SwipeableDrawer
-          anchor='left'
-          onClose={toggleDrawer(false)}
-          onOpen={toggleDrawer(true)}
-          open={isOpen}
-          PaperProps={{
-            className: HeaderStyle['drawer-paper'],
-          }}
-          variant='temporary'
-        >
-          <List className={HeaderStyle['list']}>
-            <ListItem>
-              <ListItemIcon>
-                <HomeIcon
-                  className={HeaderStyle['list-item-icon']}
-                  titleAccess='Home' />
-              </ListItemIcon>
-              <ListItemText>
-                <Link
-                  className={HeaderStyle['list-item-text']}
-                  href={`${PUBLIC_URL}home.html`}>
-                  Home
-                </Link>
-              </ListItemText>
-            </ListItem>
-            <Divider className={HeaderStyle['list-item-divider']} />
-            <ListItem>
-              <ListItemIcon>
-                <PersonIcon
-                  className={HeaderStyle['list-item-icon']}
-                  titleAccess='Advisor' />
-              </ListItemIcon>
-              <ListItemText>
-                <Link
-                  className={HeaderStyle['list-item-text']}
-                  href={`${PUBLIC_URL}advisor.html`}>
-                  Advisor
-                </Link>
-              </ListItemText>
-            </ListItem>
-            <Divider className={HeaderStyle['list-item-divider']} />
-            <ListItem>
-              <ListItemIcon>
-                <PeopleIcon
-                  className={HeaderStyle['list-item-icon']}
-                  titleAccess='Member' />
-              </ListItemIcon>
-              <ListItemText>
-                <Link
-                  className={HeaderStyle['list-item-text']}
-                  href={`${PUBLIC_URL}member.html`}>
-                  Member
-                </Link>
-              </ListItemText>
-            </ListItem>
-            <Divider className={HeaderStyle['list-item-divider']} />
-            <ListItem>
-              <ListItemIcon>
-                <LibraryBooksIcon
-                  className={HeaderStyle['list-item-icon']}
-                  titleAccess='Research' />
-              </ListItemIcon>
-              <ListItemText>
-                <Link
-                  className={HeaderStyle['list-item-text']}
-                  href={`${PUBLIC_URL}research.html`}>
-                  Research
-                </Link>
-              </ListItemText>
-            </ListItem>
-          </List>
-        </SwipeableDrawer>
+        <PCModeRoutes />
+        <MobileModeRoutes />
       </Toolbar>
     </AppBar>
   )

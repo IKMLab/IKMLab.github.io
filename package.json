@@ -47,17 +47,26 @@
     {
       "name": "StoneLin0708",
       "url": "https://github.com/StoneLin0708"
+    },
+    {
+      "name": "dinghr537",
+      "url": "https://github.com/dinghr537"
+    },
+    {
+      "name": "wulong09",
+      "url": "https://github.com/wulong09"
     }
   ],
   "dependencies": {
+    "@fontsource/roboto": "^4.5.0",
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.58",
+    "jquery": "^3.6.0",
     "npm": "^7.14.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "sass": "^1.34.0",
-    "typeface-roboto": "1.1.13"
+    "sass": "^1.34.0"
   },
   "description": "NCKU IKMLAB's Official Website.",
   "devDependencies": {

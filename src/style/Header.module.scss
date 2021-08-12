@@ -5,16 +5,28 @@
   display: grid;
   grid-template-areas: 'icon logo .';
   justify-content: space-between;
+
+  // PC mode.
+  @media only screen and (min-width: $sm) {
+    grid-template-areas: 'logo pc-mode-route';
+    justify-content: start;
+  }
 }
 
 .menu-icon {
-  grid-area: 'icon';
+  grid-area: icon;
+
+  // PC mode.
+  @media only screen and (min-width: $sm) {
+    display: none;
+  }
 }
 
 .logo-link {
-  align-self: center;
-  grid-area: 'logo';
-  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  grid-area: logo;
+  justify-content: center;
 
   .logo {
     height: auto;
@@ -25,18 +37,85 @@
 .drawer-paper {
   background-color: #424242;
 
-  .list {
+  .mobile-mode-list {
     width: 250px;
+    padding: {
+      bottom: 0;
+      top: 0;
+    }
 
     &-item- {
+      &link {
+        color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+      }
+
       &divider {
         background-color: rgba(255, 255, 255, 0.2);
       }
 
-      &icon,
+      &icon {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
       &text {
         color: #fff;
       }
+    }
+  }
+}
+
+.pc-mode-route-list {
+  display: none;
+
+  @media only screen and (min-width: $sm) {
+    display: flex;
+    grid-area: pc-mode-route;
+    height: 100%;
+    justify-content: flex-start;
+    padding: {
+      bottom: 0;
+      left: 20px;
+      top: 0;
+    }
+  }
+
+  &-item {
+    height: 100%;
+    padding: 0;
+
+    &-link {
+      height: 100%;
+      transition: background-color 0.25s;
+
+      &:hover {
+        background-color: #3b3a3a;
+        text-decoration: none;
+      }
+    }
+
+    &-button {
+      border-radius: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      width: auto;
+    }
+
+    &-icon {
+      color: #fff;
+    }
+
+    &-text {
+      color: #fff;
+      font-size: 18px;
+      padding-left: 5px;
     }
   }
 }
