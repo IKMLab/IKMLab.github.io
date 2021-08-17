@@ -1,8 +1,7 @@
 @import './Variable.module';
 .footer-section {
-    align-items: center;
+    align-items: flex-start;
     background-color: $main-color;
-    grid-gap: 20px;
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -38,35 +37,32 @@
         }
     }
     /*
-     order: 1;              Define flex display order as the first display
-     display: grid;         Use grid to set display format
-     grid-template-areas:   Make the title and the icon two lines
-     justify-content: left; Leave text to the left
-     lene-height:1;         Set spacing
+     order: 1;               Define flex display order as the first display
+     display: grid;          Use flex to set display format
+     flex-direction: column; Make the title and the icon two lines
+     justify-content: left;  Leave text to the left
     */
     .footer-powered-by {
         order: 1;
+        margin: 0;
+        padding: 0;
         align-items: center;
-        display: grid;
-        grid-template-areas: "powered-by-title ""powered-by-icon";
-        grid-template-rows: auto auto;
-        justify-content: left;
-        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         .powered-by-title {
+            height: 15px;
             text-align: center;
-            grid-area: powered-by-title;
         }
         /*
           display: flex;           Use flex to set the display format
           flex-direction: row;     Arrange icon-image and icon-name vertically
           object-fit: scale-down;  Avoid over-stretching the picture
-          height: 32px;            Let icons-image and icons-name on both sides of
-                                   power-by and related set the same height to 32px
         */
         .powered-by-icon {
-            grid-area: powered-by-icon;
+            padding-top: 20%;
             width: 100%;
-            height: 32px;
+            height: 100%;
             display: flex;
             flex-direction: row;
             &:hover {
@@ -91,28 +87,23 @@
      order: 2;              Define flex display order as the scond display
      display: grid;         Use grid to set display format
      grid-template-areas:   Make the title and the icon two lines
-     justify-content: left; Leave text to the left
-     lene-height:1;         Set spacing
+     justify-content: center; Leave text to the center
     */
     .footer-related {
-        padding-bottom: 50px;
         order: 2;
-        display: grid;
+        margin: 0;
+        padding: 0;
         align-items: center;
-        grid-template-areas: "related-title""related-icon";
-        grid-template-rows: auto auto;
-        justify-content: left;
-        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         /*
           padding:{top:15px;left:35px}  Align the related-title with the
                                         related-icon
         */
         .related-title {
-            padding: {
-                top: 15px;
-                left: 35px;
-            }
-            grid-area: related-title;
+            height: 20px;
+            text-align: center;
         }
         /*
           display: flex;           Use flex to set the display format
@@ -122,10 +113,11 @@
                                    and related be set to 32px
         */
         .related-icon {
-            height: 32px;
-            grid-area: related-icon;
+            padding-top: 5%;
+            width: 100%;
             display: flex;
             flex-direction: row;
+            align-items: center;
             &:hover {
                 text-decoration: none;
             }
@@ -142,6 +134,7 @@
         .related-icon-name {
             padding-left: 5px;
             width: 200px;
+            height: 100%;
             font-size: 12px;
             color: #3b3a3a;
         }
