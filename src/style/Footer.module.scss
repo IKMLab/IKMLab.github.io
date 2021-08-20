@@ -17,14 +17,18 @@
         min-width: 100%;
         align-items: center;
         vertical-align: center;
-        /*Make a divider for contact
-          Width:60%;  setting divider length
+        /*
+         Make a divider for the contact,and set the length of divider to a maximum of
+         600px and a minimum of 260px
         */
         .divider {
-            width: 60%;
+            width: 260px;
             border-style: solid;
             border-width: 0px 0px 1px 0px;
             background-color: rgba(255, 255, 255, 0.2);
+            @media only screen and (min-width: $sm) {
+                width: 600px;
+            }
         }
         .contact {
             padding-left: 5px;
@@ -37,10 +41,8 @@
         }
     }
     /*
-     order: 1;               Define flex display order as the first display
-     display: grid;          Use flex to set display format
-     flex-direction: column; Make the title and the icon two lines
-     justify-content: left;  Leave text to the left
+     Define flex display order as the first display,and use flex to set display format.
+     Set the title and icon two lines,leaving items in the middle.
     */
     .footer-powered-by {
         order: 1;
@@ -55,16 +57,16 @@
             text-align: center;
         }
         /*
-          display: flex;           Use flex to set the display format
-          flex-direction: row;     Arrange icon-image and icon-name vertically
-          object-fit: scale-down;  Avoid over-stretching the picture
+         Use flex to set the display format,arrange icon-image and icon-name vertically.
         */
         .powered-by-icon {
+            padding-left: 30%;
             padding-top: 5%;
-            width: 100%;
-            height: 100%;
             display: flex;
             flex-direction: row;
+            @media only screen and (min-width: $sm) {
+                padding-left: 0;
+            }
             &:hover {
                 text-decoration: none;
             }
@@ -77,18 +79,27 @@
         .powered-by-icon-name {
             white-space: nowrap;
             padding-left: 5px;
-            width: 100%;
             font-size: 12px;
             color: #3b3a3a;
         }
+        /*
+         Make a divider for the powered-by,setting the length of divider to 260px.
+         Appears when footer-powered-by and footer-related become two lines.
+        */
+        .divider {
+            width: 260px;
+            height: 10px;
+            border-style: solid;
+            border-width: 0px 0px 1px 0px;
+            background-color: rgba(255, 255, 255, 0.2);
+            background-color: transparent;
+            @media only screen and (min-width: $sm) {
+                display: none;
+            }
+        }
     }
     /*
-     pading-bottom          Let the related increase the height by 50px
-                            and align the other side power-by
-     order: 2;              Define flex display order as the scond display
-     display: grid;         Use grid to set display format
-     grid-template-areas:   Make the title and the icon two lines
-     justify-content: center; Leave text to the center
+     Use flex to set the display format,arrange related-title and related-icon vertically.
     */
     .footer-related {
         order: 2;
@@ -99,19 +110,14 @@
         flex-direction: column;
         justify-content: center;
         /*
-          padding:{top:15px;left:35px}  Align the related-title with the
-                                        related-icon
+          Align the related-title with related-icon.
         */
         .related-title {
             height: 20px;
             text-align: center;
         }
         /*
-          display: flex;           Use flex to set the display format
-          flex-direction: row;     Arrange icon-image and icon-name vertically
-          object-fit: scale-down;  Avoid over-stretching the picture
-          height: 32px;            Let the icons on both sides of power-by
-                                   and related be set to 32px
+          Use flex to set the display format,arranging icon-image and icon-name vertically.
         */
         .related-icon {
             width: 100%;
@@ -122,14 +128,17 @@
                 text-decoration: none;
             }
         }
+        /*
+          Avoid over-stretching the picture.
+          Set the width of the icons on both sides of the power-by and related sides to 32px.
+        */
         .related-icon-image {
             width: 32px;
             object-fit: scale-down;
         }
         /*
-          width: 200px;   Change the width to avoid the length
-                          being too long to change to three lines
-          color: #3b3a3a; Set related-icon-name color to gray
+          Change the width to avoid the length being too long to change to three lines.
+          Set related-icon-name color to gray.
         */
         .related-icon-name {
             padding-left: 5px;
