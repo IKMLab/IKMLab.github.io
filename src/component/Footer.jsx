@@ -83,6 +83,7 @@ export default function Footer() {
               SASS
             </h2>
           </Link>
+          <Divider className={FooterStyle['divider']} />
         </figure>
       </Grid>
       <Grid
@@ -120,4 +121,3 @@ export default function Footer() {
     </Grid>
   )
 }
-
