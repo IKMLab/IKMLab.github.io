@@ -1,75 +1,152 @@
 @import './Variable.module';
-
 .footer-section {
-  align-items: center;
-  background-color: $main-color;
-  justify-content: center;
-  width: 100%;
-  padding: {
-    bottom: 10px;
-    top: 10px;
-  }
-
-  .footer-signature {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    align-items: flex-start;
+    background-color: $main-color;
     justify-content: center;
-
-    .logo {
-      height: auto;
-      max-width: 150px;
-      width: 150px;
-    }
-
-    .copyright {
-      text-align: center;
-      width: 100%;
-    }
-  }
-
-  .footer-contact {
-    align-items: center;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    .contact {
-      word-break: break-word;
+    flex-direction: row;
+    height: 100%;
+    padding: {
+        bottom: 10px;
+        top: 10px;
     }
-  }
-
-  .footer-powered-by {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    .powered-by-title {
-      text-align: center;
-      width: 100%;
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        align-items: center;
+        vertical-align: center;
+        /**
+         Make a divider for the contact,and set the length of divider to a maximum of
+         600px and a minimum of 260px
+        **/
+        .divider {
+            width: 260px;
+            border-style: solid;
+            border-width: 0px 0px 1px 0px;
+            background-color: rgba(255, 255, 255, 0.2);
+            @media only screen and (min-width: $sm) {
+                width: 600px;
+            }
+        }
+        .contact {
+            padding-left: 5px;
+            flex-wrap: nowrap;
+            color: #3b3a3a;
+            font-size: 12px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
-
-    .powered-by-icon {
-      height: auto;
-      width: 32px;
+    /**
+     Use flex to set display format.
+     Set the title and icon two lines,leaving items in the middle.
+    **/
+    .footer-powered-by {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .powered-by-title {
+            height: 15px;
+            text-align: center;
+        }
+        /**
+         Use flex to set the display format,arrange icon-image and icon-name vertically.
+        **/
+        .powered-by-icon {
+            padding-left: 30%;
+            margin-bottom: 5%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            @media only screen and (min-width: $sm) {
+                padding-left: 0;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .powered-by-icon-image {
+            width: 32px;
+            height: 40px;
+            object-fit: scale-down;
+        }
+        .powered-by-icon-name {
+            white-space: nowrap;
+            padding-left: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #3b3a3a;
+        }
+        /**
+         Make a divider for the powered-by,setting the length of divider to 260px.
+         Appears when footer-powered-by and footer-related become two lines.
+        **/
+        .divider {
+            width: 260px;
+            height: 10px;
+            border-style: solid;
+            border-width: 0px 0px 1px 0px;
+            background-color: rgba(255, 255, 255, 0.2);
+            background-color: transparent;
+            @media only screen and (min-width: $sm) {
+                display: none;
+            }
+        }
     }
-  }
-
-  .footer-related {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    .related-title {
-      text-align: center;
-      width: 100%;
+    /**
+     Use flex to set the display format,arranging related-title and related-icon vertically.
+    **/
+    .footer-related {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /**
+          Align the related-title with related-icon.
+        **/
+        .related-title {
+            height: 20px;
+            text-align: center;
+        }
+        /**
+          Use flex to set the display format,arranging icon-image and icon-name vertically.
+        **/
+        .related-icon {
+            margin-bottom: 5%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        /**
+          Avoid over-stretching the picture.
+          Set the width of the icons on both sides of the power-by and related sides to 32px.
+        **/
+        .related-icon-image {
+            width: 32px;
+            object-fit: scale-down;
+        }
+        /**
+          Change the width to avoid the length being too long to change to three lines.
+          Set related-icon-name color to gray.
+        **/
+        .related-icon-name {
+            padding-left: 5px;
+            width: 200px;
+            height: 100%;
+            font-size: 12px;
+            font-weight: bold;
+            color: #3b3a3a;
+        }
     }
-
-    .related-icon {
-      height: 32px;
-      width: auto;
-    }
-  }
 }

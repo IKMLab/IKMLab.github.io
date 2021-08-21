@@ -1,4 +1,5 @@
 import CallIcon from '@material-ui/icons/Call'
+import Divider from '@material-ui/core/Divider'
 import EmailIcon from '@material-ui/icons/Email'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import Grid from '@material-ui/core/Grid'
@@ -6,11 +7,11 @@ import Link from '@material-ui/core/Link'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import React from 'react'
+import Typography from '@material-ui/core/Typography'
 
 import CSIEIcon from 'src/res/image/relate/NCKU-CSIE.png'
 import FooterStyle from 'src/style/Footer.module.scss'
 import NCKUIcon from 'src/res/image/relate/NCKU.png'
-import logoImage from 'src/res/image/logo.png'
 import materialUIIcon from 'src/res/image/tech/material-ui.svg'
 import reactIcon from 'src/res/image/tech/react.png'
 import sassIcon from 'src/res/image/tech/sass.png'
@@ -22,20 +23,83 @@ export default function Footer() {
       className={FooterStyle['footer-section']}
       container>
       <Grid
-        className={FooterStyle['footer-signature']}
+        className={FooterStyle['footer-powered-by']}
         item xs={12} sm={6} md={3} lg={2} xl={2}>
-        <img
-          alt='IKMLab logo'
-          className={FooterStyle['logo']}
-          src={logoImage} />
-        <p className={FooterStyle['copyright']}>
-          Copyright © {new Date(Date.now()).getFullYear()} IKMLab.<br />
-            All right reserved.
-        </p>
+        <h2 className={FooterStyle['powered-by-title']}>
+          Powered By
+        </h2>
+        <figure>
+          <Link className={FooterStyle['powered-by-icon']} href='https://reactjs.org/'>
+            <img
+              className={FooterStyle['powered-by-icon-image']}
+              src={reactIcon} />
+            <Typography className={FooterStyle['powered-by-icon-name']}>
+              REACT
+            </Typography>
+          </Link>
+          <Link className={FooterStyle['powered-by-icon']} href='https://webpack.js.org/'>
+            <img
+              className={FooterStyle['powered-by-icon-image']}
+              src={webpackIcon} />
+            <Typography className={FooterStyle['powered-by-icon-name']}>
+              WEBPACK
+            </Typography>
+          </Link>
+          <Link className={FooterStyle['powered-by-icon']} href='https://material-ui.com/'>
+            <img
+              className={FooterStyle['powered-by-icon-image']}
+              src={materialUIIcon} />
+            <Typography className={FooterStyle['powered-by-icon-name']}>
+              MATERIAL-UI
+            </Typography>
+          </Link>
+          <Link className={FooterStyle['powered-by-icon']} href='https://sass-lang.com/'>
+            <img
+              className={FooterStyle['powered-by-icon-image']}
+              src={sassIcon} />
+            <Typography className={FooterStyle['powered-by-icon-name']}>
+              SASS
+            </Typography>
+          </Link>
+          <Divider className={FooterStyle['divider']} />
+        </figure>
+      </Grid>
+      <Grid
+        className={FooterStyle['footer-related']}
+        item xs={12} sm={6} md={3} lg={2} xl={2}>
+        <h2 className={FooterStyle['related-title']}>
+          Related Link
+        </h2>
+        <figure>
+          <Link className={FooterStyle['related-icon']} href='https://web.ncku.edu.tw/index.php'>
+            <img
+              className={FooterStyle['related-icon-image']}
+              src={NCKUIcon} />
+            <Typography className={FooterStyle['related-icon-name']}>
+              National Cheng Kung University
+            </Typography>
+          </Link>
+          <Link className={FooterStyle['related-icon']}  href='http://www.csie.ncku.edu.tw/ncku_csie/'>
+            <img
+              className={FooterStyle['related-icon-image']}
+              src={CSIEIcon} />
+            <Typography className={FooterStyle['related-icon-name']}>
+              Department of Computer Science and Information Engineering
+            </Typography>
+          </Link>
+          <Link className={FooterStyle['related-icon']}  href='https://github.com/IKMLab' >
+            <GitHubIcon
+              className={FooterStyle['related-icon-image']} />
+            <Typography className={FooterStyle['related-icon-name']}>
+              Intelligent Knowledge Management Laboratory
+            </Typography>
+          </Link>
+        </figure>
       </Grid>
       <Grid
         className={FooterStyle['footer-contact']}
         item xs={12} sm={6} md={3} lg={2} xl={2}>
+        <Divider className={FooterStyle['divider']} />
         <List>
           <ListItem>
             <CallIcon />
@@ -55,59 +119,6 @@ export default function Footer() {
           </ListItem>
         </List>
       </Grid>
-      <Grid
-        className={FooterStyle['footer-powered-by']}
-        item xs={12} sm={6} md={3} lg={2} xl={2}>
-        <h2 className={FooterStyle['powered-by-title']}>
-          Powered By
-        </h2>
-        <figure>
-          <Link href='https://reactjs.org/'>
-            <img
-              className={FooterStyle['powered-by-icon']}
-              src={reactIcon} />
-          </Link>
-          <Link href='https://webpack.js.org/'>
-            <img
-              className={FooterStyle['powered-by-icon']}
-              src={webpackIcon} />
-          </Link>
-          <Link href='https://material-ui.com/'>
-            <img
-              className={FooterStyle['powered-by-icon']}
-              src={materialUIIcon} />
-          </Link>
-          <Link href='https://sass-lang.com/'>
-            <img
-              className={FooterStyle['powered-by-icon']}
-              src={sassIcon} />
-          </Link>
-        </figure>
-      </Grid>
-      <Grid
-        className={FooterStyle['footer-related']}
-        item xs={12} sm={6} md={3} lg={2} xl={2}>
-        <h2 className={FooterStyle['related-title']}>
-          Related Link
-        </h2>
-        <figure>
-          <Link href='https://web.ncku.edu.tw/index.php'>
-            <img
-              className={FooterStyle['related-icon']}
-              src={NCKUIcon} />
-          </Link>
-          <Link href='http://www.csie.ncku.edu.tw/ncku_csie/'>
-            <img
-              className={FooterStyle['related-icon']}
-              src={CSIEIcon} />
-          </Link>
-          <Link href='https://github.com/IKMLab'>
-            <GitHubIcon
-              className={FooterStyle['related-icon']} />
-          </Link>
-        </figure>
-      </Grid>
     </Grid>
   )
 }
-
