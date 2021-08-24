@@ -1,6 +1,39 @@
 export const researchData = [
   {
     title:
+      'Lithium concentration and recurrence risk during maintenance ' +
+      'treatment of bipolar disorder: multicenter cohort and ' +
+      'meta‐analysis ',
+    authors: [
+      'Chih-Wei Hsu',
+      'Andre F Carvalho',
+      'Shang‐Ying Tsai',
+      'Liang‐Jen Wang',
+      'Ping‐Tao Tseng',
+      'Pao‐Yen Lin',
+      'Yu‐Kang Tu',
+      'Eduard Vieta',
+      'Marco Solmi',
+      'Chi‐Fa Hung',
+      'Hung-Yu Kao',
+    ],
+    venue: 'APS',
+    venueType: 'journal',
+    year: 2021,
+    url: 'https://onlinelibrary.wiley.com/doi/full/10.1111/acps.13346',
+    topic: 'Bio-Medical ',
+    subfields: [
+      'Bioinformatics',
+    ],
+    professorPreferredFormat:
+      'C.-W. Hsu, A.-F Carvalho, S.‐Y. Tsai, L.-J. Wang, P.‐T. Tseng,' +
+      'P.‐Y. Lin, Y.‐K. Tu, E. Vieta, M. Solmi, C.‐F. Hung,' +
+      ' and H.-Y. Kao, "Lithium concentration and recurrence risk ' +
+      'during maintenance treatment of bipolar disorder: multicenter '+
+      'cohort and meta‐analysis" Acta Psychiatr Scand., July 2021, 2021',
+  },
+  {
+    title:
       'MVAN: Multi-View Attention Networks for Fake News Detection ' +
       'on Social Media',
     authors: [
