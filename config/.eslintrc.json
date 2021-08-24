@@ -30,6 +30,7 @@
     ],
     "rules": {
         "require-jsdoc": ["off"],
-        "semi": ["error", "never"]
+        "semi": ["error", "never"],
+        "max-len": ["off"]
     }
 }

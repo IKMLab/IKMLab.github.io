@@ -25,73 +25,69 @@ export default function Footer() {
       <Grid
         className={FooterStyle['footer-powered-by']}
         item xs={12} sm={6} md={3} lg={2} xl={2}>
-        <List>
-          <ListItem>
-            <h2 className={FooterStyle['footer-powered-by-title']}>
-              Powered By
-            </h2>
-          </ListItem>
+        <h2 className={FooterStyle['footer-powered-by-title']}>
+          Powered By
+        </h2>
+        <List className={FooterStyle['footer-powered-by-list']}>
           <ListItem>
             <Link
               className={FooterStyle['footer-powered-by-item']}
               href='https://reactjs.org/'>
-                <img
-                  className={FooterStyle['footer-powered-by-item-image']}
-                  src={reactIcon} />
-                <Typography className={FooterStyle['footer-powered-by-item-name']}>
+              <img
+                className={FooterStyle['footer-powered-by-item-image']}
+                src={reactIcon} />
+              <Typography className={FooterStyle['footer-powered-by-item-name']}>
                   REACT
-                </Typography>
-              </Link>
+              </Typography>
+            </Link>
           </ListItem>
           <ListItem>
             <Link
               className={FooterStyle['footer-powered-by-item']}
               href='https://webpack.js.org/'>
-                <img
-                  className={FooterStyle['footer-powered-by-item-image']}
-                  src={webpackIcon} />
-                <Typography className={FooterStyle['footer-powered-by-item-name']}>
+              <img
+                className={FooterStyle['footer-powered-by-item-image']}
+                src={webpackIcon} />
+              <Typography className={FooterStyle['footer-powered-by-item-name']}>
                   WEBPACK
-                </Typography>
+              </Typography>
             </Link>
           </ListItem>
           <ListItem>
             <Link
               className={FooterStyle['footer-powered-by-item']}
               href='https://material-ui.com/'>
-                <img
-                  className={FooterStyle['footer-powered-by-item-image']}
-                  src={materialUIIcon} />
-                <Typography className={FooterStyle['footer-powered-by-item-name']}>
+              <img
+                className={FooterStyle['footer-powered-by-item-image']}
+                src={materialUIIcon} />
+              <Typography className={FooterStyle['footer-powered-by-item-name']}>
                   MATERIAL-UI
-                </Typography>
+              </Typography>
             </Link>
           </ListItem>
           <ListItem>
             <Link
               className={FooterStyle['footer-powered-by-item']}
               href='https://sass-lang.com/'>
-                <img
-                  className={FooterStyle['footer-powered-by-item-image']}
-                  src={sassIcon} />
-                <Typography className={FooterStyle['footer-powered-by-item-name']}>
+              <img
+                className={FooterStyle['footer-powered-by-item-image']}
+                src={sassIcon} />
+              <Typography className={FooterStyle['footer-powered-by-item-name']}>
                   SASS
-                </Typography>
+              </Typography>
             </Link>
           </ListItem>
-          <Divider className={FooterStyle['footer-powered-by-divider']} />
         </List>
+        <Divider className={FooterStyle['footer-powered-by-divider']} />
       </Grid>
       <Grid
         className={FooterStyle['footer-related']}
         item xs={12} sm={6} md={3} lg={2} xl={2}>
-        <List>
-         <ListItem>
-           <h2 className={FooterStyle['footer-related-title']}>
-             Related Link
-           </h2>
-         </ListItem>
-         <ListItem>
+        <h2 className={FooterStyle['footer-related-title']}>
+         Related Link
+        </h2>
+        <List className={FooterStyle['footer-related-list']}>
+          <ListItem>
             <Link
               className={FooterStyle['footer-related-item']}
               href='https://web.ncku.edu.tw/index.php'>
@@ -126,12 +122,13 @@ export default function Footer() {
               </Typography>
             </Link>
           </ListItem>
-          </List>
+        </List>
+        <Divider className={FooterStyle['footer-related-divider']} />
       </Grid>
       <Grid
         className={FooterStyle['footer-contact']}
         item xs={12} sm={6} md={3} lg={2} xl={2}>
-        <Divider className={FooterStyle['divider']} />
+        <Divider className={FooterStyle['footer-contact-divider']} />
         <List>
           <ListItem>
             <CallIcon />
@@ -139,7 +136,7 @@ export default function Footer() {
               className={FooterStyle['contact']}
               href='tel:+88662757575,62520,2903'>
               <Typography className={FooterStyle['contact-text']}>
-              +886-6-275-7575 ext 62520 ext 2903
+                +886-6-275-7575 ext 62520 ext 2903
               </Typography>
             </Link>
           </ListItem>
@@ -149,7 +146,7 @@ export default function Footer() {
               className={FooterStyle['contact']}
               href='mailto:ikmlab@mail.csie.ncku.edu.tw'>
               <Typography className={FooterStyle['contact-text']}>
-              ikmlab@mail.csie.ncku.edu.tw
+                ikmlab@mail.csie.ncku.edu.tw
               </Typography>
             </Link>
           </ListItem>

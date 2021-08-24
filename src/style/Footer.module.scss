@@ -1,146 +1,172 @@
 @import './Variable.module';
+
 .footer-section {
-    background-color: $main-color;
+  align-items: flex-start;
+  background-color: $main-color;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0;
+  padding: {
+    bottom: 10px;
+    top: 20px;
+  }
+
+  .footer-powered-by {
+    align-items: center;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     margin: 0;
-    padding: {
-        bottom: 10px;
-        top: 10px;
+    max-width: 300px;
+
+    &-title {
+      display: flex;
+      justify-content: center;
+      margin: 0;
     }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &-item {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      /**
+       * Avoid over-stretching the picture by setting the width and height of the icons to 32px.
+       */
+      &-image {
+        display: inline;
+        object-fit: scale-down;
+        width: 32px;
+      }
+
+      &-name {
+        color: #3b3a3a;
+        display: inline;
+        font-size: 12px;
+        font-weight: bold;
+        padding-left: 5px;
+      }
+    }
+
     /**
-    * Use flex to set display format.
-    * Set the title and icon two lines, leaving items in the middle.
-    */
-    .footer-powered-by {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        flex-basis: 300px;
-        height: 100%;
-        min-width: 300px;
-        justify-content: center;
-        &-title,
-        /**
-        * Use flex to set the display format, arrange icon-image and icon-name vertically.
-        */
-        &-item {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            &:hover {
-                text-decoration: none;
-            }
-            &-image {
-                width: 32px;
-                height: 40px;
-                object-fit: scale-down;
-            }
-            &-name {
-                padding-left: 5px;
-                width: 200px;
-                font-size: 12px;
-                font-weight: bold;
-                color: #3b3a3a;
-                white-space: nowrap;
-            }
-        }
-        /**
-        * Make a divider for the powered-by, setting the length of divider to 260px.
-        * Appears when footer-powered-by and footer-related become two lines.
-        */
-        &-divider {
-            margin-top: 5px;
-            width: 260px;
-            height: 1px;
-            background-color: #424242;
-            @media only screen and (min-width: $sm) {
-                display: none;
-            }
-        }
+     * Set the length of divider to 260px.
+     */
+    &-divider {
+      background-color: #424242;
+      margin-bottom: 20px;
+      width: 260px;
+
+      @media only screen and (min-width: $sm) {
+        display: none;
+      }
     }
+  }
+
+  .footer-related {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    max-width: 300px;
+
+    &-title {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &-item {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      /**
+       * Avoid over-stretching the picture by setting the width and height of the icons to 32px.
+       */
+      &-image {
+        display: inline;
+        object-fit: scale-down;
+        width: 32px;
+      }
+
+      &-name {
+        color: #3b3a3a;
+        display: inline;
+        font-size: 12px;
+        font-weight: bold;
+        padding-left: 5px;
+      }
+    }
+
     /**
-    * Use flex to set the display format, arranging related-title and related-icon vertically.
-    */
-    .footer-related {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        flex-basis: 300px;
-        height: 100%;
-        min-width: 300px;
-        align-items: center;
-        justify-content: center;
-        &-title,
-        /**
-        * Use flex to set the display format, arranging icon-image and icon-name vertically.
-        */
-        &-item {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            &:hover {
-                text-decoration: none;
-            }
-            /**
-            * Avoid over-stretching the picture.
-            * Set the width of the icons on both sides of the power-by and related sides to 32px.
-            */
-            &-image {
-                width: 32px;
-                object-fit: scale-down;
-            }
-            /**
-            * Change the width to avoid the length being too long to change to three lines.
-            * Set related-icon-name color to gray.
-            */
-            &-name {
-                padding-left: 5px;
-                width: 200px;
-                font-size: 12px;
-                font-weight: bold;
-                color: #3b3a3a;
-            }
-        }
+     * Set the length of divider to 260px.
+     */
+    &-divider {
+      background-color: #424242;
+      margin-bottom: 10px;
+      width: 260px;
+
+      @media only screen and (min-width: $sm) {
+        display: none;
+      }
     }
-    .footer-contact {
-        display: flex;
-        flex-direction: column;
-        min-width: 100%;
-        align-items: center;
-        vertical-align: center;
-        /**
-        * Make a divider for the contact, and set the length of divider to a maximum of
-        * 600px and a minimum of 260px
-        */
-        .divider {
-            width: 260px;
-            height: 1px;
-            background-color: #424242;
-            @media only screen and (min-width: $sm) {
-                width: 600px;
-            }
-        }
-        .contact {
-            padding-left: 5px;
-            color: #3b3a3a;
-            font-size: 12px;
-            &:hover {
-                text-decoration: none;
-            }
-            &-text {
-                padding-left: 5px;
-                color: #3b3a3a;
-                font-size: 12px;
-            }
-        }
+  }
+
+  .footer-contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    vertical-align: center;
+
+    &-divider {
+      background-color: #424242;
+      display: none;
+      width: 600px;
+
+      @media only screen and (min-width: $sm) {
+        display: block;
+      }
     }
+
+    .contact {
+      color: #3b3a3a;
+      font-size: 12px;
+      padding-left: 5px;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &-text {
+        color: #3b3a3a;
+        font-size: 12px;
+        padding-left: 5px;
+      }
+    }
+  }
 }
