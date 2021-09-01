@@ -163,13 +163,6 @@ export const memberData = [
     image: ChenHan,
   },
   {
-    zh: '黃子寬',
-    en: 'Zi-Kuan Huang',
-    dept: 0,
-    deg: 1,
-    image: ZiKuanHuang,
-  },
-  {
     zh: '吳貞頤',
     en: 'Zhen-Yi Wu',
     dept: 0,
@@ -332,6 +325,14 @@ export const memberData = [
     year: 2015,
   },
   // Graduate Masters
+  {
+    zh: '黃子寬',
+    en: 'Zi-Kuan Huang',
+    dept: 0,
+    deg: 1,
+    year: 2020,
+    image: ZiKuanHuang,
+  },
   {
     zh: '林雨瑩',
     en: 'Yu-Ying Lin',
