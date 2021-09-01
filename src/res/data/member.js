@@ -82,6 +82,8 @@ import ZhenYiWu
   from 'src/res/image/member/Zhen-Yi-Wu.png'
 import ZiKuanHuang
   from 'src/res/image/member/Zi-Kuan-Huang.png'
+import ChunYiLin
+  from 'src/res/image/member/Chun-Yi-Lin.png'
 
 export const memberData = [
   // PhD Students
@@ -203,6 +205,13 @@ export const memberData = [
     dept: 2,
     deg: 1,
     image: KuanYuChen,
+  },
+  {
+    zh: '林峻毅',
+    en: 'Chun-Yi Lin',
+    dept: 2,
+    deg: 1,
+    image: ChunYiLin,
   },
   {
     zh: '江昇翰',
