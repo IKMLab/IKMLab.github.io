@@ -90,6 +90,8 @@ import ChiaJenYeh
   from 'src/res/image/member/Chia-Jen-Yeh.png'
 import YuFangChang
   from 'src/res/image/member/Yu-Fang-Chang.png'
+import CheWeiChen
+  from 'src/res/image/member/Che-Wei-Chen.png'
 export const memberData = [
   // PhD Students
   {
@@ -280,6 +282,13 @@ export const memberData = [
     dept: 0,
     deg: 1,
     image: YuFangChang,
+  },
+  {
+    zh: '陳哲緯',
+    en: 'Che-Wei Chen',
+    dept: 1,
+    deg: 1,
+    image: CheWeiChen,
   },
   // Graduate PhDs
   {
