@@ -94,6 +94,8 @@ import CheWeiChen
   from 'src/res/image/member/Che-Wei-Chen.png'
 import YiTingLi
   from 'src/res/image/member/Yi-Ting-Li.png'
+import ChiMinChiu
+  from 'src/res/image/member/ChiMinChiu.png'
 export const memberData = [
   // PhD Students
   {
@@ -263,6 +265,13 @@ export const memberData = [
     dept: 0,
     deg: 1,
     image: YuHsuanWu,
+  },
+  {
+    zh: '邱祺閔',
+    en: 'Chi-Min Chiu',
+    dept: 0,
+    deg: 1,
+    image: ChiMinChiu,
   },
   {
     zh: '林峻毅',
