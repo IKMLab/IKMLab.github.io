@@ -12,8 +12,6 @@ import placeholder5
   from 'src/res/image/member/ikm5.png'
 import placeholder6
   from 'src/res/image/member/ikm6.png'
-import BiEnTan
-  from 'src/res/image/member/Bi-En-Tan.png'
 import BingGuoChi
   from 'src/res/image/member/Bing-Guo-Chi.png'
 import BoYiWu
@@ -174,41 +172,6 @@ export const memberData = [
     dept: 1,
     deg: 1,
     image: ChenHan,
-  },
-  {
-    zh: '吳貞頤',
-    en: 'Zhen-Yi Wu',
-    dept: 0,
-    deg: 1,
-    image: ZhenYiWu,
-  },
-  {
-    zh: '曾敬珊',
-    en: 'Ching-Shan Tseng',
-    dept: 0,
-    deg: 1,
-    image: ChingShanTseng,
-  },
-  {
-    zh: '吳柏逸',
-    en: 'Bo-Yi Wu',
-    dept: 0,
-    deg: 1,
-    image: BoYiWu,
-  },
-  {
-    zh: '陳比恩',
-    en: 'Daniel (Bi-En) Tan',
-    dept: 1,
-    deg: 1,
-    image: BiEnTan,
-  },
-  {
-    zh: '陳冠友',
-    en: 'Kuan-Yu Chen',
-    dept: 2,
-    deg: 1,
-    image: KuanYuChen,
   },
   {
     zh: '江昇翰',
@@ -387,6 +350,38 @@ export const memberData = [
     year: 2015,
   },
   // Graduate Masters
+  {
+    zh: '吳柏逸',
+    en: 'Bo-Yi Wu',
+    dept: 0,
+    deg: 1,
+    year: 2021,
+    image: BoYiWu,
+  },
+  {
+    zh: '吳貞頤',
+    en: 'Zhen-Yi Wu',
+    dept: 0,
+    deg: 1,
+    year: 2021,
+    image: ZhenYiWu,
+  },
+  {
+    zh: '曾敬珊',
+    en: 'Ching-Shan Tseng',
+    dept: 0,
+    deg: 1,
+    year: 2021,
+    image: ChingShanTseng,
+  },
+  {
+    zh: '陳冠友',
+    en: 'Kuan-Yu Chen',
+    dept: 2,
+    deg: 1,
+    year: 2021,
+    image: KuanYuChen,
+  },
   {
     zh: '黃子寬',
     en: 'Zi-Kuan Huang',
