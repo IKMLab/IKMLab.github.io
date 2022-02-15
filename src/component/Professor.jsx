@@ -112,21 +112,33 @@ function ResearchContent() {
 function ExperienceContent() {
   const textContent = [
     [
+      `Vice Dean,
+      College of Electrical Engineering and Computer Science
+      (EECS), NCKU`,
+      `2021.8 ~ Present`,
+    ],
+    [
+      `Chair,
+      Ph.D. Program of Multimedia system and intelligent computing
+      , NCKU`,
+      `2021.8 ~ Present`,
+    ],
+    [
       `Director,
       Department of Computer Science and Information Engineering
       (CSIE), NCKU`,
-      `2018.2 ~ present`,
+      `2018.2 ~ 2021.1`,
     ],
     [
       `Director,
       Institute of Medical Informatics (IMI),
       NCKU`,
-      `2015.8 ~ present`,
+      `2015.8 ~ 2018.7`,
     ],
     [
       `Chair,
       IEEE Computational Intelligence Society (CIS) Tainan Chapter`,
-      `2017.8 ~ present`,
+      `2017.8 ~ 2021.7`,
     ],
     [
       `Vice Chair,
@@ -203,7 +215,7 @@ function HonorContent() {
   const textContent = [
     [
       `National Cheng Kung University Teaching Award`,
-      `2015`,
+      `2015, 2021`,
     ],
     [
       `National Cheng Kung University College EECS Outstanding Mentoring
@@ -212,7 +224,7 @@ function HonorContent() {
     ],
     [
       `National Cheng Kung University Distinguished Teaching Award`,
-      `2011 to 2013.`,
+      `2011`,
     ],
     [
       `BioCreAtIvE III Competition, Gene Normalization Task, 1st award
