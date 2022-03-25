@@ -48,6 +48,8 @@ import LiTingTang
   from 'src/res/image/member/Li-Ting-Tang.png'
 import MingJiChen
   from 'src/res/image/member/Ming-Ji-Chen.png'
+import YiuCheongYung
+  from 'src/res/image/member/Yiu-Cheong-Yung.png'
 import ReinaldAdrianPugoy
   from 'src/res/image/member/Reinald-Adrian-Pugoy.png'
 import ShengHanChiang
@@ -270,6 +272,13 @@ export const memberData = [
     dept: 0,
     deg: 1,
     image: YiTingLi,
+  },
+  {
+    zh: '翁耀昌',
+    en: 'Yiu-Cheong Yung',
+    dept: 0,
+    deg: 1,
+    image: YiuCheongYung,
   },
   // Graduate PhDs
   {
