@@ -48,6 +48,8 @@ import LiTingTang
   from 'src/res/image/member/Li-Ting-Tang.png'
 import MingJiChen
   from 'src/res/image/member/Ming-Ji-Chen.png'
+import MingCheHu
+  from 'src/res/image/member/Ming-Che-Hu.png'
 import YiuCheongYung
   from 'src/res/image/member/Yiu-Cheong-Yung.png'
 import ReinaldAdrianPugoy
@@ -166,6 +168,13 @@ export const memberData = [
     dept: 0,
     deg: 0,
     image: IrwanSetiawan,
+  },
+  {
+    zh: '胡銘哲',
+    en: 'Ming-Che Hu',
+    dept: 0,
+    deg: 0,
+    image: MingCheHu,
   },
   // Master Students
   {
