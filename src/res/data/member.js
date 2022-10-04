@@ -100,6 +100,22 @@ import ChiMinChiu
   from 'src/res/image/member/ChiMinChiu.png'
 import WilliamLin
   from 'src/res/image/member/William-Lin.png'
+import ChihHaoHsu
+  from 'src/res/image/member/Chih-Hao-Hsu.png'
+import ChingWenYang
+  from 'src/res/image/member/Ching-Wen-Yang.png'
+import ChongYiZhang
+  from 'src/res/image/member/Chong-Yi-Zhang.png'
+import DiNanLin
+  from 'src/res/image/member/Di-Nan-Lin.png'
+import KengJungKu
+  from 'src/res/image/member/Keng-Jung-Ku.png'
+import RunnPrasoprat
+  from 'src/res/image/member/Runn-Prasoprat.png'
+import TzuHanLo
+  from 'src/res/image/member/Tzu-Han-Lo.png'
+import YunYuHu
+  from 'src/res/image/member/Yun-Yu-Hu.png'
 export const memberData = [
   // PhD Students
   {
@@ -297,6 +313,62 @@ export const memberData = [
     dept: 0,
     deg: 1,
     image: WilliamLin,
+  },
+  {
+    zh: '許智豪',
+    en: 'Chih-Hao Hsu',
+    dept: 0,
+    deg: 1,
+    image: ChihHaoHsu,
+  },
+  {
+    zh: '楊晴雯',
+    en: 'Ching-Wen Yang',
+    dept: 0,
+    deg: 1,
+    image: ChingWenYang,
+  },
+  {
+    zh: '張崇一',
+    en: 'Chong-Yi Zhang',
+    dept: 0,
+    deg: 1,
+    image: ChongYiZhang,
+  },
+  {
+    zh: '林諦南',
+    en: 'Di-Nan Lin',
+    dept: 0,
+    deg: 1,
+    image: DiNanLin,
+  },
+  {
+    zh: '古耕榕',
+    en: 'Keng-Jung Ku',
+    dept: 0,
+    deg: 1,
+    image: KengJungKu,
+  },
+  {
+    zh: '胡劍杰',
+    en: 'Runn Prasoprat',
+    dept: 1,
+    deg: 1,
+    image: RunnPrasoprat,
+  },
+  {
+    zh: '羅子涵',
+    en: 'Tzu-Han Lo',
+    dept: 1,
+    deg: 1,
+    image: TzuHanLo,
+  },
+  {
+    zh: '胡運瑜',
+    en: 'Yun-Yu Hu',
+    dept: 2,
+    deg: 1,
+    image: YunYuHu,
   },
   // Graduate PhDs
   {
