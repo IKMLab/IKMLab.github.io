@@ -18,20 +18,34 @@ import BoYiWu
   from 'src/res/image/member/Bo-Yi-Wu.png'
 import ChangYiPan
   from 'src/res/image/member/Chang-Yi-Pan.png'
-import ChenHan
-  from 'src/res/image/member/Chen-Han.png'
+import CheWeiChen
+  from 'src/res/image/member/Che-Wei-Chen.png'
+import ChiaJenYeh
+  from 'src/res/image/member/Chia-Jen-Yeh.png'
 import ChienLiangLiu
   from 'src/res/image/member/Chien-Liang-Liu.png'
 import ChihWeiHsu
   from 'src/res/image/member/Chih-Wei-Hsu.png'
+import ChihHaoHsu
+  from 'src/res/image/member/Chih-Hao-Hsu.png'
+import ChiMinChiu
+  from 'src/res/image/member/ChiMinChiu.png'
 import ChingShanTseng
   from 'src/res/image/member/Ching-Shan-Tseng.png'
+import ChingWenYang
+  from 'src/res/image/member/Ching-Wen-Yang.png'
+import ChunYiLin
+  from 'src/res/image/member/Chun-Yi-Lin.png'
 import CutieP
   from 'src/res/image/member/Cutie-P.png'
+import ChongYiZhang
+  from 'src/res/image/member/Chong-Yi-Zhang.png'
 import DarrenChang
   from 'src/res/image/member/Darren-Chang.png'
 import DengDengDeng
   from 'src/res/image/member/Deng-Deng-Deng.png'
+import DiNanLin
+  from 'src/res/image/member/Di-Nan-Lin.png'
 import HowToTrain
   from 'src/res/image/member/How-To-Train.png'
 import HsiuWenLi
@@ -42,6 +56,8 @@ import IrwanSetiawan
   from 'src/res/image/member/Irwan-Setiawan.png'
 import JiunManChen
   from 'src/res/image/member/Jiun-Man-Chen.png'
+import KengJungKu
+  from 'src/res/image/member/Keng-Jung-Ku.png'
 import KuanYuChen
   from 'src/res/image/member/Kuan-Yu-Chen.png'
 import LiTingTang
@@ -50,10 +66,10 @@ import MingJiChen
   from 'src/res/image/member/Ming-Ji-Chen.png'
 import MingCheHu
   from 'src/res/image/member/Ming-Che-Hu.png'
-import YiuCheongYung
-  from 'src/res/image/member/Yiu-Cheong-Yung.png'
 import ReinaldAdrianPugoy
   from 'src/res/image/member/Reinald-Adrian-Pugoy.png'
+import RunnPrasoprat
+  from 'src/res/image/member/Runn-Prasoprat.png'
 import ShengHanChiang
   from 'src/res/image/member/Sheng-Han-Chiang.png'
 import ShengXuanLin
@@ -64,42 +80,41 @@ import SzuTungLin
   from 'src/res/image/member/Szu-Tung-Lin.png'
 import TimothyStephenNiven
   from 'src/res/image/member/Timothy-Stephen-Niven.png'
+import TzuHanLo
+  from 'src/res/image/member/Tzu-Han-Lo.png'
 import TzuHsuanChou
   from 'src/res/image/member/Tzu-Hsuan-Chou.png'
 import WenJieTsai
   from 'src/res/image/member/Wen-Jie-Tsai.png'
+import WilliamLin
+  from 'src/res/image/member/William-Lin.png'
 import YiChunChen
   from 'src/res/image/member/Yi-Chun-Chen.png'
 import YiTingDing
   from 'src/res/image/member/Yi-Ting-Ding.png'
+import YiTingLi
+  from 'src/res/image/member/Yi-Ting-Li.png'
 import YingJiaLin
   from 'src/res/image/member/Ying-Jia-Lin.png'
+import YiuCheongYung
+  from 'src/res/image/member/Yiu-Cheong-Yung.png'
+import YudiantoSujana
+  from 'src/res/image/member/Yudianto-Sujana.png'
+import YuHsuanWu
+  from 'src/res/image/member/Yu-Hsuan-Wu.png'
+import YunYuHu
+  from 'src/res/image/member/Yun-Yu-Hu.png'
 import YuYingLin
   from 'src/res/image/member/Yu-Ying-Lin.png'
 import YuYunWang
   from 'src/res/image/member/Yu-Yun-Wang.png'
-import YudiantoSujana
-  from 'src/res/image/member/Yudianto-Sujana.png'
+import YuFangChang
+  from 'src/res/image/member/Yu-Fang-Chang.png'
 import ZhenYiWu
   from 'src/res/image/member/Zhen-Yi-Wu.png'
 import ZiKuanHuang
   from 'src/res/image/member/Zi-Kuan-Huang.png'
-import YuHsuanWu
-  from 'src/res/image/member/Yu-Hsuan-Wu.png'
-import ChunYiLin
-  from 'src/res/image/member/Chun-Yi-Lin.png'
-import ChiaJenYeh
-  from 'src/res/image/member/Chia-Jen-Yeh.png'
-import YuFangChang
-  from 'src/res/image/member/Yu-Fang-Chang.png'
-import CheWeiChen
-  from 'src/res/image/member/Che-Wei-Chen.png'
-import YiTingLi
-  from 'src/res/image/member/Yi-Ting-Li.png'
-import ChiMinChiu
-  from 'src/res/image/member/ChiMinChiu.png'
-import WilliamLin
-  from 'src/res/image/member/William-Lin.png'
+
 export const memberData = [
   // PhD Students
   {
@@ -180,46 +195,11 @@ export const memberData = [
   },
   // Master Students
   {
-    zh: '陳晗',
-    en: 'Han Chen',
-    dept: 1,
-    deg: 1,
-    image: ChenHan,
-  },
-  {
-    zh: '江昇翰',
-    en: 'Sheng-Han Chiang',
-    dept: 1,
-    deg: 1,
-    image: ShengHanChiang,
-  },
-  {
-    zh: '劉建良',
-    en: 'Chien-Liang Liu',
-    dept: 0,
-    deg: 1,
-    image: ChienLiangLiu,
-  },
-  {
     zh: '黎修文',
     en: 'Hsiu-Wen Li',
     dept: 0,
     deg: 1,
     image: HsiuWenLi,
-  },
-  {
-    zh: '陳明吉',
-    en: 'Ming-Ji Chen',
-    dept: 0,
-    deg: 1,
-    image: MingJiChen,
-  },
-  {
-    zh: '林思彤',
-    en: 'Szu-Tung Lin',
-    dept: 0,
-    deg: 1,
-    image: SzuTungLin,
   },
   {
     zh: '陳均嫚',
@@ -297,6 +277,62 @@ export const memberData = [
     dept: 0,
     deg: 1,
     image: WilliamLin,
+  },
+  {
+    zh: '許智豪',
+    en: 'Chih-Hao Hsu',
+    dept: 0,
+    deg: 1,
+    image: ChihHaoHsu,
+  },
+  {
+    zh: '楊晴雯',
+    en: 'Ching-Wen Yang',
+    dept: 0,
+    deg: 1,
+    image: ChingWenYang,
+  },
+  {
+    zh: '張崇一',
+    en: 'Chong-Yi Zhang',
+    dept: 0,
+    deg: 1,
+    image: ChongYiZhang,
+  },
+  {
+    zh: '林諦南',
+    en: 'Di-Nan Lin',
+    dept: 0,
+    deg: 1,
+    image: DiNanLin,
+  },
+  {
+    zh: '古耕榕',
+    en: 'Keng-Jung Ku',
+    dept: 0,
+    deg: 1,
+    image: KengJungKu,
+  },
+  {
+    zh: '胡劍杰',
+    en: 'Runn Prasoprat',
+    dept: 2,
+    deg: 1,
+    image: RunnPrasoprat,
+  },
+  {
+    zh: '羅子涵',
+    en: 'Tzu-Han Lo',
+    dept: 2,
+    deg: 1,
+    image: TzuHanLo,
+  },
+  {
+    zh: '胡運瑜',
+    en: 'Yun-Yu Hu',
+    dept: 1,
+    deg: 1,
+    image: YunYuHu,
   },
   // Graduate PhDs
   {
@@ -377,6 +413,38 @@ export const memberData = [
     year: 2015,
   },
   // Graduate Masters
+  {
+    zh: '陳明吉',
+    en: 'Ming-Ji Chen',
+    dept: 0,
+    deg: 1,
+    image: MingJiChen,
+    year: 2022,
+  },
+  {
+    zh: '林思彤',
+    en: 'Szu-Tung Lin',
+    dept: 0,
+    deg: 1,
+    image: SzuTungLin,
+    year: 2022,
+  },
+  {
+    zh: '江昇翰',
+    en: 'Sheng-Han Chiang',
+    dept: 1,
+    deg: 1,
+    image: ShengHanChiang,
+    year: 2022,
+  },
+  {
+    zh: '劉建良',
+    en: 'Chien-Liang Liu',
+    dept: 0,
+    deg: 1,
+    image: ChienLiangLiu,
+    year: 2022,
+  },
   {
     zh: '吳柏逸',
     en: 'Bo-Yi Wu',
@@ -1059,7 +1127,7 @@ const schemaCheck = () => {
 
     // Check if degree is filled with correct range.
     if (!validator(member.deg, schema.items.properties.deg.type) ||
-    !validator(parsingRule.deg[member.deg], 'string')) {
+      !validator(parsingRule.deg[member.deg], 'string')) {
       console.error(member)
       throw new Error(
           `member.deg must be in range [0, ${parsingRule.deg.length - 1}].`,
@@ -1067,11 +1135,10 @@ const schemaCheck = () => {
     }
     // Check if department is filled with correct range.
     if (!validator(member.dept, schema.items.properties.dept.type) ||
-    !validator(parsingRule.dept[member.dept], 'string')) {
+      !validator(parsingRule.dept[member.dept], 'string')) {
       console.error(member)
       throw new Error(
-          `member.dept must be in range [0, ${
-            parsingRule.dept.length - 1
+          `member.dept must be in range [0, ${parsingRule.dept.length - 1
           }].`,
       )
     }
@@ -1079,12 +1146,11 @@ const schemaCheck = () => {
     // Check if graduate year is filled with correct range.
     if (member.year) {
       if (!validator(member.year, schema.items.properties.year.type) ||
-      member.year < 1990 ||
-      member.year > new Date(Date.now()).getFullYear()) {
+        member.year < 1990 ||
+        member.year > new Date(Date.now()).getFullYear()) {
         console.error(member)
         throw new Error(
-            `member.year must be in range [1990, ${
-              new Date(Date.now()).getFullYear()
+            `member.year must be in range [1990, ${new Date(Date.now()).getFullYear()
             }].`,
         )
       }
@@ -1094,7 +1160,7 @@ const schemaCheck = () => {
       if (!validator(member.image, schema.items.properties.image.type)) {
         console.error(member)
         throw new Error(
-            'member.image should be imported in file: '+
+            'member.image should be imported in file: ' +
           'src/res/data/member.js',
         )
       }
