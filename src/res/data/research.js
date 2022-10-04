@@ -1,6 +1,29 @@
 export const researchData = [
   {
     title:
+      'True or False: Does the Deep Learning Model Learn to Detect ' +
+      'Rumors?',
+    authors: [
+      'Shiwen Ni',
+      'Jiawen Li',
+      'Hung-Yu Kao',
+    ],
+    venue: 'TAAI',
+    venueType: 'conference',
+    year: 2021,
+    url: '#',
+    topic: 'NLP',
+    subfields: [
+      'Rumor Detection',
+    ],
+    professorPreferredFormat:
+      'S.-W. Ni, J.-W. Li, and H.-Y. Kao, "True or False: Does the ' +
+      'Deep Learning Model Learn to Detect Rumors?," Proc. of the ' +
+      '2020 Conference on Technologies and Applications of ' +
+      'Artificial Intelligence (TAAI-2021), Nov. 18-20, 2021.',
+  },
+  {
+    title:
       'Lithium concentration and recurrence risk during maintenance ' +
       'treatment of bipolar disorder: multicenter cohort and ' +
       'meta‐analysis ',
