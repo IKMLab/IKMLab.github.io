@@ -1,11 +1,11 @@
 export const researchData = [
   {
-    title: 
-      'HAT4RD: Hierarchical Adversarial Training for Rumor '+
+    title:
+      'HAT4RD: Hierarchical Adversarial Training for Rumor ' +
       'Detection in Social Media',
-    author: [
-      'S.-W. Ni', 
-      'J.-W. Li', 
+    authors: [
+      'S.-W. Ni',
+      'J.-W. Li',
       'H. -Y. Kao',
     ],
     venue: 'Sensors',
@@ -13,24 +13,24 @@ export const researchData = [
     year: 2022,
     url: 'https://doi.org/10.3390/s22176652',
     topic: 'NLP',
-    subfield: [
+    subfields: [
       'Rumor Detection',
     ],
-    professorPreferredFormat: 
-      'S.-W. Ni, J.-W. Li, and H. -Y. Kao, “HAT4RD: Hierarchical '+
-      'Adversarial Training for Rumor Detection in Social Media, '+
+    professorPreferredFormat:
+      'S.-W. Ni, J.-W. Li, and H. -Y. Kao, “HAT4RD: Hierarchical ' +
+      'Adversarial Training for Rumor Detection in Social Media, ' +
       '“ Sensors, 2022, 22, 6652.',
   },
   {
-    title: 
-      'Comparative effectiveness of antidepressants on geriatric '+ 
+    title:
+      'Comparative effectiveness of antidepressants on geriatric ' +
       'depression: Real-world evidence from a population-based study',
-    author: [
-      'C.-W. Hsu',  
-      'W.-T. Tseng', 
-      'L.-J. Wang', 
-      'Y.-H. Yang', 
-      'H.-Y. Kao', 
+    authors: [
+      'C.-W. Hsu',
+      'W.-T. Tseng',
+      'L.-J. Wang',
+      'Y.-H. Yang',
+      'H.-Y. Kao',
       'P.-Y. Lin',
     ],
     venue: 'J Affect Disord',
@@ -38,32 +38,32 @@ export const researchData = [
     year: 2022,
     url: 'https://www.sciencedirect.com/science/article/pii/S0165032721010776?via%3Dihub',
     topic: 'Bio-Medical',
-    subfield: [
+    subfields: [
       'Bioformatics',
     ],
-    professorPreferredFormat: 
-      'C.-W. Hsu, , W.-T. Tseng, L.-J. Wang, Y.-H. Yang, H.-Y. Kao, '+
-      'P.-Y. Lin, “Comparative effectiveness of antidepressants on '+
-      'geriatric depression: Real-world evidence from a population-based '+
-      'study, “ J Affect Disord. 2022; 296:609-15. '+
-      'doi: 10.1016/j.jad.2021.10.009. PMID: 34655698. '+
+    professorPreferredFormat:
+      'C.-W. Hsu, , W.-T. Tseng, L.-J. Wang, Y.-H. Yang, H.-Y. Kao, ' +
+      'P.-Y. Lin, “Comparative effectiveness of antidepressants on ' +
+      'geriatric depression: Real-world evidence from a population-based ' +
+      'study, “ J Affect Disord. 2022; 296:609-15. ' +
+      'doi: 10.1016/j.jad.2021.10.009. PMID: 34655698. ' +
       '(SCIE; IF=6.533; Clinical Neurology 29/212 [14%])',
   },
   {
-    title: 
-      'Differences in the prophylactic effect of serum lithium '+
-      'levels on depression and mania in bipolar disorder: '+
+    title:
+      'Differences in the prophylactic effect of serum lithium ' +
+      'levels on depression and mania in bipolar disorder: ' +
       'A dose-response meta-analysis',
-    author: [
+    authors: [
       'C.-W. Hsu',
       'S.-Y. Tsai',
       'P.-T. Tseng',
       'C.-S. Liang',
-      'E. Vieta', 
+      'E. Vieta',
       'A.-F. Carvalho',
-      'B. Stubbs', 
-      'H.-Y. Kao', 
-      'Y.-K. Tu', 
+      'B. Stubbs',
+      'H.-Y. Kao',
+      'Y.-K. Tu',
       'P.-Y. Lin',
     ],
     venue: 'Neuropsychopharmacology',
@@ -71,32 +71,32 @@ export const researchData = [
     year: 2022,
     url: 'https://doi.org/10.1016/j.euroneuro.2022.01.112',
     topic: 'Bio-Medical',
-    subfield: [
+    subfields: [
       'Bioformatics',
     ],
-    professorPreferredFormat: 
-      'C.-W. Hsu, S.-Y. Tsai, P.-T. Tseng, C.-S. Liang, E. Vieta, '+
-      'A.-F. Carvalho, B. Stubbs, H.-Y. Kao, Y.-K. Tu, P.-Y. Lin, '+
-      '“Differences in the prophylactic effect of serum lithium levels '+
-      'on depression and mania in bipolar disorder: A dose-response '+
-      'meta-analysis, “ Eur Neuropsychopharmacol. 2022; 58:20-9. '+
-      'doi: 10.1016/j.euroneuro.2022.01.112. PMID: 35158229. '+
+    professorPreferredFormat:
+      'C.-W. Hsu, S.-Y. Tsai, P.-T. Tseng, C.-S. Liang, E. Vieta, ' +
+      'A.-F. Carvalho, B. Stubbs, H.-Y. Kao, Y.-K. Tu, P.-Y. Lin, ' +
+      '“Differences in the prophylactic effect of serum lithium levels ' +
+      'on depression and mania in bipolar disorder: A dose-response ' +
+      'meta-analysis, “ Eur Neuropsychopharmacol. 2022; 58:20-9. ' +
+      'doi: 10.1016/j.euroneuro.2022.01.112. PMID: 35158229. ' +
       '(SCIE; IF=5.415; Clinical Neurology 47/212 [22%])',
   },
   {
-    title: 
-      'Predicting Serum Levels of Lithium-Treated Patients: '+
+    title:
+      'Predicting Serum Levels of Lithium-Treated Patients: ' +
       'A Supervised Machine Learning Approach',
-    author: [
-      'C.-W. Hsu', 
-      'S.-Y. Tsai', 
-      'L.-J. Wang', 
-      'C.-S. Liang', 
-      'A.-F. Carvalho', 
-      'M. Solmi', 
-      'E. Vieta', 
-      'P.-Y. Lin', 
-      'C.-A. Hu', 
+    authors: [
+      'C.-W. Hsu',
+      'S.-Y. Tsai',
+      'L.-J. Wang',
+      'C.-S. Liang',
+      'A.-F. Carvalho',
+      'M. Solmi',
+      'E. Vieta',
+      'P.-Y. Lin',
+      'C.-A. Hu',
       'H.-Y. Kao',
     ],
     venue: 'Biomedicines',
@@ -104,30 +104,30 @@ export const researchData = [
     year: 2021,
     url: 'https://www.mdpi.com/2227-9059/9/11/1558',
     topic: 'Bio-Medical',
-    subfield: [
+    subfields: [
       'Bioformatics',
     ],
-    professorPreferredFormat: 
-      'C.-W. Hsu, S.-Y. Tsai, L.-J. Wang, C.-S. Liang, A.-F. Carvalho, M. Solmi, '+
-      'E. Vieta, P.-Y. Lin, C.-A. Hu, H.-Y. Kao, “Predicting Serum Levels of '+
-      'Lithium-Treated Patients: A Supervised Machine Learning Approach, '+
-      '“ Biomedicines. 2021; 9(11). doi: 10.3390/biomedicines9111558. '+
+    professorPreferredFormat:
+      'C.-W. Hsu, S.-Y. Tsai, L.-J. Wang, C.-S. Liang, A.-F. Carvalho, M. Solmi, ' +
+      'E. Vieta, P.-Y. Lin, C.-A. Hu, H.-Y. Kao, “Predicting Serum Levels of ' +
+      'Lithium-Treated Patients: A Supervised Machine Learning Approach, ' +
+      '“ Biomedicines. 2021; 9(11). doi: 10.3390/biomedicines9111558. ' +
       'PMID: 34829787. (SCIE; IF=4.757; Medicine, Research & Experimental 62/139 [45%])',
   },
   {
-    title: 
+    title:
       'Month of birth and the risk of narcolepsy: a systematic review and meta-analysis',
-    author: [
-      'C.-W. Hsu', 
-      'P.-T. Tseng', 
-      'Y.-K. Tu', 
-      'P.-Y. Lin', 
-      'L.-J. Wang', 
-      'C.-F. Hung', 
-      'Y.-H. Yang', 
-      'H.-Y. Kao', 
-      'C.-B. Yeh', 
-      'H.-C. Lai', 
+    authors: [
+      'C.-W. Hsu',
+      'P.-T. Tseng',
+      'Y.-K. Tu',
+      'P.-Y. Lin',
+      'L.-J. Wang',
+      'C.-F. Hung',
+      'Y.-H. Yang',
+      'H.-Y. Kao',
+      'C.-B. Yeh',
+      'H.-C. Lai',
       'T.-Y. Chen',
     ],
     venue: 'JCSM',
@@ -135,27 +135,27 @@ export const researchData = [
     year: 2021,
     url: 'https://jcsm.aasm.org/doi/10.5664/jcsm.9816',
     topic: 'Bio-Medical',
-    subfield: [
+    subfields: [
       'bioformatics',
     ],
-    professorPreferredFormat: 
-      'C.-W. Hsu, P.-T. Tseng, Y.-K. Tu, P.-Y. Lin, L.-J. Wang, C.-F. Hung, Y.-H. Yang, '+
-      'H.-Y. Kao, C.-B. Yeh, H.-C. Lai, T.-Y. Chen, “Month of birth and the risk of narcolepsy: '+
-      'a systematic review and meta-analysis. J Clin Sleep Med. 2021. doi: 10.5664/jcsm.9816. '+
+    professorPreferredFormat:
+      'C.-W. Hsu, P.-T. Tseng, Y.-K. Tu, P.-Y. Lin, L.-J. Wang, C.-F. Hung, Y.-H. Yang, ' +
+      'H.-Y. Kao, C.-B. Yeh, H.-C. Lai, T.-Y. Chen, “Month of birth and the risk of narcolepsy: ' +
+      'a systematic review and meta-analysis. J Clin Sleep Med. 2021. doi: 10.5664/jcsm.9816. ' +
       'PMID: 34893148. (SCIE; IF=4.324; Chinical Neurology 80/212 [38%])',
   },
   {
-    title: 
-      'An Innovative Wearable Device For Monitoring Continuous Body Surface Temperature '+
+    title:
+      'An Innovative Wearable Device For Monitoring Continuous Body Surface Temperature ' +
       '(HEARThermo): Instrument Validation Study',
-    author: [
-      'C.-Y. Yeh', 
-      'Y.-T. Chung', 
-      'K.-T. Chuang', 
-      'Y.-C. Shu', 
-      'H.-Y. Kao', 
-      'P.-L. Chen', 
-      'W.-C. Ko', 
+    authors: [
+      'C.-Y. Yeh',
+      'Y.-T. Chung',
+      'K.-T. Chuang',
+      'Y.-C. Shu',
+      'H.-Y. Kao',
+      'P.-L. Chen',
+      'W.-C. Ko',
       'N.-Y. Ko',
     ],
     venue: 'JMIR',
@@ -163,19 +163,19 @@ export const researchData = [
     year: 2021,
     url: 'https://mhealth.jmir.org/2021/2/e19210/',
     topic: 'Bio-Medical',
-    subfield: [
+    subfields: [
       'bioformatics',
     ],
-    professorPreferredFormat: 
-      'C.-Y. Yeh, Y.-T. Chung, K.-T. Chuang, Y.-C. Shu, H.-Y. Kao, P.-L. Chen, W.-C. Ko, N.-Y. Ko, '+
-      '“An Innovative Wearable Device For Monitoring Continuous Body Surface Temperature (HEARThermo): '+
+    professorPreferredFormat:
+      'C.-Y. Yeh, Y.-T. Chung, K.-T. Chuang, Y.-C. Shu, H.-Y. Kao, P.-L. Chen, W.-C. Ko, N.-Y. Ko, ' +
+      '“An Innovative Wearable Device For Monitoring Continuous Body Surface Temperature (HEARThermo): ' +
       'Instrument Validation Study,” JMIR MHEALTH AND UHEALTH, Vol 9, Feb 2021.',
   },
   {
-    title: 
+    title:
       'R-AT: Regularized Adversarial Training for Natural Language Understanding',
-    author: [
-      'S.-W. Ni', 
+    authors: [
+      'S.-W. Ni',
       'J.-W. Li',
       'H. -Y. Kao',
     ],
@@ -184,20 +184,20 @@ export const researchData = [
     year: 2022,
     url: '#',
     topic: 'NLP',
-    subfield: [
+    subfields: [
       'Natural Language Understanding',
     ],
-    professorPreferredFormat: 
-      'S.-W. Ni, J.-W. Li, and H. -Y. Kao, “R-AT: Regularized Adversarial Training for Natural Language Understanding, '+
-      '“ Proc. of the 2022 Conference on Empirical Methods in Natural Language Processing (Finding of EMNLP-2022), '+
+    professorPreferredFormat:
+      'S.-W. Ni, J.-W. Li, and H. -Y. Kao, “R-AT: Regularized Adversarial Training for Natural Language Understanding, ' +
+      '“ Proc. of the 2022 Conference on Empirical Methods in Natural Language Processing (Finding of EMNLP-2022), ' +
       'Abu Dhabi, Dec 7-11, 2022.',
   },
   {
-    title: 
+    title:
       'Unsupervised Single Document Abstractive Summarization using Semantic Units',
-    author: [
-      'J.-Y. Wu', 
-      'Y.-J. Lin', 
+    authors: [
+      'J.-Y. Wu',
+      'Y.-J. Lin',
       'H.-Y. Kao',
     ],
     venue: 'AACL',
@@ -205,12 +205,12 @@ export const researchData = [
     year: 2022,
     url: '#',
     topic: 'NLP',
-    subfield: [
-      'Summarization','Sentiment Analysis',
+    subfields: [
+      'Summarization', 'Sentiment Analysis',
     ],
-    professorPreferredFormat: 
-      'J.-Y. Wu, Y.-J. Lin, H.-Y. Kao, “Unsupervised Single Document Abstractive Summarization using Semantic Units, '+
-      '“ Proc. of The 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics '+
+    professorPreferredFormat:
+      'J.-Y. Wu, Y.-J. Lin, H.-Y. Kao, “Unsupervised Single Document Abstractive Summarization using Semantic Units, ' +
+      '“ Proc. of The 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics ' +
       '(AACL-2022), Nov. 20-23, 2022.',
   },
   {
