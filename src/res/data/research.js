@@ -1,20 +1,4 @@
 export const researchData = [
-  
-  {
-    title: 
-      'Research Title',
-    author: [
-      'Author Name',
-    ],
-    venue: 'Venue Name',
-    venueType: 'Journal',
-    year: 2019,
-    url: 'https://example.com',
-    topic: ['tag1', 'tag2'],
-    subfield: ['subfield1', 'subfield2'],
-    professorPreferredFormat: 
-      'APA',
-  },
   {
     title: 
       'HAT4RD: Hierarchical Adversarial Training for Rumor '+
@@ -24,7 +8,7 @@ export const researchData = [
       'J.-W. Li', 
       'H. -Y. Kao',
     ],
-    venue: 'Venue Name',
+    venue: 'Sensors',
     venueType: 'Journal',
     year: 2022,
     url: 'https://doi.org/10.3390/s22176652',
@@ -47,10 +31,10 @@ export const researchData = [
       'H.-Y. Kao', 
       'P.-Y. Lin',
     ],
-    venue: 'Venue Name',
+    venue: 'J Affect Disord',
     venueType: 'Journal',
-    year: 2019,
-    url: 'https://example.com',
+    year: 2022,
+    url: 'https://www.sciencedirect.com/science/article/pii/S0165032721010776?via%3Dihub',
     topic: ['tag1', 'tag2'],
     subfield: ['subfield1', 'subfield2'],
     professorPreferredFormat: 
@@ -67,12 +51,21 @@ export const researchData = [
       'levels on depression and mania in bipolar disorder: '+
       'A dose-response meta-analysis',
     author: [
-
+      'C.-W. Hsu',
+      'S.-Y. Tsai',
+      'P.-T. Tseng',
+      'C.-S. Liang',
+      'E. Vieta', 
+      'A.-F. Carvalho',
+      'B. Stubbs', 
+      'H.-Y. Kao', 
+      'Y.-K. Tu', 
+      'P.-Y. Lin',
     ],
-    venue: 'Venue Name',
+    venue: 'Neuropsychopharmacology',
     venueType: 'Journal',
-    year: 2019,
-    url: 'https://example.com',
+    year: 2022,
+    url: 'https://doi.org/10.1016/j.euroneuro.2022.01.112',
     topic: ['tag1', 'tag2'],
     subfield: ['subfield1', 'subfield2'],
     professorPreferredFormat: 
@@ -86,14 +79,24 @@ export const researchData = [
   },
   {
     title: 
-      'Research Title',
+      'Predicting Serum Levels of Lithium-Treated Patients: '+
+      'A Supervised Machine Learning Approach',
     author: [
-      'Author Name',
+      'C.-W. Hsu', 
+      'S.-Y. Tsai', 
+      'L.-J. Wang', 
+      'C.-S. Liang', 
+      'A.-F. Carvalho', 
+      'M. Solmi', 
+      'E. Vieta', 
+      'P.-Y. Lin', 
+      'C.-A. Hu', 
+      'H.-Y. Kao',
     ],
-    venue: 'Venue Name',
+    venue: 'Biomedicines',
     venueType: 'Journal',
-    year: 2019,
-    url: 'https://example.com',
+    year: 2021,
+    url: 'https://www.mdpi.com/2227-9059/9/11/1558',
     topic: ['tag1', 'tag2'],
     subfield: ['subfield1', 'subfield2'],
     professorPreferredFormat: 
@@ -105,46 +108,95 @@ export const researchData = [
   },
   {
     title: 
-      'Research Title',
+      'Month of birth and the risk of narcolepsy: a systematic review and meta-analysis',
     author: [
-      'Author Name',
+      'C.-W. Hsu', 
+      'P.-T. Tseng', 
+      'Y.-K. Tu', 
+      'P.-Y. Lin', 
+      'L.-J. Wang', 
+      'C.-F. Hung', 
+      'Y.-H. Yang', 
+      'H.-Y. Kao', 
+      'C.-B. Yeh', 
+      'H.-C. Lai', 
+      'T.-Y. Chen',
     ],
-    venue: 'Venue Name',
+    venue: 'JCSM',
     venueType: 'Journal',
-    year: 2019,
-    url: 'https://example.com',
+    year: 2022,
+    url: 'https://jcsm.aasm.org/doi/10.5664/jcsm.9816',
     topic: ['tag1', 'tag2'],
     subfield: ['subfield1', 'subfield2'],
     professorPreferredFormat: 
-      'APA',
+      'C.-W. Hsu, P.-T. Tseng, Y.-K. Tu, P.-Y. Lin, L.-J. Wang, C.-F. Hung, Y.-H. Yang, '+
+      'H.-Y. Kao, C.-B. Yeh, H.-C. Lai, T.-Y. Chen, “Month of birth and the risk of narcolepsy: '+
+      'a systematic review and meta-analysis. J Clin Sleep Med. 2021. doi: 10.5664/jcsm.9816. '+
+      'PMID: 34893148. (SCIE; IF=4.324; Chinical Neurology 80/212 [38%])',
   },
   {
     title: 
-      'Research Title',
+      'An Innovative Wearable Device For Monitoring Continuous Body Surface Temperature '+
+      '(HEARThermo): Instrument Validation Study',
     author: [
-      'Author Name',
+      'C.-Y. Yeh', 
+      'Y.-T. Chung', 
+      'K.-T. Chuang', 
+      'Y.-C. Shu', 
+      'H.-Y. Kao', 
+      'P.-L. Chen', 
+      'W.-C. Ko', 
+      'N.-Y. Ko',
     ],
-    venue: 'Venue Name',
+    venue: 'JMIR',
     venueType: 'Journal',
-    year: 2019,
-    url: 'https://example.com',
+    year: 2021,
+    url: 'https://mhealth.jmir.org/2021/2/e19210/',
     topic: ['tag1', 'tag2'],
     subfield: ['subfield1', 'subfield2'],
     professorPreferredFormat: 
-      'APA',
+      'C.-Y. Yeh, Y.-T. Chung, K.-T. Chuang, Y.-C. Shu, H.-Y. Kao, P.-L. Chen, W.-C. Ko, N.-Y. Ko, '+
+      '“An Innovative Wearable Device For Monitoring Continuous Body Surface Temperature (HEARThermo): '+
+      'Instrument Validation Study,” JMIR MHEALTH AND UHEALTH, Vol 9, Feb 2021.',
   },
-
-
-
-
-
-
-
-
-
-
-
-
+  {
+    title: 
+      'R-AT: Regularized Adversarial Training for Natural Language Understanding',
+    author: [
+      'S.-W. Ni', 
+      'J.-W. Li',
+      'H. -Y. Kao',
+    ],
+    venue: 'EMNLP',
+    venueType: 'Conference',
+    year: 2022,
+    url: '#',
+    topic: ['tag1', 'tag2'],
+    subfield: ['subfield1', 'subfield2'],
+    professorPreferredFormat: 
+      'S.-W. Ni, J.-W. Li, and H. -Y. Kao, “R-AT: Regularized Adversarial Training for Natural Language Understanding, '+
+      '“ Proc. of the 2022 Conference on Empirical Methods in Natural Language Processing (Finding of EMNLP-2022), '+
+      'Abu Dhabi, Dec 7-11, 2022.',
+  },
+  {
+    title: 
+      'Unsupervised Single Document Abstractive Summarization using Semantic Units',
+    author: [
+      'J.-Y. Wu', 
+      'Y.-J. Lin', 
+      'H.-Y. Kao',
+    ],
+    venue: 'AACL',
+    venueType: 'Conference',
+    year: 2022,
+    url: '#',
+    topic: ['tag1', 'tag2'],
+    subfield: ['subfield1', 'subfield2'],
+    professorPreferredFormat: 
+      'J.-Y. Wu, Y.-J. Lin, H.-Y. Kao, “Unsupervised Single Document Abstractive Summarization using Semantic Units, '+
+      '“ Proc. of The 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics '+
+      '(AACL-2022), Nov. 20-23, 2022.',
+  },
   {
     title:
       'True or False: Does the Deep Learning Model Learn to Detect ' +
