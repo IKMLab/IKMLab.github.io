@@ -1,4 +1,150 @@
 export const researchData = [
+  
+  {
+    title: 
+      'Research Title',
+    author: [
+      'Author Name',
+    ],
+    venue: 'Venue Name',
+    venueType: 'Journal',
+    year: 2019,
+    url: 'https://example.com',
+    topic: ['tag1', 'tag2'],
+    subfield: ['subfield1', 'subfield2'],
+    professorPreferredFormat: 
+      'APA',
+  },
+  {
+    title: 
+      'HAT4RD: Hierarchical Adversarial Training for Rumor '+
+      'Detection in Social Media',
+    author: [
+      'S.-W. Ni', 
+      'J.-W. Li', 
+      'H. -Y. Kao',
+    ],
+    venue: 'Venue Name',
+    venueType: 'Journal',
+    year: 2022,
+    url: 'https://doi.org/10.3390/s22176652',
+    topic: ['tag1', 'tag2'],
+    subfield: ['subfield1', 'subfield2'],
+    professorPreferredFormat: 
+      'S.-W. Ni, J.-W. Li, and H. -Y. Kao, “HAT4RD: Hierarchical '+
+      'Adversarial Training for Rumor Detection in Social Media, '+
+      '“ Sensors, 2022, 22, 6652.',
+  },
+  {
+    title: 
+      'Comparative effectiveness of antidepressants on geriatric '+ 
+      'depression: Real-world evidence from a population-based study',
+    author: [
+      'C.-W. Hsu',  
+      'W.-T. Tseng', 
+      'L.-J. Wang', 
+      'Y.-H. Yang', 
+      'H.-Y. Kao', 
+      'P.-Y. Lin',
+    ],
+    venue: 'Venue Name',
+    venueType: 'Journal',
+    year: 2019,
+    url: 'https://example.com',
+    topic: ['tag1', 'tag2'],
+    subfield: ['subfield1', 'subfield2'],
+    professorPreferredFormat: 
+      'C.-W. Hsu, , W.-T. Tseng, L.-J. Wang, Y.-H. Yang, H.-Y. Kao, '+
+      'P.-Y. Lin, “Comparative effectiveness of antidepressants on '+
+      'geriatric depression: Real-world evidence from a population-based '+
+      'study, “ J Affect Disord. 2022; 296:609-15. '+
+      'doi: 10.1016/j.jad.2021.10.009. PMID: 34655698. '+
+      '(SCIE; IF=6.533; Clinical Neurology 29/212 [14%])',
+  },
+  {
+    title: 
+      'Differences in the prophylactic effect of serum lithium '+
+      'levels on depression and mania in bipolar disorder: '+
+      'A dose-response meta-analysis',
+    author: [
+
+    ],
+    venue: 'Venue Name',
+    venueType: 'Journal',
+    year: 2019,
+    url: 'https://example.com',
+    topic: ['tag1', 'tag2'],
+    subfield: ['subfield1', 'subfield2'],
+    professorPreferredFormat: 
+      'C.-W. Hsu, S.-Y. Tsai, P.-T. Tseng, C.-S. Liang, E. Vieta, '+
+      'A.-F. Carvalho, B. Stubbs, H.-Y. Kao, Y.-K. Tu, P.-Y. Lin, '+
+      '“Differences in the prophylactic effect of serum lithium levels '+
+      'on depression and mania in bipolar disorder: A dose-response '+
+      'meta-analysis, “ Eur Neuropsychopharmacol. 2022; 58:20-9. '+
+      'doi: 10.1016/j.euroneuro.2022.01.112. PMID: 35158229. '+
+      '(SCIE; IF=5.415; Clinical Neurology 47/212 [22%])',
+  },
+  {
+    title: 
+      'Research Title',
+    author: [
+      'Author Name',
+    ],
+    venue: 'Venue Name',
+    venueType: 'Journal',
+    year: 2019,
+    url: 'https://example.com',
+    topic: ['tag1', 'tag2'],
+    subfield: ['subfield1', 'subfield2'],
+    professorPreferredFormat: 
+      'C.-W. Hsu, S.-Y. Tsai, L.-J. Wang, C.-S. Liang, A.-F. Carvalho, M. Solmi, '+
+      'E. Vieta, P.-Y. Lin, C.-A. Hu, H.-Y. Kao, “Predicting Serum Levels of '+
+      'Lithium-Treated Patients: A Supervised Machine Learning Approach, '+
+      '“ Biomedicines. 2021; 9(11). doi: 10.3390/biomedicines9111558. '+
+      'PMID: 34829787. (SCIE; IF=4.757; Medicine, Research & Experimental 62/139 [45%])',
+  },
+  {
+    title: 
+      'Research Title',
+    author: [
+      'Author Name',
+    ],
+    venue: 'Venue Name',
+    venueType: 'Journal',
+    year: 2019,
+    url: 'https://example.com',
+    topic: ['tag1', 'tag2'],
+    subfield: ['subfield1', 'subfield2'],
+    professorPreferredFormat: 
+      'APA',
+  },
+  {
+    title: 
+      'Research Title',
+    author: [
+      'Author Name',
+    ],
+    venue: 'Venue Name',
+    venueType: 'Journal',
+    year: 2019,
+    url: 'https://example.com',
+    topic: ['tag1', 'tag2'],
+    subfield: ['subfield1', 'subfield2'],
+    professorPreferredFormat: 
+      'APA',
+  },
+
+
+
+
+
+
+
+
+
+
+
+
   {
     title:
       'True or False: Does the Deep Learning Model Learn to Detect ' +
