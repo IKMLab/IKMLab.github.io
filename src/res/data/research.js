@@ -12,8 +12,10 @@ export const researchData = [
     venueType: 'Journal',
     year: 2022,
     url: 'https://doi.org/10.3390/s22176652',
-    topic: ['tag1', 'tag2'],
-    subfield: ['subfield1', 'subfield2'],
+    topic: 'NLP',
+    subfield: [
+      'Rumor Detection',
+    ],
     professorPreferredFormat: 
       'S.-W. Ni, J.-W. Li, and H. -Y. Kao, “HAT4RD: Hierarchical '+
       'Adversarial Training for Rumor Detection in Social Media, '+
@@ -35,8 +37,10 @@ export const researchData = [
     venueType: 'Journal',
     year: 2022,
     url: 'https://www.sciencedirect.com/science/article/pii/S0165032721010776?via%3Dihub',
-    topic: ['tag1', 'tag2'],
-    subfield: ['subfield1', 'subfield2'],
+    topic: 'Bio-Medical',
+    subfield: [
+      'Bioformatics',
+    ],
     professorPreferredFormat: 
       'C.-W. Hsu, , W.-T. Tseng, L.-J. Wang, Y.-H. Yang, H.-Y. Kao, '+
       'P.-Y. Lin, “Comparative effectiveness of antidepressants on '+
@@ -66,8 +70,10 @@ export const researchData = [
     venueType: 'Journal',
     year: 2022,
     url: 'https://doi.org/10.1016/j.euroneuro.2022.01.112',
-    topic: ['tag1', 'tag2'],
-    subfield: ['subfield1', 'subfield2'],
+    topic: 'Bio-Medical',
+    subfield: [
+      'Bioformatics',
+    ],
     professorPreferredFormat: 
       'C.-W. Hsu, S.-Y. Tsai, P.-T. Tseng, C.-S. Liang, E. Vieta, '+
       'A.-F. Carvalho, B. Stubbs, H.-Y. Kao, Y.-K. Tu, P.-Y. Lin, '+
@@ -97,8 +103,10 @@ export const researchData = [
     venueType: 'Journal',
     year: 2021,
     url: 'https://www.mdpi.com/2227-9059/9/11/1558',
-    topic: ['tag1', 'tag2'],
-    subfield: ['subfield1', 'subfield2'],
+    topic: 'Bio-Medical',
+    subfield: [
+      'Bioformatics',
+    ],
     professorPreferredFormat: 
       'C.-W. Hsu, S.-Y. Tsai, L.-J. Wang, C.-S. Liang, A.-F. Carvalho, M. Solmi, '+
       'E. Vieta, P.-Y. Lin, C.-A. Hu, H.-Y. Kao, “Predicting Serum Levels of '+
@@ -124,10 +132,12 @@ export const researchData = [
     ],
     venue: 'JCSM',
     venueType: 'Journal',
-    year: 2022,
+    year: 2021,
     url: 'https://jcsm.aasm.org/doi/10.5664/jcsm.9816',
-    topic: ['tag1', 'tag2'],
-    subfield: ['subfield1', 'subfield2'],
+    topic: 'Bio-Medical',
+    subfield: [
+      'bioformatics',
+    ],
     professorPreferredFormat: 
       'C.-W. Hsu, P.-T. Tseng, Y.-K. Tu, P.-Y. Lin, L.-J. Wang, C.-F. Hung, Y.-H. Yang, '+
       'H.-Y. Kao, C.-B. Yeh, H.-C. Lai, T.-Y. Chen, “Month of birth and the risk of narcolepsy: '+
@@ -152,8 +162,10 @@ export const researchData = [
     venueType: 'Journal',
     year: 2021,
     url: 'https://mhealth.jmir.org/2021/2/e19210/',
-    topic: ['tag1', 'tag2'],
-    subfield: ['subfield1', 'subfield2'],
+    topic: 'Bio-Medical',
+    subfield: [
+      'bioformatics',
+    ],
     professorPreferredFormat: 
       'C.-Y. Yeh, Y.-T. Chung, K.-T. Chuang, Y.-C. Shu, H.-Y. Kao, P.-L. Chen, W.-C. Ko, N.-Y. Ko, '+
       '“An Innovative Wearable Device For Monitoring Continuous Body Surface Temperature (HEARThermo): '+
@@ -171,8 +183,10 @@ export const researchData = [
     venueType: 'Conference',
     year: 2022,
     url: '#',
-    topic: ['tag1', 'tag2'],
-    subfield: ['subfield1', 'subfield2'],
+    topic: 'NLP',
+    subfield: [
+      'Natural Language Understanding',
+    ],
     professorPreferredFormat: 
       'S.-W. Ni, J.-W. Li, and H. -Y. Kao, “R-AT: Regularized Adversarial Training for Natural Language Understanding, '+
       '“ Proc. of the 2022 Conference on Empirical Methods in Natural Language Processing (Finding of EMNLP-2022), '+
@@ -190,8 +204,10 @@ export const researchData = [
     venueType: 'Conference',
     year: 2022,
     url: '#',
-    topic: ['tag1', 'tag2'],
-    subfield: ['subfield1', 'subfield2'],
+    topic: 'NLP',
+    subfield: [
+      'Summarization','Sentiment Analysis',
+    ],
     professorPreferredFormat: 
       'J.-Y. Wu, Y.-J. Lin, H.-Y. Kao, “Unsupervised Single Document Abstractive Summarization using Semantic Units, '+
       '“ Proc. of The 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics '+
