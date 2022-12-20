@@ -1,12 +1,55 @@
 export const researchData = [
   {
     title:
+      'NEAR: Non-Supervised Explainability Architecture '+
+      'for Accurate Review-Based Collaborative Filtering',
+    authors: [
+      'R. A. Pugoy',
+      'H.-Y. Kao',
+    ],
+    venue: 'IEEE TKDE',
+    venueType: 'journal',
+    year: 2022,
+    url: 'https://ieeexplore.ieee.org/document/9969140',
+    topic: 'Text Mining',
+    subfields: [
+      'Recommender System',
+    ],
+    professorPreferredFormat:
+      'R. A. Pugoy, and H. -Y. Kao, "NEAR: Non-Supervised Explainability ' +
+      'Architecture for Accurate Review-Based Collaborative Filtering, " ' +
+      'accepted by IEEE Transaction on Knowledge and Data Engineering, ' +
+      'early access: https://ieeexplore.ieee.org/document/9969140.',
+  },
+  {
+    title:
+      'Relation-Aware Image Captioning for Explainable Visual Question Answering',
+    authors: [
+      'C.-S. Tseng',
+      'Y.-J. Lin',
+      'H.-Y. Kao',
+    ],
+    venue: 'TAAI',
+    venueType: 'conference',
+    year: 2022,
+    url: '#',
+    topic: 'NLP',
+    subfields: [
+      'Question Answering',
+    ],
+    professorPreferredFormat:
+      'C.-S. Tseng, Y.-J. Lin, and H.-Y. Kao, "Relation-Aware Image Captioning for ' +
+      'Explainable Visual Question Answering," Proc. of the 2022 Conference on ' +
+      'Technologies and Applications of Artificial Intelligence (TAAI-2022), Dec. 1-3, 2022. (Best Paper Award)',
+  },
+  {
+    title:
       'HAT4RD: Hierarchical Adversarial Training for Rumor ' +
       'Detection in Social Media',
     authors: [
       'S.-W. Ni',
       'J.-W. Li',
-      'H. -Y. Kao',
+      'H.-Y. Kao',
     ],
     venue: 'Sensors',
     venueType: 'journal',
