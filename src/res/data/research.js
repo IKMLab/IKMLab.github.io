@@ -3738,8 +3738,8 @@ const schemaCheck = () => {
 
     // Check if venue type is filled.
     if (!validator(
-        research.venueType,
-        schema.items.properties.venueType.type,
+      research.venueType,
+      schema.items.properties.venueType.type,
     )) {
       console.error(research)
       const tp = schema.items.properties.venueType.type
@@ -3797,8 +3797,8 @@ const schemaCheck = () => {
     // an array.
     if (research.subfields) {
       if (!validator(
-          research.subfields,
-          schema.items.properties.subfields.type,
+        research.subfields,
+        schema.items.properties.subfields.type,
       )) {
         console.error(research)
         const tp = schema.items.properties.subfields.type
@@ -3806,8 +3806,8 @@ const schemaCheck = () => {
       }
       research.subfields.forEach((subfield) => {
         if (!validator(
-            subfield,
-            schema.items.properties.subfields.items.type,
+          subfield,
+          schema.items.properties.subfields.items.type,
         )) {
           console.error(research)
           const tp = schema.items.properties.subfields.items.type
@@ -3819,8 +3819,8 @@ const schemaCheck = () => {
 
     // Check if professorPreferredFormat format is filled.
     if (!validator(
-        research.professorPreferredFormat,
-        schema.items.properties.professorPreferredFormat.type)) {
+      research.professorPreferredFormat,
+      schema.items.properties.professorPreferredFormat.type)) {
       console.error(research)
       const tp = schema.items.properties.professorPreferredFormat.type
       throw new Error(`research.professorPreferredFormat is not type ${tp}.`)
