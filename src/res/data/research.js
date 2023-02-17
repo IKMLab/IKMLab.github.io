@@ -1,7 +1,46 @@
 export const researchData = [
   {
     title:
-      'NEAR: Non-Supervised Explainability Architecture '+
+      'LiDA: Language-Independent Data Augmentation',
+    authors: [
+      'Y. Sujana',
+      'H.-Y. Kao',
+    ],
+    venue: 'IEEE ACCESS',
+    venueType: 'journal',
+    year: 2023,
+    url: 'https://ieeexplore.ieee.org/document/10005171',
+    topic: 'NLP',
+    subfields: [
+      'Text Classification',
+    ],
+    professorPreferredFormat:
+      'Y. Sujana and H.-Y. Kao, “LiDA: Language-Independent Data Augmentation ' +
+      'for Text Classification, ” IEEE ACCESS, DOI: 10.1109/ACCESS.2023.3234019, 2023.',
+  },
+  {
+    title:
+      'LAD: Layer-Wise Adaptive Distillation for BERT Model Compression',
+    authors: [
+      'Y.-J. Lin',
+      'K.-Y. Chen',
+      'H.-Y. Kao',
+    ],
+    venue: 'Sensors',
+    venueType: 'journal',
+    year: 2023,
+    url: 'https://doi.org/10.3390/s23031483',
+    topic: 'NLP',
+    subfields: [
+      'Knowledge Distillation',
+    ],
+    professorPreferredFormat:
+      'Y.-J. Lin, K.-Y. Chen, and H. -Y. Kao, “LAD: Layer-Wise Adaptive Distillation ' +
+      'for BERT Model Compression, ” Sensors 2023, 23(3), 1483; https://doi.org/10.3390/s23031483, 2023.',
+  },
+  {
+    title:
+      'NEAR: Non-Supervised Explainability Architecture ' +
       'for Accurate Review-Based Collaborative Filtering',
     authors: [
       'R. A. Pugoy',
@@ -258,6 +297,29 @@ export const researchData = [
   },
   {
     title:
+      'Few-shot Text Classification with Saliency-equivalent Concatenation',
+    authors: [
+      'Y.-J. Lin',
+      'Y.-F. Chang',
+      'H.-Y. Kao',
+      'H.-Y. Wang',
+      'M. Liu',
+    ],
+    venue: 'AIKE',
+    venueType: 'conference',
+    year: 2022,
+    url: '#',
+    topic: 'NLP',
+    subfields: [
+      'Text Classification',
+    ],
+    professorPreferredFormat:
+      'Y.-J. Lin, Y.-F. Chang, H.-Y. Kao, H.-Y. Wang, M. Liu, “Few-shot Text Classification with ' +
+      'Saliency-equivalent Concatenation, ” Proc. of IEEE 5th International Conference on Artificial ' +
+      'Intelligence and Knowledge Engineering (AIKE-2022), p. 74-81 8 p, Laguna Hills, CA, USA, Sept. 19-21, 2022.',
+  },
+  {
+    title:
       'True or False: Does the Deep Learning Model Learn to Detect ' +
       'Rumors?',
     authors: [
@@ -309,7 +371,7 @@ export const researchData = [
       'C.-W. Hsu, A.-F Carvalho, S.‐Y. Tsai, L.-J. Wang, P.‐T. Tseng,' +
       'P.‐Y. Lin, Y.‐K. Tu, E. Vieta, M. Solmi, C.‐F. Hung,' +
       ' and H.-Y. Kao, "Lithium concentration and recurrence risk ' +
-      'during maintenance treatment of bipolar disorder: multicenter '+
+      'during maintenance treatment of bipolar disorder: multicenter ' +
       'cohort and meta‐analysis" Acta Psychiatr Scand., July 2021, 2021',
   },
   {
