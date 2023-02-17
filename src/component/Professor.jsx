@@ -433,21 +433,17 @@ export default function Professor() {
           className={ProfessorStyle['intro']}
           item xs={12}>
           <Typography className={ProfessorStyle['intro-text']}>
-            Hung-Yu Kao received the B.S. and M.S. degree in Computer Science
+            HUNG-YU KAO received the B.S. and M.S. degree in Computer Science
             from National Tsing Hua University in 1994 and 1996 respectively.
-            In July 2003, he received the PhD degree from the Electrical
-            Engineering Department, National Taiwan University.
-            He is currently a professor of Department of Computer Science and
-            Information Engineering (CSIE) of National Cheng Kung University.
-            He is also the chair of IEEE CIS Tainan Chapter.
-            He was a post-doctoral fellow of Institute of Information Science
-            (IIS), Academia Sinica from 2003 to 2004.
-            His research interests include Natural Language Processing(NLP), Web
-            information retrieval / extraction, search engine, knowledge
-            management, data mining, social network analysis and bioinformatics.
-            He has published more than 60 research papers in refereed
-            international journals and conference proceedings.
-            He is a member of IEEE and ACM.
+            In July 2003, he received the PhD degree from the Electrical Engineering
+            Department, National Taiwan University. He is currently the Vice Dean of
+            College of EECS in National Cheng Kung University (NCKU) from 2021.
+            He was the Director of Department of Computer Science and Information Engineering
+            (CSIE) of NCKU from 2018 to 2021. He was the chair of IEEE CIS Tainan Chapter from
+            2017 to 2021. His research interests include Natural Language Processing, Web
+            information retrieval / extraction, search engine, knowledge management, data mining,
+            social network analysis and bioinformatics. He has published more than 140 research papers
+            in refereed international journals and conference proceedings. He is a member of IEEE and ACM.
           </Typography>
         </Grid>
       </Grid>
