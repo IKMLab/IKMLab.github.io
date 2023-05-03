@@ -1,6 +1,51 @@
 export const researchData = [
   {
     title:
+      'CopyCAT: Masking Strategy Conscious Augmented ' +
+      'Text for Machine Generated Text Detection',
+    authors: [
+      'C.-L. Liu',
+      'H.-Y. Kao',
+    ],
+    venue: 'PAKDD',
+    venueType: 'conference',
+    year: 2023,
+    url: '#',
+    topic: 'NLP',
+    subfields: [
+      'Generated Text Detection',
+    ],
+    professorPreferredFormat:
+      'C.-L. Liu, H.-Y. Kao, “CopyCAT: Masking Strategy Conscious Augmented ' +
+      'Text for Machine Generated Text Detection, ” Proc. of the 27th ' +
+      'Pacific-Asia Conference on Knowledge Discovery and Data Mining ' +
+      '(PAKDD-2023), May 25-28, 2023.',
+  },
+  {
+    title:
+      'Advancing Multi-Criteria Chinese Word Segmentation Through Criterion '+
+      'Classification and Denoising',
+    authors: [
+      'T.-H. Chou',
+      'C.-Y. Lin',
+      'H.-Y. Kao',
+    ],
+    venue: 'ACL',
+    venueType: 'conference',
+    year: 2023,
+    url: '#',
+    topic: 'NLP',
+    subfields: [
+      'Text Classification',
+    ],
+    professorPreferredFormat:
+      'T.-H. Chou, C.-Y. Lin, and H.-Y. Kao, “Advancing Multi-Criteria ' +
+      'Chinese Word Segmentation Through Criterion Classification and ' +
+      'Denoising, “Proc. of the 61th Annual Meeting of the Association ' +
+      'for Computational Linguistics (ACL-2023), Toronto, Canada, July 9-14, 2023.',
+  },
+  {
+    title:
       'LiDA: Language-Independent Data Augmentation',
     authors: [
       'Y. Sujana',
@@ -3738,8 +3783,8 @@ const schemaCheck = () => {
 
     // Check if venue type is filled.
     if (!validator(
-      research.venueType,
-      schema.items.properties.venueType.type,
+        research.venueType,
+        schema.items.properties.venueType.type,
     )) {
       console.error(research)
       const tp = schema.items.properties.venueType.type
@@ -3797,8 +3842,8 @@ const schemaCheck = () => {
     // an array.
     if (research.subfields) {
       if (!validator(
-        research.subfields,
-        schema.items.properties.subfields.type,
+          research.subfields,
+          schema.items.properties.subfields.type,
       )) {
         console.error(research)
         const tp = schema.items.properties.subfields.type
@@ -3806,8 +3851,8 @@ const schemaCheck = () => {
       }
       research.subfields.forEach((subfield) => {
         if (!validator(
-          subfield,
-          schema.items.properties.subfields.items.type,
+            subfield,
+            schema.items.properties.subfields.items.type,
         )) {
           console.error(research)
           const tp = schema.items.properties.subfields.items.type
@@ -3819,8 +3864,8 @@ const schemaCheck = () => {
 
     // Check if professorPreferredFormat format is filled.
     if (!validator(
-      research.professorPreferredFormat,
-      schema.items.properties.professorPreferredFormat.type)) {
+        research.professorPreferredFormat,
+        schema.items.properties.professorPreferredFormat.type)) {
       console.error(research)
       const tp = schema.items.properties.professorPreferredFormat.type
       throw new Error(`research.professorPreferredFormat is not type ${tp}.`)
