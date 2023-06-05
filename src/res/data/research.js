@@ -1,6 +1,48 @@
 export const researchData = [
   {
     title:
+      'Masked Siamese Prompt Tuning for Few-shot Natural ' +
+      'Language Understanding',
+    authors: [
+      'S.-W. Ni',
+      'H.-Y. Kao',
+    ],
+    venue: 'IEEE TAI',
+    venueType: 'journal',
+    year: 2023,
+    url: '#',
+    topic: 'NLP',
+    subfields: [
+      'Natural Language Understanding',
+    ],
+    professorPreferredFormat:
+      'S.-W. Ni and H. -Y. Kao, “Masked Siamese Prompt Tuning for Few-shot Natural ' +
+      'Language Understanding,” accepted for publication in IEEE Transactions on ' +
+      'Artificial Intelligence, 2023.',
+  },
+  {
+    title:
+      'KPT++: Refined Knowledgeable Prompt Tuning for ' +
+      'Few-shot Text Classification',
+    authors: [
+      'S.-W. Ni',
+      'H.-Y. Kao',
+    ],
+    venue: 'Knowledge-Based Systems',
+    venueType: 'journal',
+    year: 2023,
+    url: '#',
+    topic: 'NLP',
+    subfields: [
+      'Text Classification',
+    ],
+    professorPreferredFormat:
+      'S.-W. Ni and H. -Y. Kao, “KPT++: Refined Knowledgeable Prompt Tuning for ' +
+      'Few-shot Text Classification, ” accepted for publication in Knowledge-Based ' +
+      'Systems, 2023.',
+  },
+  {
+    title:
       'CopyCAT: Masking Strategy Conscious Augmented ' +
       'Text for Machine Generated Text Detection',
     authors: [
