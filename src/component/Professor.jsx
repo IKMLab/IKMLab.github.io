@@ -118,6 +118,11 @@ function ExperienceContent() {
       `2021.8 ~ Present`,
     ],
     [
+      `Distinguished Professor,
+      Department of Computer Science and Information Engineering (CSIE), NCKU`,
+      `2023.2 ~ present`,
+    ],
+    [
       `Chair,
       Ph.D. Program of Multimedia system and intelligent computing
       , NCKU`,
@@ -436,9 +441,9 @@ export default function Professor() {
             HUNG-YU KAO received the B.S. and M.S. degree in Computer Science
             from National Tsing Hua University in 1994 and 1996 respectively.
             In July 2003, he received the PhD degree from the Electrical Engineering
-            Department, National Taiwan University. He is currently the Vice Dean of
-            College of EECS in National Cheng Kung University (NCKU) from 2021.
-            He was the Director of Department of Computer Science and Information Engineering
+            Department, National Taiwan University. He is currently the Distinguished Professor
+            of Dept. of CSIE and Vice Dean of College of EECS in National Cheng Kung University
+            (NCKU) from 2021. He was the Director of Department of Computer Science and Information Engineering
             (CSIE) of NCKU from 2018 to 2021. He was the chair of IEEE CIS Tainan Chapter from
             2017 to 2021. His research interests include Natural Language Processing, Web
             information retrieval / extraction, search engine, knowledge management, data mining,
