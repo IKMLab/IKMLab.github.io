@@ -5,20 +5,20 @@ export const researchData = [
       'Language Understanding',
     authors: [
       'S.-W. Ni',
-      'H.-Y. Kao',
+      'H. -Y. Kao',
     ],
     venue: 'IEEE TAI',
     venueType: 'journal',
     year: 2023,
-    url: '#',
+    url: 'https://ieeexplore.ieee.org/document/10123028',
     topic: 'NLP',
     subfields: [
       'Natural Language Understanding',
     ],
     professorPreferredFormat:
-      'S.-W. Ni and H. -Y. Kao, “Masked Siamese Prompt Tuning for Few-shot Natural ' +
-      'Language Understanding,” accepted for publication in IEEE Transactions on ' +
-      'Artificial Intelligence, 2023.',
+      'S.-W. Ni and H. -Y. Kao, “Masked Siamese Prompt Tuning for Few-shot ' +
+      'Natural Language Understanding,” IEEE Transactions on Artificial ' +
+      'Intelligence, doi: 10.1109/TAI.2023.3275132, 11 May 2023.',
   },
   {
     title:
@@ -26,42 +26,20 @@ export const researchData = [
       'Few-shot Text Classification',
     authors: [
       'S.-W. Ni',
-      'H.-Y. Kao',
+      'H. -Y. Kao',
     ],
     venue: 'Knowledge-Based Systems',
     venueType: 'journal',
     year: 2023,
-    url: '#',
+    url: 'https://doi.org/10.1016/j.knosys.2023.110647',
     topic: 'NLP',
     subfields: [
       'Text Classification',
     ],
     professorPreferredFormat:
-      'S.-W. Ni and H. -Y. Kao, “KPT++: Refined Knowledgeable Prompt Tuning for ' +
-      'Few-shot Text Classification, ” accepted for publication in Knowledge-Based ' +
-      'Systems, 2023.',
-  },
-  {
-    title:
-      'CopyCAT: Masking Strategy Conscious Augmented ' +
-      'Text for Machine Generated Text Detection',
-    authors: [
-      'C.-L. Liu',
-      'H.-Y. Kao',
-    ],
-    venue: 'PAKDD',
-    venueType: 'conference',
-    year: 2023,
-    url: '#',
-    topic: 'NLP',
-    subfields: [
-      'Generated Text Detection',
-    ],
-    professorPreferredFormat:
-      'C.-L. Liu, H.-Y. Kao, “CopyCAT: Masking Strategy Conscious Augmented ' +
-      'Text for Machine Generated Text Detection, ” Proc. of the 27th ' +
-      'Pacific-Asia Conference on Knowledge Discovery and Data Mining ' +
-      '(PAKDD-2023), May 25-28, 2023.',
+      'S.-W. Ni and H. -Y. Kao, “KPT++: Refined Knowledgeable Prompt Tuning ' +
+      'for Few-shot Text Classification, ” Knowledge-Based Systems, Vol 274., ' +
+      'pp.110647, Aug 2023. (https://doi.org/10.1016/j.knosys.2023.110647)',
   },
   {
     title:
@@ -85,6 +63,28 @@ export const researchData = [
       'Chinese Word Segmentation Through Criterion Classification and ' +
       'Denoising, “Proc. of the 61th Annual Meeting of the Association ' +
       'for Computational Linguistics (ACL-2023), Toronto, Canada, July 9-14, 2023.',
+  },
+  {
+    title:
+      'CopyCAT: Masking Strategy Conscious Augmented ' +
+      'Text for Machine Generated Text Detection',
+    authors: [
+      'C.-L. Liu',
+      'H.-Y. Kao',
+    ],
+    venue: 'PAKDD',
+    venueType: 'conference',
+    year: 2023,
+    url: '#',
+    topic: 'NLP',
+    subfields: [
+      'Generated Text Detection',
+    ],
+    professorPreferredFormat:
+      'C.-L. Liu, H.-Y. Kao, “CopyCAT: Masking Strategy Conscious Augmented ' +
+      'Text for Machine Generated Text Detection, ” Proc. of the 27th ' +
+      'Pacific-Asia Conference on Knowledge Discovery and Data Mining ' +
+      '(PAKDD-2023), May 25-28, 2023.',
   },
   {
     title:
@@ -131,7 +131,7 @@ export const researchData = [
       'for Accurate Review-Based Collaborative Filtering',
     authors: [
       'R. A. Pugoy',
-      'H.-Y. Kao',
+      'H. -Y. Kao',
     ],
     venue: 'IEEE TKDE',
     venueType: 'journal',
@@ -142,10 +142,11 @@ export const researchData = [
       'Recommender System',
     ],
     professorPreferredFormat:
-      'R. A. Pugoy, and H. -Y. Kao, "NEAR: Non-Supervised Explainability ' +
-      'Architecture for Accurate Review-Based Collaborative Filtering, " ' +
-      'accepted by IEEE Transaction on Knowledge and Data Engineering, ' +
-      'early access: https://ieeexplore.ieee.org/document/9969140.',
+      'R. A. Pugoy, and H. -Y. Kao, “NEAR: Non-Supervised Explainability ' +
+      'Architecture for Accurate Review-Based Collaborative Filtering, ” ' +
+      'IEEE Transaction on Knowledge and Data Engineering (TKDE), doi: ' +
+      '10.1109/TKDE.2022.3226189, early access: ' +
+      'https://ieeexplore.ieee.org/document/9969140, 2 Dec, 2022. ',
   },
   {
     title:
