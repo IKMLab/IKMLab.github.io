@@ -28,6 +28,8 @@ import ChihWeiHsu
   from 'src/res/image/member/Chih-Wei-Hsu.png'
 import ChihHaoHsu
   from 'src/res/image/member/Chih-Hao-Hsu.png'
+import ChihHsiangYang
+  from 'src/res/image/member/Chih-Hsiang-Yang.jpg'
 import ChiMinChiu
   from 'src/res/image/member/ChiMinChiu.png'
 import ChingShanTseng
@@ -46,6 +48,8 @@ import DengDengDeng
   from 'src/res/image/member/Deng-Deng-Deng.png'
 import DiNanLin
   from 'src/res/image/member/Di-Nan-Lin.png'
+import HongZhongChen
+  from 'src/res/image/member/Hong-Zhong-Chen.jpg'
 import HowToTrain
   from 'src/res/image/member/How-To-Train.png'
 import HsiuWenLi
@@ -54,6 +58,8 @@ import HuiLangPeng
   from 'src/res/image/member/Hui-Lang-Peng.png'
 import IrwanSetiawan
   from 'src/res/image/member/Irwan-Setiawan.png'
+import JiaJenWang
+  from 'src/res/image/member/Jia-Jen-Wang.jpg'
 import JiunManChen
   from 'src/res/image/member/Jiun-Man-Chen.png'
 import KengJungKu
@@ -70,12 +76,16 @@ import ReinaldAdrianPugoy
   from 'src/res/image/member/Reinald-Adrian-Pugoy.png'
 import RunnPrasoprat
   from 'src/res/image/member/Runn-Prasoprat.png'
+import SelenaTeo
+  from 'src/res/image/member/Selena-Teo.jpg'
 import ShengHanChiang
   from 'src/res/image/member/Sheng-Han-Chiang.png'
 import ShengXuanLin
   from 'src/res/image/member/Sheng-Xuan-Lin.png'
 import ShiWenNi
   from 'src/res/image/member/Shi-Wen-Ni.png'
+import SsuChengWang
+  from 'src/res/image/member/Ssu-Cheng-Wang.jpg'
 import SzuTungLin
   from 'src/res/image/member/Szu-Tung-Lin.png'
 import TimothyStephenNiven
@@ -90,6 +100,8 @@ import WilliamLin
   from 'src/res/image/member/William-Lin.png'
 import YiChunChen
   from 'src/res/image/member/Yi-Chun-Chen.png'
+import YiHaoWoon
+  from 'src/res/image/member/Yi-Hao-Woon.jpg'
 import YiTingDing
   from 'src/res/image/member/Yi-Ting-Ding.png'
 import YiTingLi
@@ -104,6 +116,8 @@ import YuHsuanWu
   from 'src/res/image/member/Yu-Hsuan-Wu.png'
 import YunYuHu
   from 'src/res/image/member/Yun-Yu-Hu.png'
+import YuXiangHong
+  from 'src/res/image/member/Yu-Xiang-Hong.jpg'
 import YuYingLin
   from 'src/res/image/member/Yu-Ying-Lin.png'
 import YuYunWang
@@ -112,11 +126,20 @@ import YuFangChang
   from 'src/res/image/member/Yu-Fang-Chang.png'
 import ZhenYiWu
   from 'src/res/image/member/Zhen-Yi-Wu.png'
+import ZhiQuanFeng
+  from 'src/res/image/member/Zhi-Quan-Feng.jpg'
 import ZiKuanHuang
   from 'src/res/image/member/Zi-Kuan-Huang.png'
 
 export const memberData = [
   // PhD Students
+  {
+    zh: '馮智詮',
+    en: 'Zhi-Quan Feng',
+    dept: 0,
+    deg: 0,
+    image: ZhiQuanFeng,
+  },
   {
     zh: '寒山',
     en: 'Timothy Stephen Niven',
@@ -139,31 +162,11 @@ export const memberData = [
     image: YudiantoSujana,
   },
   {
-    zh: '李佳文',
-    en: 'Jia-Wen Li',
-    dept: 0,
-    deg: 0,
-  },
-  {
-    zh: '李仁傑',
-    en: 'Reinald Adrian Pugoy',
-    dept: 0,
-    deg: 0,
-    image: ReinaldAdrianPugoy,
-  },
-  {
     zh: '林英嘉',
     en: 'Ying-Jia Lin',
     dept: 0,
     deg: 0,
     image: YingJiaLin,
-  },
-  {
-    zh: '倪仕文',
-    en: 'Shi-Wen Ni',
-    dept: 0,
-    deg: 0,
-    image: ShiWenNi,
   },
   {
     zh: '許智維',
@@ -195,11 +198,53 @@ export const memberData = [
   },
   // Master Students
   {
-    zh: '黎修文',
-    en: 'Hsiu-Wen Li',
+    zh: '楊智翔',
+    en: 'Chih-Hsiang Yang',
     dept: 0,
     deg: 1,
-    image: HsiuWenLi,
+    image: ChihHsiangYang,
+  },
+  {
+    zh: '陳宏仲',
+    en: 'Hong-Zhong Chen',
+    dept: 2,
+    deg: 1,
+    image: HongZhongChen,
+  },
+  {
+    zh: '王嘉臻',
+    en: 'Jia-Jen Wang',
+    dept: 1,
+    deg: 1,
+    image: JiaJenWang,
+  },
+  {
+    zh: '張文嫣',
+    en: 'Selena Teo',
+    dept: 0,
+    deg: 1,
+    image: SelenaTeo,
+  },
+  {
+    zh: '王思正',
+    en: 'Ssu-Cheng Wang',
+    dept: 0,
+    deg: 1,
+    image: SsuChengWang,
+  },
+  {
+    zh: '雲宇浩',
+    en: 'Yi-Hao Woon',
+    dept: 0,
+    deg: 1,
+    image: YiHaoWoon,
+  },
+  {
+    zh: '洪裕翔',
+    en: 'Yu-Xiang Hong',
+    dept: 0,
+    deg: 1,
+    image: YuXiangHong,
   },
   {
     zh: '陳均嫚',
@@ -230,13 +275,6 @@ export const memberData = [
     image: ChiMinChiu,
   },
   {
-    zh: '林峻毅',
-    en: 'Chun-Yi Lin',
-    dept: 2,
-    deg: 1,
-    image: ChunYiLin,
-  },
-  {
     zh: '葉家任',
     en: 'Chia-Jen Yeh',
     dept: 0,
@@ -251,25 +289,11 @@ export const memberData = [
     image: YuFangChang,
   },
   {
-    zh: '陳哲緯',
-    en: 'Che-Wei Chen',
-    dept: 1,
-    deg: 1,
-    image: CheWeiChen,
-  },
-  {
     zh: '李易庭',
     en: 'Yi-Ting Li',
     dept: 0,
     deg: 1,
     image: YiTingLi,
-  },
-  {
-    zh: '翁耀昌',
-    en: 'Yiu-Cheong Yung',
-    dept: 0,
-    deg: 1,
-    image: YiuCheongYung,
   },
   {
     zh: '林偉荏',
@@ -335,6 +359,29 @@ export const memberData = [
     image: YunYuHu,
   },
   // Graduate PhDs
+  {
+    zh: '李佳文',
+    en: 'Jia-Wen Li',
+    dept: 0,
+    deg: 0,
+    year: 2021,
+  },
+  {
+    zh: '李仁傑',
+    en: 'Reinald Adrian Pugoy',
+    dept: 0,
+    deg: 0,
+    image: ReinaldAdrianPugoy,
+    year: 2022,
+  },
+  {
+    zh: '倪仕文',
+    en: 'Shi-Wen Ni',
+    dept: 0,
+    deg: 0,
+    image: ShiWenNi,
+    year: 2022,
+  },
   {
     zh: '黃獻德',
     en: 'Hsien-De Huang',
@@ -413,6 +460,38 @@ export const memberData = [
     year: 2015,
   },
   // Graduate Masters
+  {
+    zh: '林峻毅',
+    en: 'Chun-Yi Lin',
+    dept: 2,
+    deg: 1,
+    image: ChunYiLin,
+    year: 2023,
+  },
+  {
+    zh: '陳哲緯',
+    en: 'Che-Wei Chen',
+    dept: 1,
+    deg: 1,
+    image: CheWeiChen,
+    year: 2023,
+  },
+  {
+    zh: '翁耀昌',
+    en: 'Yiu-Cheong Yung',
+    dept: 0,
+    deg: 1,
+    image: YiuCheongYung,
+    year: 2023,
+  },
+  {
+    zh: '黎修文',
+    en: 'Hsiu-Wen Li',
+    dept: 0,
+    deg: 1,
+    image: HsiuWenLi,
+    year: 2023,
+  },
   {
     zh: '陳明吉',
     en: 'Ming-Ji Chen',
