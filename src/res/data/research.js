@@ -1,6 +1,91 @@
 export const researchData = [
   {
     title:
+    'Breaking Boundaries in Retrieval Systems: Unsupervised Domain Adaptation with Denoise-Finetuning',
+    authors: [
+      'C.-W. Chen',
+      'C.-W. Yang', 
+      'C.-Y. Lin', 
+      'H.-Y. Kao'
+    ],
+    venue: 'EMNLP',
+    venueType: 'conference',
+    year: 2023,
+    topic: 'NLP',
+    subfields: [
+      'Unsupervised Domain Adaptation'
+    ],
+    professorPreferredFormat:
+      'C.-W. Chen, C.-W. Yang, C.-Y. Lin, H.-Y. Kao, “Breaking Boundaries in Retrieval Systems: Unsupervised Domain Adaptation with Denoise-Finetuning, ” Proc. of the 2023 Conference on Empirical Methods in Natural Language Processing (Finding of EMNLP-2023), Singapore, Dec 6-10, 2023.',
+  },
+  {
+    title:
+      'Improving Multi-Criteria Chinese Word Segmentation through Learning Sentence Representation',
+    authors: [
+      'C.-Y. Lin',
+      'Y.-J. Lin',
+      'C.-J. Yeh',
+      'Y.-T. Li',
+      'C.-W. Yang',
+      'H.-Y. Kao'
+    ],
+    venue: 'EMNLP',
+    venueType: 'conference',
+    year: 2023,
+    topic: 'NLP',
+    subfields: [
+      'Chinese Word Segmentation'
+    ],
+    professorPreferredFormat:
+      'C.-Y. Lin, Y.-J.Lin, C.-J. Yeh, Y.-T. Li, C.-W. Yang, H.-Y. Kao, “Improving Multi-Criteria Chinese Word Segmentation through Learning Sentence Representation, ” Proc. of the 2023 Conference on Empirical Methods in Natural Language Processing (Finding of EMNLP-2023), Singapore, Dec 6-10, 2023.',
+  },
+  {
+    title:
+      'Improved Unsupervised Chinese Word Segmentation Using Pre-trained Knowledge and Pseudo-labeling Transfer',
+    authors: [
+      'H.-W. Li', 
+      'Y.-J. Lin',
+      'Y.-T. Li',
+      'C.-Y. Lin',
+      'H.-Y. Kao'
+    ],
+    venue: 'EMNLP',
+    venueType: 'conference',
+    year: 2023,
+    topic: 'NLP',
+    subfields: [
+      'Chinese Word Segmentation'
+    ],
+    professorPreferredFormat:
+      'H.-W. Li, Y.-J. Lin, Y.-T. Li, C.-Y. Lin, H.-Y. Kao, “Improved Unsupervised Chinese Word Segmentation Using Pre-trained Knowledge and Pseudo-labeling Transfer, ” Proc. of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP-2023), Singapore, Dec 6-10, 2023',
+  },
+  {
+    title:
+      'EPRD: Exploiting prior knowledge for evidence-providing ' +
+      'automatic rumor detection',
+    authors: [
+      'J.-W. Li',
+      'R. Li',
+      'S.-W. Ni',
+      'H.-Y. Kao'
+    ],
+    venue: 'Neurocomputing',
+    venueType: 'journal',
+    year: 2024,
+    url: 'https://www.sciencedirect.com/science/article/pii/S0925231223010585?dgcid=author',
+    topic: 'NLP',
+    subfields: [
+      'Rumor detection',
+      'Evidence',
+      'Graph neural network',
+      'Natural language inference',
+      'Deep learning'
+    ],
+    professorPreferredFormat:
+      'J.-W. Li, R. Li, S.-W. Ni, H.-Y. Kao, “EPRD: Exploiting prior knowledge for evidence-providing automatic rumor detection, ” Neurocomputing, Volume 563, 1 January 2024.',
+  },
+  {
+    title:
       'Masked Siamese Prompt Tuning for Few-shot Natural ' +
       'Language Understanding',
     authors: [
