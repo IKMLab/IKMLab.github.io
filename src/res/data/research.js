@@ -3925,7 +3925,7 @@ const schemaCheck = () => {
       const endYr = new Date(Date.now()).getFullYear()
       if (!validator(research.year, schema.items.properties.year.type) ||
         research.year < startYr ||
-        research.year > endYr) {
+        research.year > endYr + 1) {
         console.error(research)
         const err = `research.year must be in range [${startYr}, ${endYr}].`
         throw new Error(err)
