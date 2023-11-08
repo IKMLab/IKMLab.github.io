@@ -34,7 +34,7 @@ export const researchData = [
       'M. Yang',
       'H.-Y. Kao'
     ],
-    venue: 'IEEE/ACM Transactions on Audio, Speech, and Language Processing (IEEE/ACM TASLP)',
+    venue: 'IEEE/ACM TASLP',
     venueType: 'journal',
     year: 2023,
     url: 'https://ieeexplore.ieee.org/document/10310112',
