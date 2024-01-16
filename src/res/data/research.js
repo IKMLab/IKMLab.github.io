@@ -1,6 +1,30 @@
 export const researchData = [
   {
     title:
+      'CFEVER: A Chinese Fact Extraction and VERification Dataset',
+    authors: [
+      'Y.-J. Lin',
+      'C.-Y. Lin',
+      'C.-J. Yeh',
+      'Y.-T. Li',
+      'Y.-Y. Hu',
+      'C.-H. Hsu',
+      'M.-F. Lee',
+      'H.-Y. Kao'
+    ],
+    venue: 'AAAI',
+    venueType: 'conference',
+    year: 2024,
+    topic: 'NLP',
+    subfields: [
+      ' ',
+      ' '
+    ],
+    professorPreferredFormat:
+      'Y.-J. Lin, C.-Y. Lin, C.-J. Yeh, Y.-T. Li, Y.-Y. Hu, C.-H. Hsu, M.-F. Lee, H.-Y. Kao, “CFEVER: A Chinese Fact Extraction and VERification Dataset, “ Proc. of the 38th AAAI Conference on Artificial Intelligence (AAAI-24), Vancouver, Canada, Feb. 20-27, 2024.',
+  },
+  {
+    title:
       'EPRD: Exploiting prior knowledge for evidence-providing ' +
       'automatic rumor detection',
     authors: [
