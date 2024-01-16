@@ -7,7 +7,7 @@ export const researchData = [
       'J.-W. Li',
       'R. Li',
       'S.-W. Ni',
-      'H.-Y. Kao'
+      'H.-Y. Kao',
     ],
     venue: 'Neurocomputing',
     venueType: 'journal',
@@ -19,7 +19,7 @@ export const researchData = [
       'Evidence',
       'Graph neural network',
       'Natural language inference',
-      'Deep learning'
+      'Deep learning',
     ],
     professorPreferredFormat:
       'J.-W. Li, R. Li, S.-W. Ni, H.-Y. Kao, “EPRD: Exploiting prior knowledge for evidence-providing automatic rumor detection, ” Neurocomputing, Volume 563, 1 January 2024.',
@@ -32,7 +32,7 @@ export const researchData = [
       'S.-W. Ni',
       'J.-W. Li',
       'M. Yang',
-      'H.-Y. Kao'
+      'H.-Y. Kao',
     ],
     venue: 'IEEE/ACM TASLP',
     venueType: 'journal',
@@ -43,7 +43,7 @@ export const researchData = [
       'Adversarial training',
       'Natural language understanding',
       'regularization',
-      'generalization'
+      'generalization',
     ],
     professorPreferredFormat:
       'S.-W. Ni, J.-W. Li, M. Yang, H.-Y. Kao, “DropAttack: A Random Dropped Weight Attack Adversarial Training for Natural Language Understanding, ” IEEE/ACM Transactions on Audio, Speech, and Language Processing (IEEE/ACM TASLP), Early access: https://ieeexplore.ieee.org/document/10310112, DOI: 10.1109/TASLP.2023.3330613, 06 November 2023.',
@@ -53,16 +53,16 @@ export const researchData = [
     'Breaking Boundaries in Retrieval Systems: Unsupervised Domain Adaptation with Denoise-Finetuning',
     authors: [
       'C.-W. Chen',
-      'C.-W. Yang', 
-      'C.-Y. Lin', 
-      'H.-Y. Kao'
+      'C.-W. Yang',
+      'C.-Y. Lin',
+      'H.-Y. Kao',
     ],
     venue: 'EMNLP',
     venueType: 'conference',
     year: 2023,
     topic: 'NLP',
     subfields: [
-      'Unsupervised Domain Adaptation'
+      'Unsupervised Domain Adaptation',
     ],
     professorPreferredFormat:
       'C.-W. Chen, C.-W. Yang, C.-Y. Lin, H.-Y. Kao, “Breaking Boundaries in Retrieval Systems: Unsupervised Domain Adaptation with Denoise-Finetuning, ” Proc. of the 2023 Conference on Empirical Methods in Natural Language Processing (Finding of EMNLP-2023), Singapore, Dec 6-10, 2023.',
@@ -76,14 +76,14 @@ export const researchData = [
       'C.-J. Yeh',
       'Y.-T. Li',
       'C.-W. Yang',
-      'H.-Y. Kao'
+      'H.-Y. Kao',
     ],
     venue: 'EMNLP',
     venueType: 'conference',
     year: 2023,
     topic: 'NLP',
     subfields: [
-      'Chinese Word Segmentation'
+      'Chinese Word Segmentation',
     ],
     professorPreferredFormat:
       'C.-Y. Lin, Y.-J.Lin, C.-J. Yeh, Y.-T. Li, C.-W. Yang, H.-Y. Kao, “Improving Multi-Criteria Chinese Word Segmentation through Learning Sentence Representation, ” Proc. of the 2023 Conference on Empirical Methods in Natural Language Processing (Finding of EMNLP-2023), Singapore, Dec 6-10, 2023.',
@@ -92,18 +92,18 @@ export const researchData = [
     title:
       'Improved Unsupervised Chinese Word Segmentation Using Pre-trained Knowledge and Pseudo-labeling Transfer',
     authors: [
-      'H.-W. Li', 
+      'H.-W. Li',
       'Y.-J. Lin',
       'Y.-T. Li',
       'C.-Y. Lin',
-      'H.-Y. Kao'
+      'H.-Y. Kao',
     ],
     venue: 'EMNLP',
     venueType: 'conference',
     year: 2023,
     topic: 'NLP',
     subfields: [
-      'Chinese Word Segmentation'
+      'Chinese Word Segmentation',
     ],
     professorPreferredFormat:
       'H.-W. Li, Y.-J. Lin, Y.-T. Li, C.-Y. Lin, H.-Y. Kao, “Improved Unsupervised Chinese Word Segmentation Using Pre-trained Knowledge and Pseudo-labeling Transfer, ” Proc. of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP-2023), Singapore, Dec 6-10, 2023',
