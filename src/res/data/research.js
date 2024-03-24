@@ -10,16 +10,12 @@ export const researchData = [
       'Y.-Y. Hu',
       'C.-H. Hsu',
       'M.-F. Lee',
-      'H.-Y. Kao'
+      'H.-Y. Kao',
     ],
     venue: 'AAAI',
     venueType: 'conference',
     year: 2024,
     topic: 'NLP',
-    subfields: [
-      ' ',
-      ' '
-    ],
     professorPreferredFormat:
       'Y.-J. Lin, C.-Y. Lin, C.-J. Yeh, Y.-T. Li, Y.-Y. Hu, C.-H. Hsu, M.-F. Lee, H.-Y. Kao, “CFEVER: A Chinese Fact Extraction and VERification Dataset, “ Proc. of the 38th AAAI Conference on Artificial Intelligence (AAAI-24), Vancouver, Canada, Feb. 20-27, 2024.',
   },
