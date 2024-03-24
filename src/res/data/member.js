@@ -28,8 +28,8 @@ import ChihWeiHsu
   from 'src/res/image/member/Chih-Wei-Hsu.png'
 import ChihHaoHsu
   from 'src/res/image/member/Chih-Hao-Hsu.png'
-import ChihHsiangYang
-  from 'src/res/image/member/Chih-Hsiang-Yang.jpg'
+// import ChihHsiangYang
+//   from 'src/res/image/member/Chih-Hsiang-Yang.jpg'
 import ChiMinChiu
   from 'src/res/image/member/ChiMinChiu.png'
 import ChingShanTseng
@@ -42,8 +42,8 @@ import CutieP
   from 'src/res/image/member/Cutie-P.png'
 import ChongYiZhang
   from 'src/res/image/member/Chong-Yi-Zhang.png'
-import DarrenChang
-  from 'src/res/image/member/Darren-Chang.png'
+// import DarrenChang
+//   from 'src/res/image/member/Darren-Chang.png'
 import DengDengDeng
   from 'src/res/image/member/Deng-Deng-Deng.png'
 import DiNanLin
@@ -457,7 +457,7 @@ export const memberData = [
     zh: '周子軒',
     en: 'Tzu-Hsuan Chou',
     dept: 0,
-    deg: 0,
+    deg: 1,
     image: TzuHsuanChou,
     year: 2023,
   },
