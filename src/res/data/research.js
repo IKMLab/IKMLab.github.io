@@ -80,7 +80,7 @@ export const researchData = [
     venue: 'EMNLP',
     venueType: 'conference',
     year: 2023,
-    topic: 'NLP',
+    topic: 'IR',
     subfields: [
       'Unsupervised Domain Adaptation',
     ],
