@@ -1,6 +1,121 @@
 export const researchData = [
   {
     title:
+      'SUSTEM: An Improved Rule-Based Sundanese Stemmer',
+    authors: [
+      'I. Setiawan',
+      'H.-Y. Kao'
+    ],
+    venue: 'ACM TALLIP',
+    venueType: 'journal',
+    year: 2024,
+    topic: 'NLP',
+    subfields: [
+      ' ',
+      ' '
+    ],
+    professorPreferredFormat:
+      'I. Setiawan, H.-Y. Kao, “SUSTEM: An Improved Rule-Based Sundanese Stemmer, “ Accepted by ACM Transactions on Asian and Low-Resource Language Information Processing (ACM TALLIP), accepted on April 2024',
+  },  
+  {
+    title:
+      '0x.Yuan at SemEval-2024 Task 2: Agents Debating can reach consensus and produce better outcomes in Medical NLI task',
+    authors: [
+      'Y.-A. Lu',
+      'H.-Y. Kao'
+    ],
+    venue: 'NAACL',
+    venueType: 'conference',
+    year: 2024,
+    topic: 'NLP',
+    subfields: [
+      'NLI',
+      'SemEval'
+    ],
+    professorPreferredFormat:
+      'Y.-A. Lu, H.-Y. Kao, “0x.Yuan at SemEval-2024 Task 2: Agents Debating can reach consensus and produce better outcomes in Medical NLI task, “ Proc. of The 18th International Workshop on Semantic Evaluation (SemEval 2024), NAACL, Mexico, June 16-21, 2024',
+  },  
+  {
+    title:
+      '0x.Yuan at SemEval-2024 Task 5: Enhancing Legal Argument Reasoning with Structured Prompts',
+    authors: [
+      'Y.-A. Lu',
+      'H.-Y. Kao'
+    ],
+    venue: 'NAACL',
+    venueType: 'conference',
+    year: 2024,
+    topic: 'NLP',
+    subfields: [
+      'Reasoning',
+      'Prompt',
+      'SemEval'
+    ],
+    professorPreferredFormat:
+      'Y.-A. Lu, H.-Y. Kao, “0x.Yuan at SemEval-2024 Task 5: Enhancing Legal Argument Reasoning with Structured Prompts, “ Proc. of The 18th International Workshop on Semantic Evaluation (SemEval 2024), NAACL, Mexico, June 16-21, 2024.',
+  },
+  {
+    title:
+      'Advancing Stance Detection of Political Fan Pages: A Multimodal Approach',
+    authors: [
+      'K.-H. Kuo', 
+      'M.-H. Wang',
+      'H.-Y. Kao',
+      'Y.-C. Dai'
+    ],
+    venue: 'WWW',
+    venueType: 'conference',
+    year: 2024,
+    topic: 'NLP',
+    subfields: [
+      'Multimodal'
+    ],
+    professorPreferredFormat:
+      'K.-H. Kuo, M.-H. Wang, H.-Y. Kao and Y.-C. Dai, “Advancing Stance Detection of Political Fan Pages: A Multimodal Approach, “ Proc. of The Web Conference 2024 (WWW 2024, short paper), Singapore, May 13-17, 2024.',
+  },
+  {
+    title:
+      'GViG: Generative Visual Grounding using Prompt-based Language Modeling for Visual Question Answering',
+    authors: [
+      'Y.-T. Li',
+      'Y.-J. Lin',
+      'C.-J. Yeh',
+      'C.-Y. Lin', 
+      'H.-Y. Kao'
+    ],
+    venue: 'PAKDD',
+    venueType: 'conference',
+    year: 2024,
+    topic: 'NLP',
+    subfields: [
+      'Visual Question Answering',
+      'Generative',
+      'Prompt Learning'
+    ],
+    professorPreferredFormat:
+      'Y.-T. Li, Y.-J. Lin, C.-J. Yeh, C.-Y. Lin, H.-Y. Kao, “GViG: Generative Visual Grounding using Prompt-based Language Modeling for Visual Question Answering, “ Proc. of the 28th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD-2024), Taiwan, May 7-10, 2024.',
+  },
+  {
+    title:
+      'Contrastive Learning for Unsupervised Sentence Embedding with False Negative Calibration',
+    authors: [
+      'C.-M. Chiu',
+      'Y.-J. Lin',
+      'H.-Y. Kao'
+    ],
+    venue: 'PAKDD',
+    venueType: 'conference',
+    year: 2024,
+    topic: 'NLP',
+    subfields: [
+      'Contrastive Learning',
+      'Unsupervised Sentence Embedding'
+    ],
+    professorPreferredFormat:
+      'C.-M. Chiu, Y.-J. Lin, H.-Y. Kao, “Contrastive Learning for Unsupervised Sentence Embedding with False Negative Calibration, “ (poster) Proc. of the 28th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD-2024), Taiwan, May 7-10, 2024.',
+  },  
+  {
+    title:
       'CFEVER: A Chinese Fact Extraction and VERification Dataset',
     authors: [
       'Y.-J. Lin',
