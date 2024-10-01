@@ -37,7 +37,7 @@ module.exports = (_, argv) => {
 
   // webpack.output.publicPath need a trailing slash
   const PUBLIC_URL = isProductionMode ?
-    'http://140.116.245.107/' :
+    'http://ikmlab.duckdns.org/' :
     `https://${devConfig.host}:${devConfig.port}/`
 
   const getStyleLoaders = (useSassLoader = false) => {
