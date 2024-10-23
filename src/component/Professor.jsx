@@ -112,21 +112,26 @@ function ResearchContent() {
 function ExperienceContent() {
   const textContent = [
     [
+      `Professor,
+      Department of Computer Science (CS), NTHU`,
+      `2024.8 ~ now`,
+    ],
+    [
       `Vice Dean,
       College of Electrical Engineering and Computer Science
       (EECS), NCKU`,
-      `2021.8 ~ Present`,
+      `2021.8 ~ 2024.7`,
     ],
     [
       `Distinguished Professor,
       Department of Computer Science and Information Engineering (CSIE), NCKU`,
-      `2023.2 ~ present`,
+      `2023.2 ~ 2024.7`,
     ],
     [
       `Chair,
       Ph.D. Program of Multimedia system and intelligent computing
       , NCKU`,
-      `2021.8 ~ Present`,
+      `2021.8 ~ 2024.7`,
     ],
     [
       `Director,
@@ -154,13 +159,13 @@ function ExperienceContent() {
       `Professor,
       Department of Computer Science and Information Engineering
       (CSIE), NCKU`,
-      `2014.8 ~ present`,
+      `2014.8 ~ 2024.7`,
     ],
     [
       `Adjunct Professor,
       Institute of Medical Informatics (IMI),
       NCKU`,
-      `2014.8 ~ present`,
+      `2014.8 ~ 2024.7`,
     ],
     [
       `Associate Professor,
@@ -373,8 +378,7 @@ export default function Professor() {
             Hung-Yu Kao
           </h2>
           <h3 className={ProfessorStyle['department']}>
-            Department of Computer Science and Information Engineering at
-            National Cheng Kung University
+            Department of Computer Science at National Tsing Hua University
           </h3>
         </Grid>
         <Grid
@@ -388,8 +392,8 @@ export default function Professor() {
               <ListItemText>
                 <Link
                   className={ProfessorStyle['contact-text']}
-                  href='tel:+88662757575,62546'>
-                  +886-6-275-7575 ext 62546
+                  href='tel:+88635731214'>
+                  +886-3-5731214
                 </Link>
               </ListItemText>
             </ListItem>
@@ -400,8 +404,8 @@ export default function Professor() {
               <ListItemText>
                 <Link
                   className={ProfessorStyle['contact-text']}
-                  href='mailto:hykao@mail.ncku.edu.tw'>
-                  hykao@mail.ncku.edu.tw
+                  href='mailto:hykao@cs.nthu.edu.tw'>
+                  hykao@cs.nthu.edu.tw
                 </Link>
               </ListItemText>
             </ListItem>
@@ -412,8 +416,8 @@ export default function Professor() {
               <ListItemText>
                 <address
                   className={ProfessorStyle['contact-text']}>
-                  Rm. 65C11, CSIE new building,<br />
-                  No. 1, Daxue Rd., East Dist., Tainan City 701,<br />
+                  Rm. 633, Delta building,<br />
+                  101, Section 2, Kuang-Fu Road, Hsinchu 300044,<br />
                   Taiwan (R.O.C.)
                 </address>
               </ListItemText>
@@ -438,17 +442,20 @@ export default function Professor() {
           className={ProfessorStyle['intro']}
           item xs={12}>
           <Typography className={ProfessorStyle['intro-text']}>
-            HUNG-YU KAO received the B.S. and M.S. degree in Computer Science
-            from National Tsing Hua University in 1994 and 1996 respectively.
-            In July 2003, he received the PhD degree from the Electrical Engineering
-            Department, National Taiwan University. He is currently the Distinguished Professor
-            of Dept. of CSIE and Vice Dean of College of EECS in National Cheng Kung University
-            (NCKU) from 2021. He was the Director of Department of Computer Science and Information Engineering
-            (CSIE) of NCKU from 2018 to 2021. He was the chair of IEEE CIS Tainan Chapter from
-            2017 to 2021. His research interests include Natural Language Processing, Web
-            information retrieval / extraction, search engine, knowledge management, data mining,
-            social network analysis and bioinformatics. He has published more than 140 research papers
-            in refereed international journals and conference proceedings. He is a member of IEEE and ACM.
+            HUNG-YU KAO received the B.S. and M.S. degree in Computer Science 
+            from National Tsing Hua University in 1994 and 1996 respectively. In July
+            2003, he received the PhD degree from the Electrical Engineering 
+            Department, National Taiwan University. He is currently the professor at 
+            the department of Computer Science of Nation Tsing Hua University 
+            (NTHU). He was the vice Dean of College of EECS in National Cheng 
+            Kung University (NCKU) from 2021 to 2024 and the Director of Dept. 
+            CSIE of NCKU from 2018 to 2021. He was the chair of IEEE CIS Tainan 
+            Chapter from 2017 to 2021. His research interests include Natural 
+            Language Processing, Machine learning, Web information retrieval / 
+            extraction, knowledge management, data mining, social network analysis 
+            and bioinformatics. He has published more than 140 research papers in 
+            refereed international journals and conference proceedings. He is a 
+            member of IEEE and ACM.
           </Typography>
         </Grid>
       </Grid>

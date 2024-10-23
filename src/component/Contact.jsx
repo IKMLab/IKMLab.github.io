@@ -28,8 +28,8 @@ export default function Contact() {
               <CallIcon />
               <Link
                 className={ContactStyle['contact-info']}
-                href='tel:+88662757575,62520,2903'>
-                +886-6-275-7575 ext 62520 ext 2903
+                href='tel:+88635715131,33518'>
+                +886-3-5715131 ext.33518
               </Link>
             </ListItem>
             <ListItem>
@@ -53,8 +53,8 @@ export default function Contact() {
               <LocationOnIcon />
               <address
                 className={ContactStyle['contact-info']}>
-                Rm. 65903, CSIE new building,<br />
-                  No. 1, Daxue Rd., East Dist., Tainan City 701,<br />
+                Rm. 634, C.L.Liu Building(EECS Building),<br />
+                  101, Section 2, Kuang-Fu Road, Hsinchu 300044,<br />
                   Taiwan (R.O.C.)
               </address>
             </ListItem>
@@ -63,7 +63,7 @@ export default function Contact() {
         <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
           <iframe
             className={ContactStyle['contact-map']}
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7345.44068589906!2d120.22149759999998!3d22.997309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stw!4v1583579953358!5m2!1sen!2stw" />
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.0145593482007!2d120.98962667770058!3d24.794954977972225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468360b9e03f9e3%3A0x22772dceb9fafb07!2z5ZyL56uL5riF6I-v5aSn5a24IOWKieeCr-acl-mkqA!5e0!3m2!1szh-TW!2stw!4v1729568838865!5m2!1szh-TW!2stw"></iframe>
         </Grid>
       </Grid>
     </Box>

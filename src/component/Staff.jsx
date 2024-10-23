@@ -42,8 +42,8 @@ export default function Staff() {
             <CallIcon />
             <Link
               className={StaffStyle['staff-contact-text']}
-              href='tel:+88662757575,62520,2903'>
-              +886-6-275-7575 ext 62520 ext 2903
+              href='tel:+88635715131,33518'>
+              +886-3-5715131 ext.33518
             </Link>
           </ListItem>
           <ListItem>
@@ -58,8 +58,8 @@ export default function Staff() {
             <LocationOnIcon />
             <address
               className={StaffStyle['staff-contact-text']}>
-              Rm. 65903, CSIE new building,<br />
-              No. 1, Daxue Rd., East Dist., Tainan City 701,<br />
+              Rm. 633, Delta building,<br />
+              101, Section 2, Kuang-Fu Road, Hsinchu 300044,<br />
               Taiwan (R.O.C.)
             </address>
           </ListItem>

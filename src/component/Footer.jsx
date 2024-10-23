@@ -9,9 +9,10 @@ import ListItem from '@material-ui/core/ListItem'
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
 
-import CSIEIcon from 'src/res/image/relate/NCKU-CSIE.png'
+// import CSIEIcon from 'src/res/image/relate/NCKU-CSIE.png'
 import FooterStyle from 'src/style/Footer.module.scss'
-import NCKUIcon from 'src/res/image/relate/NCKU.png'
+// import NCKUIcon from 'src/res/image/relate/NCKU.png'
+import NTHUIcon from 'src/res/image/relate/NTHU.gif'
 import materialUIIcon from 'src/res/image/tech/material-ui.svg'
 import reactIcon from 'src/res/image/tech/react.png'
 import sassIcon from 'src/res/image/tech/sass.png'
@@ -90,24 +91,24 @@ export default function Footer() {
           <ListItem>
             <Link
               className={FooterStyle['footer-related-item']}
-              href='https://web.ncku.edu.tw/index.php'>
+              href='https://www.nthu.edu.tw/'>
               <img
                 className={FooterStyle['footer-related-item-image']}
-                src={NCKUIcon} />
+                src={NTHUIcon} />
               <Typography className={FooterStyle['footer-related-item-name']}>
-                National Cheng Kung University
+                National Tsing Hua University
               </Typography>
             </Link>
           </ListItem>
           <ListItem>
             <Link
               className={FooterStyle['footer-related-item']}
-              href='http://www.csie.ncku.edu.tw/ncku_csie/'>
+              href='https://dcs.site.nthu.edu.tw/'>
               <img
                 className={FooterStyle['footer-related-item-image']}
-                src={CSIEIcon} />
+                src={NTHUIcon} />
               <Typography className={FooterStyle['footer-related-item-name']}>
-                Department of Computer Science and Information Engineering
+                Department of Computer Science
               </Typography>
             </Link>
           </ListItem>
@@ -134,9 +135,9 @@ export default function Footer() {
             <CallIcon />
             <Link
               className={FooterStyle['contact']}
-              href='tel:+88662757575,62520,2903'>
+              href='tel:+88635715131,33518'>
               <Typography className={FooterStyle['contact-text']}>
-                +886-6-275-7575 ext 62520 ext 2903
+                +886-3-5715131 ext.33518
               </Typography>
             </Link>
           </ListItem>
