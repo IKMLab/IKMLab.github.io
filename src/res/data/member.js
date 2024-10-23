@@ -187,49 +187,49 @@ export const memberData = [
     zh: '薛揚',
     en: 'Yang Hsueh',
     dept: 0,
-    deg: 1,
+    deg: 3,
     // image: ,
   },
   {
     zh: '蔡沐風',
     en: 'Mu-Feng Tsai',
     dept: 0,
-    deg: 1,
+    deg: 3,
     // image: ,
   },
   {
     zh: '劉明杰',
     en: 'Ming-Jie Liu',
     dept: 0,
-    deg: 1,
+    deg: 3,
     // image: ,
   },
   {
     zh: '黃星翰',
     en: 'Xing-Han Huang',
     dept: 0,
-    deg: 1,
+    deg: 3,
     // image: ,
   },
   {
     zh: '黃子軒',
     en: 'Tzu-Hsuan Huang',
     dept: 0,
-    deg: 1,
+    deg: 3,
     // image: ,
   },
   {
     zh: '朱冠瑜',
     en: 'Kuan-Yu Chu',
     dept: 0,
-    deg: 1,
+    deg: 3,
     // image: ,
   },
   {
     zh: '劉秉頎',
     en: 'Ping-Chi Liou',
     dept: 0,
-    deg: 1,
+    deg: 3,
     // image: ,
   },
   {
@@ -273,6 +273,13 @@ export const memberData = [
     dept: 0,
     deg: 1,
     image: YuXiangHong,
+  },
+  {
+    zh: '古耕榕',
+    en: 'Keng-Jung Ku',
+    dept: 0,
+    deg: 1,
+    image: KengJungKu,
   },
   // Graduate PhDs
   {
@@ -437,14 +444,6 @@ export const memberData = [
     dept: 0,
     deg: 1,
     image: DiNanLin,
-    year: 2024,
-  },
-  {
-    zh: '古耕榕',
-    en: 'Keng-Jung Ku',
-    dept: 0,
-    deg: 1,
-    image: KengJungKu,
     year: 2024,
   },
   {
@@ -1163,9 +1162,13 @@ export const parsingRule = {
     'master', // 1 for master degree
   ],
   dept: [
+    // Departments of NCKU, before 2024.7
     'CSIE', // 0 for Computer Science and Information Engineering
-    'IMI', // 1 for Institute of Medical Informatics
+    'IMI',  // 1 for Institute of Medical Informatics
     'AIMP', // 2 for Artificial Intelligence Technology Master Program
+    // Departments of NTHU, after 2024.8
+    'CS',   // 3 for Computer Science
+    'ISA',  // 4 for Institute of Information Systems and Applications
   ],
 }
 
