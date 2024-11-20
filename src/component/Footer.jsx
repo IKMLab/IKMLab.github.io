@@ -151,6 +151,16 @@ export default function Footer() {
               </Typography>
             </Link>
           </ListItem>
+          <ListItem>
+            <EmailIcon />
+            <Link
+              className={FooterStyle['contact']}
+              href='mailto:ikmlab.nthu@gmail.com'>
+              <Typography className={FooterStyle['contact-text']}>
+                ikmlab.nthu@gmail.com
+              </Typography>
+            </Link>
+          </ListItem>
         </List>
       </Grid>
     </Grid>
