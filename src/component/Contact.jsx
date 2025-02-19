@@ -36,8 +36,8 @@ export default function Contact() {
               <EmailIcon />
               <Link
                 className={ContactStyle['contact-info']}
-                href='mailto:ikmlab@mail.csie.ncku.edu.tw'>
-                ikmlab@mail.csie.ncku.edu.tw
+                href='mailto:ikmlab.nthu@gmail.com'>
+                ikmlab.nthu@gmail.com
               </Link>
             </ListItem>
             <ListItem>

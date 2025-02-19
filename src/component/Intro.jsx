@@ -40,7 +40,7 @@ function IntroLab() {
           {' '}<strong>L</strong>aboratory
           {' '}(<strong>IKMLab</strong>) at the
           <Link href='https://web.ncku.edu.tw/index.php'>
-            {' '}National Cheng Kung University
+            {' '}National Tsing Hua University
           </Link>
           {' '}is composed of talented and passionate graduate students
           {' '}(both Masters and Ph.D.) from the

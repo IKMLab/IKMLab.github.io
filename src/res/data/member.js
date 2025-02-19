@@ -134,6 +134,13 @@ import ZiKuanHuang
 export const memberData = [
   // PhD Students
   {
+    zh: '李音儀',
+    en: 'Fukaya',
+    dept: 3,
+    deg: 0,
+    // image: ,
+  },
+  {
     zh: '馮智詮',
     en: 'Zhi-Quan Feng',
     dept: 0,
@@ -228,6 +235,13 @@ export const memberData = [
   {
     zh: '劉秉頎',
     en: 'Ping-Chi Liou',
+    dept: 3,
+    deg: 1,
+    // image: ,
+  },
+  {
+    zh: '吳孟維',
+    en: 'Meng-Wei Wu',
     dept: 3,
     deg: 1,
     // image: ,
