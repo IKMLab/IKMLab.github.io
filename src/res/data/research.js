@@ -1,6 +1,43 @@
 export const researchData = [
   {
     title:
+      'From Persona to Person: Enhancing the Naturalness with Multiple Discourse Relations Graph Learning in Personalized Dialogue Generation',
+    authors: [
+      'C.-H. Hsu',
+      'Y.-J. Lin',
+      'H.-Y. Kao',
+    ],
+    venue: 'PAKDD',
+    venueType: 'conference',
+    year: 2025,
+    topic: 'NLP',
+    subfields: [
+      'GNN',
+      'Generative',
+    ],
+    professorPreferredFormat:
+      'C.-H. Hsu, Y.-J. Lin, H.-Y. Kao, “From Persona to Person: Enhancing the Naturalness with Multiple Discourse Relations Graph Learning in Personalized Dialogue Generation, ” Proc. of the 29th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD-2025), Sydney Australia, June 10-13, 2025'
+  },
+  {
+    title:
+      'How Do Position Encodings Affect Length Generalization? Case Studies on In-Context Function Learning',
+    authors: [
+      'D.-N. Lin',
+      'J.-F. Yao',
+      'K.-d. Wu',
+      'H. Xu',
+      'C.-H. Huang',
+      'H.-Y. Kao',
+    ],
+    venue: 'AAAI',
+    venueType: 'conference',
+    year: 2025,
+    topic: 'NLP',
+    professorPreferredFormat:
+      'D.-N. Lin, J.-F. Yao, K.-d. Wu, H. Xu, C.-H. Huang, H.-Y. Kao, “How Do Position Encodings Affect Length Generalization? Case Studies on In-Context Function Learning, ” Proc. of the 39th AAAI Conference on Artificial Intelligence (AAAI-25), Philadelphia, Pennsylvania, USA. Feb. 25 - Mar. 4, 2025'
+  },
+  {
+    title:
       'SUSTEM: An Improved Rule-Based Sundanese Stemmer',
     authors: [
       'I. Setiawan',
