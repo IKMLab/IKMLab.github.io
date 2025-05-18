@@ -443,6 +443,7 @@ export default function Professor() {
           item xs={12}>
           <Typography className={ProfessorStyle['intro-text']}>
             HUNG-YU KAO received the B.S. and M.S. degrees in Computer Science from National Tsing Hua University in 1994 and 1996, respectively. In July 2003, he received a PhD degree from the Electrical Engineering Department, National Taiwan University. He is currently a professor at the Department of Computer Science of National Tsing Hua University (NTHU). He was the vice Dean of the College of EECS in National Cheng Kung University (NCKU) from 2021 to 2024 and the Director of Dept. CSIE of NCKU from 2018 to 2021. He was the chair of IEEE CIS Tainan Chapter from 2017 to 2021.
+            <br />
             His research interests include Natural Language Processing, Machine learning, Web information retrieval/extraction, knowledge management, data mining, social network analysis, and bioinformatics. He has published over 140 research papers in refereed international journals (IEEE TKDE, TAI, TASLP) and conference proceedings, including AAAI, ACL, and EMNLP. He is the Associate Editor of IEEE/ACM Transactions on Audio, Speech, and Language Processing. He is a member of IEEE and ACM.
           </Typography>
         </Grid>
