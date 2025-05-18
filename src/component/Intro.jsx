@@ -45,7 +45,7 @@ function IntroLab() {
           {' '}is composed of talented and passionate graduate students
           {' '}(both Masters and Ph.D.) from the
           {' '}
-          <Link href='http://www.csie.ncku.edu.tw/'>
+          {/* <Link href='http://www.csie.ncku.edu.tw/'>
             {' '}Artificial Intelligence Technology Master Program
           </Link>,
           <Link href='http://www.imi.ncku.edu.tw/'>
@@ -53,6 +53,12 @@ function IntroLab() {
           </Link>, and
           <Link href='http://www.csie.ncku.edu.tw/'>
             {' '}Department of Computer Science and Information Engineering
+          </Link>. */}
+          <Link href='https://dcs.site.nthu.edu.tw/'>
+            {' '}Department of Computer Science
+          </Link> and
+          <Link href='https://isa.site.nthu.edu.tw/'>
+            {' '}Institute of Information Systems and Applications
           </Link>.
         </p>
       </Grid>
