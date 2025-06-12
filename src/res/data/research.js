@@ -1,6 +1,67 @@
 export const researchData = [
   {
     title:
+      'MAPLE: Enhancing Review Generation with Multi-Aspect Prompt LEarning in Explainable Recommendation',
+    authors: [
+      'C.-W. Yang',
+      'Z.-Q. Feng',
+      'Y.-J. Lin',
+      'C.-W. Chen',
+      'K.-D. Wu',
+      'H. Xu',
+      'J.-F. Yao',
+      'H.-Y. Kao',
+    ],
+    venue: 'ACL',
+    venueType: 'conference',
+    year: 2025,
+    topic: 'NLP',
+    subfields: [
+      'Explainable Recommendation',
+      'Prompt Learning',
+    ],
+    professorPreferredFormat:
+      'C.-W. Yang, Z.-Q. Feng, Y.-J. Lin, C.-W. Chen, K.-D. Wu, H. Xu, J.-F. Yao, H.-Y. Kao, “MAPLE: Enhancing Review Generation with Multi-Aspect Prompt LEarning in Explainable Recommendation, “Proc. of the 63th Annual Meeting of the Association for Computational Linguistics (ACL-2025), Vienna, Austria, July 27-August 1st, 2025.'
+  },
+  {
+    title:
+      'GViG: Low-Resource Generative Visual Grounding using Prompt-based Language Modeling for Visual Question Answering',
+    authors: [
+      'Y.-T. Li',
+      'Y.-J. Lin',
+      'C.-J. Yeh',
+      'C.-Y. Lin',
+      'H.-Y. Kao',
+    ],
+    venue: 'JDSA',
+    venueType: 'journal',
+    year: 2025,
+    topic: 'NLP',
+    subfields: [
+      'Visual Question Answering',
+      'Generative',
+      'Prompt Learning',
+    ],
+    professorPreferredFormat:
+      'Y.-T. Li, Y.-J. Lin, C.-J. Yeh, C.-Y. Lin, H.-Y. Kao, “GViG: Low-Resource Generative Visual Grounding using Prompt-based Language Modeling for Visual Question Answering,” Accepted by International Journal of Data Science and Analytics, 2025.'
+  },
+  {
+    title:
+      'Exploring the Effectiveness of Pre-training Language Models with Incorporation of Diglossia for Hong Kong Content',
+    authors: [
+      'Y.-C. Yang',
+      'Y.-J. Lin',
+      'H.-Y. Kao',
+    ],
+    venue: 'ACM TALLIP',
+    venueType: 'journal',
+    year: 2025,
+    topic: 'NLP',
+    professorPreferredFormat:
+      'Y.-C. Yang, Y.-J. Lin,  H.-Y. Kao, “Exploring the Effectiveness of Pre-training Language Models with Incorporation of Diglossia for Hong Kong Content, ” Accepted by ACM Transactions on Asian and Low-Resource Language Information Processing (ACM TALLIP), accepted on May 2025'
+  },
+  {
+    title:
       'From Persona to Person: Enhancing the Naturalness with Multiple Discourse Relations Graph Learning in Personalized Dialogue Generation',
     authors: [
       'C.-H. Hsu',
