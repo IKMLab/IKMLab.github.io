@@ -130,16 +130,28 @@ import ZhiQuanFeng
   from 'src/res/image/member/Zhi-Quan-Feng.jpg'
 import ZiKuanHuang
   from 'src/res/image/member/Zi-Kuan-Huang.png'
+import HungYuChien
+  from 'src/res/image/member/Hung-Yu-Chien.jpg'
+import KuanYuChu
+  from 'src/res/image/member/Kuan-Yu-Chu.jpg'
+import MengWeiWu
+  from 'src/res/image/member/Meng-Wei-Wu.jpg'
+import MingJieLiu
+  from 'src/res/image/member/Ming-Jie-Liu.jpg'
+import MuFengTsai
+  from 'src/res/image/member/Mu-Feng-Tsai.jpg'
+import PingChiLiou
+  from 'src/res/image/member/Ping-Chi-Liou.jpg'
+import TzuHsuanHuang
+  from 'src/res/image/member/Tzu-Hsuan-Huang.jpg'
+import XingHanHuang
+  from 'src/res/image/member/Xing-Han-Huang.jpg'
+import YangHsueh
+  from 'src/res/image/member/Yang-Hsueh.jpg'
+
 
 export const memberData = [
   // PhD Students
-  {
-    zh: '李音儀',
-    en: 'Fukaya',
-    dept: 3,
-    deg: 0,
-    // image: ,
-  },
   {
     zh: '馮智詮',
     en: 'Zhi-Quan Feng',
@@ -191,102 +203,123 @@ export const memberData = [
   //   image: ChihHsiangYang,
   // },
   {
+    zh: '蟻嘉彬',
+    en: 'Chia-Pin Yi',
+    dept: 3,
+    deg: 1,
+    // image: ,
+  },
+  {
+    zh: '沈奎勳',
+    en: 'Kuei-Shun Shen',
+    dept: 3,
+    deg: 1,
+    // image: ,
+  },
+  {
+    zh: '楊珽羽',
+    en: 'Ting-Yu Yang',
+    dept: 3,
+    deg: 1,
+    // image: ,
+  },
+  {
+    zh: '郭冠廷',
+    en: 'Kuan-Ting Kuo',
+    dept: 3,
+    deg: 1,
+    // image: ,
+  },
+  {
+    zh: '柯翔崴',
+    en: 'Xiang-Wei Ke',
+    dept: 3,
+    deg: 1,
+    // image: ,
+  },
+  {
+    zh: '邱宇婕',
+    en: 'Yu-Chieh, Chiu',
+    dept: 4,
+    deg: 1,
+    // image: ,
+  },
+  {
+    zh: '范杜明英',
+    en: 'Minh-Anh Pham',
+    dept: 4,
+    deg: 1,
+    // image: ,
+  },
+  {
+    zh: '王佑禎',
+    en: 'Yu-Chien Wang',
+    dept: 3,
+    deg: 1,
+    // image: ,
+  },
+  {
+    zh: '簡宏諭',
+    en: 'Hung-Yu Chien',
+    dept: 4,
+    deg: 1,
+    image: HungYuChien,
+  },
+  {
     zh: '薛揚',
     en: 'Yang Hsueh',
     dept: 3,
     deg: 1,
-    // image: ,
+    image: YangHsueh,
   },
   {
     zh: '蔡沐風',
     en: 'Mu-Feng Tsai',
     dept: 3,
     deg: 1,
-    // image: ,
+    image: MuFengTsai,
   },
   {
     zh: '劉明杰',
     en: 'Ming-Jie Liu',
     dept: 3,
     deg: 1,
-    // image: ,
+    image: MingJieLiu,
   },
   {
     zh: '黃星翰',
     en: 'Xing-Han Huang',
     dept: 3,
     deg: 1,
-    // image: ,
+    image: XingHanHuang,
   },
   {
     zh: '黃子軒',
     en: 'Tzu-Hsuan Huang',
     dept: 3,
     deg: 1,
-    // image: ,
+    image: TzuHsuanHuang,
   },
   {
     zh: '朱冠瑜',
     en: 'Kuan-Yu Chu',
     dept: 3,
     deg: 1,
-    // image: ,
+    image: KuanYuChu,
   },
   {
     zh: '劉秉頎',
     en: 'Ping-Chi Liou',
     dept: 3,
     deg: 1,
-    // image: ,
+    image: PingChiLiou,
   },
   {
     zh: '吳孟維',
     en: 'Meng-Wei Wu',
     dept: 3,
     deg: 1,
-    // image: ,
-  },
-  {
-    zh: '陳宏仲',
-    en: 'Hong-Zhong Chen',
-    dept: 2,
-    deg: 1,
-    image: HongZhongChen,
-  },
-  {
-    zh: '王嘉臻',
-    en: 'Jia-Jen Wang',
-    dept: 1,
-    deg: 1,
-    image: JiaJenWang,
-  },
-  {
-    zh: '張文嫣',
-    en: 'Selena Teo',
-    dept: 0,
-    deg: 1,
-    image: SelenaTeo,
-  },
-  {
-    zh: '王思正',
-    en: 'Ssu-Cheng Wang',
-    dept: 0,
-    deg: 1,
-    image: SsuChengWang,
-  },
-  {
-    zh: '雲宇浩',
-    en: 'Yi-Hao Woon',
-    dept: 0,
-    deg: 1,
-    image: YiHaoWoon,
-  },
-  {
-    zh: '洪裕翔',
-    en: 'Yu-Xiang Hong',
-    dept: 0,
-    deg: 1,
-    image: YuXiangHong,
+    image: MengWeiWu,
   },
   {
     zh: '古耕榕',
@@ -420,6 +453,54 @@ export const memberData = [
   //   deg: 1,
   //   image: DarrenChang,
   // },
+  {
+    zh: '陳宏仲',
+    en: 'Hong-Zhong Chen',
+    dept: 2,
+    deg: 1,
+    image: HongZhongChen,
+    year: 2025,
+  },
+  {
+    zh: '王嘉臻',
+    en: 'Jia-Jen Wang',
+    dept: 1,
+    deg: 1,
+    image: JiaJenWang,
+    year: 2025,
+  },
+  {
+    zh: '張文嫣',
+    en: 'Selena Teo',
+    dept: 0,
+    deg: 1,
+    image: SelenaTeo,
+    year: 2025,
+  },
+  {
+    zh: '王思正',
+    en: 'Ssu-Cheng Wang',
+    dept: 0,
+    deg: 1,
+    image: SsuChengWang,
+    year: 2025,
+  },
+  {
+    zh: '雲宇浩',
+    en: 'Yi-Hao Woon',
+    dept: 0,
+    deg: 1,
+    image: YiHaoWoon,
+    year: 2025,
+  },
+  {
+    zh: '洪裕翔',
+    en: 'Yu-Xiang Hong',
+    dept: 0,
+    deg: 1,
+    image: YuXiangHong,
+    year: 2025,
+  },
   {
     zh: '林偉荏',
     en: 'William Lin',
@@ -1140,14 +1221,14 @@ export const memberData = [
   {
     zh: '登登登',
     en: 'Deng-Deng Deng',
-    dept: 0,
+    dept: 3,
     deg: 0,
     image: DengDengDeng,
   },
   {
     zh: '俏皮皮',
     en: 'Cutie P',
-    dept: 0,
+    dept: 3,
     deg: 1,
     image: CutieP,
   },
@@ -1178,11 +1259,11 @@ export const parsingRule = {
   dept: [
     // Departments of NCKU, before 2024.7
     'CSIE', // 0 for Computer Science and Information Engineering
-    'IMI',  // 1 for Institute of Medical Informatics
+    'IMI', // 1 for Institute of Medical Informatics
     'AIMP', // 2 for Artificial Intelligence Technology Master Program
     // Departments of NTHU, after 2024.8
-    'CS',   // 3 for Computer Science
-    'ISA',  // 4 for Institute of Information Systems and Applications
+    'CS', // 3 for Computer Science
+    'ISA', // 4 for Institute of Information Systems and Applications
   ],
 }
 

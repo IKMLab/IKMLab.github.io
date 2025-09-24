@@ -145,16 +145,6 @@ export default function Footer() {
             <EmailIcon />
             <Link
               className={FooterStyle['contact']}
-              href='mailto:ikmlab@mail.csie.ncku.edu.tw'>
-              <Typography className={FooterStyle['contact-text']}>
-                ikmlab@mail.csie.ncku.edu.tw
-              </Typography>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <EmailIcon />
-            <Link
-              className={FooterStyle['contact']}
               href='mailto:ikmlab.nthu@gmail.com'>
               <Typography className={FooterStyle['contact-text']}>
                 ikmlab.nthu@gmail.com

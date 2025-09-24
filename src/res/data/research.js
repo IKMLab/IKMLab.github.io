@@ -21,7 +21,7 @@ export const researchData = [
       'Prompt Learning',
     ],
     professorPreferredFormat:
-      'C.-W. Yang, Z.-Q. Feng, Y.-J. Lin, C.-W. Chen, K.-D. Wu, H. Xu, J.-F. Yao, H.-Y. Kao, “MAPLE: Enhancing Review Generation with Multi-Aspect Prompt LEarning in Explainable Recommendation, “Proc. of the 63th Annual Meeting of the Association for Computational Linguistics (ACL-2025), Vienna, Austria, July 27-August 1st, 2025.'
+      'C.-W. Yang, Z.-Q. Feng, Y.-J. Lin, C.-W. Chen, K.-D. Wu, H. Xu, J.-F. Yao, H.-Y. Kao, “MAPLE: Enhancing Review Generation with Multi-Aspect Prompt LEarning in Explainable Recommendation, “Proc. of the 63th Annual Meeting of the Association for Computational Linguistics (ACL-2025), Vienna, Austria, July 27-August 1st, 2025.',
   },
   {
     title:
@@ -43,7 +43,7 @@ export const researchData = [
       'Prompt Learning',
     ],
     professorPreferredFormat:
-      'Y.-T. Li, Y.-J. Lin, C.-J. Yeh, C.-Y. Lin, H.-Y. Kao, “GViG: Low-Resource Generative Visual Grounding using Prompt-based Language Modeling for Visual Question Answering,” Accepted by International Journal of Data Science and Analytics, 2025.'
+      'Y.-T. Li, Y.-J. Lin, C.-J. Yeh, C.-Y. Lin, H.-Y. Kao, “GViG: Low-Resource Generative Visual Grounding using Prompt-based Language Modeling for Visual Question Answering,” Accepted by International Journal of Data Science and Analytics, 2025.',
   },
   {
     title:
@@ -58,7 +58,7 @@ export const researchData = [
     year: 2025,
     topic: 'NLP',
     professorPreferredFormat:
-      'Y.-C. Yang, Y.-J. Lin,  H.-Y. Kao, “Exploring the Effectiveness of Pre-training Language Models with Incorporation of Diglossia for Hong Kong Content, ” Accepted by ACM Transactions on Asian and Low-Resource Language Information Processing (ACM TALLIP), accepted on May 2025'
+      'Y.-C. Yang, Y.-J. Lin,  H.-Y. Kao, “Exploring the Effectiveness of Pre-training Language Models with Incorporation of Diglossia for Hong Kong Content, ” Accepted by ACM Transactions on Asian and Low-Resource Language Information Processing (ACM TALLIP), accepted on May 2025',
   },
   {
     title:
@@ -77,7 +77,7 @@ export const researchData = [
       'Generative',
     ],
     professorPreferredFormat:
-      'C.-H. Hsu, Y.-J. Lin, H.-Y. Kao, “From Persona to Person: Enhancing the Naturalness with Multiple Discourse Relations Graph Learning in Personalized Dialogue Generation, ” Proc. of the 29th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD-2025), Sydney Australia, June 10-13, 2025'
+      'C.-H. Hsu, Y.-J. Lin, H.-Y. Kao, “From Persona to Person: Enhancing the Naturalness with Multiple Discourse Relations Graph Learning in Personalized Dialogue Generation, ” Proc. of the 29th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD-2025), Sydney Australia, June 10-13, 2025',
   },
   {
     title:
@@ -95,7 +95,7 @@ export const researchData = [
     year: 2025,
     topic: 'NLP',
     professorPreferredFormat:
-      'D.-N. Lin, J.-F. Yao, K.-d. Wu, H. Xu, C.-H. Huang, H.-Y. Kao, “How Do Position Encodings Affect Length Generalization? Case Studies on In-Context Function Learning, ” Proc. of the 39th AAAI Conference on Artificial Intelligence (AAAI-25), Philadelphia, Pennsylvania, USA. Feb. 25 - Mar. 4, 2025'
+      'D.-N. Lin, J.-F. Yao, K.-d. Wu, H. Xu, C.-H. Huang, H.-Y. Kao, “How Do Position Encodings Affect Length Generalization? Case Studies on In-Context Function Learning, ” Proc. of the 39th AAAI Conference on Artificial Intelligence (AAAI-25), Philadelphia, Pennsylvania, USA. Feb. 25 - Mar. 4, 2025',
   },
   {
     title:
