@@ -153,6 +153,13 @@ import YangHsueh
 export const memberData = [
   // PhD Students
   {
+    zh: '陳韻蓉',
+    en: 'Yun-Rong Chen',
+    dept: 0,
+    deg: 0,
+    // mage: ,
+  },
+  {
     zh: '馮智詮',
     en: 'Zhi-Quan Feng',
     dept: 0,
