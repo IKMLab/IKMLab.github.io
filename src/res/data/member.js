@@ -148,7 +148,8 @@ import XingHanHuang
   from 'src/res/image/member/Xing-Han-Huang.jpg'
 import YangHsueh
   from 'src/res/image/member/Yang-Hsueh.jpg'
-
+import YunRongChen
+  from 'src/res/image/member/Yun-Rong-Chen.jpg'
 
 export const memberData = [
   // PhD Students
@@ -157,7 +158,7 @@ export const memberData = [
     en: 'Yun-Rong Chen',
     dept: 0,
     deg: 0,
-    // mage: ,
+    image: YunRongChen,
   },
   {
     zh: '馮智詮',
