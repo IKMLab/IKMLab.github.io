@@ -150,6 +150,22 @@ import YangHsueh
   from 'src/res/image/member/Yang-Hsueh.jpg'
 import YunRongChen
   from 'src/res/image/member/Yun-Rong-Chen.jpg'
+// import YuChienWang
+//   from 'src/res/image/member/Yu-Chien-Wang.jpg'
+// import ChiaPinYi
+//   from 'src/res/image/member/Chia-Pin-Yi.jpg'
+// import KueiShunShen
+//   from 'src/res/image/member/Kuei-Shun-Shen.jpg'
+// import TingYuYang
+//   from 'src/res/image/member/Ting-Yu-Yang.jpg'
+// import KuanTingKuo
+//   from 'src/res/image/member/Kuan-Ting-Kuo.jpg'
+// import XiangWeiKe
+//   from 'src/res/image/member/Xiang-Wei-Ke.jpg'
+// import YuChiehChiu
+//   from 'src/res/image/member/Yu-Chieh-Chiu.jpg'
+// import MinhAnhPham
+//   from 'src/res/image/member/Minh-Anh-Pham.jpg'
 
 export const memberData = [
   // PhD Students
@@ -211,60 +227,11 @@ export const memberData = [
   //   image: ChihHsiangYang,
   // },
   {
-    zh: '蟻嘉彬',
-    en: 'Chia-Pin Yi',
-    dept: 3,
+    zh: '古耕榕',
+    en: 'Keng-Jung Ku',
+    dept: 0,
     deg: 1,
-    // image: ,
-  },
-  {
-    zh: '沈奎勳',
-    en: 'Kuei-Shun Shen',
-    dept: 3,
-    deg: 1,
-    // image: ,
-  },
-  {
-    zh: '楊珽羽',
-    en: 'Ting-Yu Yang',
-    dept: 3,
-    deg: 1,
-    // image: ,
-  },
-  {
-    zh: '郭冠廷',
-    en: 'Kuan-Ting Kuo',
-    dept: 3,
-    deg: 1,
-    // image: ,
-  },
-  {
-    zh: '柯翔崴',
-    en: 'Xiang-Wei Ke',
-    dept: 3,
-    deg: 1,
-    // image: ,
-  },
-  {
-    zh: '邱宇婕',
-    en: 'Yu-Chieh, Chiu',
-    dept: 4,
-    deg: 1,
-    // image: ,
-  },
-  {
-    zh: '范杜明英',
-    en: 'Minh-Anh Pham',
-    dept: 4,
-    deg: 1,
-    // image: ,
-  },
-  {
-    zh: '王佑禎',
-    en: 'Yu-Chien Wang',
-    dept: 3,
-    deg: 1,
-    // image: ,
+    image: KengJungKu,
   },
   {
     zh: '簡宏諭',
@@ -330,11 +297,60 @@ export const memberData = [
     image: MengWeiWu,
   },
   {
-    zh: '古耕榕',
-    en: 'Keng-Jung Ku',
-    dept: 0,
+    zh: '王佑禎',
+    en: 'Yu-Chien Wang',
+    dept: 3,
     deg: 1,
-    image: KengJungKu,
+    // image: YuChienWang,
+  },
+  {
+    zh: '蟻嘉彬',
+    en: 'Chia-Pin Yi',
+    dept: 3,
+    deg: 1,
+    // image: ChiaPinYi,
+  },
+  {
+    zh: '沈奎勳',
+    en: 'Kuei-Shun Shen',
+    dept: 3,
+    deg: 1,
+    // image: KueiShunShen,
+  },
+  {
+    zh: '楊珽羽',
+    en: 'Ting-Yu Yang',
+    dept: 3,
+    deg: 1,
+    // image: TingYuYang,
+  },
+  {
+    zh: '郭冠廷',
+    en: 'Kuan-Ting Kuo',
+    dept: 3,
+    deg: 1,
+    // image: KuanTingKuo,
+  },
+  {
+    zh: '柯翔崴',
+    en: 'Xiang-Wei Ke',
+    dept: 3,
+    deg: 1,
+    // image: XiangWeiKe,
+  },
+  {
+    zh: '邱宇婕',
+    en: 'Yu-Chieh Chiu',
+    dept: 4,
+    deg: 1,
+    // image: YuChiehChiu,
+  },
+  {
+    zh: '范杜明英',
+    en: 'Minh-Anh Pham',
+    dept: 4,
+    deg: 1,
+    // image: MinhAnhPham,
   },
   // Graduate PhDs
   {
