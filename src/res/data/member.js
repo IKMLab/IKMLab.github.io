@@ -152,20 +152,20 @@ import YunRongChen
   from 'src/res/image/member/Yun-Rong-Chen.jpg'
 // import YuChienWang
 //   from 'src/res/image/member/Yu-Chien-Wang.jpg'
-// import ChiaPinYi
-//   from 'src/res/image/member/Chia-Pin-Yi.jpg'
-// import KueiShunShen
-//   from 'src/res/image/member/Kuei-Shun-Shen.jpg'
-// import TingYuYang
-//   from 'src/res/image/member/Ting-Yu-Yang.jpg'
-// import KuanTingKuo
-//   from 'src/res/image/member/Kuan-Ting-Kuo.jpg'
-// import XiangWeiKe
-//   from 'src/res/image/member/Xiang-Wei-Ke.jpg'
-// import YuChiehChiu
-//   from 'src/res/image/member/Yu-Chieh-Chiu.jpg'
-// import MinhAnhPham
-//   from 'src/res/image/member/Minh-Anh-Pham.jpg'
+import ChiaPinYi
+  from 'src/res/image/member/Chia-Pin-Yi.jpg'
+import KueiShunShen
+  from 'src/res/image/member/Kuei-Shun-Shen.jpg'
+import TingYuYang
+  from 'src/res/image/member/Ting-Yu-Yang.png'
+import KuanTingKuo
+  from 'src/res/image/member/Kuan-Ting-Kuo.jpg'
+import XiangWeiKe
+  from 'src/res/image/member/Xiang-Wei-Ke.jpg'
+import YuChiehChiu
+  from 'src/res/image/member/Yu-Chieh-Chiu.jpg'
+import MinhAnhPham
+  from 'src/res/image/member/Minh-Anh-Pham.jpg'
 
 export const memberData = [
   // PhD Students
@@ -231,6 +231,7 @@ export const memberData = [
     en: 'Keng-Jung Ku',
     dept: 0,
     deg: 1,
+    grade: 3,
     image: KengJungKu,
   },
   {
@@ -238,6 +239,7 @@ export const memberData = [
     en: 'Hung-Yu Chien',
     dept: 4,
     deg: 1,
+    grade: 2,
     image: HungYuChien,
   },
   {
@@ -245,6 +247,7 @@ export const memberData = [
     en: 'Yang Hsueh',
     dept: 3,
     deg: 1,
+    grade: 2,
     image: YangHsueh,
   },
   {
@@ -252,6 +255,7 @@ export const memberData = [
     en: 'Mu-Feng Tsai',
     dept: 3,
     deg: 1,
+    grade: 2,
     image: MuFengTsai,
   },
   {
@@ -259,6 +263,7 @@ export const memberData = [
     en: 'Ming-Jie Liu',
     dept: 3,
     deg: 1,
+    grade: 2,
     image: MingJieLiu,
   },
   {
@@ -266,6 +271,7 @@ export const memberData = [
     en: 'Xing-Han Huang',
     dept: 3,
     deg: 1,
+    grade: 2,
     image: XingHanHuang,
   },
   {
@@ -273,6 +279,7 @@ export const memberData = [
     en: 'Tzu-Hsuan Huang',
     dept: 3,
     deg: 1,
+    grade: 2,
     image: TzuHsuanHuang,
   },
   {
@@ -280,6 +287,7 @@ export const memberData = [
     en: 'Kuan-Yu Chu',
     dept: 3,
     deg: 1,
+    grade: 2,
     image: KuanYuChu,
   },
   {
@@ -287,6 +295,7 @@ export const memberData = [
     en: 'Ping-Chi Liou',
     dept: 3,
     deg: 1,
+    grade: 2,
     image: PingChiLiou,
   },
   {
@@ -294,6 +303,7 @@ export const memberData = [
     en: 'Meng-Wei Wu',
     dept: 3,
     deg: 1,
+    grade: 2,
     image: MengWeiWu,
   },
   {
@@ -301,6 +311,7 @@ export const memberData = [
     en: 'Yu-Chien Wang',
     dept: 3,
     deg: 1,
+    grade: 2,
     // image: YuChienWang,
   },
   {
@@ -308,49 +319,56 @@ export const memberData = [
     en: 'Chia-Pin Yi',
     dept: 3,
     deg: 1,
-    // image: ChiaPinYi,
+    grade: 1,
+    image: ChiaPinYi,
   },
   {
     zh: '沈奎勳',
     en: 'Kuei-Shun Shen',
     dept: 3,
     deg: 1,
-    // image: KueiShunShen,
+    grade: 1,
+    image: KueiShunShen,
   },
   {
     zh: '楊珽羽',
     en: 'Ting-Yu Yang',
     dept: 3,
     deg: 1,
-    // image: TingYuYang,
-  },
-  {
-    zh: '郭冠廷',
-    en: 'Kuan-Ting Kuo',
-    dept: 3,
-    deg: 1,
-    // image: KuanTingKuo,
+    grade: 1,
+    image: TingYuYang,
   },
   {
     zh: '柯翔崴',
     en: 'Xiang-Wei Ke',
     dept: 3,
     deg: 1,
-    // image: XiangWeiKe,
+    grade: 1,
+    image: XiangWeiKe,
+  },
+  {
+    zh: '郭冠廷',
+    en: 'Kuan-Ting Kuo',
+    dept: 3,
+    deg: 1,
+    grade: 1,
+    image: KuanTingKuo,
   },
   {
     zh: '邱宇婕',
     en: 'Yu-Chieh Chiu',
     dept: 4,
     deg: 1,
-    // image: YuChiehChiu,
+    grade: 1,
+    image: YuChiehChiu,
   },
   {
     zh: '范杜明英',
     en: 'Minh-Anh Pham',
     dept: 4,
     deg: 1,
-    // image: MinhAnhPham,
+    grade: 1,
+    image: MinhAnhPham,
   },
   // Graduate PhDs
   {
@@ -1325,6 +1343,10 @@ const schemaCheck = () => {
         image: {
           description: 'Member\'s photo',
           type: 'string',
+        },
+        grade: {
+          description: 'Grade of master students (1 for 1st year, 2 for 2nd year...)',
+          type: 'number',
         },
       },
     },

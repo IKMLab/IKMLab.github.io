@@ -19,7 +19,12 @@ function MemberSection(props) {
     })
   } else {
     members = members.filter((member) => !member.year)
-        .sort((memberA, memberB) => memberA.dept - memberB.dept)
+        .sort((memberA, memberB) => {
+          if ((memberB.grade || 0) !== (memberA.grade || 0)) {
+            return (memberB.grade || 0) - (memberA.grade || 0)
+          }
+          return memberA.dept - memberB.dept
+        })
   }
 
   let title = ''
