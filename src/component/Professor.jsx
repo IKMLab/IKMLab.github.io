@@ -815,6 +815,9 @@ export default function Professor() {
             <Link href='https://www.semanticscholar.org/author/Hung-Yu-Kao/1738550'>
               Semantic Scholar
             </Link>
+            <Link href='https://scholargps.com/search.php?q=Hung-Yu+Kao&global_search_type=scholar&type=global'>
+              ScholarGPS
+            </Link>
             <Link href='https://orcid.org/0000-0002-8890-8544'>
               ORCID
             </Link>
