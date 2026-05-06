@@ -237,7 +237,7 @@ export default function Header() {
           className={HeaderStyle['logo-link']}
           href={`${PUBLIC_URL}home.html`}>
           <img
-            alt='IKMLab logo'
+            alt='IKMLab - Intelligent Knowledge Management Lab'
             className={HeaderStyle['logo']}
             role='img'
             src={logoImage} />
