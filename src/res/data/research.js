@@ -1,6 +1,54 @@
 export const researchData = [
   {
     title:
+      'Learning in the Fisher Subspace: A Guided Initialization for LoRA Fine-Tuning',
+    authors: [
+      'Z.-Q. Feng',
+      'Y.-J. Lin',
+      'H.-Y. Kao',
+    ],
+    venue: 'ICML',
+    venueType: 'conference',
+    year: 2026,
+    topic: 'NLP',
+    professorPreferredFormat:
+      'Z.-Q. Feng, Y.-J. Lin, H -Y. Kao, "Learning in the Fisher Subspace: A Guided Initialization for LoRA Fine-Tuning, " Proc. of forty-third International Conference on Machine Learning (ICML-2026), Seoul, South Korea, July 6-11, 2026.',
+  },
+  {
+    title:
+      'SCURank: Ranking Multiple Candidate Summaries with Summary Content Units for Enhanced Summarization',
+    authors: [
+      'B.-J. Wang',
+      'Y.-J. Lin',
+      'H.-Y. Kao',
+    ],
+    venue: 'ACL',
+    venueType: 'conference',
+    year: 2026,
+    topic: 'NLP',
+    professorPreferredFormat:
+      'B.-J. Wang, Y.-J. Lin, H.-Y. Kao, "SCURank: Ranking Multiple Candidate Summaries with Summary Content Units for Enhanced Summarization, " Proc. of the 64th Annual Meeting of the Association for Computational Linguistics (Findings of ACL-2026), San Diego, California, United States, July 2-7, 2026.',
+  },
+  {
+    title:
+      'PromptRad: Knowledge-Enhanced Multi-Label Prompt-Tuning for Low-Resource Radiology Report Labeling',
+    authors: [
+      'Y.-J. Lin',
+      'T.-C. Lo',
+      'P.-C. Li',
+      'C.-T. Cheng',
+      'C.-H. Liao',
+      'H.-Y. Kao',
+    ],
+    venue: 'ACL',
+    venueType: 'conference',
+    year: 2026,
+    topic: 'NLP',
+    professorPreferredFormat:
+      'Y.-J. Lin, T.-C. Lo, P.-C. Li, C.-T. Cheng, C. -H. Liao, H.-Y. Kao, "PromptRad: Knowledge-Enhanced Multi-Label Prompt-Tuning for Low-Resource Radiology Report Labeling, " Proc. of the BioNLP Workshop in the 64th Annual Meeting of the Association for Computational Linguistics (ACL-2026), San Diego, California, United States, July 2-7, 2026.',
+  },
+  {
+    title:
       'MAPLE: Enhancing Review Generation with Multi-Aspect Prompt LEarning in Explainable Recommendation',
     authors: [
       'C.-W. Yang',
