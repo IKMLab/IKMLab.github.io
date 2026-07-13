@@ -53,7 +53,7 @@ export default function Contact() {
               <LocationOnIcon />
               <address
                 className={ContactStyle['contact-info']}>
-                Rm. 634, C.L.Liu Building(EECS Building),<br />
+                Rm. 714, Delta Building,<br />
                   101, Section 2, Kuang-Fu Road, Hsinchu 300044,<br />
                   Taiwan (R.O.C.)
               </address>
@@ -63,7 +63,7 @@ export default function Contact() {
         <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
           <iframe
             className={ContactStyle['contact-map']}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.0145593482007!2d120.98962667770058!3d24.794954977972225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468360b9e03f9e3%3A0x22772dceb9fafb07!2z5ZyL56uL5riF6I-v5aSn5a24IOWKieeCr-acl-mkqA!5e0!3m2!1szh-TW!2stw!4v1729568838865!5m2!1szh-TW!2stw"></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.9864399794897!2d120.98957107595085!3d24.795917847836005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468360b6d10014d%3A0x9436da76a96e5bae!2z5ZyL56uL5riF6I-v5aSn5a245Y-w6YGU6aSo!5e0!3m2!1szh-TW!2stw!4v1783946593492!5m2!1szh-TW!2stw"></iframe>
         </Grid>
       </Grid>
     </Box>
