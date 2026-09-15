@@ -166,6 +166,20 @@ import YuChiehChiu
   from 'src/res/image/member/Yu-Chieh-Chiu.jpg'
 import MinhAnhPham
   from 'src/res/image/member/Minh-Anh-Pham.jpg'
+// import HsinYingLee
+//   from 'src/res/image/member/Hsin-Ying-Lee.jpg'
+// import HuiHsinLu
+//   from 'src/res/image/member/Hui-Hsin-Lu.jpg'
+// import YiWenChen
+//   from 'src/res/image/member/Yi-Wen-Chen.jpg'
+// import YuYungLiao
+//   from 'src/res/image/member/Yu-Yung-Liao.jpg'
+// import ChengYuYu
+//   from 'src/res/image/member/Cheng-Yu-Yu.jpg'
+// import HsunMaoKuo
+//   from 'src/res/image/member/Hsun-Mao-Kuo.jpg'
+// import YuSungLin
+//   from 'src/res/image/member/Yu-Sung-Lin.jpg'
 
 export const memberData = [
   // PhD Students
@@ -231,7 +245,7 @@ export const memberData = [
     en: 'Keng-Jung Ku',
     dept: 0,
     deg: 1,
-    grade: 3,
+    grade: 4,
     image: KengJungKu,
   },
   {
@@ -239,7 +253,7 @@ export const memberData = [
     en: 'Xing-Han Huang',
     dept: 3,
     deg: 1,
-    grade: 2,
+    grade: 3,
     image: XingHanHuang,
   },
   {
@@ -247,7 +261,7 @@ export const memberData = [
     en: 'Tzu-Hsuan Huang',
     dept: 3,
     deg: 1,
-    grade: 2,
+    grade: 3,
     image: TzuHsuanHuang,
   },
   {
@@ -255,7 +269,7 @@ export const memberData = [
     en: 'Kuan-Yu Chu',
     dept: 3,
     deg: 1,
-    grade: 2,
+    grade: 3,
     image: KuanYuChu,
   },
   {
@@ -263,7 +277,7 @@ export const memberData = [
     en: 'Meng-Wei Wu',
     dept: 3,
     deg: 1,
-    grade: 2,
+    grade: 3,
     image: MengWeiWu,
   },
   {
@@ -271,7 +285,7 @@ export const memberData = [
     en: 'Yu-Chien Wang',
     dept: 3,
     deg: 1,
-    grade: 2,
+    grade: 3,
     // image: YuChienWang,
   },
   {
@@ -279,7 +293,7 @@ export const memberData = [
     en: 'Chia-Pin Yi',
     dept: 3,
     deg: 1,
-    grade: 1,
+    grade: 2,
     image: ChiaPinYi,
   },
   {
@@ -287,7 +301,7 @@ export const memberData = [
     en: 'Kuei-Shun Shen',
     dept: 3,
     deg: 1,
-    grade: 1,
+    grade: 2,
     image: KueiShunShen,
   },
   {
@@ -295,7 +309,7 @@ export const memberData = [
     en: 'Ting-Yu Yang',
     dept: 3,
     deg: 1,
-    grade: 1,
+    grade: 2,
     image: TingYuYang,
   },
   {
@@ -303,7 +317,7 @@ export const memberData = [
     en: 'Xiang-Wei Ke',
     dept: 3,
     deg: 1,
-    grade: 1,
+    grade: 2,
     image: XiangWeiKe,
   },
   {
@@ -311,7 +325,7 @@ export const memberData = [
     en: 'Kuan-Ting Kuo',
     dept: 3,
     deg: 1,
-    grade: 1,
+    grade: 2,
     image: KuanTingKuo,
   },
   {
@@ -319,7 +333,7 @@ export const memberData = [
     en: 'Yu-Chieh Chiu',
     dept: 4,
     deg: 1,
-    grade: 1,
+    grade: 2,
     image: YuChiehChiu,
   },
   {
@@ -327,8 +341,64 @@ export const memberData = [
     en: 'Minh-Anh Pham',
     dept: 4,
     deg: 1,
-    grade: 1,
+    grade: 2,
     image: MinhAnhPham,
+  },
+  {
+    zh: '郭薰懋',
+    en: 'Hsun-Mao Kuo',
+    dept: 4,
+    deg: 1,
+    grade: 2,
+    // image: HsunMaoKuo,
+  },
+  {
+    zh: '李欣穎',
+    en: 'Hsin-Ying Lee',
+    dept: 4,
+    deg: 1,
+    grade: 1,
+    // image: HsinYingLee,
+  },
+  {
+    zh: '呂惠欣',
+    en: 'Hui-Hsin Lu',
+    dept: 3,
+    deg: 1,
+    grade: 1,
+    // image: HuiHsinLu,
+  },
+  {
+    zh: '陳宜妏',
+    en: 'Yi-Wen Chen',
+    dept: 5,
+    deg: 1,
+    grade: 1,
+    // image: YiWenChen,
+  },
+  {
+    zh: '廖育嫆',
+    en: 'Yu-Yung Liao',
+    dept: 3,
+    deg: 1,
+    grade: 1,
+    // image: YuYungLiao,
+  },
+  {
+    zh: '余承祐',
+    en: 'Cheng-Yu Yu',
+    dept: 4,
+    deg: 1,
+    grade: 1,
+    // image: ChengYuYu,
+  },
+  {
+    zh: '林槱松',
+    en: 'Yu-Sung Lin',
+    dept: 3,
+    deg: 1,
+    grade: 1,
+    // image: YuSungLin,
   },
   // Graduate PhDs
   {
