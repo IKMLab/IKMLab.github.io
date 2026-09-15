@@ -235,38 +235,6 @@ export const memberData = [
     image: KengJungKu,
   },
   {
-    zh: '簡宏諭',
-    en: 'Hung-Yu Chien',
-    dept: 4,
-    deg: 1,
-    grade: 2,
-    image: HungYuChien,
-  },
-  {
-    zh: '薛揚',
-    en: 'Yang Hsueh',
-    dept: 3,
-    deg: 1,
-    grade: 2,
-    image: YangHsueh,
-  },
-  {
-    zh: '蔡沐風',
-    en: 'Mu-Feng Tsai',
-    dept: 3,
-    deg: 1,
-    grade: 2,
-    image: MuFengTsai,
-  },
-  {
-    zh: '劉明杰',
-    en: 'Ming-Jie Liu',
-    dept: 3,
-    deg: 1,
-    grade: 2,
-    image: MingJieLiu,
-  },
-  {
     zh: '黃星翰',
     en: 'Xing-Han Huang',
     dept: 3,
@@ -289,14 +257,6 @@ export const memberData = [
     deg: 1,
     grade: 2,
     image: KuanYuChu,
-  },
-  {
-    zh: '劉秉頎',
-    en: 'Ping-Chi Liou',
-    dept: 3,
-    deg: 1,
-    grade: 2,
-    image: PingChiLiou,
   },
   {
     zh: '吳孟維',
@@ -495,6 +455,46 @@ export const memberData = [
   //   deg: 1,
   //   image: DarrenChang,
   // },
+  {
+    zh: '簡宏諭',
+    en: 'Hung-Yu Chien',
+    dept: 4,
+    deg: 1,
+    year: 2026,
+    image: HungYuChien,
+  },
+  {
+    zh: '薛揚',
+    en: 'Yang Hsueh',
+    dept: 3,
+    deg: 1,
+    year: 2026,
+    image: YangHsueh,
+  },
+  {
+    zh: '蔡沐風',
+    en: 'Mu-Feng Tsai',
+    dept: 3,
+    deg: 1,
+    year: 2026,
+    image: MuFengTsai,
+  },
+  {
+    zh: '劉明杰',
+    en: 'Ming-Jie Liu',
+    dept: 3,
+    deg: 1,
+    year: 2026,
+    image: MingJieLiu,
+  },
+  {
+    zh: '劉秉頎',
+    en: 'Ping-Chi Liou',
+    dept: 3,
+    deg: 1,
+    year: 2026,
+    image: PingChiLiou,
+  },
   {
     zh: '陳宏仲',
     en: 'Hong-Zhong Chen',
@@ -1306,6 +1306,7 @@ export const parsingRule = {
     // Departments of NTHU, after 2024.8
     'CS', // 3 for Computer Science
     'ISA', // 4 for Institute of Information Systems and Applications
+    'IIMT',
   ],
 }
 
