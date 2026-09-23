@@ -166,20 +166,22 @@ import YuChiehChiu
   from 'src/res/image/member/Yu-Chieh-Chiu.jpg'
 import MinhAnhPham
   from 'src/res/image/member/Minh-Anh-Pham.jpg'
-// import HsinYingLee
-//   from 'src/res/image/member/Hsin-Ying-Lee.jpg'
-// import HuiHsinLu
-//   from 'src/res/image/member/Hui-Hsin-Lu.jpg'
-// import YiWenChen
-//   from 'src/res/image/member/Yi-Wen-Chen.jpg'
-// import YuYungLiao
-//   from 'src/res/image/member/Yu-Yung-Liao.jpg'
-// import ChengYuYu
-//   from 'src/res/image/member/Cheng-Yu-Yu.jpg'
-// import HsunMaoKuo
-//   from 'src/res/image/member/Hsun-Mao-Kuo.jpg'
-// import YuSungLin
-//   from 'src/res/image/member/Yu-Sung-Lin.jpg'
+import HsinYingLee
+  from 'src/res/image/member/Hsin-Ying-Lee.jpg'
+import HuiHsinLu
+  from 'src/res/image/member/Hui-Hsin-Lu.jpg'
+import YiWenChen
+  from 'src/res/image/member/Yi-Wen-Chen.jpg'
+import YuYungLiao
+  from 'src/res/image/member/Yu-Yung-Liao.jpg'
+import ChengYuYu
+  from 'src/res/image/member/Cheng-Yu-Yu.jpg'
+import HsunMaoKuo
+  from 'src/res/image/member/Hsun-Mao-Kuo.jpg'
+import YuSungLin
+  from 'src/res/image/member/Yu-Sung-Lin.jpg'
+import TienYingLai
+  from 'src/res/image/member/Tien-Ying-Lai.jpg'
 
 export const memberData = [
   // PhD Students
@@ -231,6 +233,13 @@ export const memberData = [
     dept: 0,
     deg: 0,
     image: MingCheHu,
+  },
+  {
+    zh: '賴天應',
+    en: 'Tien-Ying Lai',
+    dept: 4,
+    deg: 0,
+    image: TienYingLai,
   },
   // Master Students
   // {
@@ -350,7 +359,7 @@ export const memberData = [
     dept: 4,
     deg: 1,
     grade: 2,
-    // image: HsunMaoKuo,
+    image: HsunMaoKuo,
   },
   {
     zh: '李欣穎',
@@ -358,7 +367,7 @@ export const memberData = [
     dept: 4,
     deg: 1,
     grade: 1,
-    // image: HsinYingLee,
+    image: HsinYingLee,
   },
   {
     zh: '呂惠欣',
@@ -366,7 +375,7 @@ export const memberData = [
     dept: 3,
     deg: 1,
     grade: 1,
-    // image: HuiHsinLu,
+    image: HuiHsinLu,
   },
   {
     zh: '陳宜妏',
@@ -374,7 +383,7 @@ export const memberData = [
     dept: 5,
     deg: 1,
     grade: 1,
-    // image: YiWenChen,
+    image: YiWenChen,
   },
   {
     zh: '廖育嫆',
@@ -382,7 +391,7 @@ export const memberData = [
     dept: 3,
     deg: 1,
     grade: 1,
-    // image: YuYungLiao,
+    image: YuYungLiao,
   },
   {
     zh: '余承祐',
@@ -390,7 +399,7 @@ export const memberData = [
     dept: 4,
     deg: 1,
     grade: 1,
-    // image: ChengYuYu,
+    image: ChengYuYu,
   },
   {
     zh: '林槱松',
@@ -398,7 +407,7 @@ export const memberData = [
     dept: 3,
     deg: 1,
     grade: 1,
-    // image: YuSungLin,
+    image: YuSungLin,
   },
   // Graduate PhDs
   {
