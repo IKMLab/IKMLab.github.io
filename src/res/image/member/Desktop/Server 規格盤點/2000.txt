@@ -1,0 +1,68 @@
+============================================================
+            Linux Server Hardware Inventory
+============================================================
+
+【主機名稱】
+ikmlab-BrainSphere-P150-F8
+
+【主機板】
+製造商 : Altos
+型號   : BrainSphere P150 F8
+版本   : 1.1     
+序號   : SBRT0110022290008D9100
+
+【CPU】
+CPU 型號       : 12th Gen Intel(R) Core(TM) i9-12900K
+CPU 顆數       : 1
+每顆 CPU Core  : 16
+總 Core 數     : 16
+每 Core Thread : 2
+總 Thread 數   : 24
+
+【RAM】
+RAM 總容量 : 62Gi
+
+每條 RAM：
+RAM 1
+  插槽       : DIMM2
+  製造商     : Crucial Technology
+  型號       : CT32G48C40U5.M16A1
+  容量       : 32 GB
+  Serial     : E7065A67
+
+RAM 2
+  插槽       : DIMM1
+  製造商     : Crucial Technology
+  型號       : CT32G48C40U5.M16A1
+  容量       : 32 GB
+  Serial     : E70655EB
+
+
+【GPU】
+GPU 數量 : 2
+
+GPU Failed to initialize NVML: Driver/library version mismatch
+  型號   : 
+  VRAM   :  MiB
+  Serial : 
+  UUID   : 
+
+GPU NVML library version: 595.91
+  型號   : 
+  VRAM   :  MiB
+  Serial : 
+  UUID   : 
+
+
+【SSD / HDD / NVMe】
+Disk 1
+  裝置       : /dev/nvme0n1
+  類型       : NVMe SSD
+  型號       : WD_BLACK
+  容量       : 1.8T
+  Serial     : SN770 2TB 22292A803934
+  介面       : nvme
+
+============================================================
+                      END
+============================================================

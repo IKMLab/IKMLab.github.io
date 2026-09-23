@@ -1,0 +1,84 @@
+============================================================
+            Linux Server Hardware Inventory
+============================================================
+
+【主機名稱】
+ikmlab-System-Product-Name
+
+【主機板】
+製造商 : ASUSTeK COMPUTER INC.
+型號   : ROG MAXIMUS XI HERO (WI-FI)
+版本   : Rev 1.xx
+序號   : 181242522100888
+
+【CPU】
+CPU 型號       : Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+CPU 顆數       : 1
+每顆 CPU Core  : 8
+總 Core 數     : 8
+每 Core Thread : 1
+總 Thread 數   : 8
+
+【RAM】
+RAM 總容量 : 62Gi
+
+每條 RAM：
+RAM 1
+  插槽       : ChannelA-DIMM1
+  製造商     : Kingston
+  型號       : KHX3200C18D4/16G
+  容量       : 16 GB
+  Serial     : 0F20F288
+
+RAM 2
+  插槽       : ChannelA-DIMM2
+  製造商     : Kingston
+  型號       : KHX3200C18D4/16G
+  容量       : 16 GB
+  Serial     : 0F20F988
+
+RAM 3
+  插槽       : ChannelB-DIMM1
+  製造商     : Kingston
+  型號       : KHX3200C18D4/16G
+  容量       : 16 GB
+  Serial     : 0D20FC88
+
+RAM 4
+  插槽       : ChannelB-DIMM2
+  製造商     : Kingston
+  型號       : KHX3200C18D4/16G
+  容量       : 16 GB
+  Serial     : 0F20FB88
+
+
+【GPU】
+GPU 數量 : 1
+
+GPU 0
+  型號   : NVIDIA GeForce RTX 4090
+  VRAM   : 24564 MiB
+  Serial : [N/A]
+  UUID   : GPU-1067567e-e44c-1045-437c-76f74928b970
+
+
+【SSD / HDD / NVMe】
+Disk 1
+  裝置       : /dev/sda
+  類型       : HDD
+  型號       : WDC
+  容量       : 3.6T
+  Serial     : WD4005FZBX-00K5WB0 VBG1KBUR
+  介面       : sata
+
+Disk 2
+  裝置       : /dev/nvme0n1
+  類型       : NVMe SSD
+  型號       : WD_BLACK
+  容量       : 931.5G
+  Serial     : SN750 SE 1TB  21321A465302
+  介面       : nvme
+
+============================================================
+                      END
+============================================================

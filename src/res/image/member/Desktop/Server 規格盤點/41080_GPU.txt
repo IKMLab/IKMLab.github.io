@@ -1,0 +1,59 @@
+3b:00.0 VGA compatible controller: NVIDIA Corporation TU102 [GeForce RTX 2080 Ti] (rev a1)
+3b:00.1 Audio device: NVIDIA Corporation TU102 High Definition Audio Controller (rev a1)
+3b:00.2 USB controller: NVIDIA Corporation TU102 USB 3.1 Host Controller (rev a1)
+3b:00.3 Serial bus controller: NVIDIA Corporation TU102 USB Type-C UCSI Controller (rev a1)
+5e:00.0 VGA compatible controller: NVIDIA Corporation TU102 [GeForce RTX 2080 Ti] (rev a1)
+5e:00.1 Audio device: NVIDIA Corporation TU102 High Definition Audio Controller (rev a1)
+5e:00.2 USB controller: NVIDIA Corporation TU102 USB 3.1 Host Controller (rev a1)
+5e:00.3 Serial bus controller: NVIDIA Corporation TU102 USB Type-C UCSI Controller (rev a1)
+86:00.0 VGA compatible controller: NVIDIA Corporation TU102 [GeForce RTX 2080 Ti] (rev a1)
+86:00.1 Audio device: NVIDIA Corporation TU102 High Definition Audio Controller (rev a1)
+86:00.2 USB controller: NVIDIA Corporation TU102 USB 3.1 Host Controller (rev a1)
+86:00.3 Serial bus controller: NVIDIA Corporation TU102 USB Type-C UCSI Controller (rev a1)
+af:00.0 VGA compatible controller: NVIDIA Corporation TU102 [GeForce RTX 2080 Ti] (rev a1)
+af:00.1 Audio device: NVIDIA Corporation TU102 High Definition Audio Controller (rev a1)
+af:00.2 USB controller: NVIDIA Corporation TU102 USB 3.1 Host Controller (rev a1)
+af:00.3 Serial bus controller: NVIDIA Corporation TU102 USB Type-C UCSI Controller (rev a1)
+root@ikmlab-41080:~# lspci -vmm -s 3b:00.0
+Slot:   3b:00.0
+Class:  VGA compatible controller
+Vendor: NVIDIA Corporation
+Device: TU102 [GeForce RTX 2080 Ti]
+SVendor:        ASUSTeK Computer Inc.
+SDevice:        TU102 [GeForce RTX 2080 Ti]
+Rev:    a1
+NUMANode:       0
+IOMMUGroup:     3
+
+root@ikmlab-41080:~# lspci -vmm -s 5e:00.0
+Slot:   5e:00.0
+Class:  VGA compatible controller
+Vendor: NVIDIA Corporation
+Device: TU102 [GeForce RTX 2080 Ti]
+SVendor:        Gigabyte Technology Co., Ltd
+SDevice:        TU102 [GeForce RTX 2080 Ti]
+Rev:    a1
+NUMANode:       0
+IOMMUGroup:     1
+
+root@ikmlab-41080:~# lspci -vmm -s 86:00.0
+Slot:   86:00.0
+Class:  VGA compatible controller
+Vendor: NVIDIA Corporation
+Device: TU102 [GeForce RTX 2080 Ti]
+SVendor:        Gigabyte Technology Co., Ltd
+SDevice:        TU102 [GeForce RTX 2080 Ti]
+Rev:    a1
+NUMANode:       1
+IOMMUGroup:     7
+
+root@ikmlab-41080:~# lspci -vmm -s af:00.0
+Slot:   af:00.0
+Class:  VGA compatible controller
+Vendor: NVIDIA Corporation
+Device: TU102 [GeForce RTX 2080 Ti]
+SVendor:        ASUSTeK Computer Inc.
+SDevice:        TU102 [GeForce RTX 2080 Ti]
+Rev:    a1
+NUMANode:       1
+IOMMUGroup:     5

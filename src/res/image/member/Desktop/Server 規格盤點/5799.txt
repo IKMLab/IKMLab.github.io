@@ -1,0 +1,68 @@
+============================================================
+            Linux Server Hardware Inventory
+============================================================
+
+【主機名稱】
+ikmlab
+
+【主機板】
+製造商 : Gigabyte Technology Co., Ltd.
+型號   : X299X AORUS MASTER
+版本   : x.x
+序號   : Default string
+
+【CPU】
+CPU 型號       : Intel(R) Core(TM) i9-10940X CPU @ 3.30GHz
+CPU 顆數       : 1
+每顆 CPU Core  : 14
+總 Core 數     : 14
+每 Core Thread : 2
+總 Thread 數   : 28
+
+【RAM】
+RAM 總容量 : 62Gi
+
+每條 RAM：
+RAM 1
+  插槽       : CPU1_DIMM_C1
+  製造商     : Kingston
+  型號       : KHX3200C16D4/32GX
+  容量       : 32 GB
+  Serial     : 69922065
+
+RAM 2
+  插槽       : CPU1_DIMM_D1
+  製造商     : Kingston
+  型號       : KHX3200C16D4/32GX
+  容量       : 32 GB
+  Serial     : E19CF68F
+
+
+【GPU】
+GPU 數量 : 2
+
+GPU 0
+  型號   : NVIDIA GeForce RTX 3090
+  VRAM   : 24576 MiB
+  Serial : [N/A]
+  UUID   : GPU-f64f86bc-53c3-ff0b-1750-af8fe36e5af2
+
+GPU 1
+  型號   : NVIDIA GeForce RTX 3090
+  VRAM   : 24576 MiB
+  Serial : [N/A]
+  UUID   : GPU-19ce6d0f-27f5-dda7-7bdf-24945513a6e2
+
+
+【SSD / HDD / NVMe】
+Disk 1
+  裝置       : /dev/nvme0n1
+  類型       : NVMe SSD
+  型號       : WD_BLACK
+  容量       : 1.8T
+  Serial     : SN750 2TB 212752800249
+  介面       : nvme
+
+============================================================
+                      END
+============================================================

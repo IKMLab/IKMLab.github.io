@@ -1,0 +1,21 @@
+
+smartctl 6.5 (build date Sep 26 2022) [x86_64-linux-4.4.302+] (local build)
+Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Model Family:     Seagate IronWolf
+Device Model:     ST2000VN004-2E4164
+Serial Number:    Z529KXTT
+LU WWN Device Id: 5 000c50 0c48f278d
+Firmware Version: SC60
+User Capacity:    2,000,398,934,016 bytes [2.00 TB]
+Sector Sizes:     512 bytes logical, 4096 bytes physical
+Rotation Rate:    5900 rpm
+Form Factor:      3.5 inches
+Device is:        In smartctl database [for details use: -P show]
+ATA Version is:   ACS-2, ACS-3 T13/2161-D revision 3b
+SATA Version is:  SATA 3.1, 6.0 Gb/s (current: 6.0 Gb/s)
+Local Time is:    Wed Sep 23 16:59:13 2026 CST
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
+

@@ -1,0 +1,99 @@
+============================================================
+            Linux Server Hardware Inventory
+============================================================
+
+【主機名稱】
+L40S
+
+【主機板】
+製造商 : Altos
+型號   : BrainSphere R380 F6
+版本   : 1.10
+序號   : HM243S012128
+
+【CPU】
+CPU 型號       : Intel(R) Xeon(R) Gold 6430
+CPU 顆數       : 2
+每顆 CPU Core  : 32
+總 Core 數     : 64
+每 Core Thread : 2
+總 Thread 數   : 128
+26%
+
+【RAM】
+RAM 總容量 : 251Gi
+
+每條 RAM：
+RAM 1
+  插槽       : P1-DIMMA1
+  製造商     : Samsung
+  型號       : M321R8GA0BB0-CQKZJ
+  容量       : 64 GB
+  Serial     : 80CE04241349B8C910
+
+RAM 2
+  插槽       : P1-DIMMG1
+  製造商     : Samsung
+  型號       : M321R8GA0BB0-CQKZJ
+  容量       : 64 GB
+  Serial     : 80CE04241349B8C9E1
+
+RAM 3
+  插槽       : P2-DIMMA1
+  製造商     : Samsung
+  型號       : M321R8GA0BB0-CQKZJ
+  容量       : 64 GB
+  Serial     : 80CE04241349B8C3E7
+
+RAM 4
+  插槽       : P2-DIMMG1
+  製造商     : Samsung
+  型號       : M321R8GA0BB0-CQKZJ
+  容量       : 64 GB
+  Serial     : 80CE04241349B8D41A
+
+
+【GPU】
+GPU 數量 : 2
+
+GPU 0
+  型號   : NVIDIA L40S
+  VRAM   : 49140 MiB
+  Serial : 1324323037135
+  UUID   : GPU-e44e0e5d-adf8-ec32-1962-966ddb546a12
+
+GPU 1
+  型號   : NVIDIA L40S
+  VRAM   : 49140 MiB
+  Serial : 1324323024371
+  UUID   : GPU-3f09dbc1-0970-b182-4acf-0d8406748c62
+
+
+【SSD / HDD / NVMe】
+Disk 1
+  裝置       : /dev/sda
+  類型       : SSD
+  型號       : SAMSUNG
+  容量       : 894.3G
+  Serial     : MZ7L3960HCJR-00A07 S662NTMY302382
+  介面       : sata
+
+Disk 2
+  裝置       : /dev/sdb
+  類型       : SSD
+  型號       : SAMSUNG
+  容量       : 894.3G
+  Serial     : MZ7L3960HCJR-00A07 S662NTMY302379
+  介面       : sata
+
+Disk 3
+  裝置       : /dev/sdc
+  類型       : SSD
+  型號       : SAMSUNG
+  容量       : 7T
+  Serial     : MZ7L37T6HBLA-00A07 S6EPNC0Y500623
+  介面       : sata
+
+============================================================
+                      END
+============================================================

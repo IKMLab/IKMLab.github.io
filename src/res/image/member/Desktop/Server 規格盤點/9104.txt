@@ -1,0 +1,107 @@
+============================================================
+            Linux Server Hardware Inventory
+============================================================
+
+【主機名稱】
+ikm-gpu-9104
+
+【主機板】
+製造商 : Micro-Star International Co., Ltd.
+型號   : MEG X670E ACE (MS-7D69)
+版本   : 1.0
+序號   : 07D6910_MC1E759381
+
+【CPU】
+CPU 型號       : AMD Ryzen 9 7950X 16-Core Processor
+CPU 顆數       : 1
+每顆 CPU Core  : 16
+總 Core 數     : 16
+每 Core Thread : 2
+總 Thread 數   : 32
+68%
+
+【RAM】
+RAM 總容量 : 124Gi
+
+每條 RAM：
+RAM 1
+  插槽       : DIMMA1
+  製造商     : Kingston
+  型號       : KF556C36-32
+  容量       : 32 GB
+  Serial     : 186EAD63
+
+RAM 2
+  插槽       : DIMMA2
+  製造商     : Kingston
+  型號       : KF556C36-32
+  容量       : 32 GB
+  Serial     : 4A2EADCC
+
+RAM 3
+  插槽       : DIMMB1
+  製造商     : Kingston
+  型號       : KF556C36-32
+  容量       : 32 GB
+  Serial     : E52EABB2
+
+RAM 4
+  插槽       : DIMMB2
+  製造商     : Kingston
+  型號       : KF556C36-32
+  容量       : 32 GB
+  Serial     : D12EABB3
+
+
+【GPU】
+GPU 數量 : 2
+
+GPU 0
+  型號   : NVIDIA GeForce RTX 4090
+  VRAM   : 24564 MiB
+  Serial : [N/A]
+  UUID   : GPU-cead2dfe-0847-916d-b8ee-3de7a96bf70c
+
+GPU 1
+  型號   : NVIDIA GeForce RTX 4090
+  VRAM   : 24564 MiB
+  Serial : [N/A]
+  UUID   : GPU-c268ec8e-f426-ea6f-ae8c-8de6aa699462
+
+
+【SSD / HDD / NVMe】
+Disk 1
+  裝置       : /dev/sda
+  類型       : HDD
+  型號       : ST8000NT001-3LZ101
+  容量       : 7.3T
+  Serial     : WRQ1KCQ7
+  介面       : sata
+
+Disk 2
+  裝置       : /dev/sdb
+  類型       : HDD
+  型號       : ST8000NT001-3LZ101
+  容量       : 7.3T
+  Serial     : WRQ1AWSC
+  介面       : sata
+
+Disk 3
+  裝置       : /dev/nvme0n1
+  類型       : NVMe SSD
+  型號       : CT2000P5PSSD8
+  容量       : 1.8T
+  Serial     : 23113F162B3D
+  介面       : nvme
+
+Disk 4
+  裝置       : /dev/nvme1n1
+  類型       : NVMe SSD
+  型號       : CT2000P5PSSD8
+  容量       : 1.8T
+  Serial     : 23113F159A7D
+  介面       : nvme
+
+============================================================
+                      END
+============================================================

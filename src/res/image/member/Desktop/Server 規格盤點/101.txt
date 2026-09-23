@@ -1,0 +1,103 @@
+============================================================
+            Linux Server Hardware Inventory
+============================================================
+
+【主機名稱】
+ikm-gpu-101
+
+【主機板】
+製造商 : ASUSTeK COMPUTER INC.
+型號   : Z11PG-D16 Series
+版本   : Rev 1.xx
+序號   : 220403432100080
+
+【CPU】
+CPU 型號       : Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz
+CPU 顆數       : 2
+每顆 CPU Core  : 16
+總 Core 數     : 32
+每 Core Thread : 2
+總 Thread 數   : 64
+26%
+
+【RAM】
+RAM 總容量 : 251Gi
+
+每條 RAM：
+RAM 1
+  插槽       : DIMM_A1
+  製造商     : Samsung
+  型號       : M393A8G40MB2-CVF
+  容量       : 64 GB
+  Serial     : 03E095C7
+
+RAM 2
+  插槽       : DIMM_D1
+  製造商     : Samsung
+  型號       : M393A8G40MB2-CVF
+  容量       : 64 GB
+  Serial     : 03E09658
+
+RAM 3
+  插槽       : DIMM_G1
+  製造商     : Samsung
+  型號       : M393A8G40MB2-CVF
+  容量       : 64 GB
+  Serial     : 03E095CE
+
+RAM 4
+  插槽       : DIMM_K1
+  製造商     : Samsung
+  型號       : M393A8G40MB2-CVF
+  容量       : 64 GB
+  Serial     : 03E09452
+
+
+【GPU】
+GPU 數量 : 4
+
+GPU 0
+  型號   : NVIDIA GeForce RTX 3090
+  VRAM   : 24576 MiB
+  Serial : [N/A]
+  UUID   : GPU-0f3a545d-b9cf-4400-1e2d-087aee158dd6
+
+GPU 1
+  型號   : NVIDIA GeForce RTX 3090
+  VRAM   : 24576 MiB
+  Serial : [N/A]
+  UUID   : GPU-e9fba756-3729-ad16-c9bc-4ec09e1c20ef
+
+GPU 2
+  型號   : NVIDIA GeForce RTX 3090
+  VRAM   : 24576 MiB
+  Serial : [N/A]
+  UUID   : GPU-69e2bd38-7e7d-e7bc-7851-1b193ad4f005
+
+GPU 3
+  型號   : NVIDIA GeForce RTX 3090
+  VRAM   : 24576 MiB
+  Serial : [N/A]
+  UUID   : GPU-0225486e-6b2a-7c63-e34a-901df669b5f0
+
+
+【SSD / HDD / NVMe】
+Disk 1
+  裝置       : /dev/sda
+  類型       : HDD
+  型號       : 00335d421bb9447b30008f0f70e3c600
+  容量       : AsustekPIKE3108
+  Serial     : N/A
+  介面       : 3.6T
+
+Disk 2
+  裝置       : /dev/sdb
+  類型       : HDD
+  型號       : 00528644211d457b30008f0f70e3c600
+  容量       : AsustekPIKE3108
+  Serial     : N/A
+  介面       : 7.3T
+
+============================================================
+                      END
+============================================================

@@ -177,7 +177,7 @@ import YuYungLiao
 import ChengYuYu
   from 'src/res/image/member/Cheng-Yu-Yu.jpg'
 import HsunMaoKuo
-  from 'src/res/image/member/Hsun-Mao-Kuo.jpg'
+  from 'src/res/image/member/Hsun-Mao-Kuo.png'
 import YuSungLin
   from 'src/res/image/member/Yu-Sung-Lin.jpg'
 import TienYingLai

@@ -1,0 +1,99 @@
+============================================================
+            Linux Server Hardware Inventory
+============================================================
+
+【主機名稱】
+ikm-gpu-9102
+
+【主機板】
+製造商 : Gigabyte Technology Co., Ltd.
+型號   : X570 AORUS ELITE
+版本   : x.x
+序號   : Default string
+
+【CPU】
+CPU 型號       : AMD Ryzen 7 3700X 8-Core Processor
+CPU 顆數       : 1
+每顆 CPU Core  : 8
+總 Core 數     : 8
+每 Core Thread : 2
+總 Thread 數   : 16
+67%
+
+【RAM】
+RAM 總容量 : 62Gi
+
+每條 RAM：
+RAM 1
+  插槽       : DIMM 0
+  製造商     : Kingston
+  型號       : KHX3200C16D4/16GX
+  容量       : 16 GB
+  Serial     : D5AD57F6
+
+RAM 2
+  插槽       : DIMM 1
+  製造商     : Kingston
+  型號       : KHX3200C16D4/16GX
+  容量       : 16 GB
+  Serial     : A6AD58C5
+
+RAM 3
+  插槽       : DIMM 0
+  製造商     : Kingston
+  型號       : KHX3200C16D4/16GX
+  容量       : 16 GB
+  Serial     : 69AD5B5E
+
+RAM 4
+  插槽       : DIMM 1
+  製造商     : Kingston
+  型號       : KHX3200C16D4/16GX
+  容量       : 16 GB
+  Serial     : A6AD5B53
+
+
+【GPU】
+GPU 數量 : 2
+
+GPU 0
+  型號   : NVIDIA GeForce RTX 3090
+  VRAM   : 24576 MiB
+  Serial : [N/A]
+  UUID   : GPU-5d1890be-33a1-36df-ed44-05413496ead0
+
+GPU 1
+  型號   : NVIDIA GeForce RTX 3090
+  VRAM   : 24576 MiB
+  Serial : [N/A]
+  UUID   : GPU-8e1a00ff-8bce-13e6-3d46-dd221cec6d19
+
+
+【SSD / HDD / NVMe】
+Disk 1
+  裝置       : /dev/sda
+  類型       : HDD
+  型號       : TOSHIBA
+  容量       : 931.5G
+  Serial     : DT01ACA100             439UH22RS
+  介面       : sata
+
+Disk 2
+  裝置       : /dev/sdb
+  類型       : HDD
+  型號       : WDC
+  容量       : 1.8T
+  Serial     : WD2003FZEX-00SRLA0         WD-WCC6N7LA4YX8
+  介面       : sata
+
+Disk 3
+  裝置       : /dev/nvme0n1
+  類型       : NVMe SSD
+  型號       : Samsung
+  容量       : 232.9G
+  Serial     : SSD 970 EVO Plus 250GB S4EUNF0M878290R
+  介面       : nvme
+
+============================================================
+                      END
+============================================================

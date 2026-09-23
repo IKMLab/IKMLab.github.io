@@ -1,0 +1,76 @@
+============================================================
+            Linux Server Hardware Inventory
+============================================================
+
+【主機名稱】
+ikmlab-X299X-AORUS-MASTER
+
+【主機板】
+製造商 : Gigabyte Technology Co., Ltd.
+型號   : X299X AORUS MASTER
+版本   : x.x
+序號   : Default string
+
+【CPU】
+CPU 型號       : Intel(R) Core(TM) i9-10940X CPU @ 3.30GHz
+CPU 顆數       : 1
+每顆 CPU Core  : 14
+總 Core 數     : 14
+每 Core Thread : 2
+總 Thread 數   : 28
+
+【RAM】
+RAM 總容量 : 62Gi
+
+每條 RAM：
+RAM 1
+  插槽       : CPU1_DIMM_A1
+  製造商     : Kingston
+  型號       : KHX3200C16D4/16GX
+  容量       : 16 GB
+  Serial     : B56F20A4
+
+RAM 2
+  插槽       : CPU1_DIMM_B1
+  製造商     : Kingston
+  型號       : KHX3200C16D4/16GX
+  容量       : 16 GB
+  Serial     : B8AF205C
+
+RAM 3
+  插槽       : CPU1_DIMM_C1
+  製造商     : Kingston
+  型號       : KHX3200C16D4/16GX
+  容量       : 16 GB
+  Serial     : B56F2083
+
+RAM 4
+  插槽       : CPU1_DIMM_D1
+  製造商     : Kingston
+  型號       : KHX3200C16D4/16GX
+  容量       : 16 GB
+  Serial     : 6DAF1B42
+
+
+【GPU】
+GPU 數量 : 1
+
+GPU 0
+  型號   : NVIDIA GeForce RTX 3090
+  VRAM   : 24576 MiB
+  Serial : [N/A]
+  UUID   : GPU-ba86fd9c-da65-0262-6085-373a00e708eb
+
+
+【SSD / HDD / NVMe】
+Disk 1
+  裝置       : /dev/nvme0n1
+  類型       : NVMe SSD
+  型號       : WD_BLACK
+  容量       : 1.8T
+  Serial     : SN750 2TB 21174S804213
+  介面       : nvme
+
+============================================================
+                      END
+============================================================

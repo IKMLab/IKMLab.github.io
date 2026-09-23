@@ -1,0 +1,119 @@
+============================================================
+            Linux Server Hardware Inventory
+============================================================
+
+【主機名稱】
+ikmlab-A6000-Pro
+
+【主機板】
+製造商 : ASUSTeK COMPUTER INC.
+型號   : Pro WS WRX90E-SAGE SE
+版本   : Rev 1.xx
+序號   : 250963417100074
+
+【CPU】
+CPU 型號       : AMD Ryzen Threadripper PRO 9975WX 32-Cores
+CPU 顆數       : 1
+每顆 CPU Core  : 32
+總 Core 數     : 32
+每 Core Thread : 2
+總 Thread 數   : 64
+33%
+
+【RAM】
+RAM 總容量 : 503Gi
+
+每條 RAM：
+RAM 1
+  插槽       : DIMM 0
+  製造商     : Micron Technology
+  型號       : MTC40F2046S1RC56BD1 QLFF
+  容量       : 64 GB
+  Serial     : D2EF01B9
+
+RAM 2
+  插槽       : DIMM 0
+  製造商     : Micron Technology
+  型號       : MTC40F2046S1RC56BD1 QLFF
+  容量       : 64 GB
+  Serial     : D2EF0118
+
+RAM 3
+  插槽       : DIMM 0
+  製造商     : Micron Technology
+  型號       : MTC40F2046S1RC56BD2 MLCC
+  容量       : 64 GB
+  Serial     : 4FB51234
+
+RAM 4
+  插槽       : DIMM 0
+  製造商     : Micron Technology
+  型號       : MTC40F2046S1RC56BD1 QLFF
+  容量       : 64 GB
+  Serial     : D2EF0265
+
+RAM 5
+  插槽       : DIMM 0
+  製造商     : Micron Technology
+  型號       : MTC40F2046S1RC56BD1 QLFF
+  容量       : 64 GB
+  Serial     : D2EF0201
+
+RAM 6
+  插槽       : DIMM 0
+  製造商     : Micron Technology
+  型號       : MTC40F2046S1RC56BD1 QLFF
+  容量       : 64 GB
+  Serial     : D2EF0211
+
+RAM 7
+  插槽       : DIMM 0
+  製造商     : Micron Technology
+  型號       : MTC40F2046S1RC56BD2 MLCC
+  容量       : 64 GB
+  Serial     : 4FB515F2
+
+RAM 8
+  插槽       : DIMM 0
+  製造商     : Micron Technology
+  型號       : MTC40F2046S1RC56BD1 QLFF
+  容量       : 64 GB
+  Serial     : D2EF0224
+
+
+【GPU】
+GPU 數量 : 2
+
+GPU 0
+  型號   : NVIDIA RTX PRO 6000 Blackwell Workstation Edition
+  VRAM   : 97887 MiB
+  Serial : 1792925028425
+  UUID   : GPU-23328861-537a-ca8b-0f85-6c91476a9e15
+
+GPU 1
+  型號   : NVIDIA RTX PRO 6000 Blackwell Workstation Edition
+  VRAM   : 97887 MiB
+  Serial : 1792925028396
+  UUID   : GPU-4d9766eb-8c92-bc56-9555-d1433b5ce0f8
+
+
+【SSD / HDD / NVMe】
+Disk 1
+  裝置       : /dev/sda
+  類型       : SSD
+  型號       : Virtual
+  容量       : 0B
+  Serial     : HDisk0 AAAABBBBCCCC3
+  介面       : usb
+
+Disk 2
+  裝置       : /dev/nvme0n1
+  類型       : NVMe SSD
+  型號       : CT4000T710SSD8
+  容量       : 3.6T
+  Serial     : 2513524F242F
+  介面       : nvme
+
+============================================================
+                      END
+============================================================

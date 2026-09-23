@@ -1,0 +1,98 @@
+============================================================
+            Linux Server Hardware Inventory
+============================================================
+
+【主機名稱】
+ikmlab-41080
+
+【主機板】
+製造商 : ASUSTeK COMPUTER INC.
+型號   : WS-C621E-SAGE Series
+版本   : Rev 1.xx
+序號   : 190653132900068
+
+【CPU】
+CPU 型號       : Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz
+CPU 顆數       : 2
+每顆 CPU Core  : 8
+總 Core 數     : 16
+每 Core Thread : 2
+總 Thread 數   : 32
+
+【RAM】
+RAM 總容量 : 125Gi
+
+每條 RAM：
+RAM 1
+  插槽       : DIMM_A1
+  製造商     : Samsung
+  型號       : M393A4K40CB2-CVF
+  容量       : 32 GB
+  Serial     : 36D2D698
+
+RAM 2
+  插槽       : DIMM_B1
+  製造商     : Samsung
+  型號       : M393A4K40CB2-CVF
+  容量       : 32 GB
+  Serial     : 36D2DF8E
+
+RAM 3
+  插槽       : DIMM_G1
+  製造商     : Samsung
+  型號       : M393A4K40CB2-CVF
+  容量       : 32 GB
+  Serial     : 36D2D597
+
+RAM 4
+  插槽       : DIMM_H1
+  製造商     : Samsung
+  型號       : M393A4K40CB2-CVF
+  容量       : 32 GB
+  Serial     : 36D2DA5F
+
+
+【GPU】
+GPU 數量 : 2
+
+GPU Failed to initialize NVML: Driver/library version mismatch
+  型號   : 
+  VRAM   :  MiB
+  Serial : 
+  UUID   : 
+
+GPU NVML library version: 580.178
+  型號   : 
+  VRAM   :  MiB
+  Serial : 
+  UUID   : 
+
+
+【SSD / HDD / NVMe】
+Disk 1
+  裝置       : /dev/sda
+  類型       : HDD
+  型號       : TOSHIBA
+  容量       : 3.6T
+  Serial     : MG04ACA400E 40HXKC5IFJKA
+  介面       : sata
+
+Disk 2
+  裝置       : /dev/sdb
+  類型       : HDD
+  型號       : Multi-Card
+  容量       : 0B
+  Serial     : 20070818000000000
+  介面       : usb
+
+Disk 3
+  裝置       : /dev/nvme0n1
+  類型       : NVMe SSD
+  型號       : INTEL
+  容量       : 953.9G
+  Serial     : SSDPEKNW010T8 BTNH94541B1S1P0B
+  介面       : nvme
+
+============================================================
+                      END
+============================================================
