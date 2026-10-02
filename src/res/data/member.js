@@ -62,8 +62,6 @@ import JiaJenWang
   from 'src/res/image/member/Jia-Jen-Wang.jpg'
 import JiunManChen
   from 'src/res/image/member/Jiun-Man-Chen.png'
-import KengJungKu
-  from 'src/res/image/member/Keng-Jung-Ku.png'
 import KuanYuChen
   from 'src/res/image/member/Kuan-Yu-Chen.png'
 import LiTingTang
@@ -249,14 +247,7 @@ export const memberData = [
   //   deg: 1,
   //   image: ChihHsiangYang,
   // },
-  {
-    zh: '古耕榕',
-    en: 'Keng-Jung Ku',
-    dept: 0,
-    deg: 1,
-    grade: 4,
-    image: KengJungKu,
-  },
+
   {
     zh: '黃星翰',
     en: 'Xing-Han Huang',
