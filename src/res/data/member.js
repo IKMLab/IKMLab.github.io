@@ -180,6 +180,10 @@ import YuSungLin
   from 'src/res/image/member/Yu-Sung-Lin.jpg'
 import TienYingLai
   from 'src/res/image/member/Tien-Ying-Lai.jpg'
+import ChihChengPeng
+  from 'src/res/image/member/Chih-Cheng-Peng.jpg'
+import BabtistaPutriG
+  from 'src/res/image/member/Babtista-Putri-G.jpg'
 
 export const memberData = [
   // PhD Students
@@ -399,6 +403,22 @@ export const memberData = [
     deg: 1,
     grade: 1,
     image: YuSungLin,
+  },
+  {
+    zh: '高俐雅',
+    en: 'Babtista Putri G',
+    dept: 4,
+    deg: 1,
+    grade: 1,
+    image: BabtistaPutriG,
+  },
+  {
+    zh: '彭祉錚',
+    en: 'Chih-Cheng Peng',
+    dept: 4,
+    deg: 1,
+    grade: 1,
+    image: ChihChengPeng,
   },
   // Graduate PhDs
   {
