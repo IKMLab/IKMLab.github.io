@@ -1,6 +1,21 @@
 export const researchData = [
   {
     title:
+      'Decision Rigidity in LLM Disinformation Detection: Behavioral and Representational Evidence',
+    authors: [
+      'M.-J. Hu',
+      'H.-Y. Kao',
+    ],
+    venue: 'EMNLP',
+    venueType: 'conference',
+    year: 2026,
+    topic: 'NLP',
+    subfields: [],
+    professorPreferredFormat:
+      'M.-J. Hu, H.-Y. Kao, "Decision Rigidity in LLM Disinformation Detection: Behavioral and Representational Evidence," Proc. of the 2026 Conference on Empirical Methods in Natural Language Processing (Findings of EMNLP-2026), Budapest, Hungary, Oct 24-29, 2026.',
+  },
+  {
+    title:
       'Learning in the Fisher Subspace: A Guided Initialization for LoRA Fine-Tuning',
     authors: [
       'Z.-Q. Feng',
