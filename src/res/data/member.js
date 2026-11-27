@@ -184,6 +184,8 @@ import ChihChengPeng
   from 'src/res/image/member/Chih-Cheng-Peng.jpg'
 import BabtistaPutriG
   from 'src/res/image/member/Babtista-Putri-G.jpg'
+import YinChiehMao
+  from 'src/res/image/member/Yin-Chieh-Mao.jpg'
 
 export const memberData = [
   // PhD Students
@@ -291,6 +293,14 @@ export const memberData = [
     deg: 1,
     grade: 3,
     // image: YuChienWang,
+  },
+  {
+    zh: '毛胤絜',
+    en: 'Yin-Chieh Mao',
+    dept: 3,
+    deg: 1,
+    grade: 3,
+    image: YinChiehMao,
   },
   {
     zh: '蟻嘉彬',
